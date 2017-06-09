@@ -25,7 +25,7 @@ int		main(int ac, char **av)
 		fd = open(av[1], O_RDONLY);
 		while (get_next_line(fd, &buf) == 1)
 		{
-			printf("%#010x\n", (int*)buf);
+			printf("%s\n", buf);
 		}
 	}
 }
