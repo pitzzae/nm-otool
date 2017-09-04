@@ -16,7 +16,23 @@ stdlib.h
 fcntl.h
 -
 
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+../includes/nmotool.h
+sys/stat.h
+-
+mach/boolean.h
+-
+mach-o/loader.h
+-
+mach-o/fat.h
+-
+unistd.h
+-
+stdlib.h
+-
+sys/mman.h
+-
+
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 unistd.h
 -
 string.h
@@ -26,365 +42,377 @@ stdlib.h
 fcntl.h
 -
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_atoi.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_atoi.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_bufcpy.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_bufcpy.c
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_bzero.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_bzero.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_date_time.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_date_time.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 time.h
 -
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_isalnum.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_isalnum.c
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_isalpha.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_isalpha.c
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_isascii.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_isascii.c
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_isdigit.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_isdigit.c
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_isprint.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_isprint.c
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_itoa.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_itoa.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lst_add_env.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_add_env.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lst_edit_env.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_edit_env.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lst_env_new.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_env_new.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 stdio.h
 -
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lst_get_env.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_get_env.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lst_rm_env.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_rm_env.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lst_to_env.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_to_env.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lstadd.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstadd.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lstaddend.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstaddend.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lstaddend_free.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstaddend_free.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lstdel.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstdel.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lstdelone.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstdelone.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lstdup.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstdup.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lstiter.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstiter.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lstlen.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstlen.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lstmap.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstmap.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lstnew.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstnew.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lstprintnbr.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstprintnbr.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lstprintstr.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstprintstr.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lstring.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstring.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_lstsplit.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstsplit.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_memalloc.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memalloc.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_memccpy.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memccpy.c
 string.h
 -
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_memchr.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memchr.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_memcmp.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memcmp.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_memcpy.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memcpy.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_memdel.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memdel.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_memmove.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memmove.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_memset.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memset.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_myputchar.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_myputchar.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_putchar.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putchar.c
 unistd.h
 -
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_putchar_fd.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putchar_fd.c
 unistd.h
 -
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_putendl.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putendl.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_putendl_fd.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putendl_fd.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_putnbr.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putnbr.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_putnbr_fd.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putnbr_fd.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_putstr.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putstr.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_putstr_fd.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putstr_fd.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_realloc.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_realloc.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_str_replace_chr.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_str_replace_chr.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_str_replace_str.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_str_replace_str.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_stradd_slash.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_stradd_slash.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strcat.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strcat.c
 string.h
 -
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strcat_l.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strcat_l.c
 string.h
 -
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strchr.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strchr.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strclr.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strclr.c
 string.h
 -
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strcmp.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strcmp.c
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strcpy.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strcpy.c
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strdel.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strdel.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strdup.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strdup.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strequ.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strequ.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strfocur.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strfocur.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strisprint.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strisprint.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_striter.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_striter.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_striteri.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_striteri.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strjoin.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strjoin.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strjoin_free.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strjoin_free.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strlcat.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strlcat.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strlen.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strlen.c
 string.h
 -
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strlocur.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strlocur.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strmap.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strmap.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strmapi.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strmapi.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strncat.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strncat.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strncmp.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strncmp.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strncpy.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strncpy.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strnequ.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strnequ.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strnew.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strnew.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strnstr.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strnstr.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strocur.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strocur.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strocur_slash.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strocur_slash.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strrchr.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strrchr.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strsplit.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strsplit.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strsplit_len.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strsplit_len.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strstr.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strstr.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strsub.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strsub.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strsub_free.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strsub_free.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strswap.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strswap.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_strtrim.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strtrim.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_tab_realloc.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_tab_realloc.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_tabdup.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_tabdup.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_tolower.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_tolower.c
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_toupper.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_toupper.c
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/ft_udel.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_udel.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/libft/srcs/get_next_line.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/get_next_line.c
 ../../includes/libft.h
-/home/gtorresa/Documents/workspace/nm-otool/includes/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h
 
-/home/gtorresa/Documents/workspace/nm-otool/srcs_otool/main.c
+/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/get_headers.c
+unistd.h
+-
+mach-o/fat.h
+-
+mach-o/loader.h
+-
+nmotool.h
+-
+
+/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/main.c
 libft.h
-/home/gtorresa/Documents/workspace/nm-otool/srcs_otool/libft.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/libft.h
+nmotool.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/nmotool.h
 stdio.h
-/home/gtorresa/Documents/workspace/nm-otool/srcs_otool/stdio.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/stdio.h
 

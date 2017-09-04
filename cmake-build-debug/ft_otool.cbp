@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ft_otool"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ft_nm">
+				<Option output="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/ft_nm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 ft_nm"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ft_nm/fast">
+				<Option output="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/ft_nm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 ft_nm/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ft_otool">
+				<Option output="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/ft_otool" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 ft_otool"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ft_otool/fast">
+				<Option output="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/ft_otool" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 ft_otool/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ft">
+				<Option output="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/libft.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 ft"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ft/fast">
+				<Option output="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/libft.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 ft/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/nmotool.h">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_atoi.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_bufcpy.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_bzero.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_date_time.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_isalnum.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_isalpha.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_isascii.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_isdigit.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_isprint.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_itoa.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_add_env.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_edit_env.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_env_new.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_get_env.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_rm_env.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_to_env.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstadd.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstaddend.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstaddend_free.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstdel.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstdelone.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstdup.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstiter.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstlen.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstmap.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstnew.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstprintnbr.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstprintstr.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstring.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstsplit.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memalloc.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memccpy.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memchr.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memcmp.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memcpy.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memdel.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memmove.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memset.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_myputchar.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putchar.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putchar_fd.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putendl.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putendl_fd.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putnbr.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putnbr_fd.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putstr.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putstr_fd.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_realloc.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_str_replace_chr.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_str_replace_str.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_stradd_slash.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strcat.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strcat_l.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strchr.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strclr.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strcmp.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strcpy.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strdel.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strdup.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strequ.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strfocur.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strisprint.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_striter.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_striteri.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strjoin.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strjoin_free.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strlcat.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strlen.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strlocur.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strmap.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strmapi.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strncat.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strncmp.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strncpy.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strnequ.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strnew.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strnstr.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strocur.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strocur_slash.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strrchr.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strsplit.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strsplit_len.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strstr.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strsub.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strsub_free.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strswap.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strtrim.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_tab_realloc.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_tabdup.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_tolower.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_toupper.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_udel.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/get_next_line.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/main.c">
+			<Option target="ft_nm"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/get_headers.c">
+			<Option target="ft_otool"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/main.c">
+			<Option target="ft_otool"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

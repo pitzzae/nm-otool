@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ft_otool.dir/srcs_otool/main.c.o"
+  "CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o"
   "CMakeFiles/ft_otool.dir/libft/srcs/ft_atoi.c.o"
   "CMakeFiles/ft_otool.dir/libft/srcs/ft_bzero.c.o"
   "CMakeFiles/ft_otool.dir/libft/srcs/ft_isalnum.c.o"

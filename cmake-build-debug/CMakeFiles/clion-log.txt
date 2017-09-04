@@ -1,4 +1,4 @@
-/home/gtorresa/app/clion-2017.1.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/gtorresa/Documents/workspace/nm-otool
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/gtorresani/Documents/42/gitlab/nm-otool
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/gtorresa/Documents/workspace/nm-otool/cmake-build-debug
+-- Build files have been written to: /Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug

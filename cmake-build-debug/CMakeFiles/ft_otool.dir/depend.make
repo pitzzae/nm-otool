@@ -263,6 +263,10 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_udel.c.o: ../libft/srcs/ft_udel.c
 CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.o: ../includes/libft.h
 CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.o: ../libft/srcs/get_next_line.c
 
+CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o: ../includes/nmotool.h
+CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o: ../srcs_otool/get_headers.c
+
 CMakeFiles/ft_otool.dir/srcs_otool/main.c.o: ../includes/libft.h
+CMakeFiles/ft_otool.dir/srcs_otool/main.c.o: ../includes/nmotool.h
 CMakeFiles/ft_otool.dir/srcs_otool/main.c.o: ../srcs_otool/main.c
 
