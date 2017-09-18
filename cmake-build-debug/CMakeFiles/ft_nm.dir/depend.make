@@ -253,6 +253,9 @@ CMakeFiles/ft_nm.dir/libft/srcs/ft_strswap.c.o: ../libft/srcs/ft_strswap.c
 CMakeFiles/ft_nm.dir/libft/srcs/ft_strtrim.c.o: ../includes/libft.h
 CMakeFiles/ft_nm.dir/libft/srcs/ft_strtrim.c.o: ../libft/srcs/ft_strtrim.c
 
+CMakeFiles/ft_nm.dir/libft/srcs/ft_swap.c.o: ../includes/libft.h
+CMakeFiles/ft_nm.dir/libft/srcs/ft_swap.c.o: ../libft/srcs/ft_swap.c
+
 CMakeFiles/ft_nm.dir/libft/srcs/ft_tab_realloc.c.o: ../includes/libft.h
 CMakeFiles/ft_nm.dir/libft/srcs/ft_tab_realloc.c.o: ../libft/srcs/ft_tab_realloc.c
 

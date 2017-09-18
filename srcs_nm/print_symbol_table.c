@@ -57,7 +57,8 @@ t_list		*print_symbol_table_86(t_head *head, char *ptr)
 			sym.type = 'T';
 		else
 			sym.type = 'U';
-		sym.name = ptr + head->sym->stroff + head->nlist32[i].n_un.n_strx;
+		sym.name = ft_strdup(ptr + head->sym->stroff +
+				 head->nlist32[i].n_un.n_strx);
 		ft_lstadd(&lst, ft_lstnew(&sym, sizeof(t_symbol)));
 		i++;
 	}

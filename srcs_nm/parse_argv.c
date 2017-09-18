@@ -30,12 +30,40 @@ static void	read_bin(t_bin *bin, char *source)
 	}
 }
 
-void		parse_result(t_list *lst)
+static void order_asc(t_list *lst)
+{
+	boolean_t	lst_is_order;
+	t_list				*l;
+	t_symbol			*sym;
+
+	lst_is_order = FALSE;
+	l = lst;
+	while (!lst_is_order)
+	{
+		lst_is_order = TRUE;
+		while (l->next && l->next->content && l->next->next)
+		{
+			if (ft_strcmp(((t_symbol*)(l->content))->name,
+						  ((t_symbol*)(l->next->content))->name) > 0)
+			{
+				sym = l->content;
+				l->content = l->next->content;
+				l->next->content = sym;
+				lst_is_order = FALSE;
+			}
+			l = l->next;
+		}
+		l = lst;
+	}
+}
+
+static void	parse_result(t_list *lst)
 {
 	size_t					i;
 	t_symbol				*sym;
 
 	i = 0;
+	order_asc(lst);
 	while (lst != NULL && (sym = (t_symbol*)lst->content) != NULL)
 	{
 		ft_putstr(sym->address);
@@ -48,7 +76,7 @@ void		parse_result(t_list *lst)
 	}
 }
 
-void		find_symbol_table(char *ptr, t_head *header)
+static void	find_symbol_table(char *ptr, t_head *header)
 {
 	int						i;
 	int						j;
