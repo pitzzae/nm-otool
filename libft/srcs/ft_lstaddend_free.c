@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "libft.h"
 
 void	ft_lstaddend_free(t_list **alst, t_list *newlst,
 		void (*del)(void *, size_t))

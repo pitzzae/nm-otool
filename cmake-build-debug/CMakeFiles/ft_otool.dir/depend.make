@@ -111,6 +111,9 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_memset.c.o: ../libft/srcs/ft_memset.c
 CMakeFiles/ft_otool.dir/libft/srcs/ft_myputchar.c.o: ../includes/libft.h
 CMakeFiles/ft_otool.dir/libft/srcs/ft_myputchar.c.o: ../libft/srcs/ft_myputchar.c
 
+CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o: ../includes/libft.h
+CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o: ../libft/srcs/ft_putbase.c
+
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar.c.o: ../libft/srcs/ft_putchar.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar_fd.c.o: ../libft/srcs/ft_putchar_fd.c
@@ -120,6 +123,9 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl.c.o: ../libft/srcs/ft_putendl.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl_fd.c.o: ../includes/libft.h
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl_fd.c.o: ../libft/srcs/ft_putendl_fd.c
+
+CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o: ../includes/libft.h
+CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o: ../libft/srcs/ft_puthex.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr.c.o: ../includes/libft.h
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr.c.o: ../libft/srcs/ft_putnbr.c
@@ -263,10 +269,23 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_udel.c.o: ../libft/srcs/ft_udel.c
 CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.o: ../includes/libft.h
 CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.o: ../libft/srcs/get_next_line.c
 
-CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o: ../includes/nmotool.h
-CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o: ../srcs_otool/get_headers.c
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o: ../includes/libft.h
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o: ../includes/nmotool.h
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o: ../srcs_otool/find_section_64.c
+
+CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o: ../includes/libft.h
+CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o: ../includes/nmotool.h
+CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o: ../srcs_otool/get_type_file.c
 
 CMakeFiles/ft_otool.dir/srcs_otool/main.c.o: ../includes/libft.h
 CMakeFiles/ft_otool.dir/srcs_otool/main.c.o: ../includes/nmotool.h
 CMakeFiles/ft_otool.dir/srcs_otool/main.c.o: ../srcs_otool/main.c
+
+CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o: ../includes/libft.h
+CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o: ../includes/nmotool.h
+CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o: ../srcs_otool/parse_argv.c
+
+CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o: ../includes/libft.h
+CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o: ../includes/nmotool.h
+CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o: ../srcs_otool/print_sections.c
 

@@ -43,10 +43,12 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memmove.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_memmove.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memset.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_memset.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_myputchar.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_myputchar.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putbase.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putchar.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putchar_fd.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar_fd.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putendl.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putendl_fd.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl_fd.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_puthex.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putnbr.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putnbr_fd.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr_fd.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putstr.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_putstr.c.o"
@@ -97,8 +99,11 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_toupper.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_toupper.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_udel.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_udel.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/get_next_line.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.o"
-  "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/get_headers.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_64.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/get_type_file.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/main.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/main.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/parse_argv.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/print_sections.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

@@ -2313,6 +2313,54 @@ CMakeFiles/ft_nm.dir/libft/srcs/ft_tabdup.c.o.provides: CMakeFiles/ft_nm.dir/lib
 CMakeFiles/ft_nm.dir/libft/srcs/ft_tabdup.c.o.provides.build: CMakeFiles/ft_nm.dir/libft/srcs/ft_tabdup.c.o
 
 
+CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o: ../libft/srcs/ft_putbase.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putbase.c
+
+CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putbase.c > CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.i
+
+CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putbase.c -o CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.s
+
+CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o.requires
+
+CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o.provides: CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o.provides
+
+CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o.provides.build: CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o
+
+
+CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o: ../libft/srcs/ft_puthex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_puthex.c
+
+CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_puthex.c > CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.i
+
+CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_puthex.c -o CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.s
+
+CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o.requires
+
+CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o.provides: CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o.provides
+
+CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o.provides.build: CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o
+
+
 # Object files for target ft_nm
 ft_nm_OBJECTS = \
 "CMakeFiles/ft_nm.dir/srcs_nm/main.c.o" \
@@ -2408,7 +2456,9 @@ ft_nm_OBJECTS = \
 "CMakeFiles/ft_nm.dir/libft/srcs/ft_udel.c.o" \
 "CMakeFiles/ft_nm.dir/libft/srcs/ft_strocur_slash.c.o" \
 "CMakeFiles/ft_nm.dir/libft/srcs/ft_stradd_slash.c.o" \
-"CMakeFiles/ft_nm.dir/libft/srcs/ft_tabdup.c.o"
+"CMakeFiles/ft_nm.dir/libft/srcs/ft_tabdup.c.o" \
+"CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o" \
+"CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o"
 
 # External object files for target ft_nm
 ft_nm_EXTERNAL_OBJECTS =
@@ -2507,9 +2557,11 @@ ft_nm: CMakeFiles/ft_nm.dir/libft/srcs/ft_udel.c.o
 ft_nm: CMakeFiles/ft_nm.dir/libft/srcs/ft_strocur_slash.c.o
 ft_nm: CMakeFiles/ft_nm.dir/libft/srcs/ft_stradd_slash.c.o
 ft_nm: CMakeFiles/ft_nm.dir/libft/srcs/ft_tabdup.c.o
+ft_nm: CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o
+ft_nm: CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o
 ft_nm: CMakeFiles/ft_nm.dir/build.make
 ft_nm: CMakeFiles/ft_nm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Linking C executable ft_nm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Linking C executable ft_nm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ft_nm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2611,6 +2663,8 @@ CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/libft/srcs/ft_udel.c.o.requi
 CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/libft/srcs/ft_strocur_slash.c.o.requires
 CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/libft/srcs/ft_stradd_slash.c.o.requires
 CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/libft/srcs/ft_tabdup.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o.requires
 
 .PHONY : CMakeFiles/ft_nm.dir/requires
 

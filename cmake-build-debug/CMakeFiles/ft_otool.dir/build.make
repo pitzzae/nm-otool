@@ -81,33 +81,105 @@ CMakeFiles/ft_otool.dir/srcs_otool/main.c.o.provides: CMakeFiles/ft_otool.dir/sr
 CMakeFiles/ft_otool.dir/srcs_otool/main.c.o.provides.build: CMakeFiles/ft_otool.dir/srcs_otool/main.c.o
 
 
-CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o: CMakeFiles/ft_otool.dir/flags.make
-CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o: ../srcs_otool/get_headers.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/get_headers.c
+CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o: CMakeFiles/ft_otool.dir/flags.make
+CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o: ../srcs_otool/get_type_file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/get_type_file.c
 
-CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/get_headers.c > CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.i
+CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/get_type_file.c > CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.i
 
-CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/get_headers.c -o CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.s
+CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/get_type_file.c -o CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.s
 
-CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o.requires:
+CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o.requires:
 
-.PHONY : CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o.requires
+.PHONY : CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o.requires
 
-CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o.provides: CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o.requires
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o.provides.build
-.PHONY : CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o.provides
+CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o.provides: CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o.provides.build
+.PHONY : CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o.provides
 
-CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o.provides.build: CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o
+CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o.provides.build: CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o
+
+
+CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o: CMakeFiles/ft_otool.dir/flags.make
+CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o: ../srcs_otool/parse_argv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/parse_argv.c
+
+CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/parse_argv.c > CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.i
+
+CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/parse_argv.c -o CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.s
+
+CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o.requires:
+
+.PHONY : CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o.requires
+
+CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o.provides: CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o.provides.build
+.PHONY : CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o.provides
+
+CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o.provides.build: CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o
+
+
+CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o: CMakeFiles/ft_otool.dir/flags.make
+CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o: ../srcs_otool/print_sections.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/print_sections.c
+
+CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/print_sections.c > CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.i
+
+CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/print_sections.c -o CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.s
+
+CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o.requires:
+
+.PHONY : CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o.requires
+
+CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o.provides: CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o.provides.build
+.PHONY : CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o.provides
+
+CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o.provides.build: CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o
+
+
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o: CMakeFiles/ft_otool.dir/flags.make
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o: ../srcs_otool/find_section_64.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_64.c
+
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_64.c > CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.i
+
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_64.c -o CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.s
+
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o.requires:
+
+.PHONY : CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o.requires
+
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o.provides: CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o.provides.build
+.PHONY : CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o.provides
+
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o.provides.build: CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o
 
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_atoi.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_atoi.c.o: ../libft/srcs/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_atoi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_atoi.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_atoi.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_atoi.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_atoi.c.i: cmake_force
@@ -131,7 +203,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_atoi.c.o.provides.build: CMakeFiles/ft_oto
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_bzero.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_bzero.c.o: ../libft/srcs/ft_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_bzero.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_bzero.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_bzero.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_bzero.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_bzero.c.i: cmake_force
@@ -155,7 +227,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_bzero.c.o.provides.build: CMakeFiles/ft_ot
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_isalnum.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_isalnum.c.o: ../libft/srcs/ft_isalnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_isalnum.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_isalnum.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_isalnum.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_isalnum.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_isalnum.c.i: cmake_force
@@ -179,7 +251,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_isalnum.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_isalpha.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_isalpha.c.o: ../libft/srcs/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_isalpha.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_isalpha.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_isalpha.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_isalpha.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_isalpha.c.i: cmake_force
@@ -203,7 +275,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_isalpha.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_isascii.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_isascii.c.o: ../libft/srcs/ft_isascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_isascii.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_isascii.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_isascii.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_isascii.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_isascii.c.i: cmake_force
@@ -227,7 +299,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_isascii.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_isdigit.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_isdigit.c.o: ../libft/srcs/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_isdigit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_isdigit.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_isdigit.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_isdigit.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_isdigit.c.i: cmake_force
@@ -251,7 +323,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_isdigit.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_isprint.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_isprint.c.o: ../libft/srcs/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_isprint.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_isprint.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_isprint.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_isprint.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_isprint.c.i: cmake_force
@@ -275,7 +347,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_isprint.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memalloc.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memalloc.c.o: ../libft/srcs/ft_memalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_memalloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_memalloc.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_memalloc.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memalloc.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memalloc.c.i: cmake_force
@@ -299,7 +371,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_memalloc.c.o.provides.build: CMakeFiles/ft
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memccpy.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memccpy.c.o: ../libft/srcs/ft_memccpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_memccpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_memccpy.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_memccpy.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memccpy.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memccpy.c.i: cmake_force
@@ -323,7 +395,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_memccpy.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memchr.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memchr.c.o: ../libft/srcs/ft_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_memchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_memchr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_memchr.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memchr.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memchr.c.i: cmake_force
@@ -347,7 +419,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_memchr.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memcmp.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memcmp.c.o: ../libft/srcs/ft_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_memcmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_memcmp.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_memcmp.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memcmp.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memcmp.c.i: cmake_force
@@ -371,7 +443,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_memcmp.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memcpy.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memcpy.c.o: ../libft/srcs/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_memcpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_memcpy.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_memcpy.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memcpy.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memcpy.c.i: cmake_force
@@ -395,7 +467,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_memcpy.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memmove.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memmove.c.o: ../libft/srcs/ft_memmove.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_memmove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_memmove.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_memmove.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memmove.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memmove.c.i: cmake_force
@@ -419,7 +491,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_memmove.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memset.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memset.c.o: ../libft/srcs/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_memset.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_memset.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_memset.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memset.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memset.c.i: cmake_force
@@ -443,7 +515,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_memset.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strcat.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strcat.c.o: ../libft/srcs/ft_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strcat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strcat.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strcat.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strcat.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strcat.c.i: cmake_force
@@ -467,7 +539,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strcat.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strchr.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strchr.c.o: ../libft/srcs/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strchr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strchr.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strchr.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strchr.c.i: cmake_force
@@ -491,7 +563,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strchr.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strcmp.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strcmp.c.o: ../libft/srcs/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strcmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strcmp.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strcmp.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strcmp.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strcmp.c.i: cmake_force
@@ -515,7 +587,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strcmp.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strcpy.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strcpy.c.o: ../libft/srcs/ft_strcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strcpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strcpy.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strcpy.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strcpy.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strcpy.c.i: cmake_force
@@ -539,7 +611,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strcpy.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strdup.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strdup.c.o: ../libft/srcs/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strdup.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strdup.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strdup.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strdup.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strdup.c.i: cmake_force
@@ -563,7 +635,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strdup.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strlcat.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strlcat.c.o: ../libft/srcs/ft_strlcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strlcat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strlcat.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strlcat.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strlcat.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strlcat.c.i: cmake_force
@@ -587,7 +659,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strlcat.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strlen.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strlen.c.o: ../libft/srcs/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strlen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strlen.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strlen.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strlen.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strlen.c.i: cmake_force
@@ -611,7 +683,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strlen.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strncat.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strncat.c.o: ../libft/srcs/ft_strncat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strncat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strncat.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strncat.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strncat.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strncat.c.i: cmake_force
@@ -635,7 +707,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strncat.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strncmp.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strncmp.c.o: ../libft/srcs/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strncmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strncmp.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strncmp.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strncmp.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strncmp.c.i: cmake_force
@@ -659,7 +731,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strncmp.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strncpy.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strncpy.c.o: ../libft/srcs/ft_strncpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strncpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strncpy.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strncpy.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strncpy.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strncpy.c.i: cmake_force
@@ -683,7 +755,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strncpy.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strnstr.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strnstr.c.o: ../libft/srcs/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strnstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strnstr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strnstr.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strnstr.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strnstr.c.i: cmake_force
@@ -707,7 +779,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strnstr.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strrchr.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strrchr.c.o: ../libft/srcs/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strrchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strrchr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strrchr.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strrchr.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strrchr.c.i: cmake_force
@@ -731,7 +803,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strrchr.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strstr.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strstr.c.o: ../libft/srcs/ft_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strstr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strstr.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strstr.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strstr.c.i: cmake_force
@@ -755,7 +827,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strstr.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_tolower.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_tolower.c.o: ../libft/srcs/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_tolower.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_tolower.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_tolower.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_tolower.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_tolower.c.i: cmake_force
@@ -779,7 +851,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_tolower.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_toupper.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_toupper.c.o: ../libft/srcs/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_toupper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_toupper.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_toupper.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_toupper.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_toupper.c.i: cmake_force
@@ -803,7 +875,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_toupper.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memdel.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memdel.c.o: ../libft/srcs/ft_memdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_memdel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_memdel.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_memdel.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_memdel.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_memdel.c.i: cmake_force
@@ -827,7 +899,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_memdel.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strnew.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strnew.c.o: ../libft/srcs/ft_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strnew.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strnew.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strnew.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strnew.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strnew.c.i: cmake_force
@@ -851,7 +923,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strnew.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strdel.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strdel.c.o: ../libft/srcs/ft_strdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strdel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strdel.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strdel.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strdel.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strdel.c.i: cmake_force
@@ -875,7 +947,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strdel.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strclr.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strclr.c.o: ../libft/srcs/ft_strclr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strclr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strclr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strclr.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strclr.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strclr.c.i: cmake_force
@@ -899,7 +971,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strclr.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_striter.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_striter.c.o: ../libft/srcs/ft_striter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_striter.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_striter.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_striter.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_striter.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_striter.c.i: cmake_force
@@ -923,7 +995,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_striter.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_striteri.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_striteri.c.o: ../libft/srcs/ft_striteri.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_striteri.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_striteri.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_striteri.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_striteri.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_striteri.c.i: cmake_force
@@ -947,7 +1019,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_striteri.c.o.provides.build: CMakeFiles/ft
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strmap.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strmap.c.o: ../libft/srcs/ft_strmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strmap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strmap.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strmap.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strmap.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strmap.c.i: cmake_force
@@ -971,7 +1043,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strmap.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strmapi.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strmapi.c.o: ../libft/srcs/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strmapi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strmapi.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strmapi.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strmapi.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strmapi.c.i: cmake_force
@@ -995,7 +1067,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strmapi.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strequ.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strequ.c.o: ../libft/srcs/ft_strequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strequ.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strequ.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strequ.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strequ.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strequ.c.i: cmake_force
@@ -1019,7 +1091,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strequ.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strnequ.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strnequ.c.o: ../libft/srcs/ft_strnequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strnequ.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strnequ.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strnequ.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strnequ.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strnequ.c.i: cmake_force
@@ -1043,7 +1115,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strnequ.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strsub.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strsub.c.o: ../libft/srcs/ft_strsub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strsub.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strsub.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strsub.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strsub.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strsub.c.i: cmake_force
@@ -1067,7 +1139,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strsub.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strjoin.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strjoin.c.o: ../libft/srcs/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strjoin.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strjoin.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strjoin.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strjoin.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strjoin.c.i: cmake_force
@@ -1091,7 +1163,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strjoin.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strtrim.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strtrim.c.o: ../libft/srcs/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strtrim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strtrim.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strtrim.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strtrim.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strtrim.c.i: cmake_force
@@ -1115,7 +1187,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strtrim.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strsplit.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strsplit.c.o: ../libft/srcs/ft_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strsplit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strsplit.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strsplit.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strsplit.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strsplit.c.i: cmake_force
@@ -1139,7 +1211,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strsplit.c.o.provides.build: CMakeFiles/ft
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_itoa.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_itoa.c.o: ../libft/srcs/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_itoa.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_itoa.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_itoa.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_itoa.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_itoa.c.i: cmake_force
@@ -1163,7 +1235,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_itoa.c.o.provides.build: CMakeFiles/ft_oto
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar.c.o: ../libft/srcs/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putchar.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar.c.i: cmake_force
@@ -1187,7 +1259,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putstr.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putstr.c.o: ../libft/srcs/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putstr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_putstr.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putstr.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putstr.c.i: cmake_force
@@ -1211,7 +1283,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_putstr.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl.c.o: ../libft/srcs/ft_putendl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putendl.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl.c.i: cmake_force
@@ -1235,7 +1307,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr.c.o: ../libft/srcs/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putnbr.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr.c.i: cmake_force
@@ -1259,7 +1331,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar_fd.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar_fd.c.o: ../libft/srcs/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar_fd.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putchar_fd.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar_fd.c.i: cmake_force
@@ -1283,7 +1355,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_putchar_fd.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putstr_fd.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putstr_fd.c.o: ../libft/srcs/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putstr_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putstr_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_putstr_fd.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putstr_fd.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putstr_fd.c.i: cmake_force
@@ -1307,7 +1379,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_putstr_fd.c.o.provides.build: CMakeFiles/f
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl_fd.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl_fd.c.o: ../libft/srcs/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl_fd.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putendl_fd.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl_fd.c.i: cmake_force
@@ -1331,7 +1403,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl_fd.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr_fd.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr_fd.c.o: ../libft/srcs/ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr_fd.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putnbr_fd.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr_fd.c.i: cmake_force
@@ -1355,7 +1427,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_putnbr_fd.c.o.provides.build: CMakeFiles/f
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstnew.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstnew.c.o: ../libft/srcs/ft_lstnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstnew.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstnew.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lstnew.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstnew.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstnew.c.i: cmake_force
@@ -1379,7 +1451,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lstnew.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdelone.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdelone.c.o: ../libft/srcs/ft_lstdelone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdelone.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdelone.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdelone.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstdelone.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdelone.c.i: cmake_force
@@ -1403,7 +1475,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdelone.c.o.provides.build: CMakeFiles/f
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdel.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdel.c.o: ../libft/srcs/ft_lstdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdel.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdel.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstdel.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdel.c.i: cmake_force
@@ -1427,7 +1499,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdel.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstadd.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstadd.c.o: ../libft/srcs/ft_lstadd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstadd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstadd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lstadd.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstadd.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstadd.c.i: cmake_force
@@ -1451,7 +1523,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lstadd.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstaddend.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstaddend.c.o: ../libft/srcs/ft_lstaddend.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstaddend.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstaddend.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lstaddend.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstaddend.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstaddend.c.i: cmake_force
@@ -1475,7 +1547,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lstaddend.c.o.provides.build: CMakeFiles/f
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstiter.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstiter.c.o: ../libft/srcs/ft_lstiter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstiter.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstiter.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lstiter.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstiter.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstiter.c.i: cmake_force
@@ -1499,7 +1571,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lstiter.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstmap.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstmap.c.o: ../libft/srcs/ft_lstmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstmap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstmap.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lstmap.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstmap.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstmap.c.i: cmake_force
@@ -1523,7 +1595,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lstmap.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstsplit.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstsplit.c.o: ../libft/srcs/ft_lstsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstsplit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstsplit.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lstsplit.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstsplit.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstsplit.c.i: cmake_force
@@ -1547,7 +1619,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lstsplit.c.o.provides.build: CMakeFiles/ft
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstprintstr.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstprintstr.c.o: ../libft/srcs/ft_lstprintstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstprintstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstprintstr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lstprintstr.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstprintstr.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstprintstr.c.i: cmake_force
@@ -1571,7 +1643,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lstprintstr.c.o.provides.build: CMakeFiles
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstprintnbr.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstprintnbr.c.o: ../libft/srcs/ft_lstprintnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstprintnbr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstprintnbr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lstprintnbr.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstprintnbr.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstprintnbr.c.i: cmake_force
@@ -1595,7 +1667,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lstprintnbr.c.o.provides.build: CMakeFiles
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_chr.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_chr.c.o: ../libft/srcs/ft_str_replace_chr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_chr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_chr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_chr.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_str_replace_chr.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_chr.c.i: cmake_force
@@ -1619,7 +1691,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_chr.c.o.provides.build: CMakeF
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstlen.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstlen.c.o: ../libft/srcs/ft_lstlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstlen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstlen.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lstlen.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstlen.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstlen.c.i: cmake_force
@@ -1643,7 +1715,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lstlen.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstring.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstring.c.o: ../libft/srcs/ft_lstring.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstring.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstring.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lstring.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstring.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstring.c.i: cmake_force
@@ -1667,7 +1739,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lstring.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdup.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdup.c.o: ../libft/srcs/ft_lstdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdup.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdup.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdup.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstdup.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdup.c.i: cmake_force
@@ -1691,7 +1763,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lstdup.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strfocur.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strfocur.c.o: ../libft/srcs/ft_strfocur.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strfocur.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strfocur.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strfocur.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strfocur.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strfocur.c.i: cmake_force
@@ -1715,7 +1787,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strfocur.c.o.provides.build: CMakeFiles/ft
 
 CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.o: ../libft/srcs/get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/get_next_line.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.i: cmake_force
@@ -1739,7 +1811,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strjoin_free.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strjoin_free.c.o: ../libft/srcs/ft_strjoin_free.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strjoin_free.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strjoin_free.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strjoin_free.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strjoin_free.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strjoin_free.c.i: cmake_force
@@ -1763,7 +1835,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strjoin_free.c.o.provides.build: CMakeFile
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_realloc.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_realloc.c.o: ../libft/srcs/ft_realloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_realloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_realloc.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_realloc.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_realloc.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_realloc.c.i: cmake_force
@@ -1787,7 +1859,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_realloc.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_tab_realloc.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_tab_realloc.c.o: ../libft/srcs/ft_tab_realloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_tab_realloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_tab_realloc.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_tab_realloc.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_tab_realloc.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_tab_realloc.c.i: cmake_force
@@ -1811,7 +1883,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_tab_realloc.c.o.provides.build: CMakeFiles
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur.c.o: ../libft/srcs/ft_strocur.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strocur.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur.c.i: cmake_force
@@ -1835,7 +1907,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strlocur.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strlocur.c.o: ../libft/srcs/ft_strlocur.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strlocur.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strlocur.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strlocur.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strlocur.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strlocur.c.i: cmake_force
@@ -1859,7 +1931,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strlocur.c.o.provides.build: CMakeFiles/ft
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strcat_l.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strcat_l.c.o: ../libft/srcs/ft_strcat_l.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strcat_l.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strcat_l.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strcat_l.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strcat_l.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strcat_l.c.i: cmake_force
@@ -1883,7 +1955,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strcat_l.c.o.provides.build: CMakeFiles/ft
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_bufcpy.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_bufcpy.c.o: ../libft/srcs/ft_bufcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_bufcpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_bufcpy.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_bufcpy.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_bufcpy.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_bufcpy.c.i: cmake_force
@@ -1907,7 +1979,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_bufcpy.c.o.provides.build: CMakeFiles/ft_o
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strisprint.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strisprint.c.o: ../libft/srcs/ft_strisprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strisprint.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strisprint.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strisprint.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strisprint.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strisprint.c.i: cmake_force
@@ -1931,7 +2003,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strisprint.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strswap.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strswap.c.o: ../libft/srcs/ft_strswap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strswap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strswap.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strswap.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strswap.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strswap.c.i: cmake_force
@@ -1955,7 +2027,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strswap.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_date_time.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_date_time.c.o: ../libft/srcs/ft_date_time.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_date_time.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_date_time.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_date_time.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_date_time.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_date_time.c.i: cmake_force
@@ -1979,7 +2051,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_date_time.c.o.provides.build: CMakeFiles/f
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_env_new.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_env_new.c.o: ../libft/srcs/ft_lst_env_new.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_env_new.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_env_new.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_env_new.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_env_new.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_env_new.c.i: cmake_force
@@ -2003,7 +2075,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_env_new.c.o.provides.build: CMakeFiles
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_to_env.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_to_env.c.o: ../libft/srcs/ft_lst_to_env.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_to_env.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_to_env.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_to_env.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_to_env.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_to_env.c.i: cmake_force
@@ -2027,7 +2099,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_to_env.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_get_env.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_get_env.c.o: ../libft/srcs/ft_lst_get_env.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_get_env.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_get_env.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_get_env.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_get_env.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_get_env.c.i: cmake_force
@@ -2051,7 +2123,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_get_env.c.o.provides.build: CMakeFiles
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_edit_env.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_edit_env.c.o: ../libft/srcs/ft_lst_edit_env.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_edit_env.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_edit_env.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_edit_env.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_edit_env.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_edit_env.c.i: cmake_force
@@ -2075,7 +2147,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_edit_env.c.o.provides.build: CMakeFile
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_add_env.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_add_env.c.o: ../libft/srcs/ft_lst_add_env.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_add_env.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_add_env.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_add_env.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_add_env.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_add_env.c.i: cmake_force
@@ -2099,7 +2171,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_add_env.c.o.provides.build: CMakeFiles
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_rm_env.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_rm_env.c.o: ../libft/srcs/ft_lst_rm_env.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_rm_env.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_rm_env.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_rm_env.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lst_rm_env.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_rm_env.c.i: cmake_force
@@ -2123,7 +2195,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lst_rm_env.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strsplit_len.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strsplit_len.c.o: ../libft/srcs/ft_strsplit_len.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strsplit_len.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strsplit_len.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strsplit_len.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strsplit_len.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strsplit_len.c.i: cmake_force
@@ -2147,7 +2219,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strsplit_len.c.o.provides.build: CMakeFile
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_str.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_str.c.o: ../libft/srcs/ft_str_replace_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_str.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_str.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_str.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_str_replace_str.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_str.c.i: cmake_force
@@ -2171,7 +2243,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_str.c.o.provides.build: CMakeF
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strsub_free.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strsub_free.c.o: ../libft/srcs/ft_strsub_free.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strsub_free.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strsub_free.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strsub_free.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strsub_free.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strsub_free.c.i: cmake_force
@@ -2195,7 +2267,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strsub_free.c.o.provides.build: CMakeFiles
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_myputchar.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_myputchar.c.o: ../libft/srcs/ft_myputchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_myputchar.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_myputchar.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_myputchar.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_myputchar.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_myputchar.c.i: cmake_force
@@ -2219,7 +2291,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_myputchar.c.o.provides.build: CMakeFiles/f
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstaddend_free.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstaddend_free.c.o: ../libft/srcs/ft_lstaddend_free.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstaddend_free.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_lstaddend_free.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_lstaddend_free.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_lstaddend_free.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_lstaddend_free.c.i: cmake_force
@@ -2243,7 +2315,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_lstaddend_free.c.o.provides.build: CMakeFi
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_udel.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_udel.c.o: ../libft/srcs/ft_udel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_udel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_udel.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_udel.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_udel.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_udel.c.i: cmake_force
@@ -2267,7 +2339,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_udel.c.o.provides.build: CMakeFiles/ft_oto
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur_slash.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur_slash.c.o: ../libft/srcs/ft_strocur_slash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur_slash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur_slash.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur_slash.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strocur_slash.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur_slash.c.i: cmake_force
@@ -2291,7 +2363,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur_slash.c.o.provides.build: CMakeFil
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_stradd_slash.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_stradd_slash.c.o: ../libft/srcs/ft_stradd_slash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_stradd_slash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_stradd_slash.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_stradd_slash.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_stradd_slash.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_stradd_slash.c.i: cmake_force
@@ -2315,7 +2387,7 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_stradd_slash.c.o.provides.build: CMakeFile
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_tabdup.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/libft/srcs/ft_tabdup.c.o: ../libft/srcs/ft_tabdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_tabdup.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_tabdup.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_tabdup.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_tabdup.c
 
 CMakeFiles/ft_otool.dir/libft/srcs/ft_tabdup.c.i: cmake_force
@@ -2337,10 +2409,61 @@ CMakeFiles/ft_otool.dir/libft/srcs/ft_tabdup.c.o.provides: CMakeFiles/ft_otool.d
 CMakeFiles/ft_otool.dir/libft/srcs/ft_tabdup.c.o.provides.build: CMakeFiles/ft_otool.dir/libft/srcs/ft_tabdup.c.o
 
 
+CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o: CMakeFiles/ft_otool.dir/flags.make
+CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o: ../libft/srcs/ft_putbase.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putbase.c
+
+CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putbase.c > CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.i
+
+CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_putbase.c -o CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.s
+
+CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o.requires:
+
+.PHONY : CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o.requires
+
+CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o.provides: CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o.provides.build
+.PHONY : CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o.provides
+
+CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o.provides.build: CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o
+
+
+CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o: CMakeFiles/ft_otool.dir/flags.make
+CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o: ../libft/srcs/ft_puthex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_puthex.c
+
+CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_puthex.c > CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.i
+
+CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_puthex.c -o CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.s
+
+CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o.requires:
+
+.PHONY : CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o.requires
+
+CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o.provides: CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o.provides.build
+.PHONY : CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o.provides
+
+CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o.provides.build: CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o
+
+
 # Object files for target ft_otool
 ft_otool_OBJECTS = \
 "CMakeFiles/ft_otool.dir/srcs_otool/main.c.o" \
-"CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o" \
+"CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o" \
+"CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o" \
+"CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o" \
+"CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o" \
 "CMakeFiles/ft_otool.dir/libft/srcs/ft_atoi.c.o" \
 "CMakeFiles/ft_otool.dir/libft/srcs/ft_bzero.c.o" \
 "CMakeFiles/ft_otool.dir/libft/srcs/ft_isalnum.c.o" \
@@ -2433,13 +2556,18 @@ ft_otool_OBJECTS = \
 "CMakeFiles/ft_otool.dir/libft/srcs/ft_udel.c.o" \
 "CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur_slash.c.o" \
 "CMakeFiles/ft_otool.dir/libft/srcs/ft_stradd_slash.c.o" \
-"CMakeFiles/ft_otool.dir/libft/srcs/ft_tabdup.c.o"
+"CMakeFiles/ft_otool.dir/libft/srcs/ft_tabdup.c.o" \
+"CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o" \
+"CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o"
 
 # External object files for target ft_otool
 ft_otool_EXTERNAL_OBJECTS =
 
 ft_otool: CMakeFiles/ft_otool.dir/srcs_otool/main.c.o
-ft_otool: CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o
+ft_otool: CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o
+ft_otool: CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o
+ft_otool: CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o
+ft_otool: CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o
 ft_otool: CMakeFiles/ft_otool.dir/libft/srcs/ft_atoi.c.o
 ft_otool: CMakeFiles/ft_otool.dir/libft/srcs/ft_bzero.c.o
 ft_otool: CMakeFiles/ft_otool.dir/libft/srcs/ft_isalnum.c.o
@@ -2533,9 +2661,11 @@ ft_otool: CMakeFiles/ft_otool.dir/libft/srcs/ft_udel.c.o
 ft_otool: CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur_slash.c.o
 ft_otool: CMakeFiles/ft_otool.dir/libft/srcs/ft_stradd_slash.c.o
 ft_otool: CMakeFiles/ft_otool.dir/libft/srcs/ft_tabdup.c.o
+ft_otool: CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o
+ft_otool: CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o
 ft_otool: CMakeFiles/ft_otool.dir/build.make
 ft_otool: CMakeFiles/ft_otool.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Linking C executable ft_otool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Linking C executable ft_otool"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ft_otool.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2544,7 +2674,10 @@ CMakeFiles/ft_otool.dir/build: ft_otool
 .PHONY : CMakeFiles/ft_otool.dir/build
 
 CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/srcs_otool/main.c.o.requires
-CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o.requires
+CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o.requires
+CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o.requires
+CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o.requires
+CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o.requires
 CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/libft/srcs/ft_atoi.c.o.requires
 CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/libft/srcs/ft_bzero.c.o.requires
 CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/libft/srcs/ft_isalnum.c.o.requires
@@ -2638,6 +2771,8 @@ CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/libft/srcs/ft_udel.c.o
 CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur_slash.c.o.requires
 CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/libft/srcs/ft_stradd_slash.c.o.requires
 CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/libft/srcs/ft_tabdup.c.o.requires
+CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o.requires
+CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o.requires
 
 .PHONY : CMakeFiles/ft_otool.dir/requires
 

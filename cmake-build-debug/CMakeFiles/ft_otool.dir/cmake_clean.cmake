@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ft_otool.dir/srcs_otool/main.c.o"
-  "CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o"
+  "CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o"
+  "CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o"
+  "CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o"
+  "CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o"
   "CMakeFiles/ft_otool.dir/libft/srcs/ft_atoi.c.o"
   "CMakeFiles/ft_otool.dir/libft/srcs/ft_bzero.c.o"
   "CMakeFiles/ft_otool.dir/libft/srcs/ft_isalnum.c.o"
@@ -94,6 +97,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_otool.dir/libft/srcs/ft_strocur_slash.c.o"
   "CMakeFiles/ft_otool.dir/libft/srcs/ft_stradd_slash.c.o"
   "CMakeFiles/ft_otool.dir/libft/srcs/ft_tabdup.c.o"
+  "CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o"
+  "CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o"
   "ft_otool.pdb"
   "ft_otool"
 )

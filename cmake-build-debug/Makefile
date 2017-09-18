@@ -1436,6 +1436,39 @@ libft/srcs/ft_myputchar.c.s:
 	$(MAKE) -f CMakeFiles/ft.dir/build.make CMakeFiles/ft.dir/libft/srcs/ft_myputchar.c.s
 .PHONY : libft/srcs/ft_myputchar.c.s
 
+libft/srcs/ft_putbase.o: libft/srcs/ft_putbase.c.o
+
+.PHONY : libft/srcs/ft_putbase.o
+
+# target to build an object file
+libft/srcs/ft_putbase.c.o:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o
+	$(MAKE) -f CMakeFiles/ft.dir/build.make CMakeFiles/ft.dir/libft/srcs/ft_putbase.c.o
+.PHONY : libft/srcs/ft_putbase.c.o
+
+libft/srcs/ft_putbase.i: libft/srcs/ft_putbase.c.i
+
+.PHONY : libft/srcs/ft_putbase.i
+
+# target to preprocess a source file
+libft/srcs/ft_putbase.c.i:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.i
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.i
+	$(MAKE) -f CMakeFiles/ft.dir/build.make CMakeFiles/ft.dir/libft/srcs/ft_putbase.c.i
+.PHONY : libft/srcs/ft_putbase.c.i
+
+libft/srcs/ft_putbase.s: libft/srcs/ft_putbase.c.s
+
+.PHONY : libft/srcs/ft_putbase.s
+
+# target to generate assembly for a file
+libft/srcs/ft_putbase.c.s:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.s
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.s
+	$(MAKE) -f CMakeFiles/ft.dir/build.make CMakeFiles/ft.dir/libft/srcs/ft_putbase.c.s
+.PHONY : libft/srcs/ft_putbase.c.s
+
 libft/srcs/ft_putchar.o: libft/srcs/ft_putchar.c.o
 
 .PHONY : libft/srcs/ft_putchar.o
@@ -1567,6 +1600,39 @@ libft/srcs/ft_putendl_fd.c.s:
 	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libft/srcs/ft_putendl_fd.c.s
 	$(MAKE) -f CMakeFiles/ft.dir/build.make CMakeFiles/ft.dir/libft/srcs/ft_putendl_fd.c.s
 .PHONY : libft/srcs/ft_putendl_fd.c.s
+
+libft/srcs/ft_puthex.o: libft/srcs/ft_puthex.c.o
+
+.PHONY : libft/srcs/ft_puthex.o
+
+# target to build an object file
+libft/srcs/ft_puthex.c.o:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o
+	$(MAKE) -f CMakeFiles/ft.dir/build.make CMakeFiles/ft.dir/libft/srcs/ft_puthex.c.o
+.PHONY : libft/srcs/ft_puthex.c.o
+
+libft/srcs/ft_puthex.i: libft/srcs/ft_puthex.c.i
+
+.PHONY : libft/srcs/ft_puthex.i
+
+# target to preprocess a source file
+libft/srcs/ft_puthex.c.i:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.i
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.i
+	$(MAKE) -f CMakeFiles/ft.dir/build.make CMakeFiles/ft.dir/libft/srcs/ft_puthex.c.i
+.PHONY : libft/srcs/ft_puthex.c.i
+
+libft/srcs/ft_puthex.s: libft/srcs/ft_puthex.c.s
+
+.PHONY : libft/srcs/ft_puthex.s
+
+# target to generate assembly for a file
+libft/srcs/ft_puthex.c.s:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.s
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.s
+	$(MAKE) -f CMakeFiles/ft.dir/build.make CMakeFiles/ft.dir/libft/srcs/ft_puthex.c.s
+.PHONY : libft/srcs/ft_puthex.c.s
 
 libft/srcs/ft_putnbr.o: libft/srcs/ft_putnbr.c.o
 
@@ -3245,32 +3311,59 @@ srcs_nm/main.c.s:
 	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/main.c.s
 .PHONY : srcs_nm/main.c.s
 
-srcs_otool/get_headers.o: srcs_otool/get_headers.c.o
+srcs_otool/find_section_64.o: srcs_otool/find_section_64.c.o
 
-.PHONY : srcs_otool/get_headers.o
+.PHONY : srcs_otool/find_section_64.o
 
 # target to build an object file
-srcs_otool/get_headers.c.o:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.o
-.PHONY : srcs_otool/get_headers.c.o
+srcs_otool/find_section_64.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o
+.PHONY : srcs_otool/find_section_64.c.o
 
-srcs_otool/get_headers.i: srcs_otool/get_headers.c.i
+srcs_otool/find_section_64.i: srcs_otool/find_section_64.c.i
 
-.PHONY : srcs_otool/get_headers.i
+.PHONY : srcs_otool/find_section_64.i
 
 # target to preprocess a source file
-srcs_otool/get_headers.c.i:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.i
-.PHONY : srcs_otool/get_headers.c.i
+srcs_otool/find_section_64.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.i
+.PHONY : srcs_otool/find_section_64.c.i
 
-srcs_otool/get_headers.s: srcs_otool/get_headers.c.s
+srcs_otool/find_section_64.s: srcs_otool/find_section_64.c.s
 
-.PHONY : srcs_otool/get_headers.s
+.PHONY : srcs_otool/find_section_64.s
 
 # target to generate assembly for a file
-srcs_otool/get_headers.c.s:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/get_headers.c.s
-.PHONY : srcs_otool/get_headers.c.s
+srcs_otool/find_section_64.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.s
+.PHONY : srcs_otool/find_section_64.c.s
+
+srcs_otool/get_type_file.o: srcs_otool/get_type_file.c.o
+
+.PHONY : srcs_otool/get_type_file.o
+
+# target to build an object file
+srcs_otool/get_type_file.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o
+.PHONY : srcs_otool/get_type_file.c.o
+
+srcs_otool/get_type_file.i: srcs_otool/get_type_file.c.i
+
+.PHONY : srcs_otool/get_type_file.i
+
+# target to preprocess a source file
+srcs_otool/get_type_file.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.i
+.PHONY : srcs_otool/get_type_file.c.i
+
+srcs_otool/get_type_file.s: srcs_otool/get_type_file.c.s
+
+.PHONY : srcs_otool/get_type_file.s
+
+# target to generate assembly for a file
+srcs_otool/get_type_file.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.s
+.PHONY : srcs_otool/get_type_file.c.s
 
 srcs_otool/main.o: srcs_otool/main.c.o
 
@@ -3298,6 +3391,60 @@ srcs_otool/main.s: srcs_otool/main.c.s
 srcs_otool/main.c.s:
 	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/main.c.s
 .PHONY : srcs_otool/main.c.s
+
+srcs_otool/parse_argv.o: srcs_otool/parse_argv.c.o
+
+.PHONY : srcs_otool/parse_argv.o
+
+# target to build an object file
+srcs_otool/parse_argv.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o
+.PHONY : srcs_otool/parse_argv.c.o
+
+srcs_otool/parse_argv.i: srcs_otool/parse_argv.c.i
+
+.PHONY : srcs_otool/parse_argv.i
+
+# target to preprocess a source file
+srcs_otool/parse_argv.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.i
+.PHONY : srcs_otool/parse_argv.c.i
+
+srcs_otool/parse_argv.s: srcs_otool/parse_argv.c.s
+
+.PHONY : srcs_otool/parse_argv.s
+
+# target to generate assembly for a file
+srcs_otool/parse_argv.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.s
+.PHONY : srcs_otool/parse_argv.c.s
+
+srcs_otool/print_sections.o: srcs_otool/print_sections.c.o
+
+.PHONY : srcs_otool/print_sections.o
+
+# target to build an object file
+srcs_otool/print_sections.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o
+.PHONY : srcs_otool/print_sections.c.o
+
+srcs_otool/print_sections.i: srcs_otool/print_sections.c.i
+
+.PHONY : srcs_otool/print_sections.i
+
+# target to preprocess a source file
+srcs_otool/print_sections.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.i
+.PHONY : srcs_otool/print_sections.c.i
+
+srcs_otool/print_sections.s: srcs_otool/print_sections.c.s
+
+.PHONY : srcs_otool/print_sections.s
+
+# target to generate assembly for a file
+srcs_otool/print_sections.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.s
+.PHONY : srcs_otool/print_sections.c.s
 
 # Help Target
 help:
@@ -3427,6 +3574,9 @@ help:
 	@echo "... libft/srcs/ft_myputchar.o"
 	@echo "... libft/srcs/ft_myputchar.i"
 	@echo "... libft/srcs/ft_myputchar.s"
+	@echo "... libft/srcs/ft_putbase.o"
+	@echo "... libft/srcs/ft_putbase.i"
+	@echo "... libft/srcs/ft_putbase.s"
 	@echo "... libft/srcs/ft_putchar.o"
 	@echo "... libft/srcs/ft_putchar.i"
 	@echo "... libft/srcs/ft_putchar.s"
@@ -3439,6 +3589,9 @@ help:
 	@echo "... libft/srcs/ft_putendl_fd.o"
 	@echo "... libft/srcs/ft_putendl_fd.i"
 	@echo "... libft/srcs/ft_putendl_fd.s"
+	@echo "... libft/srcs/ft_puthex.o"
+	@echo "... libft/srcs/ft_puthex.i"
+	@echo "... libft/srcs/ft_puthex.s"
 	@echo "... libft/srcs/ft_putnbr.o"
 	@echo "... libft/srcs/ft_putnbr.i"
 	@echo "... libft/srcs/ft_putnbr.s"
@@ -3592,12 +3745,21 @@ help:
 	@echo "... srcs_nm/main.o"
 	@echo "... srcs_nm/main.i"
 	@echo "... srcs_nm/main.s"
-	@echo "... srcs_otool/get_headers.o"
-	@echo "... srcs_otool/get_headers.i"
-	@echo "... srcs_otool/get_headers.s"
+	@echo "... srcs_otool/find_section_64.o"
+	@echo "... srcs_otool/find_section_64.i"
+	@echo "... srcs_otool/find_section_64.s"
+	@echo "... srcs_otool/get_type_file.o"
+	@echo "... srcs_otool/get_type_file.i"
+	@echo "... srcs_otool/get_type_file.s"
 	@echo "... srcs_otool/main.o"
 	@echo "... srcs_otool/main.i"
 	@echo "... srcs_otool/main.s"
+	@echo "... srcs_otool/parse_argv.o"
+	@echo "... srcs_otool/parse_argv.i"
+	@echo "... srcs_otool/parse_argv.s"
+	@echo "... srcs_otool/print_sections.o"
+	@echo "... srcs_otool/print_sections.i"
+	@echo "... srcs_otool/print_sections.s"
 .PHONY : help
 
 

@@ -92,6 +92,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft.dir/libft/srcs/ft_strocur_slash.c.o"
   "CMakeFiles/ft.dir/libft/srcs/ft_stradd_slash.c.o"
   "CMakeFiles/ft.dir/libft/srcs/ft_tabdup.c.o"
+  "CMakeFiles/ft.dir/libft/srcs/ft_putbase.c.o"
+  "CMakeFiles/ft.dir/libft/srcs/ft_puthex.c.o"
   "libft.pdb"
   "libft.a"
 )
