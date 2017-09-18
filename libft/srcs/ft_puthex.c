@@ -14,7 +14,7 @@
 
 static void		ft_putbuf(char *buf)
 {
-	ft_putendl(buf);
+	ft_putstr(buf);
 	ft_bzero(buf, 48);
 }
 
@@ -44,5 +44,4 @@ void			ft_puthex(const char *s, const size_t len)
 	}
 	if (buf[0])
 		ft_putbuf(buf);
-	ft_putstr("\n");
 }

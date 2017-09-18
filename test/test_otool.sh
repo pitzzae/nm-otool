@@ -13,11 +13,11 @@ run_ft_otool () {
 SYS_OTOOL=$(run_sys_otool $@)
 FT_OTOOL=$(run_ft_otool $@)
 
-echo "/usr/bin/otool -t"
-echo "$SYS_OTOOL"
+#echo "/usr/bin/otool -t"
+#echo "$SYS_OTOOL"
 
-echo -e "\nft_otool"
-echo "$FT_OTOOL"
+#echo -e "\nft_otool"
+#echo "$FT_OTOOL"
 
 echo -e "\ndiff:"
 diff  <(echo "$SYS_OTOOL" ) <(echo "$FT_OTOOL")

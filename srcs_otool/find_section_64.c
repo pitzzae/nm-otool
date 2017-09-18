@@ -59,6 +59,6 @@ void		find_section_64(t_head *head, t_sect *s)
 		s->end = s->start + s->x64.sec->size;
 		s->offset = s->x64.sec->addr;
 		s->len64 = TRUE;
-		print_section(s);
+		print_section(head, s);
 	}
 }

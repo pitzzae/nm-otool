@@ -57,6 +57,6 @@ typedef struct				s_bin
 void		parse_argv(t_bin *bin, char **av);
 void		get_type_file(void *ptr, t_head *head);
 void		find_section_64(t_head *head, t_sect *s);
-void		print_section(t_sect *s);
+void		print_section(t_head *head, t_sect *s);
 
 #endif //FT_OTOOL_NMOTOOL_H_H

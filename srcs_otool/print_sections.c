@@ -14,86 +14,56 @@
 
 static void	print_section_name(char *segname, char *sectname)
 {
-	ft_putchar('(');
+	ft_putstr("Contents of (");
 	ft_putstr(segname);
 	ft_putchar(',');
 	ft_putstr(sectname);
 	ft_putendl(") section");
 }
 
-void	print_byte_to_hex(char byte)
+static void	print_ptr_address(unsigned long n, char *buff, t_head *head)
 {
-	char			str[2];
-	short			count;
-	short			char_hex;
-	unsigned char	cast;
+	char 	tmp_address[16];
+	char	address[16];
+	int 	i;
 
-	cast = (unsigned char)byte;
-	count = -1;
-	while (++count != 2)
-	{
-		char_hex = cast % 16;
-		cast /= 16;
-		if (char_hex < 10)
-			str[count] = char_hex + '0';
-		else
-			str[count] = (char_hex % 10) + 'a';
-	}
-	ft_putchar(str[1]);
-	ft_putchar(str[0]);
+	ft_bzero(tmp_address, 16);
+	ft_bzero(address, 16);
+	ft_putbase(n, tmp_address, 16);
+	i = 16;
+	if (head->mach32)
+		i = 8;
+	i -= ft_strlen(tmp_address) + 1;
+	while (i >= 0)
+		address[i--] = 48;
+	ft_strcat(address, tmp_address);
+	ft_strcat(buff, address);
 }
 
-void	print_ptr_to_hex(size_t ptr, boolean_t prefix, boolean_t len64)
-{
-	char	str[16];
-	short	count;
-	short	char_hex;
-
-	count = -1;
-	while (++count != 16)
-	{
-		char_hex = ptr % 16;
-		ptr /= 16;
-		if (char_hex < 10)
-			str[count] = char_hex + '0';
-		else
-			str[count] = (char_hex % 10) + 'a';
-	}
-	count--;
-	if (!len64)
-		count -= 8;
-	if (prefix)
-		ft_putstr("0x");
-	while (count >= 0)
-		ft_putchar(str[count--]);
-}
-
-void		print_section(t_sect *s)
+void		print_section(t_head *head, t_sect *s)
 {
 	size_t	offset;
 	short	count;
-	char	delim;
+	char 	buff[64];
 
 	offset = 0;
+	ft_bzero(buff, 64);
 	print_section_name(s->seg_text, s->sect_text);
-	if (!ft_strcmp(s->seg_text, "__TEXT") && !ft_strcmp(s->sect_text, "__text"))
-		delim = ' ';
-	else
-		delim = '\t';
 	while (s->start + offset != s->end)
 	{
 		count = 0;
-		print_ptr_to_hex(s->offset + offset, FALSE, s->len64);
-		ft_putchar(delim);
+		ft_bzero(buff, 64);
+		print_ptr_address(s->offset + offset, buff, head);
+		ft_putstr(buff);
+		ft_putchar('\t');
 		while (count++ != 16)
 		{
-			print_byte_to_hex(*(s->start + offset));
+			ft_puthex((s->start + offset), 1);
 			offset++;
-			ft_putchar(' ');
 			if (s->start + offset == s->end)
 				break ;
 		}
-		ft_putchar('\n');
+		ft_putendl("");
 	}
 }
 
