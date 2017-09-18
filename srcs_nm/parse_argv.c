@@ -30,6 +30,24 @@ static void	read_bin(t_bin *bin, char *source)
 	}
 }
 
+void		parse_result(t_list *lst)
+{
+	size_t					i;
+	t_symbol				*sym;
+
+	i = 0;
+	while (lst != NULL && (sym = (t_symbol*)lst->content) != NULL)
+	{
+		ft_putstr(sym->address);
+		ft_putchar(' ');
+		ft_putchar(sym->type);
+		ft_putchar(' ');
+		ft_putendl(sym->name);
+		lst = lst->next;
+		i++;
+	}
+}
+
 void		find_symbol_table(char *ptr, t_head *header)
 {
 	int						i;
@@ -46,9 +64,9 @@ void		find_symbol_table(char *ptr, t_head *header)
 		{
 			header->sym = (struct symtab_command *)header->lc;
 			if (header->mach64)
-				print_symbol_table_64(header, ptr);
+				parse_result(print_symbol_table_64(header, ptr));
 			else
-				print_symbol_table_86(header, ptr);
+				parse_result(print_symbol_table_86(header, ptr));
 			break ;
 		}
 		header->lc = (void *)header->lc + header->lc->cmdsize;
@@ -58,7 +76,7 @@ void		find_symbol_table(char *ptr, t_head *header)
 
 void		parse_argv(t_bin *bin, char **av)
 {
-	size_t 		i;
+	size_t 					i;
 
 	i = 1;
 	while (av[i])

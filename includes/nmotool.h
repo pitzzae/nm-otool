@@ -23,6 +23,13 @@
 # include <stdio.h>
 # include "libft.h"
 
+typedef struct				s_symbol
+{
+	char 						address[17];
+	char 						type;
+	char 						*name;
+} t_symbol;
+
 typedef struct				s_head
 {
     struct mach_header			*mach32;
@@ -33,7 +40,6 @@ typedef struct				s_head
 	struct nlist				*nlist32;
 	boolean_t					is_x64;
 } t_head;
-
 
 typedef struct				s_seg_x64
 {
@@ -72,7 +78,7 @@ void		get_type_file(void *ptr, t_head *head);
 void		find_section_64(t_head *head, t_sect *s);
 void		find_section_86(t_head *head, t_sect *s);
 void		print_section(t_sect *s);
-void		print_symbol_table_64(t_head *head, char *ptr);
-void		print_symbol_table_86(t_head *head, char *ptr);
+t_list		*print_symbol_table_64(t_head *head, char *ptr);
+t_list		*print_symbol_table_86(t_head *head, char *ptr);
 
 #endif //FT_OTOOL_NMOTOOL_H_H
