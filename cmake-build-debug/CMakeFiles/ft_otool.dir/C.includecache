@@ -23,6 +23,8 @@ mach-o/loader.h
 -
 mach-o/fat.h
 -
+mach-o/nlist.h
+-
 sys/mman.h
 -
 unistd.h

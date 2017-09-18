@@ -16,6 +16,7 @@
 # include <sys/stat.h>
 # include <mach-o/loader.h>
 # include <mach-o/fat.h>
+# include <mach-o/nlist.h>
 # include <sys/mman.h>
 # include <unistd.h>
 # include <stdlib.h>
@@ -26,6 +27,11 @@ typedef struct				s_head
 {
     struct mach_header			*mach32;
     struct mach_header_64		*mach64;
+	struct load_command			*lc;
+	struct symtab_command		*sym;
+	struct nlist_64				*nlist64;
+	struct nlist				*nlist32;
+	boolean_t					is_x64;
 } t_head;
 
 
@@ -66,5 +72,7 @@ void		get_type_file(void *ptr, t_head *head);
 void		find_section_64(t_head *head, t_sect *s);
 void		find_section_86(t_head *head, t_sect *s);
 void		print_section(t_sect *s);
+void		print_symbol_table_64(t_head *head, char *ptr);
+void		print_symbol_table_86(t_head *head, char *ptr);
 
 #endif //FT_OTOOL_NMOTOOL_H_H

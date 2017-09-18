@@ -3284,6 +3284,33 @@ libft/srcs/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/ft.dir/build.make CMakeFiles/ft.dir/libft/srcs/get_next_line.c.s
 .PHONY : libft/srcs/get_next_line.c.s
 
+srcs_nm/get_type_file.o: srcs_nm/get_type_file.c.o
+
+.PHONY : srcs_nm/get_type_file.o
+
+# target to build an object file
+srcs_nm/get_type_file.c.o:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/get_type_file.c.o
+.PHONY : srcs_nm/get_type_file.c.o
+
+srcs_nm/get_type_file.i: srcs_nm/get_type_file.c.i
+
+.PHONY : srcs_nm/get_type_file.i
+
+# target to preprocess a source file
+srcs_nm/get_type_file.c.i:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/get_type_file.c.i
+.PHONY : srcs_nm/get_type_file.c.i
+
+srcs_nm/get_type_file.s: srcs_nm/get_type_file.c.s
+
+.PHONY : srcs_nm/get_type_file.s
+
+# target to generate assembly for a file
+srcs_nm/get_type_file.c.s:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/get_type_file.c.s
+.PHONY : srcs_nm/get_type_file.c.s
+
 srcs_nm/main.o: srcs_nm/main.c.o
 
 .PHONY : srcs_nm/main.o
@@ -3310,6 +3337,60 @@ srcs_nm/main.s: srcs_nm/main.c.s
 srcs_nm/main.c.s:
 	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/main.c.s
 .PHONY : srcs_nm/main.c.s
+
+srcs_nm/parse_argv.o: srcs_nm/parse_argv.c.o
+
+.PHONY : srcs_nm/parse_argv.o
+
+# target to build an object file
+srcs_nm/parse_argv.c.o:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.o
+.PHONY : srcs_nm/parse_argv.c.o
+
+srcs_nm/parse_argv.i: srcs_nm/parse_argv.c.i
+
+.PHONY : srcs_nm/parse_argv.i
+
+# target to preprocess a source file
+srcs_nm/parse_argv.c.i:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.i
+.PHONY : srcs_nm/parse_argv.c.i
+
+srcs_nm/parse_argv.s: srcs_nm/parse_argv.c.s
+
+.PHONY : srcs_nm/parse_argv.s
+
+# target to generate assembly for a file
+srcs_nm/parse_argv.c.s:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.s
+.PHONY : srcs_nm/parse_argv.c.s
+
+srcs_nm/print_symbol_table.o: srcs_nm/print_symbol_table.c.o
+
+.PHONY : srcs_nm/print_symbol_table.o
+
+# target to build an object file
+srcs_nm/print_symbol_table.c.o:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/print_symbol_table.c.o
+.PHONY : srcs_nm/print_symbol_table.c.o
+
+srcs_nm/print_symbol_table.i: srcs_nm/print_symbol_table.c.i
+
+.PHONY : srcs_nm/print_symbol_table.i
+
+# target to preprocess a source file
+srcs_nm/print_symbol_table.c.i:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/print_symbol_table.c.i
+.PHONY : srcs_nm/print_symbol_table.c.i
+
+srcs_nm/print_symbol_table.s: srcs_nm/print_symbol_table.c.s
+
+.PHONY : srcs_nm/print_symbol_table.s
+
+# target to generate assembly for a file
+srcs_nm/print_symbol_table.c.s:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/print_symbol_table.c.s
+.PHONY : srcs_nm/print_symbol_table.c.s
 
 srcs_otool/find_section_64.o: srcs_otool/find_section_64.c.o
 
@@ -3769,9 +3850,18 @@ help:
 	@echo "... libft/srcs/get_next_line.o"
 	@echo "... libft/srcs/get_next_line.i"
 	@echo "... libft/srcs/get_next_line.s"
+	@echo "... srcs_nm/get_type_file.o"
+	@echo "... srcs_nm/get_type_file.i"
+	@echo "... srcs_nm/get_type_file.s"
 	@echo "... srcs_nm/main.o"
 	@echo "... srcs_nm/main.i"
 	@echo "... srcs_nm/main.s"
+	@echo "... srcs_nm/parse_argv.o"
+	@echo "... srcs_nm/parse_argv.i"
+	@echo "... srcs_nm/parse_argv.s"
+	@echo "... srcs_nm/print_symbol_table.o"
+	@echo "... srcs_nm/print_symbol_table.i"
+	@echo "... srcs_nm/print_symbol_table.s"
 	@echo "... srcs_otool/find_section_64.o"
 	@echo "... srcs_otool/find_section_64.i"
 	@echo "... srcs_otool/find_section_64.s"

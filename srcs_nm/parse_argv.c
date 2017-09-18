@@ -30,23 +30,30 @@ static void	read_bin(t_bin *bin, char *source)
 	}
 }
 
-static void	print_filename(char *filename)
+void		find_symbol_table(char *ptr, t_head *header)
 {
-	ft_putstr(filename);
-	ft_putendl(":");
-}
+	int						i;
+	int						j;
 
-static void		select_print_sections(t_head *headers, char *filename)
-{
-	t_sect						s;
-
-	print_filename(filename);
-	s.seg_text = SEG_TEXT;
-	s.sect_text = SECT_TEXT;
-	if (headers->mach64)
-		find_section_64(headers, &s);
-	else if (headers->mach32)
-		find_section_86(headers, &s);
+	i = 0;
+	if (header->mach64)
+		j = header->mach64->ncmds;
+	else
+		j = header->mach32->ncmds;
+	while (i < j)
+	{
+		if (header->lc->cmd == LC_SYMTAB)
+		{
+			header->sym = (struct symtab_command *)header->lc;
+			if (header->mach64)
+				print_symbol_table_64(header, ptr);
+			else
+				print_symbol_table_86(header, ptr);
+			break ;
+		}
+		header->lc = (void *)header->lc + header->lc->cmdsize;
+		i++;
+	}
 }
 
 void		parse_argv(t_bin *bin, char **av)
@@ -58,7 +65,7 @@ void		parse_argv(t_bin *bin, char **av)
 	{
 		read_bin(bin, av[i]);
 		get_type_file(bin->ptr, &bin->head);
-		select_print_sections(&bin->head, av[i]);
+		find_symbol_table(bin->ptr, &bin->head);
 		i++;
 	}
 }
