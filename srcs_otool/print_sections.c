@@ -21,7 +21,7 @@ static void	print_section_name(char *segname, char *sectname)
 	ft_putendl(") section");
 }
 
-static void	print_ptr_address(unsigned long n, char *buff, t_head *head)
+static void	print_ptr_address(unsigned long n, char *buff, boolean_t x64)
 {
 	char 	tmp_address[16];
 	char	address[16];
@@ -31,7 +31,7 @@ static void	print_ptr_address(unsigned long n, char *buff, t_head *head)
 	ft_bzero(address, 16);
 	ft_putbase(n, tmp_address, 16);
 	i = 16;
-	if (head->mach32)
+	if (!x64)
 		i = 8;
 	i -= ft_strlen(tmp_address) + 1;
 	while (i >= 0)
@@ -40,7 +40,7 @@ static void	print_ptr_address(unsigned long n, char *buff, t_head *head)
 	ft_strcat(buff, address);
 }
 
-void		print_section(t_head *head, t_sect *s)
+void		print_section(t_sect *s)
 {
 	size_t	offset;
 	short	count;
@@ -53,7 +53,7 @@ void		print_section(t_head *head, t_sect *s)
 	{
 		count = 0;
 		ft_bzero(buff, 64);
-		print_ptr_address(s->offset + offset, buff, head);
+		print_ptr_address(s->offset + offset, buff, s->len64);
 		ft_putstr(buff);
 		ft_putchar('\t');
 		while (count++ != 16)
