@@ -100,6 +100,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_udel.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_udel.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/get_next_line.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_64.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_86.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/find_section_86.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/get_type_file.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/main.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/main.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/parse_argv.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o"

@@ -40,8 +40,8 @@ static void	*get_segment_offset_64(t_sect *s, t_head *headers)
 	{
 		if (ft_strcmp(s->x64.seg->segname, s->seg_text) == 0)
 			return (s->x64.seg);
-		s->x64.seg = (struct segment_command_64 *)((char *)s->x64.seg +
-				s->x64.seg->cmdsize);
+		s->x64.seg = (struct segment_command_64 *)
+				((char *)s->x64.seg + s->x64.seg->cmdsize);
 		i++;
 	}
 	return (NULL);

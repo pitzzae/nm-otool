@@ -45,6 +45,8 @@ void		select_print_sections(t_head *headers, char *filename)
 	s.sect_text = SECT_TEXT;
 	if (headers->mach64)
 		find_section_64(headers, &s);
+	else if (headers->mach32)
+		find_section_86(headers, &s);
 }
 
 void		parse_argv(t_bin *bin, char **av)

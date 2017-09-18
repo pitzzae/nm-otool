@@ -661,6 +661,9 @@
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_64.c">
 			<Option target="ft_otool"/>
 		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_86.c">
+			<Option target="ft_otool"/>
+		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/get_type_file.c">
 			<Option target="ft_otool"/>
 		</Unit>

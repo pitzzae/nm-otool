@@ -3338,6 +3338,33 @@ srcs_otool/find_section_64.c.s:
 	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.s
 .PHONY : srcs_otool/find_section_64.c.s
 
+srcs_otool/find_section_86.o: srcs_otool/find_section_86.c.o
+
+.PHONY : srcs_otool/find_section_86.o
+
+# target to build an object file
+srcs_otool/find_section_86.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/find_section_86.c.o
+.PHONY : srcs_otool/find_section_86.c.o
+
+srcs_otool/find_section_86.i: srcs_otool/find_section_86.c.i
+
+.PHONY : srcs_otool/find_section_86.i
+
+# target to preprocess a source file
+srcs_otool/find_section_86.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/find_section_86.c.i
+.PHONY : srcs_otool/find_section_86.c.i
+
+srcs_otool/find_section_86.s: srcs_otool/find_section_86.c.s
+
+.PHONY : srcs_otool/find_section_86.s
+
+# target to generate assembly for a file
+srcs_otool/find_section_86.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/find_section_86.c.s
+.PHONY : srcs_otool/find_section_86.c.s
+
 srcs_otool/get_type_file.o: srcs_otool/get_type_file.c.o
 
 .PHONY : srcs_otool/get_type_file.o
@@ -3748,6 +3775,9 @@ help:
 	@echo "... srcs_otool/find_section_64.o"
 	@echo "... srcs_otool/find_section_64.i"
 	@echo "... srcs_otool/find_section_64.s"
+	@echo "... srcs_otool/find_section_86.o"
+	@echo "... srcs_otool/find_section_86.i"
+	@echo "... srcs_otool/find_section_86.s"
 	@echo "... srcs_otool/get_type_file.o"
 	@echo "... srcs_otool/get_type_file.i"
 	@echo "... srcs_otool/get_type_file.s"

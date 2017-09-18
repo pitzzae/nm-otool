@@ -35,6 +35,12 @@ typedef struct				s_seg_x64
 	struct section_64			*sec;
 } t_seg_x64;
 
+typedef struct				s_seg_x86
+{
+	struct segment_command		*seg;
+	struct section				*sec;
+} t_seg_x86;
+
 typedef struct				s_sect
 {
 	char						*start;
@@ -44,6 +50,7 @@ typedef struct				s_sect
 	char 						*seg_text;
 	char 						*sect_text;
 	t_seg_x64					x64;
+	t_seg_x86					x86;
 } t_sect;
 
 typedef struct				s_bin
@@ -57,6 +64,7 @@ typedef struct				s_bin
 void		parse_argv(t_bin *bin, char **av);
 void		get_type_file(void *ptr, t_head *head);
 void		find_section_64(t_head *head, t_sect *s);
+void		find_section_86(t_head *head, t_sect *s);
 void		print_section(t_head *head, t_sect *s);
 
 #endif //FT_OTOOL_NMOTOOL_H_H

@@ -273,6 +273,10 @@ CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o: ../includes/libft.h
 CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o: ../includes/nmotool.h
 CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o: ../srcs_otool/find_section_64.c
 
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_86.c.o: ../includes/libft.h
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_86.c.o: ../includes/nmotool.h
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_86.c.o: ../srcs_otool/find_section_86.c
+
 CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o: ../includes/libft.h
 CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o: ../includes/nmotool.h
 CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o: ../srcs_otool/get_type_file.c

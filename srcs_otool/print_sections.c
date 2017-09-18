@@ -66,6 +66,3 @@ void		print_section(t_head *head, t_sect *s)
 		ft_putendl("");
 	}
 }
-
-
-

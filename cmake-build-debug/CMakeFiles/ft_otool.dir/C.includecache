@@ -408,6 +408,10 @@ libft.h
 nmotool.h
 /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/nmotool.h
 
+/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_86.c
+nmotool.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/nmotool.h
+
 /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/get_type_file.c
 nmotool.h
 -
