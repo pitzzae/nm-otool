@@ -12,7 +12,7 @@
 
 #include <nmotool.h>
 
-void		get_type_file(void *ptr, t_head *head)
+void		get_type_file(void *ptr, t_head *head, char *filename)
 {
 	struct fat_header	*fat_header;
 
@@ -25,10 +25,15 @@ void		get_type_file(void *ptr, t_head *head)
 		head->lc = ptr + sizeof(*head->mach64);
 		head->is_x64 = TRUE;
 	}
-	else
+	else if (fat_header->magic == MH_MAGIC)
 	{
 		head->mach32 = (struct mach_header *)ptr;
 		head->lc = ptr + sizeof(*head->mach32);
 		head->is_x64 = FALSE;
+	}
+	else
+	{
+		ft_putstr(filename);
+		ft_putendl(": The file was not recognized as a valid object file");
 	}
 }

@@ -76,7 +76,7 @@ typedef struct				s_bin
 }							t_bin;
 
 void		parse_argv(t_bin *bin, int ac, char **av);
-void		get_type_file(void *ptr, t_head *head);
+void		get_type_file(void *ptr, t_head *head, char *filename);
 void		find_section_64(t_head *head, t_sect *s);
 void		find_section_86(t_head *head, t_sect *s);
 void		print_section(t_sect *s);

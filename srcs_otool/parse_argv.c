@@ -67,8 +67,11 @@ void		parse_argv(t_bin *bin, int ac, char **av)
 	{
 		if (read_bin(bin, av[i]))
 		{
-			get_type_file(bin->ptr, &bin->head);
-			select_print_sections(&bin->head, av[i]);
+			get_type_file(bin->ptr, &bin->head, av[i]);
+			if (bin->head.mach64 || bin->head.mach32)
+				select_print_sections(&bin->head, av[i]);
+			if (munmap(bin->ptr, (size_t) bin->st.st_size) < 0)
+				return ;
 		}
 		i++;
 	}

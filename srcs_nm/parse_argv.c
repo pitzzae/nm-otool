@@ -105,13 +105,13 @@ void		parse_argv(t_bin *bin, int ac, char **av)
 	{
 		if (read_bin(bin, av[i]))
 		{
-			get_type_file(bin->ptr, &bin->head);
+			get_type_file(bin->ptr, &bin->head, av[i]);
 			print_filename(ac, av[i]);
-			find_symbol_table(bin->ptr, &bin->head);
+			if (bin->head.mach64 || bin->head.mach32)
+				find_symbol_table(bin->ptr, &bin->head);
 			if (munmap(bin->ptr, (size_t) bin->st.st_size) < 0)
 				return ;
 		}
-
 		i++;
 	}
 }
