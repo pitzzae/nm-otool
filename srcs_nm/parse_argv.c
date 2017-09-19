@@ -18,7 +18,7 @@ static void	read_bin(t_bin *bin, char *source)
 	if (bin->fd > 2)
 	{
 		if (!fstat(bin->fd, &bin->st))
-			bin->ptr = mmap(0, bin->st.st_size, PROT_READ,
+			bin->ptr = mmap(0, (size_t) bin->st.st_size, PROT_READ,
 							MAP_PRIVATE, bin->fd, 0);
 		if (bin->st.st_mode & S_IFDIR)
 		{
@@ -97,7 +97,7 @@ void		parse_argv(t_bin *bin, int ac, char **av)
 		get_type_file(bin->ptr, &bin->head);
 		print_filename(ac, av[i]);
 		find_symbol_table(bin->ptr, &bin->head);
-		if (munmap(bin->ptr, bin->st.st_size) < 0)
+		if (munmap(bin->ptr, (size_t) bin->st.st_size) < 0)
 			return ;
 		i++;
 	}

@@ -22,13 +22,13 @@ void		get_type_file(void *ptr, t_head *head)
 	if (fat_header->magic == MH_MAGIC_64)
 	{
 		head->mach64 = (struct mach_header_64 *)ptr;
-		head->lc = (void *)ptr + sizeof(*head->mach64);
+		head->lc = ptr + sizeof(*head->mach64);
 		head->is_x64 = TRUE;
 	}
 	else
 	{
 		head->mach32 = (struct mach_header *)ptr;
-		head->lc = (void *)ptr + sizeof(*head->mach32);
+		head->lc = ptr + sizeof(*head->mach32);
 		head->is_x64 = FALSE;
 	}
 }

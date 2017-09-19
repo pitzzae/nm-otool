@@ -20,7 +20,7 @@ void		ft_str_replace_chr(char *str, int c, int d)
 	while (str[i])
 	{
 		if (str[i] == c)
-			str[i] = d;
+			str[i] = (char) d;
 		i++;
 	}
 }

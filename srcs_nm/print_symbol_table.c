@@ -25,8 +25,8 @@ static void		print_ptr_addr(unsigned long n, char *buff, boolean_t x64)
 	if (!x64)
 	{
 		i = 8;
-		address_tmp = n & 0xffffffff;
-		ft_putbase(address_tmp, tmp_address, 16);
+		address_tmp = (int) (n & 0xffffffff);
+		ft_putbase((unsigned long) address_tmp, tmp_address, 16);
 	}
 	else
 		ft_putbase(n, tmp_address, 16);
@@ -85,7 +85,7 @@ static size_t	add_line_to_lst(uint8_t n_type, uint32_t f_type,
 		if (f_type == MH_OBJECT)
 			sym->type = 't';
 	}
-	return (i);
+	return (size_t) (i);
 }
 
 t_list			*print_symbol_table_86(t_head *head, char *ptr)

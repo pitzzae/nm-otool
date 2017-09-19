@@ -17,7 +17,7 @@ char		*ft_init_new_str(char **str, char c)
 	char	*out;
 	int		i;
 
-	i = ft_strocur(str[0], c);
+	i = (int) ft_strocur(str[0], c);
 	out = ft_strnew(ft_strlen(str[0]) + i + 1);
 	if (!out)
 		return (NULL);

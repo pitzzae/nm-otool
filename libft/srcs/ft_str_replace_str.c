@@ -18,13 +18,13 @@ char		*ft_str_replace_str(char *str, char *find, char *replace)
 	char	*tmp;
 	char	*tmp2;
 
-	i[0] = ft_strlen(find);
+	i[0] = (int) ft_strlen(find);
 	i[1] = 0;
-	i[2] = ft_strlen(str);
+	i[2] = (int) ft_strlen(str);
 	tmp2 = ft_strdup("");
 	while (i[1] < (i[2] - i[0]) + 1)
 	{
-		tmp = ft_strsub(str, i[1], i[0]);
+		tmp = ft_strsub(str, (unsigned int) i[1], (size_t) i[0]);
 		if (ft_strcmp(tmp, find) == 0)
 			tmp2 = ft_strjoin_free(tmp2, replace, 1);
 		else

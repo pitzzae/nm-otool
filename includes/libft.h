@@ -12,7 +12,6 @@
 
 #ifndef FT_LIBFT_H
 # define FT_LIBFT_H
-# define FT_LIBFT_H
 # define BUF_SIZE 6400
 # define FD_SIZE 10
 

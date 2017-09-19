@@ -56,7 +56,7 @@ static char		*ft_itoacal(long int n, char *str)
 		return (str);
 	while (n)
 	{
-		str[i++] = (n % 10) + 48;
+		str[i++] = (char) ((n % 10) + 48);
 		n = n / 10;
 	}
 	return (ft_revstr(str));
@@ -81,11 +81,12 @@ char			*ft_itoa(long int n)
 			return (NULL);
 		n = -n;
 		str[0] = '-';
-		return (ft_strjoin_free(str, ft_itoacal(n, ft_strnew(get_len(n))), 3));
+		return (ft_strjoin_free(str, ft_itoacal(n, ft_strnew(
+				(size_t) get_len((const int) n))), 3));
 	}
 	else
 	{
-		str = ft_strnew(get_len(n));
+		str = ft_strnew((size_t) get_len((const int) n));
 		return (ft_itoacal(n, str));
 	}
 }

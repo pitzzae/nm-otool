@@ -16,7 +16,7 @@ int			ft_strlocur(char *str, char c)
 {
 	int		i;
 
-	i = ft_strlen(str);
+	i = (int) ft_strlen(str);
 	while (i > 0)
 	{
 		if (str[i] == c)

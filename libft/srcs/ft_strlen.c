@@ -21,5 +21,5 @@ size_t	ft_strlen(const char *str)
 	{
 		i++;
 	}
-	return (i);
+	return (size_t) (i);
 }

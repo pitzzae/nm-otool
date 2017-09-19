@@ -19,7 +19,7 @@ static char		*clean_start_c(char const *s)
 	i = 0;
 	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
 		i++;
-	return (ft_strsub(s, i, ft_strlen(s)));
+	return (ft_strsub(s, (unsigned int) i, ft_strlen(s)));
 }
 
 static char		*clean_end_c(char const *s)
