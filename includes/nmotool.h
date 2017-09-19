@@ -82,5 +82,6 @@ void		find_section_86(t_head *head, t_sect *s);
 void		print_section(t_sect *s);
 t_list		*print_symbol_table_64(t_head *head, char *ptr);
 t_list		*print_symbol_table_86(t_head *head, char *ptr);
+void 		order_lst(t_list *lst);
 
 #endif //FT_OTOOL_NMOTOOL_H_H

@@ -3338,6 +3338,33 @@ srcs_nm/main.c.s:
 	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/main.c.s
 .PHONY : srcs_nm/main.c.s
 
+srcs_nm/order_lst.o: srcs_nm/order_lst.c.o
+
+.PHONY : srcs_nm/order_lst.o
+
+# target to build an object file
+srcs_nm/order_lst.c.o:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/order_lst.c.o
+.PHONY : srcs_nm/order_lst.c.o
+
+srcs_nm/order_lst.i: srcs_nm/order_lst.c.i
+
+.PHONY : srcs_nm/order_lst.i
+
+# target to preprocess a source file
+srcs_nm/order_lst.c.i:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/order_lst.c.i
+.PHONY : srcs_nm/order_lst.c.i
+
+srcs_nm/order_lst.s: srcs_nm/order_lst.c.s
+
+.PHONY : srcs_nm/order_lst.s
+
+# target to generate assembly for a file
+srcs_nm/order_lst.c.s:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/order_lst.c.s
+.PHONY : srcs_nm/order_lst.c.s
+
 srcs_nm/parse_argv.o: srcs_nm/parse_argv.c.o
 
 .PHONY : srcs_nm/parse_argv.o
@@ -3856,6 +3883,9 @@ help:
 	@echo "... srcs_nm/main.o"
 	@echo "... srcs_nm/main.i"
 	@echo "... srcs_nm/main.s"
+	@echo "... srcs_nm/order_lst.o"
+	@echo "... srcs_nm/order_lst.i"
+	@echo "... srcs_nm/order_lst.s"
 	@echo "... srcs_nm/parse_argv.o"
 	@echo "... srcs_nm/parse_argv.i"
 	@echo "... srcs_nm/parse_argv.s"

@@ -277,6 +277,10 @@ CMakeFiles/ft_nm.dir/srcs_nm/main.c.o: ../includes/libft.h
 CMakeFiles/ft_nm.dir/srcs_nm/main.c.o: ../includes/nmotool.h
 CMakeFiles/ft_nm.dir/srcs_nm/main.c.o: ../srcs_nm/main.c
 
+CMakeFiles/ft_nm.dir/srcs_nm/order_lst.c.o: ../includes/libft.h
+CMakeFiles/ft_nm.dir/srcs_nm/order_lst.c.o: ../includes/nmotool.h
+CMakeFiles/ft_nm.dir/srcs_nm/order_lst.c.o: ../srcs_nm/order_lst.c
+
 CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.o: ../includes/libft.h
 CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.o: ../includes/nmotool.h
 CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.o: ../srcs_nm/parse_argv.c

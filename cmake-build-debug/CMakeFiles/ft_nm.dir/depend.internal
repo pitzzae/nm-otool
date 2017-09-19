@@ -277,6 +277,10 @@ CMakeFiles/ft_nm.dir/srcs_nm/main.c.o
  ../includes/libft.h
  ../includes/nmotool.h
  /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/main.c
+CMakeFiles/ft_nm.dir/srcs_nm/order_lst.c.o
+ ../includes/libft.h
+ ../includes/nmotool.h
+ /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/order_lst.c
 CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.o
  ../includes/libft.h
  ../includes/nmotool.h
