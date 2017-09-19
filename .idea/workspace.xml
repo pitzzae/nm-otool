@@ -14,26 +14,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fb4f284-1cec-42a4-937c-819a30a7e994" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/get_type_file.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/get_type_file.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_itoa.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_itoa.c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_myputchar.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_myputchar.c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_chr.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_chr.c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_str.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_str_replace_str.c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_stradd_slash.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_stradd_slash.c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_strdup.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_strdup.c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_strlen.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_strlen.c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_strlocur.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_strlocur.c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_strmapi.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_strmapi.c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_strtrim.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_strtrim.c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/ft_nm" afterPath="$PROJECT_DIR$/cmake-build-debug/ft_nm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/ft_otool" afterPath="$PROJECT_DIR$/cmake-build-debug/ft_otool" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/nmotool.h" afterPath="$PROJECT_DIR$/includes/nmotool.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libft/Makefile" afterPath="$PROJECT_DIR$/libft/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_nm/get_type_file.c" afterPath="$PROJECT_DIR$/srcs_nm/get_type_file.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_nm/main.c" afterPath="$PROJECT_DIR$/srcs_nm/main.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_nm/order_lst.c" afterPath="$PROJECT_DIR$/srcs_nm/order_lst.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_nm/parse_argv.c" afterPath="$PROJECT_DIR$/srcs_nm/parse_argv.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_nm/print_symbol_table.c" afterPath="$PROJECT_DIR$/srcs_nm/print_symbol_table.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_otool/get_type_file.c" afterPath="$PROJECT_DIR$/srcs_otool/get_type_file.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_otool/main.c" afterPath="$PROJECT_DIR$/srcs_otool/main.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_otool/parse_argv.c" afterPath="$PROJECT_DIR$/srcs_otool/parse_argv.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_otool/print_sections.c" afterPath="$PROJECT_DIR$/srcs_otool/print_sections.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_nm.sh" afterPath="$PROJECT_DIR$/test/test_nm.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_otool.sh" afterPath="$PROJECT_DIR$/test/test_otool.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,67 +44,53 @@
     <splitter split-orientation="horizontal" split-proportion="0.45893502">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="parse_argv.c" pinned="false" current-in-tab="false">
+          <file leaf-file-name="parse_argv.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/srcs_otool/parse_argv.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="548">
-                  <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+                <state relative-caret-position="255">
+                  <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="parse_argv.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/srcs_nm/parse_argv.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="345">
+                  <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
                   <folding>
-                    <marker date="1505829315000" expanded="true" signature="1676:1836" ph="{...}" />
+                    <marker date="1505835941000" expanded="true" signature="2443:2718" ph="{...}" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="print_symbol_table.c" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/srcs_nm/print_symbol_table.c">
+          <file leaf-file-name="_s_ifmt.h" pinned="false" current-in-tab="false">
+            <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_s_ifmt.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="138">
-                  <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-                  <folding>
-                    <marker date="1505829482000" expanded="true" signature="1860:2649" ph="{...}" />
-                    <marker date="1505829482000" expanded="true" signature="2708:3287" ph="{...}" />
-                    <marker date="1505829482000" expanded="true" signature="3346:3925" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test_otool.sh" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/test_otool.sh">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+                <state relative-caret-position="247">
+                  <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="find_section_64.c" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/srcs_otool/find_section_64.c">
+          <file leaf-file-name="libft.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/includes/libft.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="5">
-                  <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+                <state relative-caret-position="195">
+                  <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="find_section_86.c" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/srcs_otool/find_section_86.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="915">
-                  <caret line="61" column="22" lean-forward="false" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+          <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="795">
-                  <caret line="53" column="77" lean-forward="false" selection-start-line="52" selection-start-column="20" selection-end-line="53" selection-end-column="77" />
+                <state relative-caret-position="465">
+                  <caret line="31" column="77" lean-forward="false" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
                   <folding />
                 </state>
               </provider>
@@ -117,8 +99,28 @@
           <file leaf-file-name="get_type_file.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/srcs_otool/get_type_file.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                <state relative-caret-position="315">
+                  <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="get_type_file.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/srcs_nm/get_type_file.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="510">
+                  <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ft_itoa.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libft/srcs/ft_itoa.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1104">
+                  <caret line="88" column="57" lean-forward="false" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="57" />
                   <folding />
                 </state>
               </provider>
@@ -132,16 +134,6 @@
                   <folding>
                     <marker date="1505829570000" expanded="true" signature="953:1034" ph="{...}" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test_nm.sh" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/test_nm.sh">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="34" selection-end-column="41" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -160,7 +152,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="loader.h" pinned="false" current-in-tab="false">
+          <file leaf-file-name="loader.h" pinned="false" current-in-tab="true">
             <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach-o/loader.h">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="434">
@@ -190,7 +182,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Makefile" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Makefile">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="375">
@@ -242,8 +234,8 @@
       <find>__symbol_table</find>
       <find>symtab_command</find>
       <find>_get_mmutex</find>
-      <find>MH_MAGIC</find>
       <find>LIBFT</find>
+      <find>MH_MAGIC</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -252,7 +244,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/libft/srcs/ft_strmap.c" />
         <option value="$PROJECT_DIR$/libft/srcs/ft_strmapi.c" />
         <option value="$PROJECT_DIR$/libft/srcs/ft_strncat.c" />
         <option value="$PROJECT_DIR$/libft/srcs/ft_strncmp.c" />
@@ -287,7 +278,6 @@
         <option value="$PROJECT_DIR$/srcs_nm/find_symbol_table_86.c" />
         <option value="$PROJECT_DIR$/srcs_nm/find_symbol_table_64.c" />
         <option value="$PROJECT_DIR$/libft/srcs/ft_swap.c" />
-        <option value="$PROJECT_DIR$/includes/libft.h" />
         <option value="$PROJECT_DIR$/libft/srcs/ft_memcmp.c" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/srcs_nm/main.c" />
@@ -295,14 +285,16 @@
         <option value="$PROJECT_DIR$/srcs_otool/main.c" />
         <option value="$PROJECT_DIR$/srcs_nm/get_type_file.c" />
         <option value="$PROJECT_DIR$/srcs_nm/order_lst.c" />
-        <option value="$PROJECT_DIR$/srcs_nm/parse_argv.c" />
         <option value="$PROJECT_DIR$/srcs_nm/print_symbol_table.c" />
         <option value="$PROJECT_DIR$/test/test_nm.sh" />
         <option value="$PROJECT_DIR$/test/test_otool.sh" />
-        <option value="$PROJECT_DIR$/srcs_otool/parse_argv.c" />
         <option value="$PROJECT_DIR$/srcs_otool/print_sections.c" />
         <option value="$PROJECT_DIR$/libft/Makefile" />
         <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/includes/libft.h" />
+        <option value="$PROJECT_DIR$/libft/srcs/ft_itoa.c" />
+        <option value="$PROJECT_DIR$/srcs_nm/parse_argv.c" />
+        <option value="$PROJECT_DIR$/srcs_otool/parse_argv.c" />
       </list>
     </option>
   </component>
@@ -369,7 +361,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="libft" />
+              <option name="myItemId" value="srcs_otool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ft_otool" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nm-otool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="srcs_nm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -395,6 +401,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -413,7 +420,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test_otool">
+  <component name="RunManager" selected="Application.ft_otool error_path">
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
@@ -647,10 +654,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="ft_otool ./dst/test_x64" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="./dst/test_x64" WORKING_DIR="file://$PROJECT_DIR$/test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ft_otool" TARGET_NAME="ft_otool" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ft_otool" RUN_TARGET_NAME="ft_otool">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="ft_otool ./dst/test_x64.o" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="./dst/test_x64.o" WORKING_DIR="file://$PROJECT_DIR$/test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ft_otool" TARGET_NAME="ft_otool" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ft_otool" RUN_TARGET_NAME="ft_otool">
       <envs />
       <method />
@@ -675,7 +678,15 @@
       <envs />
       <method />
     </configuration>
-    <list size="17">
+    <configuration default="false" name="ft_otool error_path" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="error_path" WORKING_DIR="file://$PROJECT_DIR$/test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ft_otool" TARGET_NAME="ft_otool" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ft_otool" RUN_TARGET_NAME="ft_otool">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ft_otool dst_directory" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="dst" WORKING_DIR="file://$PROJECT_DIR$/test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ft_otool" TARGET_NAME="ft_otool" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ft_otool" RUN_TARGET_NAME="ft_otool">
+      <envs />
+      <method />
+    </configuration>
+    <list size="18">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.ft" />
       <item index="2" class="java.lang.String" itemvalue="Application.ft_otool /usr/bin/time" />
@@ -686,13 +697,14 @@
       <item index="7" class="java.lang.String" itemvalue="Application.ft_nm ./dst/test_x86" />
       <item index="8" class="java.lang.String" itemvalue="Application.ft_nm ./dst/test_x86.o" />
       <item index="9" class="java.lang.String" itemvalue="Application.ft_nm ./libft_malloc.dylib" />
-      <item index="10" class="java.lang.String" itemvalue="Application.ft_otool ./dst/test_x64" />
-      <item index="11" class="java.lang.String" itemvalue="Application.ft_otool ./dst/test_x64.o" />
-      <item index="12" class="java.lang.String" itemvalue="Application.ft_otool ./dst/test_x86.o" />
-      <item index="13" class="java.lang.String" itemvalue="Application.ft_otool ./dst/test_x86" />
-      <item index="14" class="java.lang.String" itemvalue="Application.ft_otool ./libft_malloc.dylib" />
-      <item index="15" class="java.lang.String" itemvalue="Application.test_nm get_next_line.c.o" />
-      <item index="16" class="java.lang.String" itemvalue="Application.ft_nm /usr/bin/time" />
+      <item index="10" class="java.lang.String" itemvalue="Application.ft_otool ./dst/test_x64.o" />
+      <item index="11" class="java.lang.String" itemvalue="Application.ft_otool ./dst/test_x86.o" />
+      <item index="12" class="java.lang.String" itemvalue="Application.ft_otool ./dst/test_x86" />
+      <item index="13" class="java.lang.String" itemvalue="Application.ft_otool ./libft_malloc.dylib" />
+      <item index="14" class="java.lang.String" itemvalue="Application.test_nm get_next_line.c.o" />
+      <item index="15" class="java.lang.String" itemvalue="Application.ft_nm /usr/bin/time" />
+      <item index="16" class="java.lang.String" itemvalue="Application.ft_otool error_path" />
+      <item index="17" class="java.lang.String" itemvalue="Application.ft_otool dst_directory" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -714,26 +726,27 @@
       <workItem from="1499943304581" duration="1012000" />
       <workItem from="1505728956871" duration="3195000" />
       <workItem from="1505732175503" duration="10618000" />
-      <workItem from="1505742894654" duration="59739000" />
+      <workItem from="1505742894654" duration="62555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83857000" />
+    <option name="totallyTimeSpent" value="86673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1371" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11993646" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291634" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994527" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291634" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11993646" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994527" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995309" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -742,7 +755,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -754,27 +766,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="103" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/srcs_otool/parse_argv.c</url>
+          <line>67</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="105" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/libft/srcs/ft_tabdup.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libft/srcs/ft_tolower.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libft/srcs/ft_toupper.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -975,22 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach-o/loader.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="109" column="17" lean-forward="false" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/nmotool.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="70" column="1" lean-forward="false" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libft/srcs/ft_lstdel.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1015,22 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/libft.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srcs_nm/get_type_file.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/srcs_nm/main.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1047,24 +1018,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/srcs_nm/parse_argv.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="76" column="1" lean-forward="false" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
-          <folding>
-            <marker date="1505829533000" expanded="true" signature="2312:2560" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/srcs_nm/print_symbol_table.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
           <folding>
-            <marker date="1505829482000" expanded="true" signature="1860:2649" ph="{...}" />
-            <marker date="1505829482000" expanded="true" signature="2708:3287" ph="{...}" />
-            <marker date="1505829482000" expanded="true" signature="3346:3925" ph="{...}" />
+            <marker date="1505833298000" expanded="true" signature="1884:2682" ph="{...}" />
+            <marker date="1505833298000" expanded="true" signature="2741:3320" ph="{...}" />
+            <marker date="1505833298000" expanded="true" signature="3379:3958" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1101,30 +1062,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/srcs_otool/get_type_file.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/srcs_otool/main.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <marker date="1505829570000" expanded="true" signature="953:1034" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srcs_otool/parse_argv.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          <folding>
-            <marker date="1505829315000" expanded="true" signature="1676:1836" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1141,14 +1084,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
           <caret line="131" column="58" lean-forward="false" selection-start-line="131" selection-start-column="58" selection-end-line="131" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="77" lean-forward="false" selection-start-line="52" selection-start-column="20" selection-end-line="53" selection-end-column="77" />
           <folding />
         </state>
       </provider>
@@ -1173,6 +1108,88 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="77" lean-forward="false" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/libft.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs_nm/get_type_file.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/srcs/ft_itoa.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="88" column="57" lean-forward="false" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/nmotool.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="70" column="1" lean-forward="false" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach-o/loader.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="109" column="17" lean-forward="false" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_s_ifmt.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs_otool/get_type_file.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs_nm/parse_argv.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <marker date="1505835941000" expanded="true" signature="2443:2718" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs_otool/parse_argv.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>

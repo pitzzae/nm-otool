@@ -6,27 +6,37 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 14:31:52 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/19 16:47:44 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/19 17:47:24 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <nmotool.h>
 
-static void	read_bin(t_bin *bin, char *source)
+static int	read_bin(t_bin *bin, char *source)
 {
+	int			i;
+
+	i = 1;
 	bin->fd = open(source, O_RDONLY);
-	if (bin->fd > 2)
+	if (bin->fd > 2 && !fstat(bin->fd, &bin->st))
 	{
-		if (!fstat(bin->fd, &bin->st))
-			bin->ptr = mmap(0, (size_t) bin->st.st_size, PROT_READ,
-							MAP_PRIVATE, bin->fd, 0);
+		bin->ptr = mmap(0, (size_t) bin->st.st_size,
+						PROT_READ,	MAP_PRIVATE, bin->fd, 0);
 		if (bin->st.st_mode & S_IFDIR)
 		{
 			ft_putstr(source);
-			ft_putendl(" Is a directory.");
+			ft_putendl(": Is a directory.");
+			i = 0;
 		}
 	}
+	else
+	{
+		ft_putstr(source);
+		ft_putendl(": No such file or directory.");
+		i = 0;
+	}
 	close(bin->fd);
+	return (i);
 }
 
 static void	parse_result(t_list *lst)
@@ -93,12 +103,15 @@ void		parse_argv(t_bin *bin, int ac, char **av)
 	i = 1;
 	while (i < ac && av[i])
 	{
-		read_bin(bin, av[i]);
-		get_type_file(bin->ptr, &bin->head);
-		print_filename(ac, av[i]);
-		find_symbol_table(bin->ptr, &bin->head);
-		if (munmap(bin->ptr, (size_t) bin->st.st_size) < 0)
-			return ;
+		if (read_bin(bin, av[i]))
+		{
+			get_type_file(bin->ptr, &bin->head);
+			print_filename(ac, av[i]);
+			find_symbol_table(bin->ptr, &bin->head);
+			if (munmap(bin->ptr, (size_t) bin->st.st_size) < 0)
+				return ;
+		}
+
 		i++;
 	}
 }
