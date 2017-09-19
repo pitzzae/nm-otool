@@ -37,6 +37,12 @@ static void	print_ptr_address(unsigned long n, char *buff, boolean_t x64)
 	ft_strcat(buff, address);
 }
 
+static void	add_to_lst(t_list **lst, t_symbol sym)
+{
+	if (sym.name[0] == '_' || ft_strcmp(sym.name, "dyld_stub_binder") == 0)
+		ft_lstadd(lst, ft_lstnew(&sym, sizeof(sym)));
+}
+
 t_list		*print_symbol_table_86(t_head *head, char *ptr)
 {
 	int				i;
@@ -59,7 +65,7 @@ t_list		*print_symbol_table_86(t_head *head, char *ptr)
 			sym.type = 'U';
 		sym.name = ft_strdup(ptr + head->sym->stroff +
 				 head->nlist32[i].n_un.n_strx);
-		ft_lstadd(&lst, ft_lstnew(&sym, sizeof(t_symbol)));
+		add_to_lst(&lst, sym);
 		i++;
 	}
 	return (lst);
@@ -86,7 +92,7 @@ t_list		*print_symbol_table_64(t_head *head, char *ptr)
 		else
 			sym.type = 'U';
 		sym.name = ptr + head->sym->stroff + head->nlist64[i].n_un.n_strx;
-		ft_lstadd(&lst, ft_lstnew(&sym, sizeof(t_symbol)));
+		add_to_lst(&lst, sym);
 		i++;
 	}
 	return (lst);
