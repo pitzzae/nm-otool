@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/18 15:53:16 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/18 14:47:29 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/19 15:28:54 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ int 	main(int ac, char **av)
 	if (ac < 2)
 		return (0);
 	else
-		parse_argv(&bin, av);
+		parse_argv(&bin, ac, av);
 	return (0);
 }

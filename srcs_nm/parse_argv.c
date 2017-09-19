@@ -44,6 +44,8 @@ static void	parse_result(t_list *lst)
 		ft_putchar(sym->type);
 		ft_putchar(' ');
 		ft_putendl(sym->name);
+		free(lst->content);
+		free(lst);
 		lst = lst->next;
 		i++;
 	}
@@ -75,16 +77,29 @@ static void	find_symbol_table(char *ptr, t_head *header)
 	}
 }
 
-void		parse_argv(t_bin *bin, char **av)
+static void	print_filename(int ac, char *filename)
+{
+	if (ac > 2)
+	{
+		ft_putendl("");
+		ft_putstr(filename);
+		ft_putendl(":");
+	}
+}
+
+void		parse_argv(t_bin *bin, int ac, char **av)
 {
 	size_t 					i;
 
 	i = 1;
-	while (av[i])
+	while (i < ac && av[i])
 	{
 		read_bin(bin, av[i]);
 		get_type_file(bin->ptr, &bin->head);
+		print_filename(ac, av[i]);
 		find_symbol_table(bin->ptr, &bin->head);
+		if (munmap(bin->ptr, bin->st.st_size) < 0)
+			return;
 		i++;
 	}
 }

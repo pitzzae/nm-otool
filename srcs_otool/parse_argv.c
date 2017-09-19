@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 14:31:52 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/18 14:31:54 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/19 15:29:00 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,12 +49,12 @@ static void		select_print_sections(t_head *headers, char *filename)
 		find_section_86(headers, &s);
 }
 
-void		parse_argv(t_bin *bin, char **av)
+void		parse_argv(t_bin *bin, int ac, char **av)
 {
 	size_t 		i;
 
 	i = 1;
-	while (av[i])
+	while (i < ac && av[i])
 	{
 		read_bin(bin, av[i]);
 		get_type_file(bin->ptr, &bin->head);
