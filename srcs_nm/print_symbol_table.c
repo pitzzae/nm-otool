@@ -6,18 +6,18 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 22:47:27 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/19 15:19:27 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/19 15:58:02 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "nmotool.h"
 
-static void	print_ptr_addr(unsigned long n, char *buff, boolean_t x64)
+static void		print_ptr_addr(unsigned long n, char *buff, boolean_t x64)
 {
-	char 	tmp_address[16];
-	char	address[16];
-	int 	i;
-	int 	address_tmp;
+	char			tmp_address[16];
+	char			address[16];
+	int				i;
+	int				address_tmp;
 
 	ft_bzero(tmp_address, 16);
 	ft_bzero(address, 16);
@@ -58,9 +58,9 @@ static void		fuc_is_public(t_list **lst, t_symbol *sym)
 }
 
 static size_t	add_line_to_lst(uint8_t n_type, uint32_t f_type,
-								 uint8_t n_sect, t_symbol *sym)
+								uint8_t n_sect, t_symbol *sym)
 {
-	int 			i;
+	int				i;
 
 	i = 0;
 	if ((n_type == 0x24 || n_type == 0x0f) && n_sect ==	0x01 && (i = 1))
@@ -88,7 +88,7 @@ static size_t	add_line_to_lst(uint8_t n_type, uint32_t f_type,
 	return (i);
 }
 
-t_list		*print_symbol_table_86(t_head *head, char *ptr)
+t_list			*print_symbol_table_86(t_head *head, char *ptr)
 {
 	size_t			i;
 	t_list			*lst;
@@ -113,7 +113,7 @@ t_list		*print_symbol_table_86(t_head *head, char *ptr)
 	return (lst);
 }
 
-t_list		*print_symbol_table_64(t_head *head, char *ptr)
+t_list			*print_symbol_table_64(t_head *head, char *ptr)
 {
 	size_t			i;
 	t_list			*lst;

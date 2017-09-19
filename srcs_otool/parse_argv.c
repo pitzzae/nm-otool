@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 14:31:52 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/19 15:29:00 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/19 16:48:10 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,15 @@ static void	read_bin(t_bin *bin, char *source)
 	if (bin->fd > 2)
 	{
 		if (!fstat(bin->fd, &bin->st))
-		{
-			bin->ptr = mmap(0, bin->st.st_size, PROT_READ, MAP_PRIVATE, bin
-					->fd, 0);
-		}
+			bin->ptr = mmap(0, bin->st.st_size, PROT_READ,
+							MAP_PRIVATE, bin->fd, 0);
 		if (bin->st.st_mode & S_IFDIR)
 		{
 			ft_putstr(source);
 			ft_putendl(" Is a directory.");
 		}
 	}
+	close(bin->fd);
 }
 
 static void	print_filename(char *filename)
@@ -36,9 +35,9 @@ static void	print_filename(char *filename)
 	ft_putendl(":");
 }
 
-static void		select_print_sections(t_head *headers, char *filename)
+static void	select_print_sections(t_head *headers, char *filename)
 {
-	t_sect						s;
+	t_sect		s;
 
 	print_filename(filename);
 	s.seg_text = SEG_TEXT;
@@ -51,7 +50,7 @@ static void		select_print_sections(t_head *headers, char *filename)
 
 void		parse_argv(t_bin *bin, int ac, char **av)
 {
-	size_t 		i;
+	int			i;
 
 	i = 1;
 	while (i < ac && av[i])

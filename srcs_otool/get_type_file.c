@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 14:39:54 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/18 14:39:57 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/19 15:56:43 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void		get_type_file(void *ptr, t_head *head)
 {
-	struct fat_header *fat_header;
+	struct fat_header	*fat_header;
 
 	head->mach64 = NULL;
 	head->mach32 = NULL;

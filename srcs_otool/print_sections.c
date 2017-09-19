@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 14:47:27 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/18 14:47:29 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/19 15:55:49 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ static void	print_section_name(char *segname, char *sectname)
 
 static void	print_ptr_address(unsigned long n, char *buff, boolean_t x64)
 {
-	char 	tmp_address[16];
-	char	address[16];
-	int 	i;
+	char		tmp_address[16];
+	char		address[16];
+	int			i;
 
 	ft_bzero(tmp_address, 16);
 	ft_bzero(address, 16);
@@ -42,9 +42,9 @@ static void	print_ptr_address(unsigned long n, char *buff, boolean_t x64)
 
 void		print_section(t_sect *s)
 {
-	size_t	offset;
-	short	count;
-	char 	buff[64];
+	size_t		offset;
+	short		count;
+	char		buff[64];
 
 	offset = 0;
 	ft_bzero(buff, 64);

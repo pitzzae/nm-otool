@@ -6,15 +6,15 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/18 15:53:16 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/18 14:47:29 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/19 15:59:23 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "nmotool.h"
 
-int 	main(int ac, char **av)
+int		main(int ac, char **av)
 {
-	t_bin       bin;
+	t_bin		bin;
 
 	if (ac < 2)
 		return (0);
