@@ -15,9 +15,11 @@
 void		get_type_file(void *ptr, t_head *head, char *filename)
 {
 	struct fat_header	*fat_header;
+	struct fat_arch_64	*fat_arch_64;
 
 	head->mach64 = NULL;
 	head->mach32 = NULL;
+	fat_arch_64 = (struct fat_arch_64 *)ptr;
 	fat_header = (struct fat_header *)ptr;
 	if (fat_header->magic == MH_MAGIC_64)
 		head->mach64 = (struct mach_header_64 *)ptr;

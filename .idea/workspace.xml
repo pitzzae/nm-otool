@@ -14,14 +14,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fb4f284-1cec-42a4-937c-819a30a7e994" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/get_type_file.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/get_type_file.c.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/ft_nm" afterPath="$PROJECT_DIR$/cmake-build-debug/ft_nm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/ft_otool" afterPath="$PROJECT_DIR$/cmake-build-debug/ft_otool" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/nmotool.h" afterPath="$PROJECT_DIR$/includes/nmotool.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_nm/get_type_file.c" afterPath="$PROJECT_DIR$/srcs_nm/get_type_file.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_nm/parse_argv.c" afterPath="$PROJECT_DIR$/srcs_nm/parse_argv.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_otool/get_type_file.c" afterPath="$PROJECT_DIR$/srcs_otool/get_type_file.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_otool/parse_argv.c" afterPath="$PROJECT_DIR$/srcs_otool/parse_argv.c" />
@@ -42,8 +38,8 @@
           <file leaf-file-name="parse_argv.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/srcs_otool/parse_argv.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="518">
-                  <caret line="69" column="53" lean-forward="false" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="53" />
+                <state relative-caret-position="360">
+                  <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
@@ -52,10 +48,10 @@
           <file leaf-file-name="parse_argv.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/srcs_nm/parse_argv.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="503">
-                  <caret line="107" column="55" lean-forward="false" selection-start-line="107" selection-start-column="55" selection-end-line="107" selection-end-column="55" />
+                <state relative-caret-position="1275">
+                  <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
                   <folding>
-                    <marker date="1505846248000" expanded="true" signature="2443:2770" ph="{...}" />
+                    <marker date="1505847493000" expanded="true" signature="2481:2808" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -81,21 +77,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="get_type_file.c" pinned="false" current-in-tab="true">
+          <file leaf-file-name="get_type_file.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/srcs_otool/get_type_file.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="65" lean-forward="false" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+                <state relative-caret-position="255">
+                  <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="22" selection-end-column="42" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="get_type_file.c" pinned="false" current-in-tab="false">
+          <file leaf-file-name="get_type_file.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/srcs_nm/get_type_file.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
+                <state relative-caret-position="345">
+                  <caret line="23" column="52" lean-forward="false" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
                   <folding />
                 </state>
               </provider>
@@ -133,6 +129,16 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="main.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/srcs_nm/main.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -140,18 +146,28 @@
           <file leaf-file-name="loader.h" pinned="false" current-in-tab="false">
             <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach-o/loader.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="434">
-                  <caret line="109" column="17" lean-forward="false" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="17" />
+                <state relative-caret-position="341">
+                  <caret line="84" column="19" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="nmotool.h" pinned="false" current-in-tab="true">
+          <file leaf-file-name="nmotool.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/includes/nmotool.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="983">
-                  <caret line="75" column="34" lean-forward="false" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+                <state relative-caret-position="203">
+                  <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="fat.h" pinned="false" current-in-tab="true">
+            <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach-o/fat.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="968">
+                  <caret line="70" column="20" lean-forward="false" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -295,11 +311,11 @@
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/includes/libft.h" />
         <option value="$PROJECT_DIR$/libft/srcs/ft_itoa.c" />
-        <option value="$PROJECT_DIR$/srcs_otool/parse_argv.c" />
-        <option value="$PROJECT_DIR$/srcs_nm/parse_argv.c" />
         <option value="$PROJECT_DIR$/includes/nmotool.h" />
-        <option value="$PROJECT_DIR$/srcs_nm/get_type_file.c" />
+        <option value="$PROJECT_DIR$/srcs_nm/parse_argv.c" />
+        <option value="$PROJECT_DIR$/srcs_otool/parse_argv.c" />
         <option value="$PROJECT_DIR$/srcs_otool/get_type_file.c" />
+        <option value="$PROJECT_DIR$/srcs_nm/get_type_file.c" />
       </list>
     </option>
   </component>
@@ -707,7 +723,19 @@
       <envs />
       <method />
     </configuration>
-    <list size="18">
+    <configuration default="false" name="test_nm /dev/zero" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="/dev/zero" WORKING_DIR="file://$PROJECT_DIR$/test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ft_otool" TARGET_NAME="ft_nm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ft_otool" RUN_TARGET_NAME="ft_nm">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="test_nm /dev/random" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="/dev/random" WORKING_DIR="file://$PROJECT_DIR$/test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ft_otool" TARGET_NAME="ft_nm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ft_otool" RUN_TARGET_NAME="ft_nm">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ft_nm ../libft/libft.a" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS=" ../libft/libft.a" WORKING_DIR="file://$PROJECT_DIR$/test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ft_otool" TARGET_NAME="ft_nm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ft_otool" RUN_TARGET_NAME="ft_nm">
+      <envs />
+      <method />
+    </configuration>
+    <list size="21">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.ft" />
       <item index="2" class="java.lang.String" itemvalue="Application.ft_otool /usr/bin/time" />
@@ -726,6 +754,9 @@
       <item index="15" class="java.lang.String" itemvalue="Application.ft_nm /usr/bin/time" />
       <item index="16" class="java.lang.String" itemvalue="Application.ft_otool error_path" />
       <item index="17" class="java.lang.String" itemvalue="Application.ft_otool dst_directory" />
+      <item index="18" class="java.lang.String" itemvalue="Application.test_nm /dev/zero" />
+      <item index="19" class="java.lang.String" itemvalue="Application.test_nm /dev/random" />
+      <item index="20" class="java.lang.String" itemvalue="Application.ft_nm ../libft/libft.a" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -747,12 +778,12 @@
       <workItem from="1499943304581" duration="1012000" />
       <workItem from="1505728956871" duration="3195000" />
       <workItem from="1505732175503" duration="10618000" />
-      <workItem from="1505742894654" duration="65469000" />
+      <workItem from="1505742894654" duration="69088000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89587000" />
+    <option name="totallyTimeSpent" value="93206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1370" extended-state="6" />
@@ -796,11 +827,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/srcs_otool/parse_argv.c</url>
-          <line>69</line>
+          <line>71</line>
           <option name="timeStamp" value="110" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/srcs_otool/get_type_file.c</url>
+          <line>22</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/srcs_nm/get_type_file.c</url>
+          <line>21</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="111" />
+      <option name="time" value="115" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -849,14 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach-o/fat.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1021,14 +1054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/srcs_nm/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/srcs_nm/order_lst.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -1155,18 +1180,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach-o/loader.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="109" column="17" lean-forward="false" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_s_ifmt.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="41" column="16" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/nmotool.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs_otool/parse_argv.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs_nm/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1179,44 +1220,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/srcs_otool/parse_argv.c">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach-o/loader.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="69" column="53" lean-forward="false" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="53" />
+        <state relative-caret-position="341">
+          <caret line="84" column="19" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/nmotool.h">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach-o/fat.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="983">
-          <caret line="75" column="34" lean-forward="false" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+        <state relative-caret-position="968">
+          <caret line="70" column="20" lean-forward="false" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/srcs_nm/parse_argv.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="107" column="55" lean-forward="false" selection-start-line="107" selection-start-column="55" selection-end-line="107" selection-end-column="55" />
+        <state relative-caret-position="1275">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
-            <marker date="1505846248000" expanded="true" signature="2443:2770" ph="{...}" />
+            <marker date="1505847493000" expanded="true" signature="2481:2808" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srcs_nm/get_type_file.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/srcs_otool/get_type_file.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="65" lean-forward="false" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+        <state relative-caret-position="255">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="22" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs_nm/get_type_file.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="52" lean-forward="false" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
           <folding />
         </state>
       </provider>

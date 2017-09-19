@@ -28,6 +28,8 @@ static int	read_bin(t_bin *bin, char *source)
 			ft_putendl(": Is a directory.");
 			i = 0;
 		}
+		if (bin->st.st_size == 0)
+			i = 0;
 	}
 	else
 	{
