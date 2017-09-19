@@ -46,10 +46,10 @@ static void		fuc_is_public(t_list **lst, t_symbol *sym)
 	while (l)
 	{
 		s = ((t_symbol*)(l->content));
-		if (s && ft_strcmp(s->name, sym->name) == 0)
+		if (s && ft_strcmp(s->name, sym->name) == 0 &&
+				ft_strcmp(s->address, sym->address) == 0)
 		{
 			s->type = 'T';
-			*s->address = *sym->address;
 			return;
 		}
 		l = l->next;
@@ -68,15 +68,23 @@ static size_t	add_line_to_lst(uint8_t n_type, uint32_t f_type,
 		sym->type = 'T';
 		if (f_type == MH_DYLIB)
 			sym->type = 't';
+		if (ft_strcmp(sym->address, S_x64)	== 0 && sym->type == 'T')
+			ft_memcpy(sym->address, "0000000000000000", 16);
+		else if (ft_strcmp(sym->address, S_x86)	== 0 && sym->type == 'T')
+			ft_memcpy(sym->address, "00000000", 8);
 	}
 	else if (n_type == 0x01 && n_sect == 0x00 && (i = 1))
 		sym->type = 'U';
-	else if (n_type == 0x26 && (n_sect == 0x0a || n_sect == 0x09) && (i = 1))
+	else if (n_type == 0x26 && (n_sect == 0x09) && (i = 1))
 		sym->type = 'd';
-	else if (n_type == 0x0e && n_sect == 0x03 && (i = 1))
-		sym->type = 'd';
+	else if (n_type == 0x0e && (n_sect == 0x0a || n_sect == 0x03) && (i = 1))
+		sym->type = 'b';
 	else if (f_type != MH_DYLIB && n_type == 0x0e && n_sect == 0x01 && (i = 1))
+	{
 		sym->type = 'T';
+		if (f_type == MH_OBJECT)
+			sym->type = 't';
+	}
 	return (i);
 }
 
@@ -95,7 +103,7 @@ t_list		*print_symbol_table_86(t_head *head, char *ptr)
 		if (head->nlist32[i].n_value > 0)
 			print_ptr_addr(head->nlist32[i].n_value, sym.address, head->is_x64);
 		else
-			ft_strcat(sym.address, "        ");
+			ft_strcat(sym.address, S_x86);
 		sym.name = ptr + head->sym->stroff + head->nlist32[i].n_un.n_strx;
 		if (add_line_to_lst(head->nlist32[i].n_type, head->mach32->filetype,
 							head->nlist32[i].n_sect, &sym))
@@ -120,9 +128,9 @@ t_list		*print_symbol_table_64(t_head *head, char *ptr)
 		if (head->nlist64[i].n_value > 0)
 			print_ptr_addr(head->nlist64[i].n_value, sym.address, head->is_x64);
 		else
-			ft_strcat(sym.address, "                ");
+			ft_strcat(sym.address, S_x64);
 		sym.name = ptr + head->sym->stroff + head->nlist64[i].n_un.n_strx;
-		if (ft_strcmp(sym.name, "_read_fd.buf") == 0)
+		if (ft_strcmp(sym.name, "_get_first_page.first") == 0)
 			sym.name = sym.name;
 		if (add_line_to_lst(head->nlist64[i].n_type, head->mach64->filetype,
 							head->nlist64[i].n_sect, &sym))

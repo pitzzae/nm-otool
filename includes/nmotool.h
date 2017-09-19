@@ -12,6 +12,8 @@
 
 #ifndef FT_OTOOL_NMOTOOL_H_H
 #define FT_OTOOL_NMOTOOL_H_H
+# define S_x64 "                "
+# define S_x86 "        "
 
 # include <sys/stat.h>
 # include <mach-o/loader.h>

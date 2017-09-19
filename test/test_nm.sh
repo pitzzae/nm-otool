@@ -23,7 +23,9 @@ run_ft_nm () {
 #diff  <(echo "$SYS_NM" ) <(echo "$FT_NM")
 
 echo -e "\ndiff:"
-FILE_TEST="../cmake-build-debug/CMakeFiles/ft_nm.dir/libft/srcs/get_next_line.c.o"
+#FILE_TEST="../cmake-build-debug/CMakeFiles/ft_nm
+# .dir/libft/srcs/get_next_line.c.o"
+FILE_TEST="./libft_malloc.dylib"
 SYS_NM=$(run_sys_nm "$FILE_TEST")
 FT_NM=$(run_ft_nm "$FILE_TEST")
 diff  <(echo "$SYS_NM" ) <(echo "$FT_NM")
