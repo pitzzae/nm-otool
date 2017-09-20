@@ -88,7 +88,7 @@ typedef struct				s_bin
 }							t_bin;
 
 void		parse_argv(t_bin *bin, int ac, char **av);
-void		get_type_file(t_bin *bin, char *filename);
+void		get_type_file(t_bin *bin, char *filename, char *name);
 void		find_section_64(t_head *head, t_sect *s);
 void		find_section_86(t_head *head, t_sect *s);
 void		find_symbol_table(char *ptr, t_head *header);

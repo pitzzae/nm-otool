@@ -107,7 +107,7 @@ void		parse_argv(t_bin *bin, int ac, char **av)
 	{
 		if (read_bin(bin, av[i]))
 		{
-			get_type_file(bin, av[i]);
+			get_type_file(bin, av[i], av[0]);
 			if (bin->head.mach64 || bin->head.mach32)
 			{
 				print_filename(ac, av[i]);

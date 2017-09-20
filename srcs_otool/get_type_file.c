@@ -72,7 +72,7 @@ static void	get_type_file_lib(t_bin *bin, char *filename)
 	}
 }
 
-void		get_type_file(t_bin *bin, char *filename)
+void		get_type_file(t_bin *bin, char *filename, char *name)
 {
 	struct fat_header	*fat_header;
 
@@ -87,6 +87,8 @@ void		get_type_file(t_bin *bin, char *filename)
 		get_type_file_lib(bin, filename);
 	else
 	{
+        ft_putstr(name);
+        ft_putstr(": ");
 		ft_putstr(filename);
 		ft_putendl(": The file was not recognized as a valid object file");
 	}
