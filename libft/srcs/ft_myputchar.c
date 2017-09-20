@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/05 18:36:21 by gtorresa          #+#    #+#             */
-/*   Updated: 2016/06/07 16:47:23 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 16:56:08 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int			ft_myputchar(int c)
 {
-	return (int) (write(1, &c, 1));
+	return (int)(write(1, &c, 1));
 }

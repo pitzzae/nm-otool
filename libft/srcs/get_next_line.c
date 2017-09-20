@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 00:52:34 by gtorresa          #+#    #+#             */
-/*   Updated: 2016/02/11 12:30:18 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 17:01:56 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ static void		last_line_join(char buf[BUF_SIZE + 1], char **line)
 {
 	char			*tmp;
 
-	tmp = ft_strsub(buf, 0, (size_t) ft_strfocur(buf, '\n'));
+	tmp = ft_strsub(buf, 0, (size_t)ft_strfocur(buf, '\n'));
 	line[0] = ft_strjoin_free(line[0], tmp, 3);
-	tmp = ft_strsub(buf, (unsigned int) (ft_strfocur(buf, '\n') + 1), BUF_SIZE);
+	tmp = ft_strsub(buf, (unsigned int)(ft_strfocur(buf, '\n') + 1), BUF_SIZE);
 	ft_bzero(buf, BUF_SIZE);
 	ft_strcpy(buf, tmp);
 	free(tmp);
@@ -45,7 +45,7 @@ static int		read_fd(int const fd, char **line)
 
 	if (ft_strlen(buf[fd]) == 0)
 	{
-		ret = (int) read(fd, buf[fd], BUF_SIZE);
+		ret = (int)read(fd, buf[fd], BUF_SIZE);
 		buf[fd][ret] = '\0';
 		if (ret == 0 || ret == -1)
 			return (ret);

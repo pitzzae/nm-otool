@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 14:54:17 by gtorresa          #+#    #+#             */
-/*   Updated: 2015/12/03 19:29:38 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 17:00:56 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (s1);
 	while (s[i] != '\0')
 	{
-		s1[i] = (*f)((unsigned int) s[i], (char) i);
+		s1[i] = (*f)((unsigned int)s[i], (char)i);
 		i++;
 	}
 	s1[i] = '\0';

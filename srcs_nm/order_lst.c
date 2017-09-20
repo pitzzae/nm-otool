@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/19 15:06:24 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/19 15:53:34 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 17:14:44 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void		swap_content(t_list *l, boolean_t *lst_is_order)
 	*lst_is_order = FALSE;
 }
 
-void 		order_by_address(t_list *l, boolean_t *lst_is_order)
+void		order_by_address(t_list *l, boolean_t *lst_is_order)
 {
 	int					cmp;
 
@@ -32,7 +32,7 @@ void 		order_by_address(t_list *l, boolean_t *lst_is_order)
 		swap_content(l, lst_is_order);
 }
 
-void 		order_lst(t_list *lst)
+void		order_lst(t_list *lst)
 {
 	boolean_t			lst_is_order;
 	t_list				*l;

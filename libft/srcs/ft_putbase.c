@@ -6,15 +6,15 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 15:01:43 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/18 15:01:45 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 16:58:35 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	*ft_strcat_chr(char *dst, const char c)
+static void			*ft_strcat_chr(char *dst, const char c)
 {
-	size_t	j;
+	size_t		j;
 
 	j = 0;
 	while (dst[j] != '\0')
@@ -24,8 +24,7 @@ static void	*ft_strcat_chr(char *dst, const char c)
 	return (dst);
 }
 
-
-void		ft_putbase(unsigned long n, char *buff, int base)
+void				ft_putbase(unsigned long n, char *buff, int base)
 {
 	char		c;
 
@@ -34,7 +33,7 @@ void		ft_putbase(unsigned long n, char *buff, int base)
 		ft_putbase((n / base), buff, base);
 		n = n % base;
 	}
-	c = (char) (n < 10 ? '0' : 'a' - 10);
-	c = (char) (c + n);
+	c = (char)(n < 10 ? '0' : 'a' - 10);
+	c = (char)(c + n);
 	ft_strcat_chr(buff, c);
 }

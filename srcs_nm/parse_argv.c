@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 14:31:52 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/20 13:52:06 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 17:19:29 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static int	read_bin(t_bin *bin, char *source)
 	bin->fd = open(source, O_RDONLY);
 	if (bin->fd > 2 && !fstat(bin->fd, &bin->st))
 	{
-		bin->ptr = mmap(0, (size_t) bin->st.st_size,
+		bin->ptr = mmap(0, (size_t)bin->st.st_size,
 						PROT_READ, MAP_PRIVATE, bin->fd, 0);
 		if (bin->st.st_mode & S_IFDIR)
 		{
@@ -113,7 +113,7 @@ void		parse_argv(t_bin *bin, int ac, char **av)
 				print_filename(ac, av[i]);
 				find_symbol_table(bin->ptr, &bin->head);
 			}
-			if (munmap(bin->ptr, (size_t) bin->st.st_size) < 0)
+			if (munmap(bin->ptr, (size_t)bin->st.st_size) < 0)
 				return ;
 		}
 		i++;

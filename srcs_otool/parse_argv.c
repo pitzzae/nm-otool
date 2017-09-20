@@ -6,18 +6,18 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 14:31:52 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/20 13:52:22 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 17:26:54 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <nmotool.h>
 
-static void ft_putargv_error(char *name, char *source, char *msg)
+static void	ft_putargv_error(char *name, char *source, char *msg)
 {
-    ft_putstr(name);
-    ft_putstr(": ");
-    ft_putstr(source);
-    ft_putendl(msg);
+	ft_putstr(name);
+	ft_putstr(": ");
+	ft_putstr(source);
+	ft_putendl(msg);
 }
 
 static int	read_bin(t_bin *bin, char *source, char *name)
@@ -28,11 +28,11 @@ static int	read_bin(t_bin *bin, char *source, char *name)
 	bin->fd = open(source, O_RDONLY);
 	if (bin->fd > 2 && !fstat(bin->fd, &bin->st))
 	{
-		bin->ptr = mmap(0, (size_t) bin->st.st_size,
+		bin->ptr = mmap(0, (size_t)bin->st.st_size,
 						PROT_READ, MAP_PRIVATE, bin->fd, 0);
 		if (bin->st.st_mode & S_IFDIR)
 		{
-            ft_putargv_error(name, source, ": Is a directory.");
+			ft_putargv_error(name, source, ": Is a directory.");
 			i = 0;
 		}
 		if (bin->st.st_size == 0)
@@ -40,7 +40,7 @@ static int	read_bin(t_bin *bin, char *source, char *name)
 	}
 	else
 	{
-        ft_putargv_error(name, source, ": No such file or directory.");
+		ft_putargv_error(name, source, ": No such file or directory.");
 		i = 0;
 	}
 	close(bin->fd);
@@ -78,7 +78,7 @@ void		parse_argv(t_bin *bin, int ac, char **av)
 			get_type_file(bin, av[i], av[0]);
 			if (bin->head.mach64 || bin->head.mach32)
 				select_print_sections(&bin->head, av[i]);
-			if (munmap(bin->ptr, (size_t) bin->st.st_size) < 0)
+			if (munmap(bin->ptr, (size_t)bin->st.st_size) < 0)
 				return ;
 		}
 		i++;

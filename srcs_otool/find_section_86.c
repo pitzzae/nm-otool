@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 19:38:51 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/18 19:38:53 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 17:25:10 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void		find_section_86(t_head *head, t_sect *s)
 	s->x86.sec = (struct section *)get_section_offset_86(s);
 	if (s->x86.sec)
 	{
-		s->start = (char *) head->mach32 + s->x86.sec->offset;
+		s->start = (char *)head->mach32 + s->x86.sec->offset;
 		s->end = s->start + s->x86.sec->size;
 		s->offset = s->x86.sec->addr;
 		s->len64 = FALSE;

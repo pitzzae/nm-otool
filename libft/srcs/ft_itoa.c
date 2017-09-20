@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 21:40:38 by gtorresa          #+#    #+#             */
-/*   Updated: 2015/12/04 01:31:08 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 16:55:04 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ static char		*ft_itoacal(long int n, char *str)
 		return (str);
 	while (n)
 	{
-		str[i++] = (char) ((n % 10) + 48);
+		str[i++] = (char)((n % 10) + 48);
 		n = n / 10;
 	}
 	return (ft_revstr(str));
@@ -82,11 +82,11 @@ char			*ft_itoa(long int n)
 		n = -n;
 		str[0] = '-';
 		return (ft_strjoin_free(str, ft_itoacal(n, ft_strnew(
-				(size_t) get_len((const int) n))), 3));
+				(size_t)get_len((const int)n))), 3));
 	}
 	else
 	{
-		str = ft_strnew((size_t) get_len((const int) n));
+		str = ft_strnew((size_t)get_len((const int)n));
 		return (ft_itoacal(n, str));
 	}
 }

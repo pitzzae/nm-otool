@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 22:47:27 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/20 15:21:12 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 17:23:48 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ static void		print_ptr_addr(unsigned long n, char *buff, boolean_t x64)
 	if (!x64)
 	{
 		i = 8;
-		address_tmp = (int) (n & 0xffffffff);
-		ft_putbase((unsigned long) address_tmp, tmp_address, 16);
+		address_tmp = (int)(n & 0xffffffff);
+		ft_putbase((unsigned long)address_tmp, tmp_address, 16);
 	}
 	else
 		ft_putbase(n, tmp_address, 16);
@@ -50,7 +50,7 @@ static void		fuc_is_public(t_list **lst, t_symbol *sym)
 				ft_strcmp(s->address, sym->address) == 0)
 		{
 			s->type = 'T';
-			return;
+			return ;
 		}
 		l = l->next;
 	}
@@ -63,14 +63,14 @@ static size_t	add_line_to_lst(uint8_t n_type, uint32_t f_type,
 	int				i;
 
 	i = 0;
-	if ((n_type == 0x24 || n_type == 0x0f) && n_sect ==	0x01 && (i = 1))
+	if ((n_type == 0x24 || n_type == 0x0f) && n_sect == 0x01 && (i = 1))
 	{
 		sym->type = 'T';
 		if (f_type == MH_DYLIB)
 			sym->type = 't';
-		if (ft_strcmp(sym->address, S_x64)	== 0 && sym->type == 'T')
+		if (ft_strcmp(sym->address, S_X64) == 0 && sym->type == 'T')
 			ft_memcpy(sym->address, "0000000000000000", 16);
-		else if (ft_strcmp(sym->address, S_x86)	== 0 && sym->type == 'T')
+		else if (ft_strcmp(sym->address, S_X86) == 0 && sym->type == 'T')
 			ft_memcpy(sym->address, "00000000", 8);
 	}
 	else if (n_type == 0x01 && n_sect == 0x00 && (i = 1))
@@ -81,11 +81,10 @@ static size_t	add_line_to_lst(uint8_t n_type, uint32_t f_type,
 		sym->type = 'b';
 	else if (f_type != MH_DYLIB && n_type == 0x0e && n_sect == 0x01 && (i = 1))
 	{
-		sym->type = 'T';
-		if (f_type == MH_OBJECT || f_type == MH_EXECUTE)
+		if ((sym->type = 'T') && (f_type == MH_OBJECT || f_type == MH_EXECUTE))
 			sym->type = 't';
 	}
-	return (size_t) (i);
+	return (size_t)(i);
 }
 
 t_list			*print_symbol_table_86(t_head *head, char *ptr)
@@ -103,7 +102,7 @@ t_list			*print_symbol_table_86(t_head *head, char *ptr)
 		if (head->nlist32[i].n_value > 0)
 			print_ptr_addr(head->nlist32[i].n_value, sym.address, head->is_x64);
 		else
-			ft_strcat(sym.address, S_x86);
+			ft_strcat(sym.address, S_X86);
 		sym.name = ptr + head->sym->stroff + head->nlist32[i].n_un.n_strx;
 		if (add_line_to_lst(head->nlist32[i].n_type, head->mach32->filetype,
 							head->nlist32[i].n_sect, &sym))
@@ -128,10 +127,8 @@ t_list			*print_symbol_table_64(t_head *head, char *ptr)
 		if (head->nlist64[i].n_value > 0)
 			print_ptr_addr(head->nlist64[i].n_value, sym.address, head->is_x64);
 		else
-			ft_strcat(sym.address, S_x64);
+			ft_strcat(sym.address, S_X64);
 		sym.name = ptr + head->sym->stroff + head->nlist64[i].n_un.n_strx;
-		if (ft_strcmp(sym.name, "_add_line_to_lst"))
-			sym.name = sym.name;
 		if (add_line_to_lst(head->nlist64[i].n_type, head->mach64->filetype,
 							head->nlist64[i].n_sect, &sym))
 			fuc_is_public(&lst, &sym);

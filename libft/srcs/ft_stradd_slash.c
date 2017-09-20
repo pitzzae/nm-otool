@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/08 16:12:32 by gtorresa          #+#    #+#             */
-/*   Updated: 2016/06/15 18:39:05 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 16:59:17 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char		*ft_init_new_str(char **str, char c)
 	char	*out;
 	int		i;
 
-	i = (int) ft_strocur(str[0], c);
+	i = (int)ft_strocur(str[0], c);
 	out = ft_strnew(ft_strlen(str[0]) + i + 1);
 	if (!out)
 		return (NULL);

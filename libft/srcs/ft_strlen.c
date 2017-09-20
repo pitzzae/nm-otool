@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 11:12:55 by gtorresa          #+#    #+#             */
-/*   Updated: 2015/12/03 16:45:41 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 17:00:17 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ size_t	ft_strlen(const char *str)
 	{
 		i++;
 	}
-	return (size_t) (i);
+	return (size_t)(i);
 }

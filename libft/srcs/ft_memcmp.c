@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 16:49:48 by gtorresa          #+#    #+#             */
-/*   Updated: 2015/11/27 16:47:57 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 16:55:32 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (ptr1[i] == ptr2[i] && i <= n)
 	{
 		i++;
-		//if (i == (unsigned int)n || (ptr1[i] == '\0' && ptr2[i] == '\0'))
-		//	return (0);
+		if (i == (unsigned int)n || (ptr1[i] == '\0' && ptr2[i] == '\0'))
+			return (0);
 	}
 	return (ptr1[i] - ptr2[i]);
 }

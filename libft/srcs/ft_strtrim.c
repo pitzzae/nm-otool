@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 16:25:12 by gtorresa          #+#    #+#             */
-/*   Updated: 2015/12/03 19:41:35 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 17:01:17 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static char		*clean_start_c(char const *s)
 	i = 0;
 	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
 		i++;
-	return (ft_strsub(s, (unsigned int) i, ft_strlen(s)));
+	return (ft_strsub(s, (unsigned int)i, ft_strlen(s)));
 }
 
 static char		*clean_end_c(char const *s)

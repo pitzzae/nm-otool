@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 14:39:54 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/20 13:51:26 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 17:18:35 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,11 +45,19 @@ static void	print_file_lib_path(char *path, char *obj)
 	ft_putendl("):");
 }
 
+static void	print_error_filetype(char *name, char *filename)
+{
+	ft_putstr(name);
+	ft_putstr(": ");
+	ft_putstr(filename);
+	ft_putendl(": The file was not recognized as a valid object file");
+}
+
 static void	get_type_file_lib(t_bin *bin, char *filename)
 {
 	t_libar				l;
-	int 				i;
-	int 				j;
+	int					i;
+	int					j;
 
 	l.start = bin->ptr + sizeof(struct ar_hdr) + SARMAG + 20;
 	l.st_len = *(unsigned int*)l.start / sizeof(struct ranlib);
@@ -87,17 +95,12 @@ void		get_type_file(t_bin *bin, char *filename, char *name)
 	}
 	else if (fat_header->magic == MH_MAGIC)
 	{
-		bin->head.mach32 = (struct mach_header *) bin->ptr;
+		bin->head.mach32 = (struct mach_header *)bin->ptr;
 		bin->head.lc = bin->ptr + sizeof(*bin->head.mach32);
 		bin->head.is_x64 = FALSE;
 	}
 	else if (!ft_strncmp((char*)bin->ptr, ARMAG, SARMAG))
 		get_type_file_lib(bin, filename);
 	else
-	{
-        ft_putstr(name);
-        ft_putstr(": ");
-		ft_putstr(filename);
-		ft_putendl(": The file was not recognized as a valid object file");
-	}
+		print_error_filetype(name, filename);
 }
