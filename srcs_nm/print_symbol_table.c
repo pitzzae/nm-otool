@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 22:47:27 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/20 13:52:58 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 15:21:12 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ static size_t	add_line_to_lst(uint8_t n_type, uint32_t f_type,
 	else if (f_type != MH_DYLIB && n_type == 0x0e && n_sect == 0x01 && (i = 1))
 	{
 		sym->type = 'T';
-		if (f_type == MH_OBJECT || f_type == 2)
+		if (f_type == MH_OBJECT || f_type == MH_EXECUTE)
 			sym->type = 't';
 	}
 	return (size_t) (i);
