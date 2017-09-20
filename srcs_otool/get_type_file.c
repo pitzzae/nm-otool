@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 14:39:54 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/20 17:27:12 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 20:12:43 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,9 +87,10 @@ void		get_type_file(t_bin *bin, char *filename, char *name)
 		get_type_file_lib(bin, filename);
 	else
 	{
-		ft_putstr(name);
-		ft_putstr(": ");
-		ft_putstr(filename);
-		ft_putendl(": The file was not recognized as a valid object file");
+		ft_putstr_fd(name, 2);
+		ft_putstr_fd(": ", 2);
+		ft_putstr_fd(filename, 2);
+		ft_putstr_fd(": The file was not recognized", 2);
+		ft_putendl_fd(" as a valid object file", 2);
 	}
 }

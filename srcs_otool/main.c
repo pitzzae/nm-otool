@@ -18,8 +18,8 @@ int		main(int ac, char **av)
 
 	if (ac < 2)
 	{
-		ft_putstr(av[0]);
-		ft_putendl(": at least one file must be specified");
+		ft_putstr_fd(av[0], 2);
+		ft_putendl_fd(": at least one file must be specified", 2);
 		return (0);
 	}
 	else

@@ -47,10 +47,10 @@ static void	print_file_lib_path(char *path, char *obj)
 
 static void	print_error_filetype(char *name, char *filename)
 {
-	ft_putstr(name);
-	ft_putstr(": ");
-	ft_putstr(filename);
-	ft_putendl(": The file was not recognized as a valid object file");
+	ft_putstr_fd(name, 2);
+	ft_putstr_fd(": ", 2);
+	ft_putstr_fd(filename, 2);
+	ft_putendl_fd(": The file was not recognized as a valid object file", 2);
 }
 
 static void	get_type_file_lib(t_bin *bin, char *filename)

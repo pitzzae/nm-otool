@@ -12,6 +12,14 @@
 
 #include "nmotool.h"
 
+void	ft_putargv_error(char *name, char *source, char *msg)
+{
+	ft_putstr_fd(name, 2);
+	ft_putstr_fd(": ", 2);
+	ft_putstr_fd(source, 2);
+	ft_putendl_fd(msg, 2);
+}
+
 int		main(int ac, char **av)
 {
 	t_bin		bin;

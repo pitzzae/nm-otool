@@ -6,18 +6,18 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 14:31:52 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/20 17:26:54 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 20:13:12 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <nmotool.h>
 
-static void	ft_putargv_error(char *name, char *source, char *msg)
+void		ft_putargv_error(char *name, char *source, char *msg)
 {
-	ft_putstr(name);
-	ft_putstr(": ");
-	ft_putstr(source);
-	ft_putendl(msg);
+	ft_putstr_fd(name, 2);
+	ft_putstr_fd(": ", 2);
+	ft_putstr_fd(source, 2);
+	ft_putendl_fd(msg, 2);
 }
 
 static int	read_bin(t_bin *bin, char *source, char *name)

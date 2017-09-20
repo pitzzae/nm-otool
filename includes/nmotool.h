@@ -96,5 +96,6 @@ void				print_section(t_sect *s);
 t_list				*print_symbol_table_64(t_head *head, char *ptr);
 t_list				*print_symbol_table_86(t_head *head, char *ptr);
 void				order_lst(t_list *lst);
+void				ft_putargv_error(char *name, char *source, char *msg);
 
 #endif
