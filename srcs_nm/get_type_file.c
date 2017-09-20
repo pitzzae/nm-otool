@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 14:39:54 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/20 13:14:39 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 13:51:26 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ static void	print_file_lib(char *ptr, int size)
 {
 	struct fat_header	*fat_header;
 	t_bin				bin;
-	t_sect				s;
 
 	bin.ptr = ptr;
 	bin.st.st_size = size;

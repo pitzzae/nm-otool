@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 22:47:27 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/19 15:58:02 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 13:52:58 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ static size_t	add_line_to_lst(uint8_t n_type, uint32_t f_type,
 	else if (f_type != MH_DYLIB && n_type == 0x0e && n_sect == 0x01 && (i = 1))
 	{
 		sym->type = 'T';
-		if (f_type == MH_OBJECT)
+		if (f_type == MH_OBJECT || f_type == 2)
 			sym->type = 't';
 	}
 	return (size_t) (i);
@@ -130,6 +130,8 @@ t_list			*print_symbol_table_64(t_head *head, char *ptr)
 		else
 			ft_strcat(sym.address, S_x64);
 		sym.name = ptr + head->sym->stroff + head->nlist64[i].n_un.n_strx;
+		if (ft_strcmp(sym.name, "_add_line_to_lst"))
+			sym.name = sym.name;
 		if (add_line_to_lst(head->nlist64[i].n_type, head->mach64->filetype,
 							head->nlist64[i].n_sect, &sym))
 			fuc_is_public(&lst, &sym);

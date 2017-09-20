@@ -16,7 +16,6 @@
     <list default="true" id="4fb4f284-1cec-42a4-937c-819a30a7e994" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/get_type_file.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/get_type_file.c.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/main.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/main.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/order_lst.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/order_lst.c.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/print_symbol_table.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/print_symbol_table.c.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o" />
@@ -28,13 +27,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/ft_nm" afterPath="$PROJECT_DIR$/cmake-build-debug/ft_nm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/ft_otool" afterPath="$PROJECT_DIR$/cmake-build-debug/ft_otool" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/C.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_nm.dir/C.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/C.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_otool.dir/C.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/nmotool.h" afterPath="$PROJECT_DIR$/includes/nmotool.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_nm/get_type_file.c" afterPath="$PROJECT_DIR$/srcs_nm/get_type_file.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_nm/parse_argv.c" afterPath="$PROJECT_DIR$/srcs_nm/parse_argv.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_otool/get_type_file.c" afterPath="$PROJECT_DIR$/srcs_otool/get_type_file.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_otool/parse_argv.c" afterPath="$PROJECT_DIR$/srcs_otool/parse_argv.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srcs_nm/print_symbol_table.c" afterPath="$PROJECT_DIR$/srcs_nm/print_symbol_table.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +41,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4133574">
+    <splitter split-orientation="horizontal" split-proportion="0.4296029">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="parse_argv.c" pinned="false" current-in-tab="false">
@@ -62,10 +57,10 @@
           <file leaf-file-name="parse_argv.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/srcs_nm/parse_argv.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-398">
-                  <caret line="43" column="12" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+                <state relative-caret-position="1725">
+                  <caret line="115" column="53" lean-forward="false" selection-start-line="115" selection-start-column="53" selection-end-line="115" selection-end-column="53" />
                   <folding>
-                    <marker date="1505905300000" expanded="true" signature="2475:2785" ph="{...}" />
+                    <marker date="1505908246000" expanded="true" signature="2478:2799" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -87,37 +82,7 @@
             <entry file="file://$PROJECT_DIR$/srcs_otool/get_type_file.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="410">
-                  <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="find_section_86.c" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/srcs_otool/find_section_86.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="717">
-                  <caret line="61" column="22" lean-forward="false" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ar.h" pinned="false" current-in-tab="false">
-            <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/ar.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="562">
-                  <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ft_strcmp.c" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/libft/srcs/ft_strcmp.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                  <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -136,8 +101,28 @@
           <file leaf-file-name="get_type_file.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/srcs_nm/get_type_file.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="492">
-                  <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+                <state relative-caret-position="563">
+                  <caret line="74" column="25" lean-forward="false" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="test_nm.sh" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/test_nm.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="405">
+                  <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="order_lst.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/srcs_nm/order_lst.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="512">
+                  <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -149,6 +134,18 @@
                 <state relative-caret-position="315">
                   <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="18" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="print_symbol_table.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/srcs_nm/print_symbol_table.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="683">
+                  <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+                  <folding>
+                    <marker date="1505907585000" expanded="true" signature="1884:2697" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -170,8 +167,8 @@
           <file leaf-file-name="nmotool.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/includes/nmotool.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="351">
-                  <caret line="40" column="35" lean-forward="true" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+                <state relative-caret-position="878">
+                  <caret line="81" column="33" lean-forward="false" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
                   <folding>
                     <element signature="e#1011#1033#0" expanded="true" />
                   </folding>
@@ -319,7 +316,6 @@
         <option value="$PROJECT_DIR$/srcs_nm/main.c" />
         <option value="$PROJECT_DIR$/srcs_otool/main.c" />
         <option value="$PROJECT_DIR$/srcs_nm/order_lst.c" />
-        <option value="$PROJECT_DIR$/srcs_nm/print_symbol_table.c" />
         <option value="$PROJECT_DIR$/test/test_nm.sh" />
         <option value="$PROJECT_DIR$/test/test_otool.sh" />
         <option value="$PROJECT_DIR$/srcs_otool/print_sections.c" />
@@ -328,10 +324,11 @@
         <option value="$PROJECT_DIR$/includes/libft.h" />
         <option value="$PROJECT_DIR$/libft/srcs/ft_itoa.c" />
         <option value="$PROJECT_DIR$/srcs_otool/parse_argv.c" />
-        <option value="$PROJECT_DIR$/srcs_nm/parse_argv.c" />
         <option value="$PROJECT_DIR$/srcs_otool/get_type_file.c" />
-        <option value="$PROJECT_DIR$/includes/nmotool.h" />
         <option value="$PROJECT_DIR$/srcs_nm/get_type_file.c" />
+        <option value="$PROJECT_DIR$/srcs_nm/print_symbol_table.c" />
+        <option value="$PROJECT_DIR$/includes/nmotool.h" />
+        <option value="$PROJECT_DIR$/srcs_nm/parse_argv.c" />
       </list>
     </option>
   </component>
@@ -473,7 +470,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ft_nm ../libft/libft.a">
+  <component name="RunManager" selected="Application.test_nm">
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
@@ -759,7 +756,11 @@
       <envs />
       <method />
     </configuration>
-    <list size="23">
+    <configuration default="false" name="ft_nm ../ft_nm" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="../ft_nm" WORKING_DIR="file://$PROJECT_DIR$/test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ft_otool" TARGET_NAME="ft_nm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ft_otool" RUN_TARGET_NAME="ft_nm">
+      <envs />
+      <method />
+    </configuration>
+    <list size="24">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.ft" />
       <item index="2" class="java.lang.String" itemvalue="Application.ft_otool /usr/bin/time" />
@@ -783,6 +784,7 @@
       <item index="20" class="java.lang.String" itemvalue="Application.ft_nm ../libft/libft.a" />
       <item index="21" class="java.lang.String" itemvalue="Application.ft_otool ../libft/libft.a" />
       <item index="22" class="java.lang.String" itemvalue="Application.ft_otool test_nm.sh" />
+      <item index="23" class="java.lang.String" itemvalue="Application.ft_nm ../ft_nm" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -804,12 +806,12 @@
       <workItem from="1499943304581" duration="1012000" />
       <workItem from="1505728956871" duration="3195000" />
       <workItem from="1505732175503" duration="10618000" />
-      <workItem from="1505742894654" duration="78818000" />
+      <workItem from="1505742894654" duration="80946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102936000" />
+    <option name="totallyTimeSpent" value="105064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1370" extended-state="6" />
@@ -819,11 +821,11 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291634" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32942098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994527" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291634" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11993646" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32942098" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26291078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39906102" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -845,7 +847,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="125" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/srcs_nm/print_symbol_table.c</url>
+          <line>65</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/srcs_nm/print_symbol_table.c</url>
+          <line>133</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="127" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1042,34 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/srcs_nm/order_lst.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srcs_nm/print_symbol_table.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-          <folding>
-            <marker date="1505833298000" expanded="true" signature="1884:2682" ph="{...}" />
-            <marker date="1505833298000" expanded="true" signature="2741:3320" ph="{...}" />
-            <marker date="1505833298000" expanded="true" signature="3379:3958" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_nm.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="34" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_otool.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1235,35 +1221,61 @@
     <entry file="file://$PROJECT_DIR$/srcs_otool/get_type_file.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_nm.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs_nm/print_symbol_table.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding>
+            <marker date="1505907585000" expanded="true" signature="1884:2697" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs_nm/order_lst.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs_nm/get_type_file.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="74" column="25" lean-forward="false" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/nmotool.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="40" column="35" lean-forward="true" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+        <state relative-caret-position="878">
+          <caret line="81" column="33" lean-forward="false" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
           <folding>
             <element signature="e#1011#1033#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/srcs_nm/get_type_file.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/srcs_nm/parse_argv.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-398">
-          <caret line="43" column="12" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+        <state relative-caret-position="1725">
+          <caret line="115" column="53" lean-forward="false" selection-start-line="115" selection-start-column="53" selection-end-line="115" selection-end-column="53" />
           <folding>
-            <marker date="1505905300000" expanded="true" signature="2475:2785" ph="{...}" />
+            <marker date="1505908246000" expanded="true" signature="2478:2799" ph="{...}" />
           </folding>
         </state>
       </provider>

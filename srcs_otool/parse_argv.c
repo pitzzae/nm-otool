@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 14:31:52 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/20 13:16:42 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 13:52:22 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static int	read_bin(t_bin *bin, char *source)
 	if (bin->fd > 2 && !fstat(bin->fd, &bin->st))
 	{
 		bin->ptr = mmap(0, (size_t) bin->st.st_size,
-						PROT_READ,	MAP_PRIVATE, bin->fd, 0);
+						PROT_READ, MAP_PRIVATE, bin->fd, 0);
 		if (bin->st.st_mode & S_IFDIR)
 		{
 			ft_putstr(source);
