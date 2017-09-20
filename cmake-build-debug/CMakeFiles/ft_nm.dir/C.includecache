@@ -25,6 +25,10 @@ mach-o/fat.h
 -
 mach-o/nlist.h
 -
+mach-o/ranlib.h
+-
+ar.h
+-
 sys/mman.h
 -
 unistd.h

@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 14:31:52 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/19 17:48:06 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 13:16:42 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ void		parse_argv(t_bin *bin, int ac, char **av)
 	{
 		if (read_bin(bin, av[i]))
 		{
-			get_type_file(bin->ptr, &bin->head, av[i]);
+			get_type_file(bin, av[i]);
 			if (bin->head.mach64 || bin->head.mach32)
 				select_print_sections(&bin->head, av[i]);
 			if (munmap(bin->ptr, (size_t) bin->st.st_size) < 0)

@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 14:31:52 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/19 17:47:24 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/09/20 13:15:39 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	read_bin(t_bin *bin, char *source)
 {
-	int			i;
+	int						i;
 
 	i = 1;
 	bin->fd = open(source, O_RDONLY);
@@ -62,7 +62,17 @@ static void	parse_result(t_list *lst)
 	}
 }
 
-static void	find_symbol_table(char *ptr, t_head *header)
+static void	print_filename(int ac, char *filename)
+{
+	if (ac > 2)
+	{
+		ft_putendl("");
+		ft_putstr(filename);
+		ft_putendl(":");
+	}
+}
+
+void		find_symbol_table(char *ptr, t_head *header)
 {
 	int						i;
 	int						j;
@@ -88,16 +98,6 @@ static void	find_symbol_table(char *ptr, t_head *header)
 	}
 }
 
-static void	print_filename(int ac, char *filename)
-{
-	if (ac > 2)
-	{
-		ft_putendl("");
-		ft_putstr(filename);
-		ft_putendl(":");
-	}
-}
-
 void		parse_argv(t_bin *bin, int ac, char **av)
 {
 	int						i;
@@ -107,7 +107,7 @@ void		parse_argv(t_bin *bin, int ac, char **av)
 	{
 		if (read_bin(bin, av[i]))
 		{
-			get_type_file(bin->ptr, &bin->head, av[i]);
+			get_type_file(bin, av[i]);
 			print_filename(ac, av[i]);
 			if (bin->head.mach64 || bin->head.mach32)
 				find_symbol_table(bin->ptr, &bin->head);
