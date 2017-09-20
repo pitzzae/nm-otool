@@ -15,10 +15,25 @@
 int		main(int ac, char **av)
 {
 	t_bin		bin;
+	int			argc;
+	char		**argv;
+	char		*tmp;
 
-	if (ac < 2)
+	if (ac == 1)
+	{
+		tmp = ft_strjoin(av[0], " a.out");
+		argv = ft_strsplit(tmp, ' ');
+		free(tmp);
+		argc = 2;
+	}
+	else
+	{
+		argv = av;
+		argc = ac;
+	}
+	if (argc < 2)
 		return (0);
 	else
-		parse_argv(&bin, ac, av);
+		parse_argv(&bin, argc, argv);
 	return (0);
 }

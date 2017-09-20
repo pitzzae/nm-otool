@@ -6,5 +6,5 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/gtorresa/Documents/workspace/nm-otool/includes 
+C_INCLUDES = -I/Users/gtorresa/Documents/workspace/nm-otool-ot/includes 
 

@@ -42,4 +42,5 @@ else
     test_diff_output "./test_nmotool.sh"
     test_diff_output "./wrong_path"
     test_diff_output "./dst"
+    test_diff_output
 fi
