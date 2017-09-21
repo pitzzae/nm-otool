@@ -58,28 +58,27 @@ static void		fuc_is_public(t_list **lst, t_symbol *sym)
 }
 
 static size_t	add_line_to_lst(uint8_t n_type, uint32_t f_type,
-								uint8_t n_sect, t_symbol *sym)
+								uint8_t n, t_symbol *sym)
 {
 	int				i;
 
 	i = 0;
-	if ((n_type == 0x24 || n_type == 0x0f) && n_sect == 0x01 && (i = 1))
+	if ((n_type == 0x24 || n_type == 0x0f) && n == 0x01 && (i = 1))
 	{
-		sym->type = 'T';
-		if (f_type == MH_DYLIB)
+		if ((sym->type = 'T') && f_type == MH_DYLIB && n_type != 0x0f)
 			sym->type = 't';
 		if (ft_strcmp(sym->address, S_X64) == 0 && sym->type == 'T')
 			ft_memcpy(sym->address, "0000000000000000", 16);
 		else if (ft_strcmp(sym->address, S_X86) == 0 && sym->type == 'T')
 			ft_memcpy(sym->address, "00000000", 8);
 	}
-	else if (n_type == 0x01 && n_sect == 0x00 && (i = 1))
+	else if (n_type == 0x01 && n == 0x00 && (i = 1))
 		sym->type = 'U';
-	else if (n_type == 0x26 && (n_sect == 0x09) && (i = 1))
+	else if (n_type == 0x26 && (n == 0x09) && (i = 1))
 		sym->type = 'd';
-	else if (n_type == 0x0e && (n_sect == 0x0a || n_sect == 0x03) && (i = 1))
+	else if (n_type == 0xe && (I(n) == 3 || I(n) == 8 || I(n) == 10) && (i = 1))
 		sym->type = 'b';
-	else if (f_type != MH_DYLIB && n_type == 0x0e && n_sect == 0x01 && (i = 1))
+	else if (f_type != MH_DYLIB && n_type == 0x0e && n == 0x01 && (i = 1))
 	{
 		if ((sym->type = 'T') && (f_type == MH_OBJECT || f_type == MH_EXECUTE))
 			sym->type = 't';

@@ -14,6 +14,7 @@
 # define FT_NMOTOOL_H
 # define S_X64 "                "
 # define S_X86 "        "
+# define I(p)		(int)p
 
 # include <sys/stat.h>
 # include <mach-o/loader.h>
