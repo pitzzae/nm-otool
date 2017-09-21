@@ -1,0 +1,72 @@
+10135  make re
+10136  ls
+10137  normnette srcs_otool srcs_nm
+10138  norminette srcs_otool srcs_nm
+10139  ls
+10140  ./ft_nm ft_nm
+10141  ./ft_nm ft_nm --help
+10142  ./ft_nm ft_nm -u
+10143  ls
+10144  cp ../test .
+10145  cp -R ../test .
+10146  ls
+10147  cp -r ../test .
+10148  ls
+10149  cd test
+10150  ls
+10151  make
+10152  ls
+10153  ls src
+10154  ls
+10155  cat test_nm.sh
+10156  ./test_nmotool.sh
+10157  cat test_nmotool.sh
+10158  cd ..
+10159  ./ft_nm
+10160  ls
+10161  vi test1.c
+10162  gcc test1.c -o test1
+10163  ./ft_nm test1
+10164  nm test1
+10165  vim test2.c
+10166  gcc test2.c -o test2
+10167  ./ft_nm test2
+10168  nm test2
+10169  ./ft_nm test2
+10170  nm test2
+10171  ./ft_nm /usr/bin > testft
+10172  ./ft_nm /usr/bin * > testft
+10173  nm /usr/bin * > testnm
+10174  vimdiff $(testft) $(testnm)
+10175  vimdiff (testft) (testnm)
+10176  cat testft
+10177  diff testft testnm
+10178  vim Makefile
+10179  make re
+10180  cd libft
+10181  vim Makefile
+10182  cd ..
+10183  make re
+10184  ./ft_nm ft_nm
+10185  ./ft_nm /usr/bin/audiodevice
+10186  nm /usr/bin/audiodevice
+10187  ls
+10188  nm /usr/lib/libAccountPolicyTranslation.dylib
+10189  ./ft_nm /usr/lib/libAccountPolicyTranslation.dylib
+10190  nm /usr/bin/python
+10191  ./ft_nm /usr/bin/python
+10192  ./ft_nm objs_nm/*
+10193  ./ft_otool test1
+10194  otool test1
+10195  otool -t test1
+10196  otool -t /usr/bin/audiodevice
+10197  ./ft_otool -t /usr/bin/audiodevice
+10198  ./ft_otool /usr/bin/audiodevice
+10199* cd Documents/workspace/nm-otool-ot
+10200* ls
+10201* git pull
+10202* git status
+10203* cat > correct
+10204* ls
+10205* cat correct
+10206* ls
