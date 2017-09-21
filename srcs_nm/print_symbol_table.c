@@ -57,35 +57,6 @@ static void		fuc_is_public(t_list **lst, t_symbol *sym)
 	ft_lstadd(lst, ft_lstnew(sym, sizeof(*sym)));
 }
 
-static size_t	add_line_to_lst(uint8_t n_type, uint32_t f_type,
-								uint8_t n, t_symbol *sym)
-{
-	int				i;
-
-	i = 0;
-	if ((n_type == 0x24 || n_type == 0x0f) && n == 0x01 && (i = 1))
-	{
-		if ((sym->type = 'T') && f_type == MH_DYLIB && n_type != 0x0f)
-			sym->type = 't';
-		if (ft_strcmp(sym->address, S_X64) == 0 && sym->type == 'T')
-			ft_memcpy(sym->address, "0000000000000000", 16);
-		else if (ft_strcmp(sym->address, S_X86) == 0 && sym->type == 'T')
-			ft_memcpy(sym->address, "00000000", 8);
-	}
-	else if (n_type == 0x01 && n == 0x00 && (i = 1))
-		sym->type = 'U';
-	else if (n_type == 0x26 && (n == 0x09) && (i = 1))
-		sym->type = 'd';
-	else if (n_type == 0xe && (I(n) == 3 || I(n) == 8 || I(n) == 10) && (i = 1))
-		sym->type = 'b';
-	else if (f_type != MH_DYLIB && n_type == 0x0e && n == 0x01 && (i = 1))
-	{
-		if ((sym->type = 'T') && (f_type == MH_OBJECT || f_type == MH_EXECUTE))
-			sym->type = 't';
-	}
-	return (size_t)(i);
-}
-
 t_list			*print_symbol_table_86(t_head *head, char *ptr)
 {
 	size_t			i;
@@ -128,6 +99,8 @@ t_list			*print_symbol_table_64(t_head *head, char *ptr)
 		else
 			ft_strcat(sym.address, S_X64);
 		sym.name = ptr + head->sym->stroff + head->nlist64[i].n_un.n_strx;
+		if (ft_strcmp(sym.name, "_une_globale") == 0)
+			sym.name = sym.name;
 		if (add_line_to_lst(head->nlist64[i].n_type, head->mach64->filetype,
 							head->nlist64[i].n_sect, &sym))
 			fuc_is_public(&lst, &sym);

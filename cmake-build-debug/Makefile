@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/gtorresa/Documents/workspace/nm-otool-ot
+CMAKE_SOURCE_DIR = /Users/gtorresani/Documents/42/gitlab/nm-otool
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gtorresa/Documents/workspace/nm-otool-ot/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gtorresa/Documents/workspace/nm-otool-ot/cmake-build-debug/CMakeFiles /Users/gtorresa/Documents/workspace/nm-otool-ot/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles /Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gtorresa/Documents/workspace/nm-otool-ot/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -3284,6 +3284,33 @@ libft/srcs/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/ft.dir/build.make CMakeFiles/ft.dir/libft/srcs/get_next_line.c.s
 .PHONY : libft/srcs/get_next_line.c.s
 
+srcs_nm/add_line_to_lst.o: srcs_nm/add_line_to_lst.c.o
+
+.PHONY : srcs_nm/add_line_to_lst.o
+
+# target to build an object file
+srcs_nm/add_line_to_lst.c.o:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/add_line_to_lst.c.o
+.PHONY : srcs_nm/add_line_to_lst.c.o
+
+srcs_nm/add_line_to_lst.i: srcs_nm/add_line_to_lst.c.i
+
+.PHONY : srcs_nm/add_line_to_lst.i
+
+# target to preprocess a source file
+srcs_nm/add_line_to_lst.c.i:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/add_line_to_lst.c.i
+.PHONY : srcs_nm/add_line_to_lst.c.i
+
+srcs_nm/add_line_to_lst.s: srcs_nm/add_line_to_lst.c.s
+
+.PHONY : srcs_nm/add_line_to_lst.s
+
+# target to generate assembly for a file
+srcs_nm/add_line_to_lst.c.s:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/add_line_to_lst.c.s
+.PHONY : srcs_nm/add_line_to_lst.c.s
+
 srcs_nm/get_type_file.o: srcs_nm/get_type_file.c.o
 
 .PHONY : srcs_nm/get_type_file.o
@@ -3877,6 +3904,9 @@ help:
 	@echo "... libft/srcs/get_next_line.o"
 	@echo "... libft/srcs/get_next_line.i"
 	@echo "... libft/srcs/get_next_line.s"
+	@echo "... srcs_nm/add_line_to_lst.o"
+	@echo "... srcs_nm/add_line_to_lst.i"
+	@echo "... srcs_nm/add_line_to_lst.s"
 	@echo "... srcs_nm/get_type_file.o"
 	@echo "... srcs_nm/get_type_file.i"
 	@echo "... srcs_nm/get_type_file.s"

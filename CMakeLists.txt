@@ -51,7 +51,8 @@ set(SOURCE_OTOOL_FILES srcs_otool/main.c srcs_otool/get_type_file.c
         srcs_otool/parse_argv.c srcs_otool/print_sections.c
         srcs_otool/find_section_64.c srcs_otool/find_section_86.c)
 set(SOURCE_NM_FILES srcs_nm/main.c srcs_nm/get_type_file.c
-        srcs_nm/parse_argv.c srcs_nm/print_symbol_table.c srcs_nm/order_lst.c)
+        srcs_nm/parse_argv.c srcs_nm/print_symbol_table.c srcs_nm/order_lst.c
+        srcs_nm/add_line_to_lst.c)
 
 add_executable(ft_otool ${SOURCE_OTOOL_FILES} ${SOURCE_LIBFT} ${HEADER_FILES})
 add_executable(ft_nm ${SOURCE_NM_FILES} ${SOURCE_LIBFT} ${HEADER_FILES})

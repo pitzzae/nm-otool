@@ -269,6 +269,10 @@ CMakeFiles/ft_nm.dir/libft/srcs/ft_udel.c.o: ../libft/srcs/ft_udel.c
 CMakeFiles/ft_nm.dir/libft/srcs/get_next_line.c.o: ../includes/libft.h
 CMakeFiles/ft_nm.dir/libft/srcs/get_next_line.c.o: ../libft/srcs/get_next_line.c
 
+CMakeFiles/ft_nm.dir/srcs_nm/add_line_to_lst.c.o: ../includes/libft.h
+CMakeFiles/ft_nm.dir/srcs_nm/add_line_to_lst.c.o: ../includes/nmotool.h
+CMakeFiles/ft_nm.dir/srcs_nm/add_line_to_lst.c.o: ../srcs_nm/add_line_to_lst.c
+
 CMakeFiles/ft_nm.dir/srcs_nm/get_type_file.c.o: ../includes/libft.h
 CMakeFiles/ft_nm.dir/srcs_nm/get_type_file.c.o: ../includes/nmotool.h
 CMakeFiles/ft_nm.dir/srcs_nm/get_type_file.c.o: ../srcs_nm/get_type_file.c

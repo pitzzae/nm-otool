@@ -98,5 +98,7 @@ t_list				*print_symbol_table_64(t_head *head, char *ptr);
 t_list				*print_symbol_table_86(t_head *head, char *ptr);
 void				order_lst(t_list *lst);
 void				ft_putargv_error(char *name, char *source, char *msg);
+size_t				add_line_to_lst(uint8_t n_type, uint32_t f_type,
+									uint8_t n, t_symbol *sym);
 
 #endif
