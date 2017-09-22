@@ -3419,6 +3419,33 @@ srcs_nm/parse_argv.c.s:
 	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.s
 .PHONY : srcs_nm/parse_argv.c.s
 
+srcs_nm/parse_universel_binary.o: srcs_nm/parse_universel_binary.c.o
+
+.PHONY : srcs_nm/parse_universel_binary.o
+
+# target to build an object file
+srcs_nm/parse_universel_binary.c.o:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/parse_universel_binary.c.o
+.PHONY : srcs_nm/parse_universel_binary.c.o
+
+srcs_nm/parse_universel_binary.i: srcs_nm/parse_universel_binary.c.i
+
+.PHONY : srcs_nm/parse_universel_binary.i
+
+# target to preprocess a source file
+srcs_nm/parse_universel_binary.c.i:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/parse_universel_binary.c.i
+.PHONY : srcs_nm/parse_universel_binary.c.i
+
+srcs_nm/parse_universel_binary.s: srcs_nm/parse_universel_binary.c.s
+
+.PHONY : srcs_nm/parse_universel_binary.s
+
+# target to generate assembly for a file
+srcs_nm/parse_universel_binary.c.s:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/parse_universel_binary.c.s
+.PHONY : srcs_nm/parse_universel_binary.c.s
+
 srcs_nm/print_symbol_table.o: srcs_nm/print_symbol_table.c.o
 
 .PHONY : srcs_nm/print_symbol_table.o
@@ -3919,6 +3946,9 @@ help:
 	@echo "... srcs_nm/parse_argv.o"
 	@echo "... srcs_nm/parse_argv.i"
 	@echo "... srcs_nm/parse_argv.s"
+	@echo "... srcs_nm/parse_universel_binary.o"
+	@echo "... srcs_nm/parse_universel_binary.i"
+	@echo "... srcs_nm/parse_universel_binary.s"
 	@echo "... srcs_nm/print_symbol_table.o"
 	@echo "... srcs_nm/print_symbol_table.i"
 	@echo "... srcs_nm/print_symbol_table.s"

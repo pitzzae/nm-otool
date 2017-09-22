@@ -49,6 +49,8 @@ typedef struct		s_head
 {
 	struct mach_header			*mach32;
 	struct mach_header_64		*mach64;
+	struct fat_arch				*arch32;
+	struct fat_arch				*arch64;
 	struct load_command			*lc;
 	struct symtab_command		*sym;
 	struct nlist_64				*nlist64;
@@ -94,10 +96,11 @@ void				find_section_64(t_head *head, t_sect *s);
 void				find_section_86(t_head *head, t_sect *s);
 void				find_symbol_table(char *ptr, t_head *header);
 void				print_section(t_sect *s);
-t_list				*print_symbol_table_64(t_head *head, char *ptr);
-t_list				*print_symbol_table_86(t_head *head, char *ptr);
+t_list				*print_symbol_table_64(t_head *head);
+t_list				*print_symbol_table_86(t_head *head);
 void				order_lst(t_list *lst);
 void				ft_putargv_error(char *name, char *source, char *msg);
+size_t				parse_universel_binary(t_bin *bin);
 size_t				add_line_to_lst(uint8_t n_type, uint32_t f_type,
 									uint8_t n, t_symbol *sym);
 

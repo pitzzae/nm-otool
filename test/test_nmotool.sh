@@ -24,9 +24,9 @@ test_diff_output () {
     echo "nm_diff:"
     diff  <(echo -e $(run_sys_nm "$@")) <(echo -e $(run_ft_nm "$@"))
     echo -e "end_nm_diff\n"
-    echo "otool_diff:"
-    diff  <(echo -e $(run_sys_otool "$@")) <(echo -e $(run_ft_otool "$@"))
-    echo -e "end_otool_diff\n"
+    #echo "otool_diff:"
+    #diff  <(echo -e $(run_sys_otool "$@")) <(echo -e $(run_ft_otool "$@"))
+    #echo -e "end_otool_diff\n"
 }
 
 if [ $1 ]

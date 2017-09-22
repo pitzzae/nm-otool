@@ -104,6 +104,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/main.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/main.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/order_lst.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/order_lst.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/parse_argv.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/parse_universel_binary.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/parse_universel_binary.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/print_symbol_table.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/print_symbol_table.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

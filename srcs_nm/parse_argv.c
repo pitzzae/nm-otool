@@ -76,6 +76,7 @@ void		find_symbol_table(char *ptr, t_head *header)
 	int						j;
 
 	i = 0;
+	(void)ptr;
 	if (header->mach64)
 		j = header->mach64->ncmds;
 	else
@@ -86,9 +87,9 @@ void		find_symbol_table(char *ptr, t_head *header)
 		{
 			header->sym = (struct symtab_command *)header->lc;
 			if (header->mach64)
-				parse_result(print_symbol_table_64(header, ptr));
+				parse_result(print_symbol_table_64(header));
 			else
-				parse_result(print_symbol_table_86(header, ptr));
+				parse_result(print_symbol_table_86(header));
 			break ;
 		}
 		header->lc = (void *)header->lc + header->lc->cmdsize;

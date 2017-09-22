@@ -78,6 +78,8 @@ void		get_type_file(t_bin *bin, char *filename, char *name)
 
 	bin->head.mach64 = NULL;
 	bin->head.mach32 = NULL;
+	bin->head.arch64 = NULL;
+	bin->head.arch32 = NULL;
 	fat_header = (struct fat_header *)bin->ptr;
 	if (fat_header->magic == MH_MAGIC_64)
 		bin->head.mach64 = (struct mach_header_64 *)bin->ptr;

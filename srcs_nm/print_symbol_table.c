@@ -57,7 +57,7 @@ static void		fuc_is_public(t_list **lst, t_symbol *sym)
 	ft_lstadd(lst, ft_lstnew(sym, sizeof(*sym)));
 }
 
-t_list			*print_symbol_table_86(t_head *head, char *ptr)
+t_list			*print_symbol_table_86(t_head *head)
 {
 	size_t			i;
 	t_list			*lst;
@@ -65,7 +65,7 @@ t_list			*print_symbol_table_86(t_head *head, char *ptr)
 
 	i = 0;
 	lst = ft_lstnew(NULL, 0);
-	head->nlist32 = (void *)ptr + head->sym->symoff;
+	head->nlist32 = (void *)(head->mach32) + head->sym->symoff;
 	while (i < head->sym->nsyms)
 	{
 		ft_bzero(sym.address, 17);
@@ -73,7 +73,8 @@ t_list			*print_symbol_table_86(t_head *head, char *ptr)
 			print_ptr_addr(head->nlist32[i].n_value, sym.address, head->is_x64);
 		else
 			ft_strcat(sym.address, S_X86);
-		sym.name = ptr + head->sym->stroff + head->nlist32[i].n_un.n_strx;
+		sym.name = (void *)(head->mach32) + head->sym->stroff +
+							head->nlist32[i].n_un.n_strx;
 		if (add_line_to_lst(head->nlist32[i].n_type, head->mach32->filetype,
 							head->nlist32[i].n_sect, &sym))
 			fuc_is_public(&lst, &sym);
@@ -82,7 +83,7 @@ t_list			*print_symbol_table_86(t_head *head, char *ptr)
 	return (lst);
 }
 
-t_list			*print_symbol_table_64(t_head *head, char *ptr)
+t_list			*print_symbol_table_64(t_head *head)
 {
 	size_t			i;
 	t_list			*lst;
@@ -90,7 +91,7 @@ t_list			*print_symbol_table_64(t_head *head, char *ptr)
 
 	i = 0;
 	lst = ft_lstnew(NULL, 0);
-	head->nlist64 = (void *)ptr + head->sym->symoff;
+	head->nlist64 = (void *)(head->mach64) + head->sym->symoff;
 	while (i < head->sym->nsyms)
 	{
 		ft_bzero(sym.address, 17);
@@ -98,8 +99,9 @@ t_list			*print_symbol_table_64(t_head *head, char *ptr)
 			print_ptr_addr(head->nlist64[i].n_value, sym.address, head->is_x64);
 		else
 			ft_strcat(sym.address, S_X64);
-		sym.name = ptr + head->sym->stroff + head->nlist64[i].n_un.n_strx;
-		if (ft_strcmp(sym.name, "_une_globale") == 0)
+		sym.name = (void *)(head->mach64) + head->sym->stroff +
+				   			head->nlist64[i].n_un.n_strx;
+		if (ft_strcmp(sym.name, "_sshKeychainLog.log") == 0)
 			sym.name = sym.name;
 		if (add_line_to_lst(head->nlist64[i].n_type, head->mach64->filetype,
 							head->nlist64[i].n_sect, &sym))

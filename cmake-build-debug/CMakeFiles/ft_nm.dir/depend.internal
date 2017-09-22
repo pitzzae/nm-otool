@@ -289,6 +289,10 @@ CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.o
  ../includes/libft.h
  ../includes/nmotool.h
  /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/parse_argv.c
+CMakeFiles/ft_nm.dir/srcs_nm/parse_universel_binary.c.o
+ ../includes/libft.h
+ ../includes/nmotool.h
+ /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/parse_universel_binary.c
 CMakeFiles/ft_nm.dir/srcs_nm/print_symbol_table.c.o
  ../includes/libft.h
  ../includes/nmotool.h

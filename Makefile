@@ -26,7 +26,7 @@ OTOOL_OBJS		= objs_otool
 INCL_DIR		= ./includes
 
 NM_SRCS			= main.c get_type_file.c parse_argv.c print_symbol_table.c \
-                order_lst.c add_line_to_lst.c
+                order_lst.c add_line_to_lst.c parse_universel_binary.c
 OTOOL_SRCS		= main.c get_type_file.c parse_argv.c print_sections.c \
                 find_section_64.c find_section_86.c
 

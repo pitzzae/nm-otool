@@ -101,6 +101,8 @@ void		get_type_file(t_bin *bin, char *filename, char *name)
 	}
 	else if (!ft_strncmp((char*)bin->ptr, ARMAG, SARMAG))
 		get_type_file_lib(bin, filename);
+	else if (parse_universel_binary(bin))
+		get_type_file_lib(bin, filename);
 	else
 		print_error_filetype(name, filename);
 }

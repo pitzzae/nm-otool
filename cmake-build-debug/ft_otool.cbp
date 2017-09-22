@@ -670,6 +670,9 @@
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/parse_argv.c">
 			<Option target="ft_nm"/>
 		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/parse_universel_binary.c">
+			<Option target="ft_nm"/>
+		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/print_symbol_table.c">
 			<Option target="ft_nm"/>
 		</Unit>
