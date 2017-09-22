@@ -12,17 +12,34 @@
 
 #include "nmotool.h"
 
-static size_t	add_line_to_lst1(uint8_t t, uint32_t f_type,
+static size_t 	add_line_to_lst2(uint8_t t, uint32_t f_type,
 								  uint8_t n, t_symbol *sym)
 {
 	int				i;
 	int 			j;
 	int 			k;
 
+	(void)f_type;
 	i = 0;
 	j = I(t);
 	k = I(n);
-	if (f_type != MH_DYLIB && t == 0x0e && n == 0x01 && (i = 1))
+	if (t & N_TYPE)
+		i = 0;
+	if (I(t) == 11 && I(n) == 11 && (i = 1))
+	{
+		if ((sym->type = 'D') && f_type == MH_EXECUTE)
+			sym->type = 'd';
+	}
+	return (size_t)(i);
+}
+
+static size_t	add_line_to_lst1(uint8_t t, uint32_t f_type,
+								  uint8_t n, t_symbol *sym)
+{
+	int				i;
+
+	i = 0;
+	if (f_type != MH_DYLIB && t == N_TYPE && n == N_EXT && (i = 1))
 	{
 		if ((sym->type = 'T') && (f_type == MH_OBJECT || f_type == MH_EXECUTE))
 			sym->type = 't';
@@ -33,14 +50,16 @@ static size_t	add_line_to_lst1(uint8_t t, uint32_t f_type,
 		sym->type = 'S';
 	else if (I(t) == 30 && (I(n) == 22 || I(n) == 23 || I(n) == 25) && (i = 1))
 		sym->type = 's';
-	else if (I(t) == 14 && (I(n) == 4 || I(n) == 15) && (i = 1))
+	else if (I(t) == 14 && (I(n) == 4 || I(n) == 5 || I(n) == 15) && (i = 1))
 		sym->type = 's';
 	else if ((I(t) == 14 || I(t) == 30) && I(n) == 1 && (i = 1))
 		sym->type = 't';
 	else if (I(t) == 30 && I(n) == 24 && (i = 1))
 		sym->type = 'd';
-	else if (I(t) == 14 && I(n) == 26 && (i = 1))
+	else if (I(t) == 14 && (I(n) == 26 || I(n) == 12) && (i = 1))
 		sym->type = 'b';
+	else if (i == 0 && add_line_to_lst2(n, f_type, n, sym) == 1)
+		return (size_t)(1);
 	return (size_t)(i);
 }
 
