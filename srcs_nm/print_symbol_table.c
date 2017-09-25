@@ -46,8 +46,8 @@ static void		fuc_is_public(t_list **lst, t_symbol *sym)
 	while (l)
 	{
 		s = ((t_symbol*)(l->content));
-		if (s && ft_strcmp(s->name, sym->name) == 0 &&
-				ft_strcmp(s->address, sym->address) == 0)
+		if (s && ft_strcmp(s->name, sym->name) == 0 && sym->type == 't' &&
+			ft_strcmp(s->address, sym->address) == 0)
 		{
 			s->type = 'T';
 			return ;
@@ -101,7 +101,7 @@ t_list			*print_symbol_table_64(t_head *head)
 			ft_strcat(sym.address, S_X64);
 		sym.name = (void *)(head->mach64) + head->sym->stroff +
 				   			head->nlist64[i].n_un.n_strx;
-		if (ft_strcmp(sym.name, "_prefer32cpu") == 0)
+		if (ft_strcmp(sym.name, "_ComprNames") == 0)
 			sym.name = sym.name;
 		if (add_line_to_lst(head->nlist64[i].n_type, head->mach64->filetype,
 							head->nlist64[i].n_sect, &sym))

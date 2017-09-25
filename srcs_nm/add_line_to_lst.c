@@ -25,11 +25,12 @@ static size_t 	add_line_to_lst2(uint8_t t, uint32_t f_type,
 	k = I(n);
 	if (t & N_TYPE)
 		i = 0;
-	if (I(t) == 11 && I(n) == 11 && (i = 1))
-	{
-		if ((sym->type = 'D') && f_type == MH_EXECUTE)
-			sym->type = 'd';
-	}
+	if (I(t) == 14 && I(n) == 11 && (i = 1))
+		sym->type = 'd';
+	if (I(t) == 15 && I(n) == 11 && (i = 1))
+		sym->type = 'D';
+	if (I(t) == 38 && I(n) == 10 && (i = 1))
+		sym->type = 's';
 	return (size_t)(i);
 }
 
@@ -58,7 +59,7 @@ static size_t	add_line_to_lst1(uint8_t t, uint32_t f_type,
 		sym->type = 'd';
 	else if (I(t) == 14 && (I(n) == 26 || I(n) == 12) && (i = 1))
 		sym->type = 'b';
-	else if (i == 0 && add_line_to_lst2(n, f_type, n, sym) == 1)
+	else if (i == 0 && add_line_to_lst2(t, f_type, n, sym) == 1)
 		return (size_t)(1);
 	return (size_t)(i);
 }
@@ -69,6 +70,7 @@ size_t			add_line_to_lst(uint8_t n_type, uint32_t f_type,
 	int				i;
 
 	i = 0;
+	sym->type = 0;
 	if ((n_type == 0x24 || n_type == 0x0f) && n == 0x01 && (i = 1))
 	{
 		if ((sym->type = 'T') && f_type == MH_DYLIB && n_type != 0x0f)
