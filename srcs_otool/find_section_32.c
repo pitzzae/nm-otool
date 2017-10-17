@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   find_section_86.c                                  :+:      :+:    :+:   */
+/*   find_section_32.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,7 @@
 
 #include "nmotool.h"
 
-static void	*get_section_offset_86(t_sect *s)
+static void	*get_section_offset_32(t_sect *s)
 {
 	size_t						i;
 
@@ -31,12 +31,12 @@ static void	*get_section_offset_86(t_sect *s)
 	return (NULL);
 }
 
-static void	*get_segment_offset_86(t_sect *s, t_head *headers)
+static void	*get_segment_offset_32(t_sect *s, t_file *bin)
 {
 	size_t						i;
 
 	i = 0;
-	while (i < headers->mach32->ncmds)
+	while (i < bin->mach32->ncmds)
 	{
 		if (ft_strcmp(s->x86.seg->segname, s->seg_text) == 0)
 			return (s->x86.seg);
@@ -47,15 +47,15 @@ static void	*get_segment_offset_86(t_sect *s, t_head *headers)
 	return (NULL);
 }
 
-void		find_section_86(t_head *head, t_sect *s)
+void		find_section_32(t_file *bin, t_sect *s)
 {
-	s->x86.seg = (struct segment_command *)(head->mach32 + 1);
-	if (head->mach32->filetype != MH_OBJECT)
-		s->x86.seg = get_segment_offset_86(s, head);
-	s->x86.sec = (struct section *)get_section_offset_86(s);
+	s->x86.seg = (struct segment_command *)(bin->mach32 + 1);
+	if (bin->mach32->filetype != MH_OBJECT)
+		s->x86.seg = get_segment_offset_32(s, bin);
+	s->x86.sec = (struct section *)get_section_offset_32(s);
 	if (s->x86.sec)
 	{
-		s->start = (char *)head->mach32 + s->x86.sec->offset;
+		s->start = (char *)bin->mach32 + s->x86.sec->offset;
 		s->end = s->start + s->x86.sec->size;
 		s->offset = s->x86.sec->addr;
 		s->len64 = FALSE;

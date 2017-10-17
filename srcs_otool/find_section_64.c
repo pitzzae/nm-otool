@@ -31,12 +31,12 @@ static void	*get_section_offset_64(t_sect *s)
 	return (NULL);
 }
 
-static void	*get_segment_offset_64(t_sect *s, t_head *headers)
+static void	*get_segment_offset_64(t_sect *s, t_file *bin)
 {
 	size_t						i;
 
 	i = 0;
-	while (i < headers->mach64->ncmds)
+	while (i < bin->mach64->ncmds)
 	{
 		if (ft_strcmp(s->x64.seg->segname, s->seg_text) == 0)
 			return (s->x64.seg);
@@ -47,15 +47,15 @@ static void	*get_segment_offset_64(t_sect *s, t_head *headers)
 	return (NULL);
 }
 
-void		find_section_64(t_head *head, t_sect *s)
+void		find_section_64(t_file *bin, t_sect *s)
 {
-	s->x64.seg = (struct segment_command_64 *)(head->mach64 + 1);
-	if (head->mach64->filetype != MH_OBJECT)
-		s->x64.seg = get_segment_offset_64(s, head);
+	s->x64.seg = (struct segment_command_64 *)(bin->mach64 + 1);
+	if (bin->mach64->filetype != MH_OBJECT)
+		s->x64.seg = get_segment_offset_64(s, bin);
 	s->x64.sec = (struct section_64 *)get_section_offset_64(s);
 	if (s->x64.sec)
 	{
-		s->start = (char *)head->mach64 + s->x64.sec->offset;
+		s->start = (char *)bin->mach64 + s->x64.sec->offset;
 		s->end = s->start + s->x64.sec->size;
 		s->offset = s->x64.sec->addr;
 		s->len64 = TRUE;

@@ -12,27 +12,21 @@
 
 #include "nmotool.h"
 
+static void	print_filename(char *filename)
+{
+	ft_putstr(filename);
+	ft_putendl(":");
+}
+
 void	ft_otool(t_file *bin)
 {
-	struct segment_command *seg32;
-	struct segment_command_64 *seg64;
-	uint32_t		i;
+	t_sect		s;
 
-	i = 0;
-	while (i < bin->ncmds)
-	{
-		if (bin->dump->is_64)
-			seg64 = bin->seg64_t[i];
-		else
-			seg32 = bin->seg32_t[i];
-		if (bin->lc_t[i]->cmd == LC_SEGMENT)
-		{
-			ft_putstr(seg32->segname);
-			ft_putnbr(bin->lc_t[i]->cmd);
-			ft_putstr(" ");
-			ft_putnbr(bin->lc_t[i]->cmdsize);
-			ft_putendl("");
-		}
-		i++;
-	}
+	print_filename(bin->filename);
+	s.seg_text = SEG_TEXT;
+	s.sect_text = SECT_TEXT;
+	if (bin->mach64)
+		find_section_64(bin, &s);
+	else if (bin->mach32)
+		find_section_32(bin, &s);
 }

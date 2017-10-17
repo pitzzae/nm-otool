@@ -777,10 +777,19 @@
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/print_symbol_table.c">
 			<Option target="ft_nm"/>
 		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_32.c">
+			<Option target="ft_otool"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_64.c">
+			<Option target="ft_otool"/>
+		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/ft_otool.c">
 			<Option target="ft_otool"/>
 		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/main.c">
+			<Option target="ft_otool"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/print_sections.c">
 			<Option target="ft_otool"/>
 		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/CMakeLists.txt">

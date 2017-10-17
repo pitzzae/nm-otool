@@ -291,6 +291,16 @@ CMakeFiles/ft_otool.dir/libnmotool/srcs/mmap_file.c.o: ../libft/includes/libft.h
 CMakeFiles/ft_otool.dir/libnmotool/srcs/mmap_file.c.o: ../libnmotool/includes/libnmotool.h
 CMakeFiles/ft_otool.dir/libnmotool/srcs/mmap_file.c.o: ../libnmotool/srcs/mmap_file.c
 
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_32.c.o: ../includes/nmotool.h
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_32.c.o: ../libft/includes/libft.h
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_32.c.o: ../libnmotool/includes/libnmotool.h
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_32.c.o: ../srcs_otool/find_section_32.c
+
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o: ../includes/nmotool.h
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o: ../libft/includes/libft.h
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o: ../libnmotool/includes/libnmotool.h
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o: ../srcs_otool/find_section_64.c
+
 CMakeFiles/ft_otool.dir/srcs_otool/ft_otool.c.o: ../includes/nmotool.h
 CMakeFiles/ft_otool.dir/srcs_otool/ft_otool.c.o: ../libft/includes/libft.h
 CMakeFiles/ft_otool.dir/srcs_otool/ft_otool.c.o: ../libnmotool/includes/libnmotool.h
@@ -300,4 +310,9 @@ CMakeFiles/ft_otool.dir/srcs_otool/main.c.o: ../includes/nmotool.h
 CMakeFiles/ft_otool.dir/srcs_otool/main.c.o: ../libft/includes/libft.h
 CMakeFiles/ft_otool.dir/srcs_otool/main.c.o: ../libnmotool/includes/libnmotool.h
 CMakeFiles/ft_otool.dir/srcs_otool/main.c.o: ../srcs_otool/main.c
+
+CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o: ../includes/nmotool.h
+CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o: ../libft/includes/libft.h
+CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o: ../libnmotool/includes/libnmotool.h
+CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o: ../srcs_otool/print_sections.c
 

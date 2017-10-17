@@ -424,11 +424,23 @@ libnmotool.h
 libnmotool.h
 -
 
+/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_32.c
+nmotool.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/nmotool.h
+
+/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_64.c
+nmotool.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/nmotool.h
+
 /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/ft_otool.c
 nmotool.h
 /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/nmotool.h
 
 /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/main.c
+nmotool.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/nmotool.h
+
+/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/print_sections.c
 nmotool.h
 /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/nmotool.h
 

@@ -291,6 +291,16 @@ CMakeFiles/ft_otool.dir/libnmotool/srcs/mmap_file.c.o
  ../libft/includes/libft.h
  ../libnmotool/includes/libnmotool.h
  /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/mmap_file.c
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_32.c.o
+ ../includes/nmotool.h
+ ../libft/includes/libft.h
+ ../libnmotool/includes/libnmotool.h
+ /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_32.c
+CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o
+ ../includes/nmotool.h
+ ../libft/includes/libft.h
+ ../libnmotool/includes/libnmotool.h
+ /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_64.c
 CMakeFiles/ft_otool.dir/srcs_otool/ft_otool.c.o
  ../includes/nmotool.h
  ../libft/includes/libft.h
@@ -301,3 +311,8 @@ CMakeFiles/ft_otool.dir/srcs_otool/main.c.o
  ../libft/includes/libft.h
  ../libnmotool/includes/libnmotool.h
  /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/main.c
+CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o
+ ../includes/nmotool.h
+ ../libft/includes/libft.h
+ ../libnmotool/includes/libnmotool.h
+ /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/print_sections.c

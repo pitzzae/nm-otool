@@ -3711,6 +3711,60 @@ srcs_nm/print_symbol_table.c.s:
 	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/print_symbol_table.c.s
 .PHONY : srcs_nm/print_symbol_table.c.s
 
+srcs_otool/find_section_32.o: srcs_otool/find_section_32.c.o
+
+.PHONY : srcs_otool/find_section_32.o
+
+# target to build an object file
+srcs_otool/find_section_32.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/find_section_32.c.o
+.PHONY : srcs_otool/find_section_32.c.o
+
+srcs_otool/find_section_32.i: srcs_otool/find_section_32.c.i
+
+.PHONY : srcs_otool/find_section_32.i
+
+# target to preprocess a source file
+srcs_otool/find_section_32.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/find_section_32.c.i
+.PHONY : srcs_otool/find_section_32.c.i
+
+srcs_otool/find_section_32.s: srcs_otool/find_section_32.c.s
+
+.PHONY : srcs_otool/find_section_32.s
+
+# target to generate assembly for a file
+srcs_otool/find_section_32.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/find_section_32.c.s
+.PHONY : srcs_otool/find_section_32.c.s
+
+srcs_otool/find_section_64.o: srcs_otool/find_section_64.c.o
+
+.PHONY : srcs_otool/find_section_64.o
+
+# target to build an object file
+srcs_otool/find_section_64.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o
+.PHONY : srcs_otool/find_section_64.c.o
+
+srcs_otool/find_section_64.i: srcs_otool/find_section_64.c.i
+
+.PHONY : srcs_otool/find_section_64.i
+
+# target to preprocess a source file
+srcs_otool/find_section_64.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.i
+.PHONY : srcs_otool/find_section_64.c.i
+
+srcs_otool/find_section_64.s: srcs_otool/find_section_64.c.s
+
+.PHONY : srcs_otool/find_section_64.s
+
+# target to generate assembly for a file
+srcs_otool/find_section_64.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.s
+.PHONY : srcs_otool/find_section_64.c.s
+
 srcs_otool/ft_otool.o: srcs_otool/ft_otool.c.o
 
 .PHONY : srcs_otool/ft_otool.o
@@ -3764,6 +3818,33 @@ srcs_otool/main.s: srcs_otool/main.c.s
 srcs_otool/main.c.s:
 	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/main.c.s
 .PHONY : srcs_otool/main.c.s
+
+srcs_otool/print_sections.o: srcs_otool/print_sections.c.o
+
+.PHONY : srcs_otool/print_sections.o
+
+# target to build an object file
+srcs_otool/print_sections.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o
+.PHONY : srcs_otool/print_sections.c.o
+
+srcs_otool/print_sections.i: srcs_otool/print_sections.c.i
+
+.PHONY : srcs_otool/print_sections.i
+
+# target to preprocess a source file
+srcs_otool/print_sections.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.i
+.PHONY : srcs_otool/print_sections.c.i
+
+srcs_otool/print_sections.s: srcs_otool/print_sections.c.s
+
+.PHONY : srcs_otool/print_sections.s
+
+# target to generate assembly for a file
+srcs_otool/print_sections.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.s
+.PHONY : srcs_otool/print_sections.c.s
 
 # Help Target
 help:
@@ -4104,12 +4185,21 @@ help:
 	@echo "... srcs_nm/print_symbol_table.o"
 	@echo "... srcs_nm/print_symbol_table.i"
 	@echo "... srcs_nm/print_symbol_table.s"
+	@echo "... srcs_otool/find_section_32.o"
+	@echo "... srcs_otool/find_section_32.i"
+	@echo "... srcs_otool/find_section_32.s"
+	@echo "... srcs_otool/find_section_64.o"
+	@echo "... srcs_otool/find_section_64.i"
+	@echo "... srcs_otool/find_section_64.s"
 	@echo "... srcs_otool/ft_otool.o"
 	@echo "... srcs_otool/ft_otool.i"
 	@echo "... srcs_otool/ft_otool.s"
 	@echo "... srcs_otool/main.o"
 	@echo "... srcs_otool/main.i"
 	@echo "... srcs_otool/main.s"
+	@echo "... srcs_otool/print_sections.o"
+	@echo "... srcs_otool/print_sections.i"
+	@echo "... srcs_otool/print_sections.s"
 .PHONY : help
 
 

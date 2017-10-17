@@ -56,7 +56,9 @@ set(SOURCE_LIBNMOTOOL libnmotool/srcs/mmap_file.c
         libnmotool/srcs/dump_mach_header.c libnmotool/srcs/dump_load_commands.c)
 add_library(nmotool ${SOURCE_LIBNMOTOOL} ${HEADER_FILES})
 
-set(SOURCE_OTOOL_FILES srcs_otool/main.c srcs_otool/ft_otool.c)
+set(SOURCE_OTOOL_FILES srcs_otool/main.c srcs_otool/ft_otool.c
+        srcs_otool/find_section_64.c srcs_otool/find_section_32.c
+        srcs_otool/print_sections.c )
 set(SOURCE_NM_FILES srcs_nm/main.c srcs_nm/get_type_file.c
         srcs_nm/parse_argv.c srcs_nm/print_symbol_table.c srcs_nm/order_lst.c
         srcs_nm/add_line_to_lst.c srcs_nm/parse_universel_binary.c
