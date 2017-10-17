@@ -12,18 +12,37 @@
 
 #include <libnmotool.h>
 
-void	dump_segments(void *ptr) {
-	(void)ptr;
-/*	uint32_t magic = read_magic(obj_file, 0);
-	int is_64 = is_magic_64(magic);
-	int is_swap = should_swap_bytes(magic);
-	int fat = is_fat(magic);
-	if (fat)
-	{
-		dump_fat_header(obj_file, is_swap);
-	}
+static int is_magic_64(uint32_t magic) {
+	return magic == MH_MAGIC_64 || magic == MH_CIGAM_64;
+}
+
+static int should_swap_bytes(uint32_t magic) {
+	return magic == MH_CIGAM || magic == MH_CIGAM_64 || magic == FAT_CIGAM;
+}
+
+static int is_fat(uint32_t magic) {
+	return magic == FAT_MAGIC || magic == FAT_CIGAM;
+}
+
+static void	init_struct(t_file *bin)
+{
+	bin->head = NULL;
+	bin->dump = NULL;
+	bin->mach32 = NULL;
+	bin->mach64 = NULL;
+}
+
+void	dump_segments(t_file *bin) {
+	t_dump				dump;
+
+	init_struct(bin);
+	bin->head = (struct fat_header*)bin->ptr;
+	dump.is_64 = is_magic_64(bin->head->magic);
+	dump.is_swap = should_swap_bytes(bin->head->magic);
+	dump.fat = is_fat(bin->head->magic);
+	bin->dump = &dump;
+	if (dump.fat)
+		dump_fat_header(bin);
 	else
-	{
-		dump_mach_header(obj_file, 0, is_64, is_swap);
-	}*/
+		dump_mach_header(bin);
 }

@@ -1,10 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ft_otool.dir/srcs_otool/main.c.o"
-  "CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o"
-  "CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o"
-  "CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o"
-  "CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o"
-  "CMakeFiles/ft_otool.dir/srcs_otool/find_section_86.c.o"
   "CMakeFiles/ft_otool.dir/libft/srcs/ft_atoi.c.o"
   "CMakeFiles/ft_otool.dir/libft/srcs/ft_bzero.c.o"
   "CMakeFiles/ft_otool.dir/libft/srcs/ft_isalnum.c.o"
@@ -100,6 +95,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_otool.dir/libft/srcs/ft_tabdup.c.o"
   "CMakeFiles/ft_otool.dir/libft/srcs/ft_putbase.c.o"
   "CMakeFiles/ft_otool.dir/libft/srcs/ft_puthex.c.o"
+  "CMakeFiles/ft_otool.dir/libft/srcs/ft_swapuint32.c.o"
+  "CMakeFiles/ft_otool.dir/libnmotool/srcs/mmap_file.c.o"
+  "CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_segments.c.o"
+  "CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_fat_header.c.o"
+  "CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_mach_header.c.o"
   "ft_otool.pdb"
   "ft_otool"
 )

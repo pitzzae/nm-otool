@@ -253,6 +253,8 @@ CMakeFiles/ft_nm.dir/libft/srcs/ft_strswap.c.o: ../libft/srcs/ft_strswap.c
 CMakeFiles/ft_nm.dir/libft/srcs/ft_strtrim.c.o: ../libft/includes/libft.h
 CMakeFiles/ft_nm.dir/libft/srcs/ft_strtrim.c.o: ../libft/srcs/ft_strtrim.c
 
+CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o: ../libft/srcs/ft_swapuint32.c
+
 CMakeFiles/ft_nm.dir/libft/srcs/ft_tab_realloc.c.o: ../libft/includes/libft.h
 CMakeFiles/ft_nm.dir/libft/srcs/ft_tab_realloc.c.o: ../libft/srcs/ft_tab_realloc.c
 
@@ -268,6 +270,22 @@ CMakeFiles/ft_nm.dir/libft/srcs/ft_udel.c.o: ../libft/srcs/ft_udel.c
 
 CMakeFiles/ft_nm.dir/libft/srcs/get_next_line.c.o: ../libft/includes/libft.h
 CMakeFiles/ft_nm.dir/libft/srcs/get_next_line.c.o: ../libft/srcs/get_next_line.c
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o: ../libft/includes/libft.h
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o: ../libnmotool/includes/libnmotool.h
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o: ../libnmotool/srcs/dump_fat_header.c
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o: ../libft/includes/libft.h
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o: ../libnmotool/includes/libnmotool.h
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o: ../libnmotool/srcs/dump_mach_header.c
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o: ../libft/includes/libft.h
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o: ../libnmotool/includes/libnmotool.h
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o: ../libnmotool/srcs/dump_segments.c
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o: ../libft/includes/libft.h
+CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o: ../libnmotool/includes/libnmotool.h
+CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o: ../libnmotool/srcs/mmap_file.c
 
 CMakeFiles/ft_nm.dir/srcs_nm/add_line_to_lst.c.o: ../includes/nmotool.h
 CMakeFiles/ft_nm.dir/srcs_nm/add_line_to_lst.c.o: ../libft/includes/libft.h

@@ -93,18 +93,18 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strsub_free.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_strsub_free.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strswap.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_strswap.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_strtrim.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_strtrim.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_swapuint32.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_swapuint32.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_tab_realloc.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_tab_realloc.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_tabdup.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_tabdup.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_tolower.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_tolower.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_toupper.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_toupper.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_udel.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_udel.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/get_next_line.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.o"
-  "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_64.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/find_section_64.c.o"
-  "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_86.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/find_section_86.c.o"
-  "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/get_type_file.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/get_type_file.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_fat_header.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_fat_header.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_mach_header.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_mach_header.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_segments.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_segments.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/mmap_file.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libnmotool/srcs/mmap_file.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/main.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/main.c.o"
-  "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/parse_argv.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/parse_argv.c.o"
-  "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/print_sections.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/print_sections.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

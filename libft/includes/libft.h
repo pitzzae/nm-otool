@@ -148,5 +148,6 @@ char				*ft_lst_rm_env(t_lstenv **t_env, char *opt);
 void				ft_lst_env_cpy(t_lstenv **t_env, t_lstenv **t_newenv);
 char				*ft_str_replace_str(char *str, char *find, char *replace);
 char				**ft_tabdup(char **tab);
+uint32_t			ft_swapuint32(uint32_t u);
 
 #endif

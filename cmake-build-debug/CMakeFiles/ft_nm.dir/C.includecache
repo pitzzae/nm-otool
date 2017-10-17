@@ -7,24 +7,6 @@
 #IncludeRegexTransform: 
 
 ../includes/nmotool.h
-sys/stat.h
--
-mach-o/loader.h
--
-mach-o/fat.h
--
-mach-o/nlist.h
--
-mach-o/ranlib.h
--
-ar.h
--
-sys/mman.h
--
-unistd.h
--
-stdlib.h
--
 stdio.h
 -
 libft.h
@@ -41,6 +23,22 @@ fcntl.h
 -
 
 ../libnmotool/includes/libnmotool.h
+libft.h
+-
+sys/stat.h
+-
+mach-o/loader.h
+-
+mach-o/fat.h
+-
+mach-o/nlist.h
+-
+mach-o/ranlib.h
+-
+ar.h
+-
+sys/mman.h
+-
 
 /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_atoi.c
 libft.h
@@ -382,6 +380,10 @@ libft.h
 libft.h
 -
 
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_swapuint32.c
+stdint.h
+-
+
 /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_tab_realloc.c
 libft.h
 -
@@ -400,6 +402,22 @@ libft.h
 
 /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/get_next_line.c
 libft.h
+-
+
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_fat_header.c
+libnmotool.h
+-
+
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_mach_header.c
+libnmotool.h
+-
+
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_segments.c
+libnmotool.h
+-
+
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/mmap_file.c
+libnmotool.h
 -
 
 /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/add_line_to_lst.c

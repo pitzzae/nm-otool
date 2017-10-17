@@ -102,6 +102,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_nm.dir/libft/srcs/ft_tabdup.c.o"
   "CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o"
   "CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o"
+  "CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o"
+  "CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o"
+  "CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o"
+  "CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o"
+  "CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o"
   "ft_nm.pdb"
   "ft_nm"
 )

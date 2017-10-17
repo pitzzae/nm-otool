@@ -2529,6 +2529,126 @@ CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o.provides: CMakeFiles/ft_nm.dir/lib
 CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o.provides.build: CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o
 
 
+CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o: ../libft/srcs/ft_swapuint32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_swapuint32.c
+
+CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_swapuint32.c > CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.i
+
+CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_swapuint32.c -o CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.s
+
+CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o.requires
+
+CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o.provides: CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o.provides
+
+CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o.provides.build: CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o
+
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o: ../libnmotool/srcs/mmap_file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/mmap_file.c
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/mmap_file.c > CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.i
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/mmap_file.c -o CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.s
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o.requires
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o.provides: CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o.provides
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o.provides.build: CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o
+
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o: ../libnmotool/srcs/dump_segments.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_segments.c
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_segments.c > CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.i
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_segments.c -o CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.s
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o.requires
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o.provides: CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o.provides
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o.provides.build: CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o
+
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o: ../libnmotool/srcs/dump_fat_header.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_fat_header.c
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_fat_header.c > CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.i
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_fat_header.c -o CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.s
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o.requires
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o.provides: CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o.provides
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o.provides.build: CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o
+
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o: ../libnmotool/srcs/dump_mach_header.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_mach_header.c
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_mach_header.c > CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.i
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_mach_header.c -o CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.s
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o.requires
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o.provides: CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o.provides
+
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o.provides.build: CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o
+
+
 # Object files for target ft_nm
 ft_nm_OBJECTS = \
 "CMakeFiles/ft_nm.dir/srcs_nm/main.c.o" \
@@ -2633,7 +2753,12 @@ ft_nm_OBJECTS = \
 "CMakeFiles/ft_nm.dir/libft/srcs/ft_stradd_slash.c.o" \
 "CMakeFiles/ft_nm.dir/libft/srcs/ft_tabdup.c.o" \
 "CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o" \
-"CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o"
+"CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o" \
+"CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o" \
+"CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o" \
+"CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o" \
+"CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o" \
+"CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o"
 
 # External object files for target ft_nm
 ft_nm_EXTERNAL_OBJECTS =
@@ -2741,9 +2866,14 @@ ft_nm: CMakeFiles/ft_nm.dir/libft/srcs/ft_stradd_slash.c.o
 ft_nm: CMakeFiles/ft_nm.dir/libft/srcs/ft_tabdup.c.o
 ft_nm: CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o
 ft_nm: CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o
+ft_nm: CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o
+ft_nm: CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o
+ft_nm: CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o
+ft_nm: CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o
+ft_nm: CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o
 ft_nm: CMakeFiles/ft_nm.dir/build.make
 ft_nm: CMakeFiles/ft_nm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Linking C executable ft_nm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Linking C executable ft_nm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ft_nm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2854,6 +2984,11 @@ CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/libft/srcs/ft_stradd_slash.c
 CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/libft/srcs/ft_tabdup.c.o.requires
 CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/libft/srcs/ft_putbase.c.o.requires
 CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/libft/srcs/ft_puthex.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/libft/srcs/ft_swapuint32.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o.requires
 
 .PHONY : CMakeFiles/ft_nm.dir/requires
 

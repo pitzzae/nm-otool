@@ -16,15 +16,6 @@
 # define S_X86 "        "
 # define I(p)		(int)p
 
-# include <sys/stat.h>
-# include <mach-o/loader.h>
-# include <mach-o/fat.h>
-# include <mach-o/nlist.h>
-# include <mach-o/ranlib.h>
-# include <ar.h>
-# include <sys/mman.h>
-# include <unistd.h>
-# include <stdlib.h>
 # include <stdio.h>
 # include <libft.h>
 # include <libnmotool.h>

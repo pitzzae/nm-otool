@@ -12,14 +12,6 @@
 
 #include "nmotool.h"
 
-uint32_t		ft_swapuint32(uint32_t u)
-{
-	return (((((uint32_t)(u) & 0xff000000) >> 24) |
-			(((uint32_t)(u) & 0x00ff0000) >> 8) |
-			(((uint32_t)(u) & 0x0000ff00) << 8) |
-			(((uint32_t)(u) & 0x000000ff) << 24)));
-}
-
 size_t		parse_universel_binary(t_bin *bin)
 {
 	struct fat_header		*fh;

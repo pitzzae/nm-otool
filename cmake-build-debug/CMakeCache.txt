@@ -198,6 +198,9 @@ ft_otool_BINARY_DIR:STATIC=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-
 //Value Computed by CMake
 ft_otool_SOURCE_DIR:STATIC=/Users/gtorresani/Documents/42/gitlab/nm-otool
 
+//Dependencies for target
+nmotool_LIB_DEPENDS:STATIC=
+
 
 ########################
 # INTERNAL cache entries

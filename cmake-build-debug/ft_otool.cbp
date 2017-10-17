@@ -17,21 +17,59 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nmotool">
+				<Option output="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/libnmotool.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes"/>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/includes"/>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/includes"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 nmotool"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nmotool/fast">
+				<Option output="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/libnmotool.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes"/>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/includes"/>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/includes"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 nmotool/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -133,6 +171,16 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="ft">
 				<Option output="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/libft.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug"/>
@@ -183,11 +231,13 @@
 			</Target>
 		</Build>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/nmotool.h">
+			<Option target="nmotool"/>
 			<Option target="ft_nm"/>
 			<Option target="ft_otool"/>
 			<Option target="ft"/>
 		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/includes/libft.h">
+			<Option target="nmotool"/>
 			<Option target="ft_nm"/>
 			<Option target="ft_otool"/>
 			<Option target="ft"/>
@@ -637,6 +687,11 @@
 			<Option target="ft_otool"/>
 			<Option target="ft"/>
 		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_swapuint32.c">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_tab_realloc.c">
 			<Option target="ft_nm"/>
 			<Option target="ft_otool"/>
@@ -668,9 +723,30 @@
 			<Option target="ft"/>
 		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/includes/libnmotool.h">
+			<Option target="nmotool"/>
 			<Option target="ft_nm"/>
 			<Option target="ft_otool"/>
 			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_fat_header.c">
+			<Option target="nmotool"/>
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_mach_header.c">
+			<Option target="nmotool"/>
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_segments.c">
+			<Option target="nmotool"/>
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/mmap_file.c">
+			<Option target="nmotool"/>
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
 		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/add_line_to_lst.c">
 			<Option target="ft_nm"/>
@@ -696,22 +772,7 @@
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/print_symbol_table.c">
 			<Option target="ft_nm"/>
 		</Unit>
-		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_64.c">
-			<Option target="ft_otool"/>
-		</Unit>
-		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/find_section_86.c">
-			<Option target="ft_otool"/>
-		</Unit>
-		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/get_type_file.c">
-			<Option target="ft_otool"/>
-		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/main.c">
-			<Option target="ft_otool"/>
-		</Unit>
-		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/parse_argv.c">
-			<Option target="ft_otool"/>
-		</Unit>
-		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/print_sections.c">
 			<Option target="ft_otool"/>
 		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/CMakeLists.txt">

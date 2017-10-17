@@ -14,9 +14,9 @@ NAME = libnmotool.a
 NAME32 = libnmotool_i386.a
 NAME64 = libnmotool_x86_64.a
 
-SRCS = dump_segments.c
+SRCS = dump_segments.c mmap_file.c dump_fat_header.c dump_mach_header.c
 
-INCLUDES = -I./includes
+INCLUDES = -I./includes -I../libft/includes
 
 CFLAGS = -Wall -Wextra -Werror
 
