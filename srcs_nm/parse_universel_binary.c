@@ -28,13 +28,12 @@ size_t		parse_universel_binary(t_bin *bin)
 
 	fh = (struct fat_header*)bin->ptr;
 	fa = (struct fat_arch*)(bin->ptr + sizeof(struct fat_header));
-	i = 0;
-	if (fh->magic == FAT_MAGIC || fh->magic == FAT_CIGAM)
+	if ((i = 0) && (fh->magic == FAT_MAGIC || fh->magic == FAT_CIGAM))
 	{
 		if (ft_swapuint32(fa->cputype) == CPU_TYPE_X86 && (i = 1))
 		{
 			bin->head.arch32 = fa;
-			bin->head.mach64 = (struct mach_header_64 *)(bin->ptr +
+			bin->head.mach32 = (struct mach_header *)(bin->ptr +
 								ft_swapuint32(fa->offset));
 			bin->head.lc = (struct load_command*)(bin->head.mach32 + 1);
 			bin->head.is_x64 = FALSE;

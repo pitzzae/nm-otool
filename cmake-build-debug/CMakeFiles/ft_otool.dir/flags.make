@@ -6,5 +6,5 @@ C_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacO
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/gtorresani/Documents/42/gitlab/nm-otool/includes 
+C_INCLUDES = -I/Users/gtorresani/Documents/42/gitlab/nm-otool/includes -I/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/includes -I/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/includes 
 

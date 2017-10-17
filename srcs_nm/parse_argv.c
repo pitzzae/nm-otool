@@ -87,9 +87,9 @@ void		find_symbol_table(char *ptr, t_head *header)
 		{
 			header->sym = (struct symtab_command *)header->lc;
 			if (header->mach64)
-				parse_result(print_symbol_table_64(header));
+				parse_result(print_symbol_table_64(header, ptr));
 			else
-				parse_result(print_symbol_table_86(header));
+				parse_result(print_symbol_table_86(header, ptr));
 			break ;
 		}
 		header->lc = (void *)header->lc + header->lc->cmdsize;

@@ -14,52 +14,85 @@ NM_NAME			= ft_nm
 OTOOL_NAME		= ft_otool
 CC				= gcc
 
-LIB_DIR			= ./libft
-LIB_NAME		= $(LIB_DIR)/libft.a
+LIBFT_DIR		= ./libft
+LIBFT_NAME		= $(LIBFT_DIR)/libft.a
+
+LIBNMOTOOL_DIR		= ./libnmotool
+LIBFT_NAME		= $(LIBNMTOOL_DIR)/libnmotool.a
 
 CFLAGS			= -Wall -Wextra -Werror
 
 NM_DIR			= srcs_nm
 OTOOL_DIR		= srcs_otool
-NM_OBJS			= objs_nm
-OTOOL_OBJS		= objs_otool
-INCL_DIR		= ./includes
+NM_OBJS32		= objs_nm32
+NM_OBJS64		= objs_nm64
+OTOOL_OBJS32	= objs_otool32
+OTOOL_OBJS64	= objs_otool64
+INCL_DIR		= -I./includes -I$(LIBFT_DIR)/includes -I$(LIBNMOTOOL_DIR)/includes
+LIB_DIR			= -L$(LIBFT_DIR) -lft -L$(LIBNMOTOOL_DIR) -lnmotool
 
-NM_SRCS			= main.c get_type_file.c parse_argv.c print_symbol_table.c \
-                order_lst.c add_line_to_lst.c parse_universel_binary.c
+NM_SRCS			= add_line_to_lst.c main.c parse_universel_binary.c \
+				get_segment_command.c order_lst.c print_symbol_table.c \
+				get_type_file.c parse_argv.c
 OTOOL_SRCS		= main.c get_type_file.c parse_argv.c print_sections.c \
                 find_section_64.c find_section_86.c
 
-NM_OBJECTS		= $(patsubst %.c, $(NM_OBJS)/%.o, $(NM_SRCS))
-OTOOL_OBJECTS	= $(patsubst %.c, $(OTOOL_OBJS)/%.o, $(OTOOL_SRCS))
+NM_OBJECTS32	= $(patsubst %.c, $(NM_OBJS32)/%.o, $(NM_SRCS))
+NM_OBJECTS64	= $(patsubst %.c, $(NM_OBJS64)/%.o, $(NM_SRCS))
+OTOOL_OBJECTS32	= $(patsubst %.c, $(OTOOL_OBJS32)/%.o, $(OTOOL_SRCS))
+OTOOL_OBJECTS64	= $(patsubst %.c, $(OTOOL_OBJS64)/%.o, $(OTOOL_SRCS))
 
 .PHONY: all
 
-all: ${NM_NAME} ${OTOOL_NAME}
+all: makelib ${NM_NAME} ${OTOOL_NAME}
+	@echo "\nAll Done"
 
-$(NM_NAME): $(NM_OBJECTS)
-	@make -j 8 -C $(LIB_DIR)
-	@$(CC) $(NM_OBJECTS) -o $@ $(CFLAGS) -I$(INCL_DIR) -L$(LIB_DIR) -lft
+makelib: 
+	@echo "Make libft"
+	@make -j 8 -C $(LIBFT_DIR)
+	@echo "Make libnmotool"
+	@make -j 8 -C $(LIBNMOTOOL_DIR)
 
-$(NM_OBJS)/%.o: $(addprefix $(NM_DIR)/,%.c)
-	@mkdir -p $(NM_OBJS)
-	$(CC) $(CFLAGS) -I$(INCL_DIR) -o $@ -c $^
+$(NM_NAME): $(NM_OBJECTS32) $(NM_OBJECTS64)
+	@$(CC) $(NM_OBJECTS32) -o $@_i386 $(CFLAGS) -m32 $(INCL_DIR) $(LIB_DIR)
+	@$(CC) $(NM_OBJECTS64) -o $@_x86_64 $(CFLAGS) -m64 $(INCL_DIR) $(LIB_DIR)
+	@lipo -create -output $@ $@_i386 $@_x86_64
 
-$(OTOOL_NAME): $(OTOOL_OBJECTS)
-	@make -j 8 -C $(LIB_DIR)
-	@$(CC) $(CFLAGS) -o $@ $(OTOOL_OBJECTS) -I $(INCL_DIR) -L$(LIB_DIR) -lft
+$(NM_OBJS32)/%.o: $(addprefix $(NM_DIR)/,%.c)
+	@mkdir -p $(NM_OBJS32)
+	@$(CC) $(CFLAGS) -m32 $(INCL_DIR) -o $@ -c $^
+	@printf "."
 
-$(OTOOL_OBJS)/%.o: $(addprefix $(OTOOL_DIR)/,%.c)
-	@mkdir -p $(OTOOL_OBJS)
-	$(CC) $(CFLAGS) -I$(INCL_DIR) -o $@ -c $^
+$(NM_OBJS64)/%.o: $(addprefix $(NM_DIR)/,%.c)
+	@mkdir -p $(NM_OBJS64)
+	@$(CC) $(CFLAGS) -m64 $(INCL_DIR) -o $@ -c $^
+	@printf "."
+
+$(OTOOL_NAME): $(OTOOL_OBJECTS32) $(OTOOL_OBJECTS64)
+	@$(CC) $(OTOOL_OBJECTS32) -o $@_i386 $(CFLAGS) -m32 $(INCL_DIR) $(LIB_DIR)
+	@$(CC) $(OTOOL_OBJECTS64) -o $@_x86_64 $(CFLAGS) -m64 $(INCL_DIR) $(LIB_DIR)
+	@lipo -create -output $@ $@_i386 $@_x86_64
+
+$(OTOOL_OBJS32)/%.o: $(addprefix $(OTOOL_DIR)/,%.c)
+	@mkdir -p $(OTOOL_OBJS32)
+	@$(CC) $(CFLAGS) -m32 $(INCL_DIR) -o $@ -c $^
+	@printf "."
+
+$(OTOOL_OBJS64)/%.o: $(addprefix $(OTOOL_DIR)/,%.c)
+	@mkdir -p $(OTOOL_OBJS64)
+	@$(CC) $(CFLAGS) -m64 $(INCL_DIR) -o $@ -c $^
+	@printf "."
 
 fclean: clean
-	@rm -f $(NM_NAME) $(OTOOL_NAME)
+	@rm -f	$(NM_NAME) $(NM_NAME)_i386 $(NM_NAME)_x86_64 \
+			$(OTOOL_NAME) $(OTOOL_NAME)_i386 $(OTOOL_NAME)_x86_64
 	@echo "Delete $(NM_NAME) $(OTOOL_NAME)"
-	@make -C $(LIB_DIR) fclean
+	@make -C $(LIBFT_DIR) fclean
+	@make -C $(LIBNMOTOOL_DIR) fclean
 
 clean:
-	@make -C $(LIB_DIR) clean
-	@rm -rf $(NM_OBJS) $(OTOOL_OBJS)
+	@make -C $(LIBFT_DIR) clean
+	@make -C $(LIBNMOTOOL_DIR) clean
+	@rm -rf $(NM_OBJS32) $(NM_OBJS64) $(OTOOL_OBJS32) $(OTOOL_OBJS64)
 
 re: fclean all

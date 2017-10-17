@@ -16,7 +16,6 @@
 # define FD_SIZE 10
 
 # include <unistd.h>
-# include <string.h>
 # include <stdlib.h>
 # include <fcntl.h>
 

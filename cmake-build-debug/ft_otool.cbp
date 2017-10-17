@@ -45,6 +45,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes"/>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/includes"/>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/includes"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
@@ -67,6 +69,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes"/>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/includes"/>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/includes"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
@@ -89,6 +93,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes"/>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/includes"/>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/includes"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
@@ -111,6 +117,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes"/>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/includes"/>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/includes"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
@@ -133,6 +141,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes"/>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/includes"/>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/includes"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
@@ -155,6 +165,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes"/>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/includes"/>
+					<Add directory="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/includes"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
@@ -170,12 +182,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/libft.h">
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/nmotool.h">
 			<Option target="ft_nm"/>
 			<Option target="ft_otool"/>
 			<Option target="ft"/>
 		</Unit>
-		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/includes/nmotool.h">
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/includes/libft.h">
 			<Option target="ft_nm"/>
 			<Option target="ft_otool"/>
 			<Option target="ft"/>
@@ -655,7 +667,15 @@
 			<Option target="ft_otool"/>
 			<Option target="ft"/>
 		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/includes/libnmotool.h">
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+			<Option target="ft"/>
+		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/add_line_to_lst.c">
+			<Option target="ft_nm"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/get_segment_command.c">
 			<Option target="ft_nm"/>
 		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/get_type_file.c">

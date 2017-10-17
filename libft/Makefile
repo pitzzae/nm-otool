@@ -11,6 +11,8 @@
 #******************************************************************************#
 
 NAME = libft.a
+NAME32 = libft_i386.a
+NAME64 = libft_x86_64.a
 
 SRCS = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c\
 	ft_isdigit.c ft_isprint.c ft_memalloc.c ft_memccpy.c ft_memchr.c\
@@ -35,30 +37,53 @@ SRCS = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c\
 
 CFLAGS = -Wall -Wextra -Werror
 
-O_DIR = ./obj
+INCLUDE	= -I./includes
 
-OBJS = $(addprefix $(O_DIR)/,$(SRCS:.c=.o))
+O_DIR32 = ./obj_32
+
+O_DIR64 = ./obj_64
+
+OBJS32 = $(addprefix $(O_DIR32)/,$(SRCS:.c=.o))
+
+OBJS64 = $(addprefix $(O_DIR64)/,$(SRCS:.c=.o))
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	@ar rc $@ $^
-	@echo "\nCreating archive library."
-	@ranlib $@
-	@echo "Indexing archive library."
+$(NAME): $(NAME32) $(NAME64)
+	@echo "\nCreating fat library."
+	@lipo -create -output $@ $^
 
-$(O_DIR)/%.o: ./srcs/%.c
-	@mkdir -p $(O_DIR)
+$(NAME32): $(OBJS32)
+	@ar rc $@ $^
+	@echo "\nCreating i386 archive library."
+	@ranlib $@
+	@echo "Indexing i386 archive library."
+
+$(NAME64): $(OBJS64)
+	@ar rc $@ $^
+	@echo "\nCreating x86_64 archive library."
+	@ranlib $@
+	@echo "Indexing x86_64 archive library."
+
+$(O_DIR64)/%.o: ./srcs/%.c
+	@mkdir -p $(O_DIR64)
 	@printf "."
-	@gcc $(CFLAGS) -c $< -I../includes -o $@
+	@gcc $(CFLAGS) -m64 -c $< $(INCLUDE) -o $@
+
+
+$(O_DIR32)/%.o: ./srcs/%.c
+	@mkdir -p $(O_DIR32)
+	@printf "."
+	@gcc $(CFLAGS) -m32 -c $< $(INCLUDE) -o $@
 
 clean:
-	@rm -rf $(O_DIR)
+	@rm -rf $(O_DIR32)
+	@rm -rf $(O_DIR64)
 	@echo "Delete obj."
 
 fclean: clean
-	@rm -rf $(NAME)
-	@echo "Delete $(NAME)."
+	@rm -rf $(NAME) $(NAME32) $(NAME64)
+	@echo "Delete $(NAME) $(NAME32) $(NAME64)."
 
 re: fclean
 	@make all

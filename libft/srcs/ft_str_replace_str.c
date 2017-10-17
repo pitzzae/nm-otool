@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 char		*ft_str_replace_str(char *str, char *find, char *replace)
 {

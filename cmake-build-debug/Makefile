@@ -3311,6 +3311,33 @@ srcs_nm/add_line_to_lst.c.s:
 	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/add_line_to_lst.c.s
 .PHONY : srcs_nm/add_line_to_lst.c.s
 
+srcs_nm/get_segment_command.o: srcs_nm/get_segment_command.c.o
+
+.PHONY : srcs_nm/get_segment_command.o
+
+# target to build an object file
+srcs_nm/get_segment_command.c.o:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/get_segment_command.c.o
+.PHONY : srcs_nm/get_segment_command.c.o
+
+srcs_nm/get_segment_command.i: srcs_nm/get_segment_command.c.i
+
+.PHONY : srcs_nm/get_segment_command.i
+
+# target to preprocess a source file
+srcs_nm/get_segment_command.c.i:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/get_segment_command.c.i
+.PHONY : srcs_nm/get_segment_command.c.i
+
+srcs_nm/get_segment_command.s: srcs_nm/get_segment_command.c.s
+
+.PHONY : srcs_nm/get_segment_command.s
+
+# target to generate assembly for a file
+srcs_nm/get_segment_command.c.s:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/get_segment_command.c.s
+.PHONY : srcs_nm/get_segment_command.c.s
+
 srcs_nm/get_type_file.o: srcs_nm/get_type_file.c.o
 
 .PHONY : srcs_nm/get_type_file.o
@@ -3934,6 +3961,9 @@ help:
 	@echo "... srcs_nm/add_line_to_lst.o"
 	@echo "... srcs_nm/add_line_to_lst.i"
 	@echo "... srcs_nm/add_line_to_lst.s"
+	@echo "... srcs_nm/get_segment_command.o"
+	@echo "... srcs_nm/get_segment_command.i"
+	@echo "... srcs_nm/get_segment_command.s"
 	@echo "... srcs_nm/get_type_file.o"
 	@echo "... srcs_nm/get_type_file.i"
 	@echo "... srcs_nm/get_type_file.s"

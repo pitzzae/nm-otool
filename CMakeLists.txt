@@ -3,7 +3,10 @@ project(ft_otool)
 
 
 include_directories(includes)
-set(HEADER_FILES includes/libft.h includes/nmotool.h)
+include_directories(libft/includes)
+include_directories(libnmotool/includes)
+set(HEADER_FILES libnmotool/includes/libnmotool.h libft/includes/libft.h
+        includes/nmotool.h)
 
 set(SOURCE_LIBFT libft/srcs/ft_atoi.c libft/srcs/ft_bzero.c
         libft/srcs/ft_isalnum.c libft/srcs/ft_isalpha.c
@@ -52,7 +55,8 @@ set(SOURCE_OTOOL_FILES srcs_otool/main.c srcs_otool/get_type_file.c
         srcs_otool/find_section_64.c srcs_otool/find_section_86.c)
 set(SOURCE_NM_FILES srcs_nm/main.c srcs_nm/get_type_file.c
         srcs_nm/parse_argv.c srcs_nm/print_symbol_table.c srcs_nm/order_lst.c
-        srcs_nm/add_line_to_lst.c srcs_nm/parse_universel_binary.c)
+        srcs_nm/add_line_to_lst.c srcs_nm/parse_universel_binary.c
+        srcs_nm/get_segment_command.c)
 
 add_executable(ft_otool ${SOURCE_OTOOL_FILES} ${SOURCE_LIBFT} ${HEADER_FILES})
 add_executable(ft_nm ${SOURCE_NM_FILES} ${SOURCE_LIBFT} ${HEADER_FILES})

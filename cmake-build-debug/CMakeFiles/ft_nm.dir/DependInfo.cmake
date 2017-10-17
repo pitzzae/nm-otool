@@ -100,6 +100,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_udel.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/libft/srcs/ft_udel.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/get_next_line.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/libft/srcs/get_next_line.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/add_line_to_lst.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/add_line_to_lst.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/get_segment_command.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/get_segment_command.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/get_type_file.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/get_type_file.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/main.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/main.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/order_lst.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/order_lst.c.o"
@@ -112,6 +113,8 @@ set(CMAKE_C_COMPILER_ID "AppleClang")
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../includes"
+  "../libft/includes"
+  "../libnmotool/includes"
   )
 
 # Targets to which this target links.

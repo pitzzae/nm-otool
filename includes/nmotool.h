@@ -26,7 +26,8 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdio.h>
-# include "libft.h"
+# include <libft.h>
+# include <libnmotool.h>
 
 typedef struct		s_symbol
 {
@@ -45,18 +46,12 @@ typedef struct		s_libar
 	char						*str;
 }					t_libar;
 
-typedef struct		s_head
+typedef struct		s_seg_com
 {
-	struct mach_header			*mach32;
-	struct mach_header_64		*mach64;
-	struct fat_arch				*arch32;
-	struct fat_arch				*arch64;
-	struct load_command			*lc;
-	struct symtab_command		*sym;
-	struct nlist_64				*nlist64;
-	struct nlist				*nlist32;
-	boolean_t					is_x64;
-}					t_head;
+	unsigned char				text;
+	unsigned char				data;
+	unsigned char				bss;
+}					t_seg_com;
 
 typedef struct		s_seg_x64
 {
@@ -80,7 +75,22 @@ typedef struct		s_sect
 	char						*sect_text;
 	t_seg_x64					x64;
 	t_seg_x86					x86;
+	t_seg_com					segcom;
 }					t_sect;
+
+typedef struct		s_head
+{
+	struct mach_header			*mach32;
+	struct mach_header_64		*mach64;
+	struct fat_arch				*arch32;
+	struct fat_arch				*arch64;
+	struct load_command			*lc;
+	struct symtab_command		*sym;
+	struct nlist_64				*nlist64;
+	struct nlist				*nlist32;
+	boolean_t					is_x64;
+	t_sect						sect;
+}					t_head;
 
 typedef struct		s_bin
 {
@@ -96,12 +106,13 @@ void				find_section_64(t_head *head, t_sect *s);
 void				find_section_86(t_head *head, t_sect *s);
 void				find_symbol_table(char *ptr, t_head *header);
 void				print_section(t_sect *s);
-t_list				*print_symbol_table_64(t_head *head);
-t_list				*print_symbol_table_86(t_head *head);
+t_list				*print_symbol_table_64(t_head *head, char *ptr);
+t_list				*print_symbol_table_86(t_head *head, char *ptr);
 void				order_lst(t_list *lst);
 void				ft_putargv_error(char *name, char *source, char *msg);
 size_t				parse_universel_binary(t_bin *bin);
-size_t				add_line_to_lst(uint8_t n_type, uint32_t f_type,
-									uint8_t n, t_symbol *sym);
+uint32_t			ft_swapuint32(uint32_t u);
+void				get_segment_command(t_head *head);
+size_t				add_line_to_lst(void *nlst, t_head *head, t_symbol *sym);
 
 #endif

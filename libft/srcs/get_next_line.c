@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 static void		last_line_join(char buf[BUF_SIZE + 1], char **line)
 {

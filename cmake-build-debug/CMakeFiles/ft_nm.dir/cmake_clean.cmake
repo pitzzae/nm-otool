@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_nm.dir/srcs_nm/order_lst.c.o"
   "CMakeFiles/ft_nm.dir/srcs_nm/add_line_to_lst.c.o"
   "CMakeFiles/ft_nm.dir/srcs_nm/parse_universel_binary.c.o"
+  "CMakeFiles/ft_nm.dir/srcs_nm/get_segment_command.c.o"
   "CMakeFiles/ft_nm.dir/libft/srcs/ft_atoi.c.o"
   "CMakeFiles/ft_nm.dir/libft/srcs/ft_bzero.c.o"
   "CMakeFiles/ft_nm.dir/libft/srcs/ft_isalnum.c.o"
