@@ -153,12 +153,37 @@ CMakeFiles/nmotool.dir/libnmotool/srcs/dump_mach_header.c.o.provides: CMakeFiles
 CMakeFiles/nmotool.dir/libnmotool/srcs/dump_mach_header.c.o.provides.build: CMakeFiles/nmotool.dir/libnmotool/srcs/dump_mach_header.c.o
 
 
+CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o: CMakeFiles/nmotool.dir/flags.make
+CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o: ../libnmotool/srcs/dump_load_commands.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o   -c /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_load_commands.c
+
+CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_load_commands.c > CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.i
+
+CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_load_commands.c -o CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.s
+
+CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o.requires:
+
+.PHONY : CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o.requires
+
+CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o.provides: CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o.requires
+	$(MAKE) -f CMakeFiles/nmotool.dir/build.make CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o.provides.build
+.PHONY : CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o.provides
+
+CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o.provides.build: CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o
+
+
 # Object files for target nmotool
 nmotool_OBJECTS = \
 "CMakeFiles/nmotool.dir/libnmotool/srcs/mmap_file.c.o" \
 "CMakeFiles/nmotool.dir/libnmotool/srcs/dump_segments.c.o" \
 "CMakeFiles/nmotool.dir/libnmotool/srcs/dump_fat_header.c.o" \
-"CMakeFiles/nmotool.dir/libnmotool/srcs/dump_mach_header.c.o"
+"CMakeFiles/nmotool.dir/libnmotool/srcs/dump_mach_header.c.o" \
+"CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o"
 
 # External object files for target nmotool
 nmotool_EXTERNAL_OBJECTS =
@@ -167,9 +192,10 @@ libnmotool.a: CMakeFiles/nmotool.dir/libnmotool/srcs/mmap_file.c.o
 libnmotool.a: CMakeFiles/nmotool.dir/libnmotool/srcs/dump_segments.c.o
 libnmotool.a: CMakeFiles/nmotool.dir/libnmotool/srcs/dump_fat_header.c.o
 libnmotool.a: CMakeFiles/nmotool.dir/libnmotool/srcs/dump_mach_header.c.o
+libnmotool.a: CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o
 libnmotool.a: CMakeFiles/nmotool.dir/build.make
 libnmotool.a: CMakeFiles/nmotool.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libnmotool.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libnmotool.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/nmotool.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nmotool.dir/link.txt --verbose=$(VERBOSE)
 
@@ -182,6 +208,7 @@ CMakeFiles/nmotool.dir/requires: CMakeFiles/nmotool.dir/libnmotool/srcs/mmap_fil
 CMakeFiles/nmotool.dir/requires: CMakeFiles/nmotool.dir/libnmotool/srcs/dump_segments.c.o.requires
 CMakeFiles/nmotool.dir/requires: CMakeFiles/nmotool.dir/libnmotool/srcs/dump_fat_header.c.o.requires
 CMakeFiles/nmotool.dir/requires: CMakeFiles/nmotool.dir/libnmotool/srcs/dump_mach_header.c.o.requires
+CMakeFiles/nmotool.dir/requires: CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o.requires
 
 .PHONY : CMakeFiles/nmotool.dir/requires
 

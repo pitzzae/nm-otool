@@ -36,16 +36,23 @@ typedef struct		s_file
 	int							fd;
 	struct stat					st;
 	void						*ptr;
+	void						*func;
 	struct fat_header			*head;
 	struct fat_arch				*arch;
+	uint32_t					ncmds;
 	struct mach_header			*mach32;
 	struct mach_header_64		*mach64;
+	struct load_command			*lc;
+	struct load_command			**lc_t;
+	struct segment_command		**seg32_t;
+	struct segment_command_64	**seg64_t;
 	t_dump						*dump;
 }					t_file;
 
 void		dump_segments(t_file *bin);
 void		dump_fat_header(t_file *bin);
 void		dump_mach_header(t_file *bin);
+void		dump_load_commands(t_file *bin);
 void 		mmap_file(t_file *bin, char *path);
 
 #endif

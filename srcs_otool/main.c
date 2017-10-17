@@ -37,6 +37,7 @@ int 		main(int ac, char **av)
 	char		*tmp;
 
 	bin.exename = av[0];
+	bin.func = ft_otool;
 	if (ac == 1)
 	{
 		tmp = ft_strjoin(av[0], " a.out");

@@ -44,5 +44,14 @@ void	dump_segments(t_file *bin) {
 	if (dump.fat)
 		dump_fat_header(bin);
 	else
+	{
+		bin->mach64 = NULL;
+		bin->mach32 = (struct mach_header*)((bin->ptr));
+		if (bin->dump->is_64 == 1)
+		{
+			bin->mach32 = NULL;
+			bin->mach64 = (struct mach_header_64*)((bin->ptr));
+		}
 		dump_mach_header(bin);
+	}
 }

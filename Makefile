@@ -34,7 +34,7 @@ LIB_DIR			= -L$(LIBFT_DIR) -lft -L$(LIBNMOTOOL_DIR) -lnmotool
 NM_SRCS			= add_line_to_lst.c main.c parse_universel_binary.c \
 				get_segment_command.c order_lst.c print_symbol_table.c \
 				get_type_file.c parse_argv.c
-OTOOL_SRCS		= main.c
+OTOOL_SRCS		= main.c ft_otool.c
 
 NM_OBJECTS32	= $(patsubst %.c, $(NM_OBJS32)/%.o, $(NM_SRCS))
 NM_OBJECTS64	= $(patsubst %.c, $(NM_OBJS64)/%.o, $(NM_SRCS))

@@ -107,6 +107,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o"
   "CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o"
   "CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o"
+  "CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_load_commands.c.o"
   "ft_nm.pdb"
   "ft_nm"
 )

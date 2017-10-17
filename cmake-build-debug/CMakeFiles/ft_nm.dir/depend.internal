@@ -275,6 +275,10 @@ CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o
  ../libft/includes/libft.h
  ../libnmotool/includes/libnmotool.h
  /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_fat_header.c
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_load_commands.c.o
+ ../libft/includes/libft.h
+ ../libnmotool/includes/libnmotool.h
+ /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_load_commands.c
 CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o
  ../libft/includes/libft.h
  ../libnmotool/includes/libnmotool.h

@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/nmotool.dir/libnmotool/srcs/dump_segments.c.o"
   "CMakeFiles/nmotool.dir/libnmotool/srcs/dump_fat_header.c.o"
   "CMakeFiles/nmotool.dir/libnmotool/srcs/dump_mach_header.c.o"
+  "CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o"
   "libnmotool.pdb"
   "libnmotool.a"
 )

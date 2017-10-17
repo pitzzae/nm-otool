@@ -106,4 +106,7 @@ uint32_t			ft_swapuint32(uint32_t u);
 void				get_segment_command(t_head *head);
 size_t				add_line_to_lst(void *nlst, t_head *head, t_symbol *sym);
 
+
+void				ft_otool(t_file *bin);
+
 #endif

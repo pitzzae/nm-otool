@@ -275,6 +275,10 @@ CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_fat_header.c.o: ../libft/includes/l
 CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_fat_header.c.o: ../libnmotool/includes/libnmotool.h
 CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_fat_header.c.o: ../libnmotool/srcs/dump_fat_header.c
 
+CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_load_commands.c.o: ../libft/includes/libft.h
+CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_load_commands.c.o: ../libnmotool/includes/libnmotool.h
+CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_load_commands.c.o: ../libnmotool/srcs/dump_load_commands.c
+
 CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_mach_header.c.o: ../libft/includes/libft.h
 CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_mach_header.c.o: ../libnmotool/includes/libnmotool.h
 CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_mach_header.c.o: ../libnmotool/srcs/dump_mach_header.c
@@ -286,6 +290,11 @@ CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_segments.c.o: ../libnmotool/srcs/du
 CMakeFiles/ft_otool.dir/libnmotool/srcs/mmap_file.c.o: ../libft/includes/libft.h
 CMakeFiles/ft_otool.dir/libnmotool/srcs/mmap_file.c.o: ../libnmotool/includes/libnmotool.h
 CMakeFiles/ft_otool.dir/libnmotool/srcs/mmap_file.c.o: ../libnmotool/srcs/mmap_file.c
+
+CMakeFiles/ft_otool.dir/srcs_otool/ft_otool.c.o: ../includes/nmotool.h
+CMakeFiles/ft_otool.dir/srcs_otool/ft_otool.c.o: ../libft/includes/libft.h
+CMakeFiles/ft_otool.dir/srcs_otool/ft_otool.c.o: ../libnmotool/includes/libnmotool.h
+CMakeFiles/ft_otool.dir/srcs_otool/ft_otool.c.o: ../srcs_otool/ft_otool.c
 
 CMakeFiles/ft_otool.dir/srcs_otool/main.c.o: ../includes/nmotool.h
 CMakeFiles/ft_otool.dir/srcs_otool/main.c.o: ../libft/includes/libft.h

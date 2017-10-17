@@ -36,7 +36,6 @@ static void ft_swap_fat_arch(t_file *bin, struct fat_arch *arch)
 void 		dump_fat_header(t_file *bin)
 {
 	struct fat_header	header;
-	struct mach_header	*mach;
 	struct fat_arch		arch;
 	uint32_t			i;
 
@@ -49,8 +48,15 @@ void 		dump_fat_header(t_file *bin)
 					+ (sizeof(struct fat_arch) * i));
 		if (bin->dump->is_swap)
 			ft_swap_fat_arch(bin, &arch);
-		mach = (struct mach_header*)((bin->ptr) + bin->arch->offset);
-		bin->dump->is_64 = is_magic_64(mach->magic);
+		bin->mach32 = (struct mach_header*)((bin->ptr) + bin->arch->offset);
+		bin->mach64 = NULL;
+		bin->dump->is_64 = is_magic_64(bin->mach32->magic);
+		if (bin->dump->is_64 == 1)
+		{
+			bin->mach32 = NULL;
+			bin->mach64 = (struct mach_header_64*)((bin->ptr) +
+					bin->arch->offset);
+		}
 		dump_mach_header(bin);
 		i++;
 	}

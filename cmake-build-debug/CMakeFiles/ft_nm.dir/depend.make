@@ -275,6 +275,10 @@ CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o: ../libft/includes/libf
 CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o: ../libnmotool/includes/libnmotool.h
 CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_fat_header.c.o: ../libnmotool/srcs/dump_fat_header.c
 
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_load_commands.c.o: ../libft/includes/libft.h
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_load_commands.c.o: ../libnmotool/includes/libnmotool.h
+CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_load_commands.c.o: ../libnmotool/srcs/dump_load_commands.c
+
 CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o: ../libft/includes/libft.h
 CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o: ../libnmotool/includes/libnmotool.h
 CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o: ../libnmotool/srcs/dump_mach_header.c

@@ -101,9 +101,11 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/ft_udel.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/ft_udel.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libft/srcs/get_next_line.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libft/srcs/get_next_line.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_fat_header.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_fat_header.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_load_commands.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_load_commands.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_mach_header.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_mach_header.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_segments.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_segments.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/mmap_file.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/libnmotool/srcs/mmap_file.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/ft_otool.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/ft_otool.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/main.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir/srcs_otool/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

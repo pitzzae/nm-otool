@@ -733,6 +733,11 @@
 			<Option target="ft_nm"/>
 			<Option target="ft_otool"/>
 		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_load_commands.c">
+			<Option target="nmotool"/>
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_mach_header.c">
 			<Option target="nmotool"/>
 			<Option target="ft_nm"/>
@@ -771,6 +776,9 @@
 		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/print_symbol_table.c">
 			<Option target="ft_nm"/>
+		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/ft_otool.c">
+			<Option target="ft_otool"/>
 		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/main.c">
 			<Option target="ft_otool"/>

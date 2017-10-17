@@ -3363,6 +3363,39 @@ libnmotool/srcs/dump_fat_header.c.s:
 	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_fat_header.c.s
 .PHONY : libnmotool/srcs/dump_fat_header.c.s
 
+libnmotool/srcs/dump_load_commands.o: libnmotool/srcs/dump_load_commands.c.o
+
+.PHONY : libnmotool/srcs/dump_load_commands.o
+
+# target to build an object file
+libnmotool/srcs/dump_load_commands.c.o:
+	$(MAKE) -f CMakeFiles/nmotool.dir/build.make CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_load_commands.c.o
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_load_commands.c.o
+.PHONY : libnmotool/srcs/dump_load_commands.c.o
+
+libnmotool/srcs/dump_load_commands.i: libnmotool/srcs/dump_load_commands.c.i
+
+.PHONY : libnmotool/srcs/dump_load_commands.i
+
+# target to preprocess a source file
+libnmotool/srcs/dump_load_commands.c.i:
+	$(MAKE) -f CMakeFiles/nmotool.dir/build.make CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.i
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_load_commands.c.i
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_load_commands.c.i
+.PHONY : libnmotool/srcs/dump_load_commands.c.i
+
+libnmotool/srcs/dump_load_commands.s: libnmotool/srcs/dump_load_commands.c.s
+
+.PHONY : libnmotool/srcs/dump_load_commands.s
+
+# target to generate assembly for a file
+libnmotool/srcs/dump_load_commands.c.s:
+	$(MAKE) -f CMakeFiles/nmotool.dir/build.make CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.s
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_load_commands.c.s
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_load_commands.c.s
+.PHONY : libnmotool/srcs/dump_load_commands.c.s
+
 libnmotool/srcs/dump_mach_header.o: libnmotool/srcs/dump_mach_header.c.o
 
 .PHONY : libnmotool/srcs/dump_mach_header.o
@@ -3677,6 +3710,33 @@ srcs_nm/print_symbol_table.s: srcs_nm/print_symbol_table.c.s
 srcs_nm/print_symbol_table.c.s:
 	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/print_symbol_table.c.s
 .PHONY : srcs_nm/print_symbol_table.c.s
+
+srcs_otool/ft_otool.o: srcs_otool/ft_otool.c.o
+
+.PHONY : srcs_otool/ft_otool.o
+
+# target to build an object file
+srcs_otool/ft_otool.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/ft_otool.c.o
+.PHONY : srcs_otool/ft_otool.c.o
+
+srcs_otool/ft_otool.i: srcs_otool/ft_otool.c.i
+
+.PHONY : srcs_otool/ft_otool.i
+
+# target to preprocess a source file
+srcs_otool/ft_otool.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/ft_otool.c.i
+.PHONY : srcs_otool/ft_otool.c.i
+
+srcs_otool/ft_otool.s: srcs_otool/ft_otool.c.s
+
+.PHONY : srcs_otool/ft_otool.s
+
+# target to generate assembly for a file
+srcs_otool/ft_otool.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/srcs_otool/ft_otool.c.s
+.PHONY : srcs_otool/ft_otool.c.s
 
 srcs_otool/main.o: srcs_otool/main.c.o
 
@@ -4008,6 +4068,9 @@ help:
 	@echo "... libnmotool/srcs/dump_fat_header.o"
 	@echo "... libnmotool/srcs/dump_fat_header.i"
 	@echo "... libnmotool/srcs/dump_fat_header.s"
+	@echo "... libnmotool/srcs/dump_load_commands.o"
+	@echo "... libnmotool/srcs/dump_load_commands.i"
+	@echo "... libnmotool/srcs/dump_load_commands.s"
 	@echo "... libnmotool/srcs/dump_mach_header.o"
 	@echo "... libnmotool/srcs/dump_mach_header.i"
 	@echo "... libnmotool/srcs/dump_mach_header.s"
@@ -4041,6 +4104,9 @@ help:
 	@echo "... srcs_nm/print_symbol_table.o"
 	@echo "... srcs_nm/print_symbol_table.i"
 	@echo "... srcs_nm/print_symbol_table.s"
+	@echo "... srcs_otool/ft_otool.o"
+	@echo "... srcs_otool/ft_otool.i"
+	@echo "... srcs_otool/ft_otool.s"
 	@echo "... srcs_otool/main.o"
 	@echo "... srcs_otool/main.i"
 	@echo "... srcs_otool/main.s"

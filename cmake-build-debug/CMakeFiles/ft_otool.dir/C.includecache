@@ -408,6 +408,10 @@ libft.h
 libnmotool.h
 -
 
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_load_commands.c
+libnmotool.h
+-
+
 /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_mach_header.c
 libnmotool.h
 -
@@ -419,6 +423,10 @@ libnmotool.h
 /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/mmap_file.c
 libnmotool.h
 -
+
+/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/ft_otool.c
+nmotool.h
+/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/nmotool.h
 
 /Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_otool/main.c
 nmotool.h
