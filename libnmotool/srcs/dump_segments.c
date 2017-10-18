@@ -6,21 +6,21 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 14:59:48 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/17 14:59:50 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 15:28:12 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libnmotool.h>
 
-static int is_magic_64(uint32_t magic) {
+static int	is_magic_64(uint32_t magic) {
 	return magic == MH_MAGIC_64 || magic == MH_CIGAM_64;
 }
 
-static int should_swap_bytes(uint32_t magic) {
+static int	should_swap_bytes(uint32_t magic) {
 	return magic == MH_CIGAM || magic == MH_CIGAM_64 || magic == FAT_CIGAM;
 }
 
-static int is_fat(uint32_t magic) {
+static int	is_fat(uint32_t magic) {
 	return magic == FAT_MAGIC || magic == FAT_CIGAM;
 }
 
@@ -32,7 +32,7 @@ static void	init_struct(t_file *bin)
 	bin->mach64 = NULL;
 }
 
-void	dump_segments(t_file *bin) {
+void		dump_segments(t_file *bin) {
 	t_dump				dump;
 
 	init_struct(bin);
@@ -52,6 +52,7 @@ void	dump_segments(t_file *bin) {
 			bin->mach32 = NULL;
 			bin->mach64 = (struct mach_header_64*)((bin->ptr));
 		}
-		dump_mach_header(bin);
+		if (check_lib_option(bin))
+			dump_mach_header(bin);
 	}
 }

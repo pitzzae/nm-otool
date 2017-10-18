@@ -54,7 +54,7 @@ add_library(ft ${SOURCE_LIBFT} ${HEADER_FILES})
 set(SOURCE_LIBNMOTOOL libnmotool/srcs/mmap_file.c
         libnmotool/srcs/dump_segments.c libnmotool/srcs/dump_fat_header.c
         libnmotool/srcs/dump_mach_header.c libnmotool/srcs/dump_load_commands.c
-        libnmotool/srcs/dump_static_lib.c)
+        libnmotool/srcs/dump_static_lib.c libnmotool/srcs/check_lib_option.c)
 add_library(nmotool ${SOURCE_LIBNMOTOOL} ${HEADER_FILES})
 
 set(SOURCE_OTOOL_FILES srcs_otool/main.c srcs_otool/ft_otool.c

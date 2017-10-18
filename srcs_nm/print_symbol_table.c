@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 22:47:27 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/20 17:23:48 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 15:30:32 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,6 @@ static t_list	*print_symbol_table_64(t_file *bin, void *ptr)
 	t_list			*lst;
 	t_symbol		sym;
 
-
 	i = 0;
 	lst = ft_lstnew(NULL, 0);
 	bin->nlist64 = (struct nlist_64*)(ptr + bin->sym->symoff);
@@ -93,7 +92,7 @@ static t_list	*print_symbol_table_64(t_file *bin, void *ptr)
 	return (lst);
 }
 
-t_list		*print_symbol_table(t_file *bin)
+t_list			*print_symbol_table(t_file *bin)
 {
 	t_list			*lst;
 

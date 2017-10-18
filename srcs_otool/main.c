@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 16:38:34 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 11:45:43 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 15:30:53 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,15 @@ static void	parse_argv_file(t_file *bin, int ac, char **av)
 	}
 }
 
-int 		main(int ac, char **av)
+static void	init_lib_nmotool(t_file *bin)
+{
+	bin->is_arlib = 0;
+	bin->func = ft_otool;
+	bin->pos = 0;
+	bin->fat_opt = 1;
+}
+
+int			main(int ac, char **av)
 {
 	t_file		bin;
 	int			argc;
@@ -37,9 +45,7 @@ int 		main(int ac, char **av)
 	char		*tmp;
 
 	bin.exename = av[0];
-	bin.is_arlib = 0;
-	bin.func = ft_otool;
-	bin.pos = 0;
+	init_lib_nmotool(&bin);
 	if (ac == 1)
 	{
 		tmp = ft_strjoin(av[0], " a.out");

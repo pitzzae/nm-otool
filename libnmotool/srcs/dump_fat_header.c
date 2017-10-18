@@ -6,24 +6,24 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 17:23:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/17 17:23:04 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 15:27:30 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libnmotool.h>
 
-static int is_magic_64(uint32_t magic) {
+static int	is_magic_64(uint32_t magic) {
 	return magic == MH_MAGIC_64 || magic == MH_CIGAM_64;
 }
 
-static void ft_swap_fat_header(t_file *bin, struct fat_header *header)
+static void	ft_swap_fat_header(t_file *bin, struct fat_header *header)
 {
 	header->magic = ft_swapuint32(bin->head->magic);
 	header->nfat_arch = ft_swapuint32(bin->head->nfat_arch);
 	bin->head = header;
 }
 
-static void ft_swap_fat_arch(t_file *bin, struct fat_arch *arch)
+static void	ft_swap_fat_arch(t_file *bin, struct fat_arch *arch)
 {
 	arch->cputype = ft_swapuint32(bin->arch->cputype);
 	arch->cpusubtype = ft_swapuint32(bin->arch->cpusubtype);
@@ -33,7 +33,7 @@ static void ft_swap_fat_arch(t_file *bin, struct fat_arch *arch)
 	bin->arch = arch;
 }
 
-void 		dump_fat_header(t_file *bin)
+void		dump_fat_header(t_file *bin)
 {
 	struct fat_header	header;
 	struct fat_arch		arch;
@@ -57,7 +57,8 @@ void 		dump_fat_header(t_file *bin)
 			bin->mach64 = (struct mach_header_64*)((bin->ptr) +
 					bin->arch->offset);
 		}
-		dump_mach_header(bin);
+		if (check_lib_option(bin))
+			dump_mach_header(bin);
 		i++;
 	}
 }

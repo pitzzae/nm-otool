@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 15:02:12 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 11:45:11 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 15:26:46 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ typedef struct		s_file
 	struct nlist_64				*nlist64;
 	struct nlist				*nlist32;
 	t_dump						*dump;
+	int 						fat_opt;
 }					t_file;
 
 void		dump_segments(t_file *bin);
@@ -69,6 +70,7 @@ void		dump_fat_header(t_file *bin);
 void		dump_mach_header(t_file *bin);
 void		dump_load_commands(t_file *bin);
 void		dump_static_lib(t_file *bin);
+int 		check_lib_option(t_file *bin);
 void		mmap_file(t_file *bin, char *path);
 
 #endif
