@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/18 15:53:16 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 15:26:33 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 17:51:51 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ typedef struct		s_symbol
 	char						*name;
 	uint8_t						n_type;
 	uint8_t						n_sect;
+	uint64_t 					n_value;
 }					t_symbol;
 
 typedef struct		s_seg_x64
