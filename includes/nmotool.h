@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/18 15:53:16 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 17:51:51 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 22:01:39 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ void				ft_otool(t_file *bin);
 
 void				ft_nm(t_file *bin);
 t_list				*print_symbol_table(t_file *bin);
-void				add_line_to_lst(t_symbol *sym, t_list **lst);
+void				add_line_to_lst(t_file *bin, t_symbol *sym, t_list **lst);
 void				order_lst(t_list *lst);
 
 #endif

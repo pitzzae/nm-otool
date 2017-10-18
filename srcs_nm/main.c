@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 12:06:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 15:31:08 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 22:02:06 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ static void	init_lib_nmotool(t_file *bin)
 	bin->func = ft_nm;
 	bin->pos = 0;
 	bin->fat_opt = 1;
+	bin->tdb = NULL;
 }
 
 int			main(int ac, char **av)

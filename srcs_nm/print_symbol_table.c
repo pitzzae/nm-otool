@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 22:47:27 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 19:19:50 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 22:02:14 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ static t_list	*print_symbol_table_32(t_file *bin, void *ptr, t_symbol *sym)
 		sym->name = (void *)(bin->mach32) + bin->sym->stroff +
 				bin->nlist32[i].n_un.n_strx;
 		if ((sym->n_type & 0xff) <= 0xf)
-			add_line_to_lst(sym, &lst);
+			add_line_to_lst(bin, sym, &lst);
 		i++;
 	}
 	return (lst);
@@ -91,7 +91,7 @@ static t_list	*print_symbol_table_64(t_file *bin, void *ptr, t_symbol *sym)
 		int k = sym->n_type & 0xff;
 		(void)k;
 		if ((sym->n_type & 0xff) <= 0x0f || (sym->n_type & 0xff) == 0x1e)
-			add_line_to_lst(sym, &lst);
+			add_line_to_lst(bin, sym, &lst);
 		i++;
 	}
 	return (lst);

@@ -6,13 +6,13 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 13:48:22 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 19:19:46 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 22:02:01 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "nmotool.h"
 
-static char	get_char_type(unsigned char c, t_symbol *sym)
+static char	get_char_type(unsigned char c, t_symbol *sym, t_file *bin)
 {
 	if (c == N_UNDF)
 	{
@@ -26,11 +26,11 @@ static char	get_char_type(unsigned char c, t_symbol *sym)
 		return ('a');
 	if (c == N_SECT)
 	{
-		if (sym->n_sect == 0x01)
+		if (sym->n_sect == bin->tdb->text_nsect || sym->n_sect == 0x01)
 			return ('t');
-		else if (sym->n_sect == 0x08 || sym->n_sect == 0x0b)
+		else if (sym->n_sect == bin->tdb->data_nsect)
 			return ('d');
-		else if (sym->n_sect == 0x03 || sym->n_sect == 0x0c)
+		else if (sym->n_sect == bin->tdb->bss_nsect)
 			return ('b');
 		return ('s');
 	}
@@ -39,7 +39,7 @@ static char	get_char_type(unsigned char c, t_symbol *sym)
 	return ('?');
 }
 
-void		add_line_to_lst(t_symbol *sym, t_list **lst)
+void		add_line_to_lst(t_file *bin, t_symbol *sym, t_list **lst)
 {
 	t_list		*l;
 	int 		i,j;
@@ -47,12 +47,12 @@ void		add_line_to_lst(t_symbol *sym, t_list **lst)
 	l = *lst;
 	while (l)
 		l = l->next;
-	if (!ft_strcmp(sym->name, "___gzipVersionNumber"))
+	if (!ft_strcmp(sym->name, "_shim_marker"))
 	{
 		i = sym->n_sect;
 		j = sym->n_type;
 	}
-	sym->type = get_char_type(sym->n_type & N_TYPE, sym);
+	sym->type = get_char_type(sym->n_type & N_TYPE, sym, bin);
 	if ((sym->n_type & N_EXT))
 		sym->type = ft_toupper(sym->type);
 	ft_lstadd(lst, ft_lstnew(sym, sizeof(*sym)));
