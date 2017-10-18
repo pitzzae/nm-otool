@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 23:37:04 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 11:34:13 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 11:45:23 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ static void	print_file_lib(t_file *bin, char *ptr, int size)
 	bin_tmp.st.st_size = size;
 	bin_tmp.func = bin->func;
 	bin_tmp.filename = bin->filename;
+	bin_tmp.is_arlib = 1;
 	dump_segments(&bin_tmp);
 }
 

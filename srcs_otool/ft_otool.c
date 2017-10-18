@@ -6,23 +6,26 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 20:43:20 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/17 20:43:22 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 11:45:35 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "nmotool.h"
 
-static void	print_filename(char *filename)
+static void	print_filename(t_file *bin, char *filename)
 {
-	ft_putstr(filename);
-	ft_putendl(":");
+	if (!bin->is_arlib)
+	{
+		ft_putstr(filename);
+		ft_putendl(":");
+	}
 }
 
 void	ft_otool(t_file *bin)
 {
 	t_sect		s;
 
-	print_filename(bin->filename);
+	print_filename(bin, bin->filename);
 	s.seg_text = SEG_TEXT;
 	s.sect_text = SECT_TEXT;
 	if (bin->mach64)

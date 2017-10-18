@@ -1,1 +1,5 @@
-.idea/workspace.xml
+.idea/
+cmake-build-debug/CMakeFiles/ft.dir/
+cmake-build-debug/CMakeFiles/ft_nm.dir/
+cmake-build-debug/CMakeFiles/ft_otool.dir/
+cmake-build-debug/CMakeFiles/nmotool.dir/

@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 16:38:34 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/17 16:38:36 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 11:45:43 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ int 		main(int ac, char **av)
 	char		*tmp;
 
 	bin.exename = av[0];
+	bin.is_arlib = 0;
 	bin.func = ft_otool;
 	if (ac == 1)
 	{

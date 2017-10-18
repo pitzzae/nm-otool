@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 15:02:12 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 11:33:34 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 11:45:11 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ typedef struct		s_file
 {
 	char 						*filename;
 	char 						*exename;
+	int 						is_arlib;
 	int							fd;
 	struct stat					st;
 	void						*ptr;
