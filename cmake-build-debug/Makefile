@@ -3462,6 +3462,39 @@ libnmotool/srcs/dump_segments.c.s:
 	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_segments.c.s
 .PHONY : libnmotool/srcs/dump_segments.c.s
 
+libnmotool/srcs/dump_static_lib.o: libnmotool/srcs/dump_static_lib.c.o
+
+.PHONY : libnmotool/srcs/dump_static_lib.o
+
+# target to build an object file
+libnmotool/srcs/dump_static_lib.c.o:
+	$(MAKE) -f CMakeFiles/nmotool.dir/build.make CMakeFiles/nmotool.dir/libnmotool/srcs/dump_static_lib.c.o
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_static_lib.c.o
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_static_lib.c.o
+.PHONY : libnmotool/srcs/dump_static_lib.c.o
+
+libnmotool/srcs/dump_static_lib.i: libnmotool/srcs/dump_static_lib.c.i
+
+.PHONY : libnmotool/srcs/dump_static_lib.i
+
+# target to preprocess a source file
+libnmotool/srcs/dump_static_lib.c.i:
+	$(MAKE) -f CMakeFiles/nmotool.dir/build.make CMakeFiles/nmotool.dir/libnmotool/srcs/dump_static_lib.c.i
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_static_lib.c.i
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_static_lib.c.i
+.PHONY : libnmotool/srcs/dump_static_lib.c.i
+
+libnmotool/srcs/dump_static_lib.s: libnmotool/srcs/dump_static_lib.c.s
+
+.PHONY : libnmotool/srcs/dump_static_lib.s
+
+# target to generate assembly for a file
+libnmotool/srcs/dump_static_lib.c.s:
+	$(MAKE) -f CMakeFiles/nmotool.dir/build.make CMakeFiles/nmotool.dir/libnmotool/srcs/dump_static_lib.c.s
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_static_lib.c.s
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_static_lib.c.s
+.PHONY : libnmotool/srcs/dump_static_lib.c.s
+
 libnmotool/srcs/mmap_file.o: libnmotool/srcs/mmap_file.c.o
 
 .PHONY : libnmotool/srcs/mmap_file.o
@@ -4158,6 +4191,9 @@ help:
 	@echo "... libnmotool/srcs/dump_segments.o"
 	@echo "... libnmotool/srcs/dump_segments.i"
 	@echo "... libnmotool/srcs/dump_segments.s"
+	@echo "... libnmotool/srcs/dump_static_lib.o"
+	@echo "... libnmotool/srcs/dump_static_lib.i"
+	@echo "... libnmotool/srcs/dump_static_lib.s"
 	@echo "... libnmotool/srcs/mmap_file.o"
 	@echo "... libnmotool/srcs/mmap_file.i"
 	@echo "... libnmotool/srcs/mmap_file.s"

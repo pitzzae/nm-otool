@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 15:02:12 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/17 15:02:21 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 11:33:34 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,16 @@ typedef struct		s_dump
 	int							is_swap;
 	int							fat;
 }					t_dump;
+
+typedef struct		s_arlib
+{
+	struct ranlib				*lib;
+	struct ar_hdr				*ar;
+	char						*start;
+	unsigned int				st_len;
+	unsigned int				arr_len;
+	char						*str;
+}					t_arlib;
 
 typedef struct		s_file
 {
@@ -53,6 +63,7 @@ void		dump_segments(t_file *bin);
 void		dump_fat_header(t_file *bin);
 void		dump_mach_header(t_file *bin);
 void		dump_load_commands(t_file *bin);
-void 		mmap_file(t_file *bin, char *path);
+void		dump_static_lib(t_file *bin);
+void		mmap_file(t_file *bin, char *path);
 
 #endif

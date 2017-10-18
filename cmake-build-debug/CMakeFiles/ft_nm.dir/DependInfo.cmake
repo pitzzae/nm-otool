@@ -104,6 +104,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_load_commands.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_load_commands.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_mach_header.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_mach_header.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_segments.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_segments.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_static_lib.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/libnmotool/srcs/dump_static_lib.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/mmap_file.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/libnmotool/srcs/mmap_file.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/add_line_to_lst.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/add_line_to_lst.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/get_segment_command.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir/srcs_nm/get_segment_command.c.o"

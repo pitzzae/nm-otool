@@ -420,6 +420,10 @@ libnmotool.h
 libnmotool.h
 -
 
+/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_static_lib.c
+libnmotool.h
+-
+
 /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/mmap_file.c
 libnmotool.h
 -

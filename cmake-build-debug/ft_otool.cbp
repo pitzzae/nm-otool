@@ -748,6 +748,11 @@
 			<Option target="ft_nm"/>
 			<Option target="ft_otool"/>
 		</Unit>
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_static_lib.c">
+			<Option target="nmotool"/>
+			<Option target="ft_nm"/>
+			<Option target="ft_otool"/>
+		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/mmap_file.c">
 			<Option target="nmotool"/>
 			<Option target="ft_nm"/>

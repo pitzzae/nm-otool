@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_load_commands.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/nmotool.dir/libnmotool/srcs/dump_load_commands.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_mach_header.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/nmotool.dir/libnmotool/srcs/dump_mach_header.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_segments.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/nmotool.dir/libnmotool/srcs/dump_segments.c.o"
+  "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_static_lib.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/nmotool.dir/libnmotool/srcs/dump_static_lib.c.o"
   "/Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/mmap_file.c" "/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/nmotool.dir/libnmotool/srcs/mmap_file.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

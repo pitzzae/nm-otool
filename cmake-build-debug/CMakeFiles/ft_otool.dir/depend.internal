@@ -287,6 +287,10 @@ CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_segments.c.o
  ../libft/includes/libft.h
  ../libnmotool/includes/libnmotool.h
  /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_segments.c
+CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_static_lib.c.o
+ ../libft/includes/libft.h
+ ../libnmotool/includes/libnmotool.h
+ /Users/gtorresani/Documents/42/gitlab/nm-otool/libnmotool/srcs/dump_static_lib.c
 CMakeFiles/ft_otool.dir/libnmotool/srcs/mmap_file.c.o
  ../libft/includes/libft.h
  ../libnmotool/includes/libnmotool.h

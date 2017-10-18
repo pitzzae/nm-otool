@@ -287,6 +287,10 @@ CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_segments.c.o: ../libft/includes/lib
 CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_segments.c.o: ../libnmotool/includes/libnmotool.h
 CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_segments.c.o: ../libnmotool/srcs/dump_segments.c
 
+CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_static_lib.c.o: ../libft/includes/libft.h
+CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_static_lib.c.o: ../libnmotool/includes/libnmotool.h
+CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_static_lib.c.o: ../libnmotool/srcs/dump_static_lib.c
+
 CMakeFiles/ft_otool.dir/libnmotool/srcs/mmap_file.c.o: ../libft/includes/libft.h
 CMakeFiles/ft_otool.dir/libnmotool/srcs/mmap_file.c.o: ../libnmotool/includes/libnmotool.h
 CMakeFiles/ft_otool.dir/libnmotool/srcs/mmap_file.c.o: ../libnmotool/srcs/mmap_file.c

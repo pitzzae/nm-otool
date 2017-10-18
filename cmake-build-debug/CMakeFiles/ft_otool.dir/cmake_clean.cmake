@@ -105,6 +105,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_fat_header.c.o"
   "CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_mach_header.c.o"
   "CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_load_commands.c.o"
+  "CMakeFiles/ft_otool.dir/libnmotool/srcs/dump_static_lib.c.o"
   "ft_otool.pdb"
   "ft_otool"
 )

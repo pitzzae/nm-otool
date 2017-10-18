@@ -6,7 +6,7 @@
 #    By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/17 14:18:23 by gtorresa          #+#    #+#              #
-#*   Updated: 2017/10/17 14:59:37 by gtorresa         ###   ########.fr       *#
+#*   Updated: 2017/10/18 11:33:01 by gtorresa         ###   ########.fr       *#
 #                                                                              #
 #******************************************************************************#
 
@@ -15,7 +15,7 @@ NAME32 = libnmotool_i386.a
 NAME64 = libnmotool_x86_64.a
 
 SRCS = dump_segments.c mmap_file.c dump_fat_header.c dump_mach_header.c \
-		dump_load_commands.c
+		dump_load_commands.c dump_static_lib.c
 
 INCLUDES = -I./includes -I../libft/includes
 
