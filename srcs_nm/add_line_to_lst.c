@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 13:48:22 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 19:01:27 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 19:19:46 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,13 +42,16 @@ static char	get_char_type(unsigned char c, t_symbol *sym)
 void		add_line_to_lst(t_symbol *sym, t_list **lst)
 {
 	t_list		*l;
-	int 		i;
+	int 		i,j;
 
 	l = *lst;
 	while (l)
 		l = l->next;
-	if (!ft_strcmp(sym->name, "_crc_table"))
+	if (!ft_strcmp(sym->name, "___gzipVersionNumber"))
+	{
 		i = sym->n_sect;
+		j = sym->n_type;
+	}
 	sym->type = get_char_type(sym->n_type & N_TYPE, sym);
 	if ((sym->n_type & N_EXT))
 		sym->type = ft_toupper(sym->type);
