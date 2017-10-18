@@ -3528,86 +3528,32 @@ libnmotool/srcs/mmap_file.c.s:
 	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/libnmotool/srcs/mmap_file.c.s
 .PHONY : libnmotool/srcs/mmap_file.c.s
 
-srcs_nm/add_line_to_lst.o: srcs_nm/add_line_to_lst.c.o
+srcs_nm/ft_nm.o: srcs_nm/ft_nm.c.o
 
-.PHONY : srcs_nm/add_line_to_lst.o
-
-# target to build an object file
-srcs_nm/add_line_to_lst.c.o:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/add_line_to_lst.c.o
-.PHONY : srcs_nm/add_line_to_lst.c.o
-
-srcs_nm/add_line_to_lst.i: srcs_nm/add_line_to_lst.c.i
-
-.PHONY : srcs_nm/add_line_to_lst.i
-
-# target to preprocess a source file
-srcs_nm/add_line_to_lst.c.i:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/add_line_to_lst.c.i
-.PHONY : srcs_nm/add_line_to_lst.c.i
-
-srcs_nm/add_line_to_lst.s: srcs_nm/add_line_to_lst.c.s
-
-.PHONY : srcs_nm/add_line_to_lst.s
-
-# target to generate assembly for a file
-srcs_nm/add_line_to_lst.c.s:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/add_line_to_lst.c.s
-.PHONY : srcs_nm/add_line_to_lst.c.s
-
-srcs_nm/get_segment_command.o: srcs_nm/get_segment_command.c.o
-
-.PHONY : srcs_nm/get_segment_command.o
+.PHONY : srcs_nm/ft_nm.o
 
 # target to build an object file
-srcs_nm/get_segment_command.c.o:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/get_segment_command.c.o
-.PHONY : srcs_nm/get_segment_command.c.o
+srcs_nm/ft_nm.c.o:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/ft_nm.c.o
+.PHONY : srcs_nm/ft_nm.c.o
 
-srcs_nm/get_segment_command.i: srcs_nm/get_segment_command.c.i
+srcs_nm/ft_nm.i: srcs_nm/ft_nm.c.i
 
-.PHONY : srcs_nm/get_segment_command.i
-
-# target to preprocess a source file
-srcs_nm/get_segment_command.c.i:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/get_segment_command.c.i
-.PHONY : srcs_nm/get_segment_command.c.i
-
-srcs_nm/get_segment_command.s: srcs_nm/get_segment_command.c.s
-
-.PHONY : srcs_nm/get_segment_command.s
-
-# target to generate assembly for a file
-srcs_nm/get_segment_command.c.s:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/get_segment_command.c.s
-.PHONY : srcs_nm/get_segment_command.c.s
-
-srcs_nm/get_type_file.o: srcs_nm/get_type_file.c.o
-
-.PHONY : srcs_nm/get_type_file.o
-
-# target to build an object file
-srcs_nm/get_type_file.c.o:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/get_type_file.c.o
-.PHONY : srcs_nm/get_type_file.c.o
-
-srcs_nm/get_type_file.i: srcs_nm/get_type_file.c.i
-
-.PHONY : srcs_nm/get_type_file.i
+.PHONY : srcs_nm/ft_nm.i
 
 # target to preprocess a source file
-srcs_nm/get_type_file.c.i:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/get_type_file.c.i
-.PHONY : srcs_nm/get_type_file.c.i
+srcs_nm/ft_nm.c.i:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/ft_nm.c.i
+.PHONY : srcs_nm/ft_nm.c.i
 
-srcs_nm/get_type_file.s: srcs_nm/get_type_file.c.s
+srcs_nm/ft_nm.s: srcs_nm/ft_nm.c.s
 
-.PHONY : srcs_nm/get_type_file.s
+.PHONY : srcs_nm/ft_nm.s
 
 # target to generate assembly for a file
-srcs_nm/get_type_file.c.s:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/get_type_file.c.s
-.PHONY : srcs_nm/get_type_file.c.s
+srcs_nm/ft_nm.c.s:
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/ft_nm.c.s
+.PHONY : srcs_nm/ft_nm.c.s
 
 srcs_nm/main.o: srcs_nm/main.c.o
 
@@ -3662,60 +3608,6 @@ srcs_nm/order_lst.s: srcs_nm/order_lst.c.s
 srcs_nm/order_lst.c.s:
 	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/order_lst.c.s
 .PHONY : srcs_nm/order_lst.c.s
-
-srcs_nm/parse_argv.o: srcs_nm/parse_argv.c.o
-
-.PHONY : srcs_nm/parse_argv.o
-
-# target to build an object file
-srcs_nm/parse_argv.c.o:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.o
-.PHONY : srcs_nm/parse_argv.c.o
-
-srcs_nm/parse_argv.i: srcs_nm/parse_argv.c.i
-
-.PHONY : srcs_nm/parse_argv.i
-
-# target to preprocess a source file
-srcs_nm/parse_argv.c.i:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.i
-.PHONY : srcs_nm/parse_argv.c.i
-
-srcs_nm/parse_argv.s: srcs_nm/parse_argv.c.s
-
-.PHONY : srcs_nm/parse_argv.s
-
-# target to generate assembly for a file
-srcs_nm/parse_argv.c.s:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/parse_argv.c.s
-.PHONY : srcs_nm/parse_argv.c.s
-
-srcs_nm/parse_universel_binary.o: srcs_nm/parse_universel_binary.c.o
-
-.PHONY : srcs_nm/parse_universel_binary.o
-
-# target to build an object file
-srcs_nm/parse_universel_binary.c.o:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/parse_universel_binary.c.o
-.PHONY : srcs_nm/parse_universel_binary.c.o
-
-srcs_nm/parse_universel_binary.i: srcs_nm/parse_universel_binary.c.i
-
-.PHONY : srcs_nm/parse_universel_binary.i
-
-# target to preprocess a source file
-srcs_nm/parse_universel_binary.c.i:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/parse_universel_binary.c.i
-.PHONY : srcs_nm/parse_universel_binary.c.i
-
-srcs_nm/parse_universel_binary.s: srcs_nm/parse_universel_binary.c.s
-
-.PHONY : srcs_nm/parse_universel_binary.s
-
-# target to generate assembly for a file
-srcs_nm/parse_universel_binary.c.s:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/srcs_nm/parse_universel_binary.c.s
-.PHONY : srcs_nm/parse_universel_binary.c.s
 
 srcs_nm/print_symbol_table.o: srcs_nm/print_symbol_table.c.o
 
@@ -4197,27 +4089,15 @@ help:
 	@echo "... libnmotool/srcs/mmap_file.o"
 	@echo "... libnmotool/srcs/mmap_file.i"
 	@echo "... libnmotool/srcs/mmap_file.s"
-	@echo "... srcs_nm/add_line_to_lst.o"
-	@echo "... srcs_nm/add_line_to_lst.i"
-	@echo "... srcs_nm/add_line_to_lst.s"
-	@echo "... srcs_nm/get_segment_command.o"
-	@echo "... srcs_nm/get_segment_command.i"
-	@echo "... srcs_nm/get_segment_command.s"
-	@echo "... srcs_nm/get_type_file.o"
-	@echo "... srcs_nm/get_type_file.i"
-	@echo "... srcs_nm/get_type_file.s"
+	@echo "... srcs_nm/ft_nm.o"
+	@echo "... srcs_nm/ft_nm.i"
+	@echo "... srcs_nm/ft_nm.s"
 	@echo "... srcs_nm/main.o"
 	@echo "... srcs_nm/main.i"
 	@echo "... srcs_nm/main.s"
 	@echo "... srcs_nm/order_lst.o"
 	@echo "... srcs_nm/order_lst.i"
 	@echo "... srcs_nm/order_lst.s"
-	@echo "... srcs_nm/parse_argv.o"
-	@echo "... srcs_nm/parse_argv.i"
-	@echo "... srcs_nm/parse_argv.s"
-	@echo "... srcs_nm/parse_universel_binary.o"
-	@echo "... srcs_nm/parse_universel_binary.i"
-	@echo "... srcs_nm/parse_universel_binary.s"
 	@echo "... srcs_nm/print_symbol_table.o"
 	@echo "... srcs_nm/print_symbol_table.i"
 	@echo "... srcs_nm/print_symbol_table.s"

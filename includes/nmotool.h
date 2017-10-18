@@ -94,18 +94,18 @@ typedef struct		s_bin
 void				parse_argv(t_bin *bin, int ac, char **av);
 void				get_type_file(t_bin *bin, char *filename, char *name);
 void				find_symbol_table(char *ptr, t_head *header);
-t_list				*print_symbol_table_64(t_head *head, char *ptr);
-t_list				*print_symbol_table_86(t_head *head, char *ptr);
-void				order_lst(t_list *lst);
 void				ft_putargv_error(char *name, char *source, char *msg);
 size_t				parse_universel_binary(t_bin *bin);
-uint32_t			ft_swapuint32(uint32_t u);
 void				get_segment_command(t_head *head);
-size_t				add_line_to_lst(void *nlst, t_head *head, t_symbol *sym);
 
 void				find_section_64(t_file *bin, t_sect *s);
 void				find_section_32(t_file *bin, t_sect *s);
 void				print_section(t_sect *s);
 void				ft_otool(t_file *bin);
+
+void				ft_nm(t_file *bin);
+t_list				*print_symbol_table(t_file *bin);
+size_t				add_line_to_lst(void *nlst, t_file *bin, t_symbol *sym);
+void				order_lst(t_list *lst);
 
 #endif

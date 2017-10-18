@@ -39,6 +39,7 @@ int 		main(int ac, char **av)
 	bin.exename = av[0];
 	bin.is_arlib = 0;
 	bin.func = ft_otool;
+	bin.pos = 0;
 	if (ac == 1)
 	{
 		tmp = ft_strjoin(av[0], " a.out");

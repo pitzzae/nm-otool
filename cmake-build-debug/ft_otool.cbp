@@ -758,25 +758,13 @@
 			<Option target="ft_nm"/>
 			<Option target="ft_otool"/>
 		</Unit>
-		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/add_line_to_lst.c">
-			<Option target="ft_nm"/>
-		</Unit>
-		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/get_segment_command.c">
-			<Option target="ft_nm"/>
-		</Unit>
-		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/get_type_file.c">
+		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/ft_nm.c">
 			<Option target="ft_nm"/>
 		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/main.c">
 			<Option target="ft_nm"/>
 		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/order_lst.c">
-			<Option target="ft_nm"/>
-		</Unit>
-		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/parse_argv.c">
-			<Option target="ft_nm"/>
-		</Unit>
-		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/parse_universel_binary.c">
 			<Option target="ft_nm"/>
 		</Unit>
 		<Unit filename="/Users/gtorresani/Documents/42/gitlab/nm-otool/srcs_nm/print_symbol_table.c">

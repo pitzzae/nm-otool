@@ -5,28 +5,41 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/18 15:53:16 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/09/19 15:59:23 by gtorresa         ###   ########.fr       */
+/*   Created: 2017/10/18 12:06:02 by gtorresa          #+#    #+#             */
+/*   Updated: 2017/10/18 12:06:04 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "nmotool.h"
 
-void	ft_putargv_error(char *name, char *source, char *msg)
+static void	parse_argv_file(t_file *bin, int ac, char **av)
 {
-	ft_putstr_fd(name, 2);
-	ft_putstr_fd(": ", 2);
-	ft_putstr_fd(source, 2);
-	ft_putendl_fd(msg, 2);
+	int 		i;
+
+	i = 1;
+	while (i < ac)
+	{
+		mmap_file(bin, av[i]);
+		if (bin->ptr)
+		{
+			dump_segments(bin);
+			munmap(bin->ptr, (size_t)bin->st.st_size);
+		}
+		i++;
+	}
 }
 
-int		main(int ac, char **av)
+int 		main(int ac, char **av)
 {
-	t_bin		bin;
+	t_file		bin;
 	int			argc;
 	char		**argv;
 	char		*tmp;
 
+	bin.exename = av[0];
+	bin.is_arlib = 0;
+	bin.func = ft_nm;
+	bin.pos = 0;
 	if (ac == 1)
 	{
 		tmp = ft_strjoin(av[0], " a.out");
@@ -42,6 +55,6 @@ int		main(int ac, char **av)
 	if (argc < 2)
 		return (0);
 	else
-		parse_argv(&bin, argc, argv);
+		parse_argv_file(&bin, argc, argv);
 	return (0);
 }

@@ -23,3 +23,7 @@ cmake-build-debug/CMakeFiles/ft.dir/
 cmake-build-debug/CMakeFiles/ft_nm.dir/
 cmake-build-debug/CMakeFiles/ft_otool.dir/
 cmake-build-debug/CMakeFiles/nmotool.dir/
+cmake-build-debug/ft_nm
+cmake-build-debug/ft_otool
+cmake-build-debug/ft_otool.cbp
+cmake-build-debug/CMakeFiles/Makefile2

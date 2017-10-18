@@ -57,7 +57,15 @@ static void		fuc_is_public(t_list **lst, t_symbol *sym)
 	ft_lstadd(lst, ft_lstnew(sym, sizeof(*sym)));
 }
 
-t_list			*print_symbol_table_86(t_head *head, char *ptr)
+size_t			add_line_to_lst(void *nlst, t_file *bin, t_symbol *sym)
+{
+	(void)nlst;
+	(void)bin;
+	(void)sym;
+	return (1);
+}
+
+static t_list	*print_symbol_table_32(t_file *bin, void *ptr)
 {
 	size_t			i;
 	t_list			*lst;
@@ -66,17 +74,18 @@ t_list			*print_symbol_table_86(t_head *head, char *ptr)
 	i = 0;
 	(void)ptr;
 	lst = ft_lstnew(NULL, 0);
-	head->nlist32 = (void *)(head->mach32) + head->sym->symoff;
-	while (i < head->sym->nsyms)
+	bin->nlist32 = (struct nlist*)(ptr + bin->sym->symoff);
+	while (i < bin->sym->nsyms)
 	{
 		ft_bzero(sym.address, 17);
-		if (head->nlist32[i].n_value > 0)
-			print_ptr_addr(head->nlist32[i].n_value, sym.address, head->is_x64);
+		if (bin->nlist32[i].n_value > 0)
+			print_ptr_addr(bin->nlist32[i].n_value, sym.address,
+						   bin->dump->is_64);
 		else
 			ft_strcat(sym.address, S_X86);
-		sym.name = (void *)(head->mach32) + head->sym->stroff +
-							head->nlist32[i].n_un.n_strx;
-		if (add_line_to_lst((void*)(&head->nlist64[i]), head, &sym))
+		sym.name = (void *)(bin->mach32) + bin->sym->stroff +
+				bin->nlist32[i].n_un.n_strx;
+		if (add_line_to_lst((void*)(&bin->nlist64[i]), bin, &sym))
 			fuc_is_public(&lst, &sym);
 		i++;
 	}
@@ -89,7 +98,7 @@ void			test(struct nlist_64 l64)
 	return ;
 }
 
-t_list			*print_symbol_table_64(t_head *head, char *ptr)
+static t_list	*print_symbol_table_64(t_file *bin, void *ptr)
 {
 	size_t			i;
 	t_list			*lst;
@@ -98,9 +107,8 @@ t_list			*print_symbol_table_64(t_head *head, char *ptr)
 
 	i = 0;
 	lst = ft_lstnew(NULL, 0);
-	head->nlist64 = (void *)ptr + head->sym->symoff;
-	head->sect.x64.seg = (struct segment_command_64*)(head->nlist64);
-	while (i < head->sym->nsyms)
+	bin->nlist64 = (struct nlist_64*)(ptr + bin->sym->symoff);
+	while (i < bin->sym->nsyms)
 	{
 		/*
 		uint8_t io1;
@@ -112,24 +120,35 @@ t_list			*print_symbol_table_64(t_head *head, char *ptr)
 		uint8_t io6 = N_SECT;
 		uint8_t io7 = N_INDR;
 
-		io1 = head->nlist64[i].n_type & N_TYPE;
-		io2 = head->nlist64[i].n_type & N_EXT;
+		io1 = bin->nlist64[i].n_type & N_TYPE;
+		io2 = bin->nlist64[i].n_type & N_EXT;
 
-		struct nlist_64	s = head->nlist64[i];
+		struct nlist_64	s = bin->nlist64[i];
 		*/
 		ft_bzero(sym.address, 17);
-		if (head->nlist64[i].n_value > 0)
-			print_ptr_addr(head->nlist64[i].n_value, sym.address, head->is_x64);
+		if (bin->nlist64[i].n_value > 0)
+			print_ptr_addr(bin->nlist64[i].n_value, sym.address,
+						   bin->dump->is_64);
 		else
 			ft_strcat(sym.address, S_X64);
-		sym.name = (void *)(head->mach64) + head->sym->stroff +
-				   			head->nlist64[i].n_un.n_strx;
+		sym.name = (void *)(bin->mach64) + bin->sym->stroff +
+				bin->nlist64[i].n_un.n_strx;
 		if (ft_strcmp(sym.name, "_CentSigMsg") == 0)
-			test(head->nlist64[i]);
-		if (add_line_to_lst((void*)(&head->nlist64[i]), head, &sym))
+			test(bin->nlist64[i]);
+		if (add_line_to_lst((void*)(&bin->nlist64[i]), bin, &sym))
 			fuc_is_public(&lst, &sym);
 		i++;
-		head->sect.x64.seg++;
 	}
+	return (lst);
+}
+
+t_list		*print_symbol_table(t_file *bin)
+{
+	t_list			*lst;
+
+	if (bin->mach64)
+		lst = print_symbol_table_64(bin, (void*)bin->mach64);
+	else
+		lst = print_symbol_table_32(bin, (void*)bin->mach32);
 	return (lst);
 }

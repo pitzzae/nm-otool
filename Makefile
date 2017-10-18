@@ -6,7 +6,7 @@
 #    By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/06/09 10:25:23 by gtorresa          #+#    #+#              #
-#*   Updated: 2017/09/19 16:44:24 by gtorresa         ###   ########.fr       *#
+#*   Updated: 2017/10/18 12:06:45 by gtorresa         ###   ########.fr       *#
 #                                                                              #
 #******************************************************************************#
 
@@ -31,9 +31,8 @@ OTOOL_OBJS64	= objs_otool64
 INCL_DIR		= -I./includes -I$(LIBFT_DIR)/includes -I$(LIBNMOTOOL_DIR)/includes
 LIB_DIR			= -L$(LIBFT_DIR) -lft -L$(LIBNMOTOOL_DIR) -lnmotool
 
-NM_SRCS			= add_line_to_lst.c main.c parse_universel_binary.c \
-				get_segment_command.c order_lst.c print_symbol_table.c \
-				get_type_file.c parse_argv.c
+NM_SRCS			= main.c ft_nm.c print_symbol_table.c order_lst.c
+
 OTOOL_SRCS		= main.c ft_otool.c find_section_32.c find_section_64.c \
 				print_sections.c
 

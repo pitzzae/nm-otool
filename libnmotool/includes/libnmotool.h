@@ -51,12 +51,16 @@ typedef struct		s_file
 	struct fat_header			*head;
 	struct fat_arch				*arch;
 	uint32_t					ncmds;
+	uint32_t					pos;
 	struct mach_header			*mach32;
 	struct mach_header_64		*mach64;
 	struct load_command			*lc;
 	struct load_command			**lc_t;
 	struct segment_command		**seg32_t;
 	struct segment_command_64	**seg64_t;
+	struct symtab_command		*sym;
+	struct nlist_64				*nlist64;
+	struct nlist				*nlist32;
 	t_dump						*dump;
 }					t_file;
 
