@@ -57,14 +57,6 @@ static void		fuc_is_public(t_list **lst, t_symbol *sym)
 	ft_lstadd(lst, ft_lstnew(sym, sizeof(*sym)));
 }
 
-size_t			add_line_to_lst(void *nlst, t_file *bin, t_symbol *sym)
-{
-	(void)nlst;
-	(void)bin;
-	(void)sym;
-	return (1);
-}
-
 static t_list	*print_symbol_table_32(t_file *bin, void *ptr)
 {
 	size_t			i;
@@ -90,12 +82,6 @@ static t_list	*print_symbol_table_32(t_file *bin, void *ptr)
 		i++;
 	}
 	return (lst);
-}
-
-void			test(struct nlist_64 l64)
-{
-	(void)l64;
-	return ;
 }
 
 static t_list	*print_symbol_table_64(t_file *bin, void *ptr)
@@ -134,7 +120,7 @@ static t_list	*print_symbol_table_64(t_file *bin, void *ptr)
 		sym.name = (void *)(bin->mach64) + bin->sym->stroff +
 				bin->nlist64[i].n_un.n_strx;
 		if (ft_strcmp(sym.name, "_CentSigMsg") == 0)
-			test(bin->nlist64[i]);
+			;
 		if (add_line_to_lst((void*)(&bin->nlist64[i]), bin, &sym))
 			fuc_is_public(&lst, &sym);
 		i++;
