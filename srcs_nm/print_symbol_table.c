@@ -37,26 +37,6 @@ static void		print_ptr_addr(unsigned long n, char *buff, boolean_t x64)
 	ft_strcat(buff, address);
 }
 
-static void		fuc_is_public(t_list **lst, t_symbol *sym)
-{
-	t_list			*l;
-	t_symbol		*s;
-
-	l = *lst;
-	while (l)
-	{
-		s = ((t_symbol*)(l->content));
-		if (s && ft_strcmp(s->name, sym->name) == 0 && sym->type == 't' &&
-			ft_strcmp(s->address, sym->address) == 0)
-		{
-			s->type = 'T';
-			return ;
-		}
-		l = l->next;
-	}
-	ft_lstadd(lst, ft_lstnew(sym, sizeof(*sym)));
-}
-
 static t_list	*print_symbol_table_32(t_file *bin, void *ptr)
 {
 	size_t			i;
@@ -74,11 +54,12 @@ static t_list	*print_symbol_table_32(t_file *bin, void *ptr)
 			print_ptr_addr(bin->nlist32[i].n_value, sym.address,
 						   bin->dump->is_64);
 		else
-			ft_strcat(sym.address, S_X86);
+			ft_strcat(sym.address, S_X32);
+		sym.n_type = bin->nlist32[i].n_type;
+		sym.n_sect = bin->nlist32[i].n_sect;
 		sym.name = (void *)(bin->mach32) + bin->sym->stroff +
 				bin->nlist32[i].n_un.n_strx;
-		if (add_line_to_lst((void*)(&bin->nlist64[i]), bin, &sym))
-			fuc_is_public(&lst, &sym);
+		add_line_to_lst(&sym, &lst);
 		i++;
 	}
 	return (lst);
@@ -96,33 +77,17 @@ static t_list	*print_symbol_table_64(t_file *bin, void *ptr)
 	bin->nlist64 = (struct nlist_64*)(ptr + bin->sym->symoff);
 	while (i < bin->sym->nsyms)
 	{
-		/*
-		uint8_t io1;
-		uint8_t io2;
-
-		uint8_t io3 = N_UNDF;
-		uint8_t io4 = N_PBUD;
-		uint8_t io5 = N_ABS;
-		uint8_t io6 = N_SECT;
-		uint8_t io7 = N_INDR;
-
-		io1 = bin->nlist64[i].n_type & N_TYPE;
-		io2 = bin->nlist64[i].n_type & N_EXT;
-
-		struct nlist_64	s = bin->nlist64[i];
-		*/
 		ft_bzero(sym.address, 17);
 		if (bin->nlist64[i].n_value > 0)
 			print_ptr_addr(bin->nlist64[i].n_value, sym.address,
 						   bin->dump->is_64);
 		else
 			ft_strcat(sym.address, S_X64);
+		sym.n_type = bin->nlist64[i].n_type;
+		sym.n_sect = bin->nlist64[i].n_sect;
 		sym.name = (void *)(bin->mach64) + bin->sym->stroff +
 				bin->nlist64[i].n_un.n_strx;
-		if (ft_strcmp(sym.name, "_CentSigMsg") == 0)
-			;
-		if (add_line_to_lst((void*)(&bin->nlist64[i]), bin, &sym))
-			fuc_is_public(&lst, &sym);
+		add_line_to_lst(&sym, &lst);
 		i++;
 	}
 	return (lst);

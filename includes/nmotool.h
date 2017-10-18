@@ -13,7 +13,7 @@
 #ifndef FT_NMOTOOL_H
 # define FT_NMOTOOL_H
 # define S_X64 "                "
-# define S_X86 "        "
+# define S_X32 "        "
 
 # include <stdio.h>
 # include <libft.h>
@@ -24,6 +24,8 @@ typedef struct		s_symbol
 	char						address[17];
 	char						type;
 	char						*name;
+	uint8_t						n_type;
+	uint8_t						n_sect;
 }					t_symbol;
 
 typedef struct		s_seg_x64
@@ -57,7 +59,7 @@ void				ft_otool(t_file *bin);
 
 void				ft_nm(t_file *bin);
 t_list				*print_symbol_table(t_file *bin);
-size_t				add_line_to_lst(void *nlst, t_file *bin, t_symbol *sym);
+void				add_line_to_lst(t_symbol *sym, t_list **lst);
 void				order_lst(t_list *lst);
 
 #endif
