@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 13:48:22 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 17:51:56 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/18 18:38:29 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,8 @@ void		add_line_to_lst(t_symbol *sym, t_list **lst)
 	while (l)
 		l = l->next;
 	sym->type = get_char_type(sym->n_type & N_TYPE, sym);
-
-	if (!ft_strcmp(sym->name, "radr://5614542"))
-		i = sym->n_type & N_TYPE;
+	if (!ft_strcmp(sym->name, "_testp"))
+		i = sym->n_type & N_STAB;
 	if ((sym->n_type & N_EXT))
 		sym->type = ft_toupper(sym->type);
 	ft_lstadd(lst, ft_lstnew(sym, sizeof(*sym)));
