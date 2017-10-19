@@ -1,6 +1,0 @@
-/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/nmotool.dir
-/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_nm.dir
-/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft_otool.dir
-/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/gtorresani/Documents/42/gitlab/nm-otool/cmake-build-debug/CMakeFiles/ft.dir
