@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/19 11:56:01 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 12:05:19 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 12:09:30 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,11 @@ int 		check_magic_number(t_file *bin)
 		bin->head->magic == FAT_CIGAM)
 		return (1);
 	else
+	{
+		ft_putstr_fd(bin->exename, 2);
+		ft_putstr_fd(": ", 2);
+		ft_putstr_fd(bin->filename, 2);
+		ft_putendl_fd(" The file was not recognized as a valid object file", 2);
 		return (0);
+	}
 }
