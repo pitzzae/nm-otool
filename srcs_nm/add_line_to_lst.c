@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 13:48:22 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 14:48:27 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 16:01:06 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void		add_line_to_lst(t_file *bin, t_symbol *sym, t_list **lst)
 	l = *lst;
 	while (l)
 		l = l->next;
-	if (!ft_strcmp(sym->name, "___block_descriptor_tmp"))
+	if (!ft_strcmp(sym->name, "__objc_empty_vtable"))
 	{
 		i = sym->n_sect;
 		j = sym->n_type;

@@ -38,8 +38,8 @@ test_diff_output () {
 }
 
 echo "Test /usr/bin/*"
-LEN=0
 PASS=0
+LEN=0
 for LINE in /usr/bin/*
 do
     test_diff_output $LINE
@@ -47,10 +47,9 @@ done
 PASSBIN=$PASS
 LENBIN=$LEN
 
-
 echo "Test /usr/lib/*"
-LEN=0
 PASS=0
+LEN=0
 for LINE in /usr/lib/*
 do
     test_diff_output $LINE
