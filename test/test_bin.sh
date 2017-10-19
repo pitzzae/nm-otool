@@ -18,8 +18,7 @@ run_sys_otool () {
 run_ft_otool () {
     $FT_OTOOL_PATH $@
 }
-LEN=0
-PASS=0
+
 test_diff_output () {
     LEN=$(($LEN + 1))
     DIFF=`diff  <(echo -e $(run_sys_nm "$@")) <(echo -e $(run_ft_nm "$@"))`
@@ -38,8 +37,26 @@ test_diff_output () {
     fi
 }
 
+echo "Test /usr/bin/*"
+LEN=0
+PASS=0
 for LINE in /usr/bin/*
 do
     test_diff_output $LINE
 done
-echo "Result $PASS/$LEN"
+PASSBIN=$PASS
+LENBIN=$LEN
+
+
+echo "Test /usr/lib/*"
+LEN=0
+PASS=0
+for LINE in /usr/lib/*
+do
+    test_diff_output $LINE
+done
+PASSLIB=$PASS
+LENLIB=$LEN
+
+echo "Result bin $PASSBIN/$LENBIN"
+echo "Result lib $PASSLIB/$LENLIB"

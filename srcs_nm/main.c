@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 12:06:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 14:19:16 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 14:48:52 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static void	parse_argv_file(t_file *bin, int ac, char **av)
 {
-	t_tdb_nsect tbd;
-	int 		i;
+	t_tdb_nsect	tbd;
+	int			i;
 
 	i = 1;
 	bin->tdb = &tbd;
@@ -36,7 +36,7 @@ static void	init_lib_nmotool(t_file *bin)
 	bin->is_arlib = 0;
 	bin->func = ft_nm;
 	bin->pos = 0;
-	bin->fat_opt = 1;
+	bin->is_print = 0;
 	bin->tdb = NULL;
 	bin->nfat_arch = 0;
 }

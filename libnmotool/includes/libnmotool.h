@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 15:02:12 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 12:05:10 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 14:47:05 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ typedef struct		s_file
 	struct nlist				*nlist32;
 	t_dump						*dump;
 	t_tdb_nsect					*tdb;
-	int 						fat_opt;
+	int 						is_print;
 }					t_file;
 
 void		dump_segments(t_file *bin);

@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 13:48:22 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 14:19:09 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 14:48:27 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,11 @@ static char	get_char_type(unsigned char c, t_symbol *sym, t_file *bin)
 		return ('a');
 	if (c == N_SECT)
 	{
-		if (sym->n_sect == bin->tdb->text_nsect || sym->n_sect == 0x01)
+		if (sym->n_sect == bin->tdb->text_nsect)
 			return ('t');
 		else if (sym->n_sect == bin->tdb->data_nsect)
 			return ('d');
-		else if (sym->n_sect == bin->tdb->bss_nsect || sym->n_sect == 0x0c ||
-				sym->n_sect == 0x0f)
+		else if (sym->n_sect == bin->tdb->bss_nsect)
 			return ('b');
 		return ('s');
 	}
@@ -43,7 +42,7 @@ static char	get_char_type(unsigned char c, t_symbol *sym, t_file *bin)
 void		add_line_to_lst(t_file *bin, t_symbol *sym, t_list **lst)
 {
 	t_list		*l;
-	int 		i,j;
+	int		i,j;
 
 	l = *lst;
 	while (l)
