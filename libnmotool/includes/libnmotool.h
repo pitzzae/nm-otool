@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 15:02:12 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 01:59:14 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 12:05:10 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,7 @@ void		dump_mach_header(t_file *bin);
 void		dump_load_commands(t_file *bin);
 void		dump_static_lib(t_file *bin);
 int 		check_lib_option(t_file *bin);
+int 		check_magic_number(t_file *bin);
 void		dump_section_name(t_file *bin);
 void		mmap_file(t_file *bin, char *path);
 void		ft_swap_fat_header(t_file *bin, struct fat_header *header);

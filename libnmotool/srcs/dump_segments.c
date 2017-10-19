@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 14:59:48 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 15:28:12 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 12:05:15 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@ void		dump_segments(t_file *bin) {
 	dump.is_swap = should_swap_bytes(bin->head->magic);
 	dump.fat = is_fat(bin->head->magic);
 	bin->dump = &dump;
+	if (!check_magic_number(bin))
+		return ;
 	if (dump.fat)
 		dump_fat_header(bin);
 	else
