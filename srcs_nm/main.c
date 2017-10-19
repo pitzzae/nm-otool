@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 12:06:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 14:48:52 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 16:53:59 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,9 @@
 
 static void	parse_argv_file(t_file *bin, int ac, char **av)
 {
-	t_tdb_nsect	tbd;
 	int			i;
 
 	i = 1;
-	bin->tdb = &tbd;
 	while (i < ac)
 	{
 		mmap_file(bin, av[i]);
