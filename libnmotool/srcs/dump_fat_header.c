@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 17:23:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 17:34:21 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 20:58:43 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,4 +72,5 @@ void			dump_fat_header(t_file *bin)
 			dump_mach_header(bin);
 		i++;
 	}
+	free(bin->fat_l);
 }

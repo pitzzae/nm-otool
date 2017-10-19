@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 14:59:48 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 17:34:27 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 20:58:55 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,23 +24,27 @@ static int	is_fat(uint32_t magic) {
 	return magic == FAT_MAGIC || magic == FAT_CIGAM;
 }
 
-static void	init_struct(t_file *bin)
+static void	init_struct(t_file *bin, t_dump	*dump)
 {
 	bin->head = NULL;
 	bin->dump = NULL;
 	bin->mach32 = NULL;
 	bin->mach64 = NULL;
+	bin->head = (struct fat_header*)bin->ptr;
+	dump->is_64 = is_magic_64(bin->head->magic);
+	dump->is_swap = should_swap_bytes(bin->head->magic);
+	dump->fat = is_fat(bin->head->magic);
+	bin->dump = dump;
+	bin->nfat_arch = 1;
 }
 
 void		dump_segments(t_file *bin) {
+	int 				fat_l[1];
 	t_dump				dump;
 
-	init_struct(bin);
-	bin->head = (struct fat_header*)bin->ptr;
-	dump.is_64 = is_magic_64(bin->head->magic);
-	dump.is_swap = should_swap_bytes(bin->head->magic);
-	dump.fat = is_fat(bin->head->magic);
-	bin->dump = &dump;
+	init_struct(bin, &dump);
+	bin->fat_l = fat_l;
+	bin->fat_l[0] = 0;
 	if (!check_magic_number(bin))
 		return ;
 	if (dump.fat)
@@ -58,3 +62,4 @@ void		dump_segments(t_file *bin) {
 			dump_mach_header(bin);
 	}
 }
+

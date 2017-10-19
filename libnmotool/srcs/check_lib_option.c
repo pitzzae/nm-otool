@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 15:22:15 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 17:46:48 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 20:58:37 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,10 @@ static int	fat_is_select(t_file *bin, int pos)
 	find_64 = 0;
 	while (i < bin->nfat_arch)
 	{
+		int k;
+		int l;
+		k = bin->fat_l[i];
+		l = CPU_TYPE_X86_64;
 		if (bin->fat_l[i] == CPU_TYPE_X86_64)
 			find_64 = CPU_TYPE_X86_64;
 		i++;
