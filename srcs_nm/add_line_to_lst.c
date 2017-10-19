@@ -30,7 +30,8 @@ static char	get_char_type(unsigned char c, t_symbol *sym, t_file *bin)
 			return ('t');
 		else if (sym->n_sect == bin->tdb->data_nsect || sym->n_sect == 0x0b)
 			return ('d');
-		else if (sym->n_sect == bin->tdb->bss_nsect || sym->n_sect == 0x0c)
+		else if (sym->n_sect == bin->tdb->bss_nsect || sym->n_sect == 0x0c ||
+				sym->n_sect == 0x0f)
 			return ('b');
 		return ('s');
 	}
@@ -47,7 +48,7 @@ void		add_line_to_lst(t_file *bin, t_symbol *sym, t_list **lst)
 	l = *lst;
 	while (l)
 		l = l->next;
-	if (!ft_strcmp(sym->name, "_central_hdr_sig"))
+	if (!ft_strcmp(sym->name, "_regionDescriptionOptions"))
 	{
 		i = sym->n_sect;
 		j = sym->n_type;

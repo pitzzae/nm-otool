@@ -19,6 +19,7 @@ objs_nm64/
 objs_otool32/
 objs_otool64/
 .idea/
+cmake-build-debug/CMakeFiles/Progress/
 cmake-build-debug/CMakeFiles/ft.dir/
 cmake-build-debug/CMakeFiles/ft_nm.dir/
 cmake-build-debug/CMakeFiles/ft_otool.dir/

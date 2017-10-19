@@ -49,7 +49,7 @@ static int	dump_section_name_32(t_file *bin, char *sect, char *seg)
 
 	i = 0;
 	n = 0;
-	while (i < bin->mach32->ncmds)
+	while (i < ft_swapuint32(bin->mach32->ncmds))
 	{
 		if (bin->lc_t[i]->cmd == LC_SEGMENT)
 		{
@@ -72,8 +72,8 @@ static int	dump_section_name_32(t_file *bin, char *sect, char *seg)
 
 static void init_section32(t_file *bin)
 {
-	uint32_t		i;
-	void			*ptr;
+	uint32_t	i;
+	void		*ptr;
 
 	i = 0;
 	ptr = ((void*)(bin->mach32 + 1) + sizeof(struct segment_command));
@@ -87,8 +87,8 @@ static void init_section32(t_file *bin)
 
 static void init_section64(t_file *bin)
 {
-	uint32_t		i;
-	void			*ptr;
+	uint32_t	i;
+	void		*ptr;
 
 	i = 0;
 	ptr = ((void*)(bin->mach64 + 1) + sizeof(struct segment_command_64));
@@ -102,7 +102,7 @@ static void init_section64(t_file *bin)
 
 void		dump_section_name(t_file *bin)
 {
-	t_tdb_nsect		tbd;
+	t_tdb_nsect tbd;
 
 	bin->tdb = &tbd;
 	if (bin->mach64)
