@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 20:06:40 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 22:02:25 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 01:59:30 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,14 +105,14 @@ void		dump_section_name(t_file *bin)
 	t_tdb_nsect		tbd;
 
 	bin->tdb = &tbd;
-	if (bin->dump->is_64)
+	if (bin->mach64)
 	{
 		init_section64(bin);
 		bin->tdb->text_nsect = dump_section_name_64(bin, SECT_TEXT, SEG_TEXT);
 		bin->tdb->data_nsect = dump_section_name_64(bin, SECT_DATA, SEG_DATA);
 		bin->tdb->bss_nsect = dump_section_name_64(bin, SECT_BSS, SEG_DATA);
 	}
-	else
+	else if (bin->mach32)
 	{
 		init_section32(bin);
 		bin->tdb->text_nsect = dump_section_name_32(bin, SECT_TEXT, SEG_TEXT);

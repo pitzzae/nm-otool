@@ -6,43 +6,54 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 17:23:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 15:27:30 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 01:59:25 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libnmotool.h>
 
-static int	is_magic_64(uint32_t magic) {
+static int		is_magic_64(uint32_t magic) {
 	return magic == MH_MAGIC_64 || magic == MH_CIGAM_64;
 }
 
-static void	ft_swap_fat_header(t_file *bin, struct fat_header *header)
+static int		init_fat_header(t_file *bin, struct fat_header *header)
 {
-	header->magic = ft_swapuint32(bin->head->magic);
-	header->nfat_arch = ft_swapuint32(bin->head->nfat_arch);
-	bin->head = header;
+	if (bin->dump->is_swap)
+		ft_swap_fat_header(bin, header);
+	bin->fat_l = malloc(sizeof(char) * header->nfat_arch);
+	bin->nfat_arch = header->nfat_arch;
+	return ((int)header->nfat_arch);
 }
 
-static void	ft_swap_fat_arch(t_file *bin, struct fat_arch *arch)
+static void 	make_fat_head_list(t_file *bin)
 {
-	arch->cputype = ft_swapuint32(bin->arch->cputype);
-	arch->cpusubtype = ft_swapuint32(bin->arch->cpusubtype);
-	arch->offset = ft_swapuint32(bin->arch->offset);
-	arch->size = ft_swapuint32(bin->arch->size);
-	arch->align = ft_swapuint32(bin->arch->align);
-	bin->arch = arch;
+	struct fat_arch		arch;
+	uint32_t			i;
+
+	i = 0;
+	while (i < bin->nfat_arch)
+	{
+		bin->arch = (struct fat_arch*)(((bin->ptr) + sizeof(struct fat_header))
+									   + (sizeof(struct fat_arch) * i));
+		if (bin->dump->is_swap)
+			ft_swap_fat_arch(bin, &arch);
+		bin->mach32 = (struct mach_header*)((bin->ptr) + bin->arch->offset);
+		bin->mach64 = NULL;
+		bin->fat_l[i] = is_magic_64(bin->mach32->magic);
+		i++;
+	}
 }
 
-void		dump_fat_header(t_file *bin)
+void			dump_fat_header(t_file *bin)
 {
 	struct fat_header	header;
 	struct fat_arch		arch;
 	uint32_t			i;
 
 	i = 0;
-	if (bin->dump->is_swap)
-		ft_swap_fat_header(bin, &header);
-	while (i < header.nfat_arch)
+	init_fat_header(bin, &header);
+	make_fat_head_list(bin);
+	while (i < bin->nfat_arch)
 	{
 		bin->arch = (struct fat_arch*)(((bin->ptr) + sizeof(struct fat_header))
 					+ (sizeof(struct fat_arch) * i));
@@ -55,7 +66,7 @@ void		dump_fat_header(t_file *bin)
 		{
 			bin->mach32 = NULL;
 			bin->mach64 = (struct mach_header_64*)((bin->ptr) +
-					bin->arch->offset);
+												   bin->arch->offset);
 		}
 		if (check_lib_option(bin))
 			dump_mach_header(bin);
