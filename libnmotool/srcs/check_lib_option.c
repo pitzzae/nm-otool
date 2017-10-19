@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 15:22:15 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 17:34:15 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 17:46:48 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,11 @@ int			check_lib_option(t_file *bin, int pos)
 		i = fat_is_select(bin, pos);
 	else
 		i = 1;
-	if (i)
+	if (i && !bin->is_print)
+	{
 		bin->is_print = i;
-	return (i);
+		return (i);
+	}
+	else
+		return (0);
 }
