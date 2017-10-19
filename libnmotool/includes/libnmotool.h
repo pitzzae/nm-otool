@@ -6,12 +6,14 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 15:02:12 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 17:34:09 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 21:50:29 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBNMOTOOL_H
 # define LIBNMOTOOL_H
+# define NM_DISPLAY 0
+# define OT_DISPLAY 1
 
 # include <libft.h>
 # include <sys/stat.h>
@@ -48,13 +50,14 @@ typedef struct		s_tdb_nsect
 
 typedef struct		s_file
 {
-	char 						*filename;
-	char 						*exename;
-	int 						is_arlib;
+	char						*filename;
+	char						*exename;
+	int							is_arlib;
 	int							fd;
 	struct stat					st;
 	void						*ptr;
 	void						*func;
+	int							print_error;
 	struct fat_header			*head;
 	struct fat_arch				*arch;
 	int							*fat_l;
@@ -74,7 +77,7 @@ typedef struct		s_file
 	struct nlist				*nlist32;
 	t_dump						*dump;
 	t_tdb_nsect					*tdb;
-	int 						is_print;
+	int							is_print;
 }					t_file;
 
 void		dump_segments(t_file *bin);
@@ -82,8 +85,8 @@ void		dump_fat_header(t_file *bin);
 void		dump_mach_header(t_file *bin);
 void		dump_load_commands(t_file *bin);
 void		dump_static_lib(t_file *bin);
-int 		check_lib_option(t_file *bin, int pos);
-int 		check_magic_number(t_file *bin);
+int			check_lib_option(t_file *bin, int pos);
+int			check_magic_number(t_file *bin);
 void		dump_section_name(t_file *bin);
 void		mmap_file(t_file *bin, char *path);
 void		ft_swap_fat_header(t_file *bin, struct fat_header *header);

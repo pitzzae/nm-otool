@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 16:38:34 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 16:54:07 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 21:51:24 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ static void	init_lib_nmotool(t_file *bin)
 {
 	bin->is_arlib = 0;
 	bin->func = ft_otool;
+	bin->print_error = OT_DISPLAY;
 	bin->pos = 0;
 	bin->is_print = 0;
 	bin->tdb = NULL;
