@@ -67,5 +67,11 @@ set(SOURCE_NM_FILES srcs_nm/main.c srcs_nm/ft_nm.c srcs_nm/print_symbol_table.c
 
 add_executable(ft_otool ${SOURCE_OTOOL_FILES} ${SOURCE_LIBFT}
         ${SOURCE_LIBNMOTOOL} ${HEADER_FILES})
+
 add_executable(ft_nm ${SOURCE_NM_FILES} ${SOURCE_LIBFT} ${SOURCE_LIBNMOTOOL}
         ${HEADER_FILES})
+add_executable(ft_nm_i386 ${SOURCE_NM_FILES} ${SOURCE_LIBFT} ${SOURCE_LIBNMOTOOL}
+        ${HEADER_FILES})
+
+
+set_target_properties(ft_nm_i386 PROPERTIES COMPILE_FLAGS "-m32" LINK_FLAGS "-m32")
