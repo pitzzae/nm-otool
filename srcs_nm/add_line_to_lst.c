@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 13:48:22 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 16:01:06 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 17:36:03 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,16 +42,10 @@ static char	get_char_type(unsigned char c, t_symbol *sym, t_file *bin)
 void		add_line_to_lst(t_file *bin, t_symbol *sym, t_list **lst)
 {
 	t_list		*l;
-	int		i,j;
 
 	l = *lst;
 	while (l)
 		l = l->next;
-	if (!ft_strcmp(sym->name, "__objc_empty_vtable"))
-	{
-		i = sym->n_sect;
-		j = sym->n_type;
-	}
 	sym->type = get_char_type(sym->n_type & N_TYPE, sym, bin);
 	if ((sym->n_type & N_EXT))
 		sym->type = ft_toupper(sym->type);

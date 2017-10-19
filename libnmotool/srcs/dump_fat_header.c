@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 17:23:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 01:59:25 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 17:34:21 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static void 	make_fat_head_list(t_file *bin)
 			ft_swap_fat_arch(bin, &arch);
 		bin->mach32 = (struct mach_header*)((bin->ptr) + bin->arch->offset);
 		bin->mach64 = NULL;
-		bin->fat_l[i] = is_magic_64(bin->mach32->magic);
+		bin->fat_l[i] = (int)bin->arch->cputype;
 		i++;
 	}
 }
@@ -68,7 +68,7 @@ void			dump_fat_header(t_file *bin)
 			bin->mach64 = (struct mach_header_64*)((bin->ptr) +
 												   bin->arch->offset);
 		}
-		if (check_lib_option(bin))
+		if (check_lib_option(bin, i))
 			dump_mach_header(bin);
 		i++;
 	}

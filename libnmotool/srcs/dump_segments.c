@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 14:59:48 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 12:05:15 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 17:34:27 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void		dump_segments(t_file *bin) {
 			bin->mach32 = NULL;
 			bin->mach64 = (struct mach_header_64*)((bin->ptr));
 		}
-		if (check_lib_option(bin))
+		if (check_lib_option(bin, 0))
 			dump_mach_header(bin);
 	}
 }

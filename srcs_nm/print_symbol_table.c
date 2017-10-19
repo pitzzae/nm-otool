@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 22:47:27 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 16:01:11 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 17:36:07 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,9 +97,6 @@ static t_list	*print_symbol_table_64(t_file *bin, void *ptr, t_symbol *sym)
 	{
 		sym->name = (void *)(bin->mach64) + bin->sym->stroff +
 					bin->nlist64[i].n_un.n_strx;
-		int l;
-		if (!ft_strcmp(sym->name, "__objc_empty_vtable"))
-			l = 0;
 		sym->n_type = bin->nlist64[i].n_type;
 		sym->n_sect = bin->nlist64[i].n_sect;
 		sym->n_value = bin->nlist64[i].n_value;
