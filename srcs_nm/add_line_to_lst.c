@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 13:48:22 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 01:59:35 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/19 14:19:09 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static char	get_char_type(unsigned char c, t_symbol *sym, t_file *bin)
 	{
 		if (sym->n_sect == bin->tdb->text_nsect || sym->n_sect == 0x01)
 			return ('t');
-		else if (sym->n_sect == bin->tdb->data_nsect || sym->n_sect == 0x0b)
+		else if (sym->n_sect == bin->tdb->data_nsect)
 			return ('d');
 		else if (sym->n_sect == bin->tdb->bss_nsect || sym->n_sect == 0x0c ||
 				sym->n_sect == 0x0f)
@@ -48,7 +48,7 @@ void		add_line_to_lst(t_file *bin, t_symbol *sym, t_list **lst)
 	l = *lst;
 	while (l)
 		l = l->next;
-	if (!ft_strcmp(sym->name, "_regionDescriptionOptions"))
+	if (!ft_strcmp(sym->name, "___block_descriptor_tmp"))
 	{
 		i = sym->n_sect;
 		j = sym->n_type;
