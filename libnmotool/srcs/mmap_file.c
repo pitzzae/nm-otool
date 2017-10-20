@@ -6,21 +6,13 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 16:21:15 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/20 13:29:31 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/20 14:22:35 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libnmotool.h>
 
-static void	ft_putargv_error(t_file *bin, char *msg)
-{
-	ft_putstr_fd(bin->exename, 2);
-	ft_putstr_fd(": ", 2);
-	ft_putstr_fd(bin->filename, 2);
-	ft_putendl_fd(msg, 2);
-}
-
-static int 	is_magic_header(uint32_t magic)
+static int	is_magic_header(uint32_t magic)
 {
 	if (magic == MH_MAGIC ||
 		magic == MH_MAGIC_64 ||
@@ -34,9 +26,9 @@ static int 	is_magic_header(uint32_t magic)
 
 static int	is_recognized_file(t_file *bin)
 {
-	unsigned char 			buffer[9];
+	unsigned char			buffer[9];
 	struct fat_header		*header;
-	int 					bytes_read;
+	int						bytes_read;
 
 	buffer[8] = '\0';
 	bytes_read = read(bin->fd, buffer, 8);
@@ -50,6 +42,12 @@ static int	is_recognized_file(t_file *bin)
 	return (1);
 }
 
+static void	ft_print_error(void (*print_error)(t_file *bin, char *msg),
+							t_file *bin, char *msg)
+{
+	print_error(bin, msg);
+}
+
 void		mmap_file(t_file *bin, char *file)
 {
 	bin->ptr = NULL;
@@ -58,14 +56,14 @@ void		mmap_file(t_file *bin, char *file)
 	if (bin->fd > 2 && !fstat(bin->fd, &bin->st))
 	{
 		if (bin->st.st_mode & S_IFDIR)
-			ft_putargv_error(bin, ": Is a directory.");
+			ft_print_error(bin->print_error, bin, MSG_NM_DIR);
 		else if (is_recognized_file(bin))
-			ft_putargv_error(bin, ": wasn't recognized as a valid object file");
+			ft_print_error(bin->print_error, bin, MSG_NM_NOOBJ);
 		else
 			bin->ptr = mmap(0, (size_t)bin->st.st_size,
 						PROT_READ, MAP_PRIVATE, bin->fd, 0);
 	}
 	else
-		ft_putargv_error(bin, ": No such file or directory.");
+		ft_print_error(bin->print_error, bin, MSG_NM_NOFILE);
 	close(bin->fd);
 }

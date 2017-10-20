@@ -6,17 +6,26 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 12:06:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/20 12:34:50 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/20 14:22:58 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "nmotool.h"
 
+static void	ft_nm_print_error(t_file *bin, char *msg)
+{
+	ft_putstr_fd(bin->exename, 2);
+	ft_putstr_fd(": ", 2);
+	ft_putstr_fd(bin->filename, 2);
+	ft_putendl_fd(msg, 2);
+}
+
 static void	init_lib_nmotool(t_file *bin)
 {
 	bin->is_arlib = 0;
 	bin->func = ft_nm;
-	bin->print_error = NM_DISPLAY;
+	bin->print_error = ft_nm_print_error;
+	bin->display = NM_DISPLAY;
 	bin->pos = 0;
 	bin->is_print = 0;
 	bin->tdb = NULL;

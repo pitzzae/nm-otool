@@ -6,17 +6,25 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 16:38:34 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/20 12:35:03 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/20 14:23:16 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "nmotool.h"
 
+static void	ft_ot_print_error(t_file *bin, char *msg)
+{
+	(void)msg;
+	ft_putstr(bin->filename);
+	ft_putendl(": is not an object file");
+}
+
 static void	init_lib_nmotool(t_file *bin)
 {
 	bin->is_arlib = 0;
 	bin->func = ft_otool;
-	bin->print_error = OT_DISPLAY;
+	bin->print_error = ft_ot_print_error;
+	bin->display = OT_DISPLAY;
 	bin->pos = 0;
 	bin->is_print = 0;
 	bin->tdb = NULL;

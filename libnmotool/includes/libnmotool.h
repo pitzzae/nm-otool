@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 15:02:12 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/20 12:32:36 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/20 14:20:36 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 # define LIBNMOTOOL_H
 # define NM_DISPLAY 0
 # define OT_DISPLAY 1
+# define MSG_NM_DIR ": Is a directory."
+# define MSG_NM_NOOBJ ": The file was not recognized as a valid object file"
+# define MSG_NM_NOFILE ": No such file or directory."
 
 # include <libft.h>
 # include <sys/stat.h>
@@ -60,7 +63,8 @@ typedef struct		s_file
 	void						*mmap;
 	void						*func;
 	void						*init_lib;
-	int							print_error;
+	void						*print_error;
+	int							display;
 	struct fat_header			*head;
 	struct fat_arch				*arch;
 	int							*fat_l;
