@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 16:38:34 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/20 14:23:16 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/20 15:08:46 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,18 @@
 
 static void	ft_ot_print_error(t_file *bin, char *msg)
 {
-	(void)msg;
-	ft_putstr(bin->filename);
-	ft_putendl(": is not an object file");
+	char		*error;
+	int			fd;
+
+	fd = 1;
+	error = ": is not an object file";
+	if (!ft_strcmp(msg, MSG_NM_DIR))
+	{
+		error = MSG_NM_DIR;
+		fd = 2;
+	}
+	ft_putstr_fd(bin->filename, fd);
+	ft_putendl_fd(error, fd);
 }
 
 static void	init_lib_nmotool(t_file *bin)
