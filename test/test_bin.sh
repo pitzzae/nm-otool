@@ -8,7 +8,12 @@ run_sys_nm () {
 }
 
 run_ft_nm () {
-    $FT_NM_PATH $@  2>/dev/null | cat -e | sed -e 's/\$/\\n/g'
+    $FT_NM_PATH $@ 2>/dev/null | cat -e | sed -e 's/\$/\\n/g'; test ${PIPESTATUS[0]} -ne 0
+    STATUS=$?
+    if [[ $STATUS -ne 1 ]];
+    then
+        (>&2 echo "Segmentation Fault $FT_NM_PATH $@ exit $STATUS")
+    fi
 }
 
 run_sys_otool () {
@@ -16,14 +21,19 @@ run_sys_otool () {
 }
 
 run_ft_otool () {
-    $FT_OTOOL_PATH $@ 2>/dev/null | cat -e | sed -e 's/\$/\\n/g'
+    $FT_OTOOL_PATH $@ 2>/dev/null | cat -e | sed -e 's/\$/\\n/g'; test ${PIPESTATUS[0]} -ne 0
+    STATUS=$?
+    if [[ $STATUS -ne 1 ]];
+    then
+        (>&2 echo "Segmentation Fault $FT_OTOOL_PATH $@ exit $STATUS")
+    fi
 }
 
 test_diff_output () {
     LEN=$(($LEN + 1))
     NM=`diff  <(echo -e $(run_sys_nm "$@")) <(echo -e $(run_ft_nm "$@"))`
     OT=`diff  <(echo -e $(run_sys_otool "$@")) <(echo -e $(run_ft_otool "$@"))`
-    if [ "$NM" ]
+    if [ "$NM" ];
     then
         (>&2 echo "Test nm $@")
         (>&2 echo "nm_diff:")
@@ -33,7 +43,7 @@ test_diff_output () {
         echo "Test nm $@ OK"
         PASS_NM=$(($PASS_NM + 1))
     fi
-    if [ "$OT" ]
+    if [ "$OT" ];
     then
         (>&2 echo "Test otool $@")
         (>&2 echo "otool_diff:")
@@ -48,7 +58,8 @@ test_diff_output () {
 test_path_recur () {
     for LINE in $@/*
     do
-        if [[ -d $LINE ]]; then
+        if [[ -d $LINE ]];
+        then
            test_path_recur $LINE
         else
             test_diff_output $LINE
@@ -62,13 +73,13 @@ test_directory () {
     PASS_OT=0
     LEN=0
     test_path_recur $@
-    RESULT="$RESULT""Result [ft_nm] bin $PASS_NM/$LEN\n\
-    Result [ft_otool] bin $PASS_OT/$LEN\n"
+    RESULT="$RESULT""Result [ft_nm] $@/* $PASS_NM/$LEN\n"
+    RESULT="$RESULT""Result [ft_otool] $@/* $PASS_OT/$LEN\n\n"
 }
 
 RESULT=""
 
-test_directory /usr/bin
-test_directory /usr/lib
+test_directory /usr/bin 2>error
+test_directory /usr/lib 2>error
 
-echo -e "$RESULT"
+echo -e "\n$RESULT"
