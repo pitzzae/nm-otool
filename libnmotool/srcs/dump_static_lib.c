@@ -6,16 +6,23 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 23:37:04 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 11:45:23 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/20 12:33:00 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libnmotool.h>
 
+static void	ptr_to_init_lib(t_file *bin, void (*init_lib)(t_file *bin))
+{
+	init_lib(bin);
+}
+
 static void	print_file_lib(t_file *bin, char *ptr, int size)
 {
 	t_file				bin_tmp;
 
+	ptr_to_init_lib(bin, bin->init_lib);
+	bin_tmp.init_lib = bin->init_lib;
 	bin_tmp.ptr = ptr;
 	bin_tmp.st.st_size = size;
 	bin_tmp.func = bin->func;
@@ -25,9 +32,11 @@ static void	print_file_lib(t_file *bin, char *ptr, int size)
 	dump_segments(&bin_tmp);
 }
 
-static void	print_file_lib_path(char *path, char *obj)
+static void	print_file_lib_path(t_file *bin, char *obj)
 {
-	ft_putstr(path);
+	if (bin->print_error == NM_DISPLAY)
+		ft_putendl("");
+	ft_putstr(bin->filename);
 	ft_putchar('(');
 	ft_putstr(obj);
 	ft_putendl("):");
@@ -47,8 +56,11 @@ static void	init_arlib(t_file *bin, t_arlib *l)
 	l->str = (void*)l->lib + l->st_len * sizeof(struct ranlib) + 4;
 	l->arr_len = *(unsigned int*)(l->str - 4);
 	l->str += l->arr_len;
-	ft_putstr("Archive : ");
-	ft_putendl(bin->filename);
+	if (bin->print_error == OT_DISPLAY)
+	{
+		ft_putstr("Archive : ");
+		ft_putendl(bin->filename);
+	}
 }
 
 void	dump_static_lib(t_file *bin)
@@ -68,7 +80,7 @@ void	dump_static_lib(t_file *bin)
 		if (ft_strlen(l.ar->ar_name) > 0)
 		{
 			j = ft_atoi(ft_strchr(l.ar->ar_name, '/') + 1);
-			print_file_lib_path(bin->filename, l.str);
+			print_file_lib_path(bin, l.str);
 			print_file_lib(bin, l.str + j, ft_atoi(l.ar->ar_size));
 			l.str += j;
 			l.str += ft_atoi(l.ar->ar_size) - j;

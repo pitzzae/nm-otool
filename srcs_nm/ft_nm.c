@@ -6,19 +6,30 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 12:06:09 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 15:29:33 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/20 12:33:22 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "nmotool.h"
 
-static void	parse_result(t_list *lst)
+static void	print_name_multi_arg(t_file *bin)
+{
+	if (bin->ac > 2)
+	{
+		ft_putendl("");
+		ft_putstr(bin->filename);
+		ft_putendl(":");
+	}
+}
+
+static void	parse_result(t_file *bin, t_list *lst)
 {
 	size_t			i;
 	t_symbol		*sym;
 
 	i = 0;
 	order_lst(lst);
+	print_name_multi_arg(bin);
 	while (lst != NULL && (sym = (t_symbol*)lst->content) != NULL)
 	{
 		ft_putstr(sym->address);
@@ -45,5 +56,5 @@ void		ft_nm(t_file *bin)
 			lst = print_symbol_table(bin);
 		bin->pos++;
 	}
-	parse_result(lst);
+	parse_result(bin, lst);
 }
