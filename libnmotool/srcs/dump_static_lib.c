@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 23:37:04 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/20 14:21:38 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/20 18:29:45 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ static void	init_arlib(t_file *bin, t_arlib *l)
 	}
 }
 
-void	dump_static_lib(t_file *bin)
+void		dump_static_lib(t_file *bin)
 {
 	t_arlib				l;
 	int					i;
@@ -82,8 +82,7 @@ void	dump_static_lib(t_file *bin)
 			j = ft_atoi(ft_strchr(l.ar->ar_name, '/') + 1);
 			print_file_lib_path(bin, l.str);
 			print_file_lib(bin, l.str + j, ft_atoi(l.ar->ar_size));
-			l.str += j;
-			l.str += ft_atoi(l.ar->ar_size) - j;
+			l.str += ft_atoi(l.ar->ar_size);
 		}
 		else
 			l.str = NULL;

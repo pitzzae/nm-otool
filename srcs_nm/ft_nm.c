@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 12:06:09 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/20 12:33:22 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/20 18:30:07 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static void	parse_result(t_file *bin, t_list *lst)
 	i = 0;
 	order_lst(lst);
 	print_name_multi_arg(bin);
-	while (lst != NULL && (sym = (t_symbol*)lst->content) != NULL)
+	while (lst != NULL && (sym = (t_symbol*)lst->content) != NULL && sym->name)
 	{
 		ft_putstr(sym->address);
 		ft_putchar(' ');
@@ -49,12 +49,14 @@ void		ft_nm(t_file *bin)
 	t_list			*lst;
 
 	bin->pos = 0;
+	lst = NULL;
 	while (bin->pos < bin->ncmds)
 	{
 		bin->sym = (struct symtab_command *)bin->lc_t[bin->pos];
-		if (bin->sym->cmd == LC_SYMTAB)
+		if (bin->sym->cmd == LC_SYMTAB && bin->sym->nsyms)
 			lst = print_symbol_table(bin);
 		bin->pos++;
 	}
-	parse_result(bin, lst);
+	if (lst)
+		parse_result(bin, lst);
 }
