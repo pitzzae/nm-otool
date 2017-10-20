@@ -19,6 +19,7 @@ objs_nm64/
 objs_otool32/
 objs_otool64/
 test/dst/
+test/error
 .idea/
 cmake-build-debug/CMakeFiles/
 cmake-build-debug/ft_nm

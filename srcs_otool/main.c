@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 16:38:34 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/20 15:08:46 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/20 15:55:54 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static void	ft_ot_print_error(t_file *bin, char *msg)
 
 	fd = 1;
 	error = ": is not an object file";
-	if (!ft_strcmp(msg, MSG_NM_DIR))
+	if (!ft_strcmp(msg, MSG_NM_DIR) || !ft_strcmp(msg, MSG_NM_NOFILE))
 	{
 		error = MSG_NM_DIR;
 		fd = 2;
