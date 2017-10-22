@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 23:37:04 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/22 17:45:05 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/22 20:17:06 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,15 +66,17 @@ static void	init_arlib(t_file *bin, t_arlib *l)
 void		dump_static_lib(t_file *bin)
 {
 	t_arlib				l;
-	int					i;
+
 	int					j;
 
-	i = 0;
 	init_arlib(bin, &l);
 	while (l.str)
 	{
 		if (ft_strstr(l.str, "SYMDEF") != NULL)
-			continue;
+		{
+			l.str = NULL;
+			continue ;
+		}
 		l.ar = (struct ar_hdr*)l.str;
 		l.str += sizeof(struct ar_hdr);
 		if (ft_strlen(l.ar->ar_name) > 0)
