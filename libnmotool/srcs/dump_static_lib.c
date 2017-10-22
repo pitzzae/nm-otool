@@ -34,7 +34,7 @@ static void	print_file_lib(t_file *bin, char *ptr, int size)
 
 static void	print_file_lib_path(t_file *bin, char *obj)
 {
-	if (bin->print_error == NM_DISPLAY)
+	if (bin->display == NM_DISPLAY)
 		ft_putendl("");
 	ft_putstr(bin->filename);
 	ft_putchar('(');
