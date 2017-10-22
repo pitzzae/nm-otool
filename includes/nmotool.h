@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/18 15:53:16 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/18 22:01:39 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/22 16:58:50 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,6 @@ void				ft_nm(t_file *bin);
 t_list				*print_symbol_table(t_file *bin);
 void				add_line_to_lst(t_file *bin, t_symbol *sym, t_list **lst);
 void				order_lst(t_list *lst);
+int					is_symtab(uint8_t n_type);
 
 #endif

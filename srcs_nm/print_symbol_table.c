@@ -40,16 +40,8 @@ static void		print_ptr_addr(unsigned long n, char *buff, boolean_t x64)
 static int		is_print_addr(uint64_t n_value, uint8_t n_sect, t_symbol *sym)
 {
 	int				i;
-	uint8_t 			j;
-	uint8_t 			k;
-	uint8_t 			l;
-	uint8_t 			m;
 
 	i = 0;
-	j = n_sect;
-	k = sym->n_type;
-	l = (sym->n_type & N_TYPE);
-	m = N_ABS;
 	if (n_value > 0 || ((sym->n_type & N_TYPE) == N_SECT && n_sect == 0x01))
 		i = 1;
 	if (n_value == 0 && ((sym->n_type & N_TYPE) == N_ABS && n_sect == 0x00))
@@ -78,7 +70,7 @@ static t_list	*print_symbol_table_32(t_file *bin, void *ptr, t_symbol *sym)
 						   bin->dump->is_64);
 		else
 			ft_strcat(sym->address, S_X32);
-		if ((sym->n_type & 0xff) <= 0xf || (sym->n_type & 0xff) == 0x1e)
+		if (is_symtab(sym->n_type))
 			add_line_to_lst(bin, sym, &lst);
 		i++;
 	}
@@ -106,7 +98,7 @@ static t_list	*print_symbol_table_64(t_file *bin, void *ptr, t_symbol *sym)
 						   bin->dump->is_64);
 		else
 			ft_strcat(sym->address, S_X64);
-		if ((sym->n_type & 0xff) <= 0x0f || (sym->n_type & 0xff) == 0x1e)
+		if (is_symtab(sym->n_type))
 			add_line_to_lst(bin, sym, &lst);
 		i++;
 	}

@@ -32,7 +32,7 @@ INCL_DIR		= -I./includes -I$(LIBFT_DIR)/includes -I$(LIBNMOTOOL_DIR)/includes
 LIB_DIR			= -L$(LIBFT_DIR) -lft -L$(LIBNMOTOOL_DIR) -lnmotool
 
 NM_SRCS			= main.c ft_nm.c print_symbol_table.c order_lst.c \
-				add_line_to_lst.c
+				add_line_to_lst.c is_symtab.c
 
 OTOOL_SRCS		= main.c ft_otool.c find_section_32.c find_section_64.c \
 				print_sections.c
