@@ -13,6 +13,7 @@
 
 FT_NM_PATH="../ft_nm"
 FT_OTOOL_PATH="../ft_otool"
+FILTER="\.bundle\|\.plist\|\.rb\|\.ri\|\.gem\|\.py"
 GREEN='\033[0;32m' # Green term color
 RED='\033[0;31m' # Red term color
 NC='\033[0m' # No Color
@@ -45,10 +46,29 @@ run_ft_otool () {
     fi
 }
 
+clean_progress_bar () {
+    printf "\r                                                                                 \r"
+}
+
+print_progress_bar () {
+    cur=`date +%s`
+    runtime=$(( $cur-$start ))
+    estremain=$(( ($runtime * $TOTAL_TESTED / $TOTAL_TEST)-$runtime ))
+    printf "%d.%d%% complete ($TOTAL_TESTED of $TOTAL_TEST) | %d.%d%% pass ($TOTAL_PASS of $TOTAL_TESTED) - est %d:%0.2d remaining\e[K" \
+$(( $TOTAL_TESTED*100/$TOTAL_TEST )) $(( ($TOTAL_TESTED*1000/$TOTAL_TEST)%10)) \
+$(( $TOTAL_PASS*100/$TOTAL_TESTED )) $(( ($TOTAL_PASS*1000/$TOTAL_TESTED)%10)) \
+$(( $estremain/60 )) \
+$(( $estremain%60 ))
+}
+
 test_diff_output () {
     LEN=$(($LEN + 1))
-    TOTAL_TEST=$(($TOTAL_TEST + 2))
+    clean_progress_bar
     echo -e "Test $@"
+    if [ $TOTAL_TESTED -ne 0 ];
+    then
+        print_progress_bar
+    fi
     NM=`diff  <(echo -e $(run_sys_nm "$@")) <(echo -e $(run_ft_nm "$@"))`
     OT=`diff  <(echo -e $(run_sys_otool "$@")) <(echo -e $(run_ft_otool "$@"))`
     if [ "$NM" ];
@@ -59,6 +79,7 @@ test_diff_output () {
         (>&2 echo "$NM")
         (>&2 echo -e "end_nm_diff\n")
     else
+        clean_progress_bar
         echo -e "$FT_NM_PATH\t${GREEN}OK${NC}"
         PASS_NM=$(($PASS_NM + 1))
         TOTAL_PASS=$(($TOTAL_PASS + 1))
@@ -75,10 +96,11 @@ test_diff_output () {
         PASS_OT=$(($PASS_OT + 1))
         TOTAL_PASS=$(($TOTAL_PASS + 1))
     fi
+    TOTAL_TESTED=$((TOTAL_TESTED + 2))
+    print_progress_bar
 }
 
 test_path_recur () {
-    FILTER="\.bundle\|\.plist\|\.rb\|\.ri\|\.gem\|\.py"
     for LINE in $@/*
     do
         if [[ -d $LINE ]];
@@ -95,25 +117,59 @@ test_path_recur () {
 }
 
 test_directory () {
-    echo "Test $@/*"
+    echo "Test $@"
     PASS_NM=0
     PASS_OT=0
     LEN=0
     test_path_recur $@
-    RESULT="$RESULT""Result [ft_nm] $@/* $PASS_NM/$LEN\n"
-    RESULT="$RESULT""Result [ft_otool] $@/* $PASS_OT/$LEN\n\n"
+    RESULT="$RESULT""Result [ft_nm] $@ $PASS_NM/$LEN\n"
+    RESULT="$RESULT""Result [ft_otool] $@ $PASS_OT/$LEN\n\n"
+}
+
+count_path_len () {
+    for LINE in $@/*
+    do
+        if [[ -d $LINE ]];
+        then
+           count_path_len $LINE
+        else
+            if [ `echo $LINE | grep -v $FILTER` ];
+            then
+                TOTAL_TEST=$(($TOTAL_TEST + 2))
+                printf "\r%s" $TOTAL_TEST
+            fi
+        fi
+    done
+}
+
+count_total_test () {
+    echo -e "Find test files"
+    if [ $TOTAL_TEST_MANU -ne 0 ];
+    then
+        TOTAL_TEST=$TOTAL_TEST_MANU
+        echo "$TOTAL_TEST"
+    else
+        for PATH_TEST in $@;
+        do
+            count_path_len "$PATH_TEST"
+        done
+    fi
 }
 
 main () {
     RESULT=""
+    TOTAL_TEST_MANU=5282
     TOTAL_TEST=0
     TOTAL_PASS=0
+    TOTAL_TESTED=0
+    count_total_test $@
     for PATH_TEST in $@
     do
-        test_directory "$PATH_TEST/*" 2>error
+        test_directory "$PATH_TEST" 2>error
     done
     echo -e "\n$RESULT"
     echo -e "Result Total $TOTAL_PASS/$TOTAL_TEST\n"
 }
 
+start=`date +%s`
 time main /usr/bin /usr/lib
