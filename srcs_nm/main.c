@@ -82,7 +82,7 @@ int			main(int ac, char **av)
 	t_arg		arg;
 
 	bin.exename = av[0];
-	bin.init_lib = init_lib_nmotool;
+	bin.init_lib = &(init_lib_nmotool);
 	bin.option_parser = nm_option_parser;
 	bin.display = NM_DISPLAY;
 	arg.ac = ac;

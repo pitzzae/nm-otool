@@ -1,7 +1,7 @@
 #!/bin/bash
 
 FT_NM_PATH="../ft_nm"
-FT_OTOOL_PATH="../ft_otool"
+FT_OTOOL_PATH="../ft_otool -a"
 
 run_sys_nm () {
 	nm $@ | cat -e | sed -e 's/\$/\\n/g'
@@ -12,11 +12,11 @@ run_ft_nm () {
 }
 
 run_sys_otool () {
-	otool -t $@
+	otool -a $@ | cat -e | sed -e 's/\$/\\n/g'
 }
 
 run_ft_otool () {
-    $FT_OTOOL_PATH $@
+    $FT_OTOOL_PATH $@ | cat -e | sed -e 's/\$/\\n/g'
 }
 
 test_diff_output () {
@@ -24,9 +24,9 @@ test_diff_output () {
     echo "nm_diff:"
     diff  <(echo -e $(run_sys_nm "$@")) <(echo -e $(run_ft_nm "$@"))
     echo -e "end_nm_diff\n"
-    #echo "otool_diff:"
-    #diff  <(echo -e $(run_sys_otool "$@")) <(echo -e $(run_ft_otool "$@"))
-    #echo -e "end_otool_diff\n"
+    echo "otool_diff:"
+    diff  <(echo -e $(run_sys_otool "$@")) <(echo -e $(run_ft_otool "$@"))
+    echo -e "end_otool_diff\n"
 }
 
 if [ $1 ]

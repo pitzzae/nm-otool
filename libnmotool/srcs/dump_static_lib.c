@@ -6,22 +6,19 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 23:37:04 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 16:38:09 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/23 17:57:37 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libnmotool.h>
 
-static void	ptr_to_init_lib(t_file *bin, void (*init_lib)(t_file *bin))
-{
-	init_lib(bin);
-}
-
 static void	print_file_lib(t_file *bin, char *ptr, int size)
 {
+	void				(*init_lib_nmotool)(t_file *bin);
 	t_file				bin_tmp;
 
-	ptr_to_init_lib(bin, bin->init_lib);
+	init_lib_nmotool = bin->init_lib;
+	init_lib_nmotool(bin);
 	bin_tmp.init_lib = bin->init_lib;
 	bin_tmp.ptr = ptr;
 	bin_tmp.st.st_size = size;
@@ -47,6 +44,15 @@ static void	print_file_lib_path(t_file *bin, char *obj)
 	}
 }
 
+static void	print_archive_header(t_file *bin, t_arlib *l, void *ptr)
+{
+	void				(*ft_otool)(t_file *bin);
+
+	ft_otool = bin->func;
+	l->ar = (struct ar_hdr*)ptr;
+	ft_otool(bin);
+}
+
 static void	init_arlib(t_file *bin, t_arlib *l)
 {
 	char				*ptr;
@@ -56,16 +62,18 @@ static void	init_arlib(t_file *bin, t_arlib *l)
 	else
 		ptr = (char*)bin->mach32;
 	l->start = ptr + sizeof(struct ar_hdr) + SARMAG + 20;
+	if (bin->display == OT_DISPLAY)
+	{
+		ft_putstr("Archive : ");
+		ft_putendl(bin->filename);
+		if (bin->d_opt & OT_OPT_A)
+			print_archive_header(bin, l, ptr + SARMAG);
+	}
 	l->st_len = *(unsigned int*)l->start / sizeof(struct ranlib);
 	l->lib = (struct ranlib*)(l->start + 4);
 	l->str = (void*)l->lib + l->st_len * sizeof(struct ranlib) + 4;
 	l->arr_len = *(unsigned int*)(l->str - 4);
 	l->str += l->arr_len;
-	if (bin->display == OT_DISPLAY)
-	{
-		ft_putstr("Archive : ");
-		ft_putendl(bin->filename);
-	}
 }
 
 void		dump_static_lib(t_file *bin)
@@ -73,8 +81,8 @@ void		dump_static_lib(t_file *bin)
 	t_arlib				l;
 	int					j;
 
-	init_arlib(bin, &l);
 	bin->ar_lib = &l;
+	init_arlib(bin, &l);
 	while (l.str)
 	{
 		if (ft_strstr(l.str, "SYMDEF") != NULL)

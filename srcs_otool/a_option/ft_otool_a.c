@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/23 15:44:33 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 17:08:15 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/23 17:08:35 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void		ft_otool_a(t_file *bin)
 	ft_putstr(" ");
 	ft_putstr(tmp[2]);
 	ft_putstr("/");
-	ft_putstr(tmp[2]);
+	ft_putstr(tmp[3]);
 	ft_putstr(" ");
 	ft_putstr_whsp(tmp[5], ' ', 5);
 	ft_putstr(" ");
