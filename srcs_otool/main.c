@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 16:38:34 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 11:22:18 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/23 12:37:22 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,16 @@ static void	ft_ot_print_error(t_file *bin, char *msg)
 
 static void	ot_option_parser(t_file *bin, char opt)
 {
-	(void)bin;
-	(void)opt;
+	if (opt == 'f' && !(bin->d_opt & OT_OPT_F))
+		bin->d_opt += OT_OPT_F;
+	else if (opt == 'a' && !(bin->d_opt & OT_OPT_A))
+		bin->d_opt += OT_OPT_A;
+	else if (opt == 'h' && !(bin->d_opt & OT_OPT_H))
+		bin->d_opt += OT_OPT_H;
+	else if (opt == 'l' && !(bin->d_opt & OT_OPT_L))
+		bin->d_opt += OT_OPT_L;
+	else if (opt == 't' && !(bin->d_opt & OT_OPT_T))
+		bin->d_opt += OT_OPT_T;
 }
 
 static void	init_lib_nmotool(t_file *bin)
@@ -61,7 +69,7 @@ static void	init_lib_nmotool(t_file *bin)
 	bin->dump = NULL;
 	bin->ncmds = 0;
 	bin->mmap = NULL;
-	bin->option_parser = ot_option_parser;
+	bin->option_parser = NULL;
 }
 
 static void	parse_argv_file(t_file *bin, int ac, char **av)
@@ -91,11 +99,12 @@ int			main(int ac, char **av)
 	bin.exename = av[0];
 	bin.init_lib = init_lib_nmotool;
 	bin.option_parser = ot_option_parser;
+	bin.display = OT_DISPLAY;
 	arg.ac = ac;
 	arg.av = av;
 	read_option_flag(ac, &arg, &bin);
 	if (arg.ac < 2)
-		return (0);
+		ft_print_ot_option(&bin);
 	else
 		parse_argv_file(&bin, arg.ac, arg.av);
 	return (0);

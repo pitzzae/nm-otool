@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 15:02:12 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 11:03:38 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/23 12:16:11 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,14 @@
 # define LIBNMOTOOL_H
 # define NM_DISPLAY 0
 # define OT_DISPLAY 1
+
+# define OT_OPT_NO 0x00
+# define OT_OPT_F 0x01
+# define OT_OPT_A 0x02
+# define OT_OPT_H 0x04
+# define OT_OPT_L 0x08
+# define OT_OPT_T 0x10
+
 # define MSG_NM_DIR ": Is a directory."
 # define MSG_NM_NOOBJ ": The file was not recognized as a valid object file"
 # define MSG_NM_NOFILE ": No such file or directory."
@@ -72,6 +80,7 @@ typedef struct		s_file
 	void						*print_error;
 	void						*option_parser;
 	int							display;
+	uint32_t					d_opt;
 	struct fat_header			*head;
 	struct fat_arch				*arch;
 	int							*fat_l;
@@ -94,6 +103,8 @@ typedef struct		s_file
 	int							is_print;
 }					t_file;
 
+void		read_option_flag(int ac, t_arg *arg, t_file *bin);
+void		mmap_file(t_file *bin, char *path);
 void		dump_segments(t_file *bin);
 void		dump_fat_header(t_file *bin);
 void		dump_mach_header(t_file *bin);
@@ -102,7 +113,6 @@ void		dump_static_lib(t_file *bin);
 int			check_lib_option(t_file *bin, int pos);
 int			check_magic_number(t_file *bin);
 void		dump_section_name(t_file *bin);
-void		mmap_file(t_file *bin, char *path);
 void		ft_swap_fat_header(t_file *bin, struct fat_header *header);
 void		ft_swap_fat_arch(t_file *bin, struct fat_arch *arch);
 

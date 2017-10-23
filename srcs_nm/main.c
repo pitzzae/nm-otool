@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 12:06:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 11:25:57 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/23 11:41:20 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ static void	init_lib_nmotool(t_file *bin)
 	bin->dump = NULL;
 	bin->ncmds = 0;
 	bin->mmap = NULL;
-	bin->option_parser = nm_option_parser;
+	bin->option_parser = NULL;
 }
 
 static void	parse_argv_file(t_file *bin, int ac, char **av)
@@ -84,6 +84,7 @@ int			main(int ac, char **av)
 	bin.exename = av[0];
 	bin.init_lib = init_lib_nmotool;
 	bin.option_parser = nm_option_parser;
+	bin.display = NM_DISPLAY;
 	arg.ac = ac;
 	arg.av = av;
 	read_option_flag(ac, &arg, &bin);

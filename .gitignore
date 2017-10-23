@@ -25,5 +25,6 @@ cmake-build-debug/CMakeFiles/
 cmake-build-debug/ft_nm
 cmake-build-debug/ft_otool
 cmake-build-debug/ft_otool.cbp
+cmake-build-debug/libft.a
 cmake-build-debug/Makefile
 cmake-build-debug/CMakeCache.txt

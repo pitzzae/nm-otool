@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/18 15:53:16 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 10:29:45 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/23 12:38:53 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ typedef struct		s_sect
 void				find_section_64(t_file *bin, t_sect *s);
 void				find_section_32(t_file *bin, t_sect *s);
 void				print_section(t_sect *s);
-void				read_option_flag(int ac, t_arg *arg, t_file *bin);
+void				ft_print_ot_option(t_file *bin);
 void				ft_otool(t_file *bin);
 
 void				ft_nm(t_file *bin);

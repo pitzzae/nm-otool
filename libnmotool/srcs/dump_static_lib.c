@@ -29,6 +29,7 @@ static void	print_file_lib(t_file *bin, char *ptr, int size)
 	bin_tmp.filename = bin->filename;
 	bin_tmp.is_arlib = 1;
 	bin_tmp.is_print = 0;
+	bin_tmp.d_opt = bin->d_opt;
 	dump_segments(&bin_tmp);
 }
 

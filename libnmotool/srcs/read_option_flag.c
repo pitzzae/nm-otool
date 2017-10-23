@@ -6,7 +6,7 @@
 /*   By: gtorresa <null>                            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/23 09:53:01 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 11:23:25 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/23 12:16:43 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ static void	check_option_type(char *opt, t_file *bin)
 		init_option(bin->option_parser, bin, opt[i]);
 }
 
-static void	empty_arg_after_option(t_arg *arg)
+static void	empty_arg_after_option(t_file *bin, t_arg *arg)
 {
-	if (arg->ac == 1)
+	if (arg->ac == 1 && bin->display == NM_DISPLAY)
 	{
 		arg->av[1] = " a.out";
 		arg->ac++;
@@ -43,6 +43,7 @@ void		read_option_flag(int ac, t_arg *arg, t_file *bin)
 
 	i = 0;
 	j = 0;
+	bin->d_opt = OT_OPT_NO;
 	while (++i < ac)
 	{
 		if (arg->av[i][0] == '-')
@@ -61,5 +62,5 @@ void		read_option_flag(int ac, t_arg *arg, t_file *bin)
 			new_av[++j] = arg->av[i];
 	new_av[++j] = NULL;
 	arg->av = new_av;
-	empty_arg_after_option(arg);
+	empty_arg_after_option(bin, arg);
 }
