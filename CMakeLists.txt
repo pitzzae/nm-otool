@@ -60,8 +60,11 @@ set(SOURCE_LIBNMOTOOL libnmotool/srcs/mmap_file.c
 add_library(nmotool ${SOURCE_LIBNMOTOOL} ${HEADER_FILES})
 
 set(SOURCE_OTOOL_FILES srcs_otool/main.c srcs_otool/ft_otool.c
-        srcs_otool/find_section_64.c srcs_otool/find_section_32.c
-        srcs_otool/print_sections.c)
+        srcs_otool/t_option/find_section_64.c
+        srcs_otool/t_option/find_section_32.c
+        srcs_otool/t_option/ft_otool_t.c
+        srcs_otool/t_option/print_sections.c
+        srcs_otool/h_option/ft_otool_h.c )
 set(SOURCE_NM_FILES srcs_nm/main.c srcs_nm/ft_nm.c srcs_nm/print_symbol_table.c
         srcs_nm/order_lst.c srcs_nm/add_line_to_lst.c srcs_nm/is_symtab.c)
 
