@@ -166,11 +166,12 @@ main () {
     count_total_test $@
     for PATH_TEST in $@
     do
-        test_directory "$PATH_TEST" 2>error
+        test_directory "$PATH_TEST" 2>> error
     done
     echo -e "\n$RESULT"
     echo -e "Result Total $TOTAL_PASS/$TOTAL_TEST\n"
 }
 
 start=`date +%s`
+echo "" > error
 time main /usr/bin /usr/lib

@@ -14,7 +14,7 @@
 
 static void	print_file_lib(t_file *bin, char *ptr, int size)
 {
-	void				(*init_lib_nmotool)(t_file *bin);
+	void				(*init_lib_nmotool)(t_file *);
 	t_file				bin_tmp;
 
 	init_lib_nmotool = bin->init_lib;

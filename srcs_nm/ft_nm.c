@@ -6,13 +6,13 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 12:06:09 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 20:32:50 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/23 20:47:30 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "nmotool.h"
 
-static void ft_free_lst(void *ptr, size_t len)
+static void	ft_free_lst(void *ptr, size_t len)
 {
 	(void)len;
 	(void)ptr;
