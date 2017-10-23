@@ -12,7 +12,7 @@
 
 #include <stdint.h>
 
-uint8_t		ft_swapuint8(uint32_t u)
+uint8_t		ft_swapuint8(uint8_t u)
 {
 	return (((((uint8_t)(u) & 0xff00) >> 8) |
 			 (((uint8_t)(u) & 0x00ff) << 8)));

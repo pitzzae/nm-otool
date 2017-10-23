@@ -37,10 +37,13 @@ static void	print_file_lib_path(t_file *bin, char *obj)
 {
 	if (bin->display == NM_DISPLAY)
 		ft_putendl("");
-	ft_putstr(bin->filename);
-	ft_putchar('(');
-	ft_putstr(obj);
-	ft_putendl("):");
+	if (bin->display == NM_DISPLAY || bin->d_opt & OT_OPT_T)
+	{
+		ft_putstr(bin->filename);
+		ft_putchar('(');
+		ft_putstr(obj);
+		ft_putendl("):");
+	}
 }
 
 static void	init_arlib(t_file *bin, t_arlib *l)
