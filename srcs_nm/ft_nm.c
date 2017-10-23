@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 12:06:09 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 20:32:20 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/23 20:32:50 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,5 +64,6 @@ void		ft_nm(t_file *bin)
 	}
 	if (lst)
 		parse_result(bin, lst);
-	ft_lstdel(&lst, ft_free_lst);
+	if (lst)
+		ft_lstdel(&lst, ft_free_lst);
 }
