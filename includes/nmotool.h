@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/18 15:53:16 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 12:57:51 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/23 13:00:17 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ void				find_section_32(t_file *bin, t_sect *s);
 void				print_section(t_sect *s);
 void				ft_print_ot_option(t_file *bin);
 void				ft_otool_h(t_file *bin);
+void				ft_otool_a(t_file *bin);
 void				ft_otool_t(t_file *bin);
 void				ft_otool(t_file *bin);
 

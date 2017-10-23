@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 11:08:25 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 14:31:52 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/23 15:25:34 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,7 +127,7 @@ char				*ft_itoa(long int n);
 int					ft_myputchar(int c);
 void				ft_putchar(char c);
 void				ft_putstr(char *str);
-void				ft_putstr_whsp(char *str, unsigned long len);
+void				ft_putstr_whsp(char *str, char c, unsigned long len);
 void				ft_putendl(char *str);
 void				ft_putnbr(long int n);
 void				ft_putbase(unsigned long n, char *buf, int base);

@@ -100,6 +100,7 @@ typedef struct		s_file
 	struct nlist				*nlist32;
 	t_dump						*dump;
 	t_tdb_nsect					*tdb;
+	t_arlib						*ar_lib;
 	int							is_print;
 }					t_file;
 

@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 23:37:04 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/22 20:17:06 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/23 16:38:09 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ static void	print_file_lib(t_file *bin, char *ptr, int size)
 	bin_tmp.is_arlib = 1;
 	bin_tmp.is_print = 0;
 	bin_tmp.d_opt = bin->d_opt;
+	bin_tmp.ar_lib = bin->ar_lib;
 	dump_segments(&bin_tmp);
 }
 
@@ -70,10 +71,10 @@ static void	init_arlib(t_file *bin, t_arlib *l)
 void		dump_static_lib(t_file *bin)
 {
 	t_arlib				l;
-
 	int					j;
 
 	init_arlib(bin, &l);
+	bin->ar_lib = &l;
 	while (l.str)
 	{
 		if (ft_strstr(l.str, "SYMDEF") != NULL)

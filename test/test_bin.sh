@@ -12,7 +12,7 @@
 #******************************************************************************#
 
 FT_NM_PATH="../ft_nm"
-FT_OTOOL_PATH="../ft_otool"
+FT_OTOOL_PATH="../ft_otool -t"
 FILTER="\.bundle\|\.plist\|\.rb\|\.ri\|\.gem\|\.py"
 GREEN='\033[0;32m' # Green term color
 RED='\033[0;31m' # Red term color

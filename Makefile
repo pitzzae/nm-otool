@@ -37,7 +37,7 @@ NM_SRCS			= main.c ft_nm.c print_symbol_table.c order_lst.c \
 OTOOL_SRCS		= main.c ft_otool.c t_option/ft_otool_t.c \
 				t_option/find_section_32.c t_option/find_section_64.c \
 				t_option/print_sections.c \
-				h_option/ft_otool_h.c
+				h_option/ft_otool_h.c a_option/ft_otool_a.c
 
 NM_OBJECTS32	= $(patsubst %.c, $(NM_OBJS32)/%.o, $(NM_SRCS))
 NM_OBJECTS64	= $(patsubst %.c, $(NM_OBJS64)/%.o, $(NM_SRCS))
@@ -63,12 +63,14 @@ $(NM_NAME): $(NM_OBJECTS32) $(NM_OBJECTS64)
 $(NM_OBJS32)/%.o: $(addprefix $(NM_DIR)/,%.c)
 	@mkdir -p $(NM_OBJS32)/t_option
 	@mkdir -p $(NM_OBJS32)/h_option
+	@mkdir -p $(NM_OBJS32)/a_option
 	@$(CC) $(CFLAGS) -m32 $(INCL_DIR) -o $@ -c $^
 	@printf "."
 
 $(NM_OBJS64)/%.o: $(addprefix $(NM_DIR)/,%.c)
 	@mkdir -p $(NM_OBJS64)/t_option
 	@mkdir -p $(NM_OBJS64)/h_option
+	@mkdir -p $(NM_OBJS64)/a_option
 	@$(CC) $(CFLAGS) -m64 $(INCL_DIR) -o $@ -c $^
 	@printf "."
 
@@ -80,12 +82,14 @@ $(OTOOL_NAME): $(OTOOL_OBJECTS32) $(OTOOL_OBJECTS64)
 $(OTOOL_OBJS32)/%.o: $(addprefix $(OTOOL_DIR)/,%.c)
 	@mkdir -p $(OTOOL_OBJS32)/t_option
 	@mkdir -p $(OTOOL_OBJS32)/h_option
+	@mkdir -p $(OTOOL_OBJS32)/a_option
 	@$(CC) $(CFLAGS) -m32 $(INCL_DIR) -o $@ -c $^
 	@printf "."
 
 $(OTOOL_OBJS64)/%.o: $(addprefix $(OTOOL_DIR)/,%.c)
 	@mkdir -p $(OTOOL_OBJS64)/t_option
 	@mkdir -p $(OTOOL_OBJS64)/h_option
+	@mkdir -p $(OTOOL_OBJS64)/a_option
 	@$(CC) $(CFLAGS) -m64 $(INCL_DIR) -o $@ -c $^
 	@printf "."
 
