@@ -1,3 +1,5 @@
+cmake-build-debug/libft.a
+cmake-build-debug/libnmotool.a
 ft_nm.dSYM/
 ft_nm
 ft_nm_i386

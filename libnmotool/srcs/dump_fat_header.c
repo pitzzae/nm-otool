@@ -30,7 +30,6 @@ static void		make_fat_head_list(t_file *bin, struct fat_arch *arch)
 	uint32_t			i;
 
 	i = 0;
-	(void)arch;
 	while (i < bin->nfat_arch)
 	{
 		bin->arch = (struct fat_arch*)(((bin->ptr) + sizeof(struct fat_header))

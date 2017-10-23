@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 13:48:22 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 19:03:22 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/23 20:25:02 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,5 +49,5 @@ void		add_line_to_lst(t_file *bin, t_symbol *sym, t_list **lst)
 	sym->type = get_char_type(sym->n_type & N_TYPE, sym, bin);
 	if ((sym->n_type & N_EXT))
 		sym->type = ft_toupper(sym->type);
-	ft_lstadd(lst, ft_lstnew(sym, sizeof(*sym)));
+	ft_lstadd(lst, ft_lstnew(sym, sizeof(*sym) + 32));
 }
