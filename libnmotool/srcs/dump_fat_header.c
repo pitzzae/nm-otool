@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 17:23:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/19 20:58:43 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/23 18:53:17 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,23 +20,23 @@ static int		init_fat_header(t_file *bin, struct fat_header *header)
 {
 	if (bin->dump->is_swap)
 		ft_swap_fat_header(bin, header);
-	bin->fat_l = malloc(sizeof(char) * header->nfat_arch);
+	bin->fat_l = (int*)malloc(sizeof(int) * header->nfat_arch + 2);
 	bin->nfat_arch = header->nfat_arch;
 	return ((int)header->nfat_arch);
 }
 
-static void 	make_fat_head_list(t_file *bin)
+static void		make_fat_head_list(t_file *bin, struct fat_arch *arch)
 {
-	struct fat_arch		arch;
 	uint32_t			i;
 
 	i = 0;
+	(void)arch;
 	while (i < bin->nfat_arch)
 	{
 		bin->arch = (struct fat_arch*)(((bin->ptr) + sizeof(struct fat_header))
-									   + (sizeof(struct fat_arch) * i));
+									+ (sizeof(struct fat_arch) * i));
 		if (bin->dump->is_swap)
-			ft_swap_fat_arch(bin, &arch);
+			ft_swap_fat_arch(bin, arch);
 		bin->mach32 = (struct mach_header*)((bin->ptr) + bin->arch->offset);
 		bin->mach64 = NULL;
 		bin->fat_l[i] = (int)bin->arch->cputype;
@@ -48,11 +48,12 @@ void			dump_fat_header(t_file *bin)
 {
 	struct fat_header	header;
 	struct fat_arch		arch;
+	struct fat_arch		arch_tmp;
 	uint32_t			i;
 
 	i = 0;
 	init_fat_header(bin, &header);
-	make_fat_head_list(bin);
+	make_fat_head_list(bin, &arch_tmp);
 	while (i < bin->nfat_arch)
 	{
 		bin->arch = (struct fat_arch*)(((bin->ptr) + sizeof(struct fat_header))
