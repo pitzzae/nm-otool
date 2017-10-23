@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 12:06:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/20 14:22:58 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/23 11:25:57 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,12 @@ static void	ft_nm_print_error(t_file *bin, char *msg)
 	ft_putstr_fd(": ", 2);
 	ft_putstr_fd(bin->filename, 2);
 	ft_putendl_fd(msg, 2);
+}
+
+static void	nm_option_parser(t_file *bin, char opt)
+{
+	(void)bin;
+	(void)opt;
 }
 
 static void	init_lib_nmotool(t_file *bin)
@@ -47,6 +53,7 @@ static void	init_lib_nmotool(t_file *bin)
 	bin->dump = NULL;
 	bin->ncmds = 0;
 	bin->mmap = NULL;
+	bin->option_parser = nm_option_parser;
 }
 
 static void	parse_argv_file(t_file *bin, int ac, char **av)
@@ -72,27 +79,17 @@ static void	parse_argv_file(t_file *bin, int ac, char **av)
 int			main(int ac, char **av)
 {
 	t_file		bin;
-	int			argc;
-	char		**argv;
-	char		*tmp;
+	t_arg		arg;
 
 	bin.exename = av[0];
 	bin.init_lib = init_lib_nmotool;
-	if (ac == 1)
-	{
-		tmp = ft_strjoin(av[0], " a.out");
-		argv = ft_strsplit(tmp, ' ');
-		free(tmp);
-		argc = 2;
-	}
-	else
-	{
-		argv = av;
-		argc = ac;
-	}
-	if (argc < 2)
+	bin.option_parser = nm_option_parser;
+	arg.ac = ac;
+	arg.av = av;
+	read_option_flag(ac, &arg, &bin);
+	if (arg.ac < 2)
 		return (0);
 	else
-		parse_argv_file(&bin, argc, argv);
+		parse_argv_file(&bin, arg.ac, arg.av);
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 15:02:12 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/20 14:20:36 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/23 11:03:38 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,12 @@
 # include <mach-o/ranlib.h>
 # include <ar.h>
 # include <sys/mman.h>
+
+typedef struct		s_arg
+{
+	char						**av;
+	int							ac;
+}					t_arg;
 
 typedef struct		s_dump
 {
@@ -64,6 +70,7 @@ typedef struct		s_file
 	void						*func;
 	void						*init_lib;
 	void						*print_error;
+	void						*option_parser;
 	int							display;
 	struct fat_header			*head;
 	struct fat_arch				*arch;
