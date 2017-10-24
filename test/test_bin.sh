@@ -71,6 +71,10 @@ test_diff_output () {
     fi
     NM=`diff  <(echo -e $(run_sys_nm "$@")) <(echo -e $(run_ft_nm "$@"))`
     OT=`diff  <(echo -e $(run_sys_otool "$@")) <(echo -e $(run_ft_otool "$@"))`
+    if [ $TOTAL_TESTED -ne 0 ];
+    then
+        clean_progress_bar
+    fi
     if [ "$NM" ];
     then
         echo -e "$FT_NM_PATH\t${RED}NOK${NC}"
@@ -168,7 +172,7 @@ manual_test () {
 main () {
     RESULT=""
     #TOTAL_TEST_MANU=5282
-    TOTAL_TEST_MANU=0
+    TOTAL_TEST_MANU=5282
     TOTAL_TEST=0
     TOTAL_PASS=0
     TOTAL_TESTED=0

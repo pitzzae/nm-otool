@@ -85,6 +85,7 @@ int			main(int ac, char **av)
 	bin.init_lib = &(init_lib_nmotool);
 	bin.option_parser = nm_option_parser;
 	bin.display = NM_DISPLAY;
+	bin.arch_opt = CPU_TYPE_X86_64;
 	arg.ac = ac;
 	arg.av = av;
 	read_option_flag(ac, &arg, &bin);

@@ -6,24 +6,29 @@
 /*   By: gtorresa <null>                            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/23 09:53:01 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 19:03:23 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 15:17:35 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libnmotool.h>
 
-static void	init_option(void (*f)(t_file *bin, char opt), t_file *bin, char c)
-{
-	f(bin, c);
-}
-
 static void	check_option_type(char *opt, t_file *bin)
 {
 	int				i;
+	void			(*init_option)(t_file *, char);
 
 	i = 0;
-	while (opt[++i])
-		init_option(bin->option_parser, bin, opt[i]);
+	init_option = bin->option_parser;
+	if (!ft_strncmp(opt, "-arch=", 6) && !(bin->d_opt & OT_OPT_F))
+	{
+		if (!ft_strcmp(&opt[6], "x86_64"))
+			bin->arch_opt = CPU_TYPE_X86_64;
+		else if (!ft_strcmp(&opt[6], "i386"))
+			bin->arch_opt = CPU_TYPE_I386;
+	}
+	else
+		while (opt[++i])
+			init_option(bin, opt[i]);
 }
 
 static void	empty_arg_after_option(t_file *bin, t_arg *arg)
