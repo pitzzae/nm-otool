@@ -74,10 +74,10 @@ test_diff_output () {
     if [ "$NM" ];
     then
         echo -e "$FT_NM_PATH\t${RED}NOK${NC}"
-        (>&2 echo "nm $@")
-        (>&2 echo "nm_diff:")
-        (>&2 echo "$NM")
-        (>&2 echo -e "end_nm_diff\n")
+        (>>error echo "nm $@")
+        (>>error echo "nm_diff:")
+        (>>error echo "$NM")
+        (>>error echo -e "end_nm_diff\n")
     else
         clean_progress_bar
         echo -e "$FT_NM_PATH\t${GREEN}OK${NC}"
@@ -87,10 +87,10 @@ test_diff_output () {
     if [ "$OT" ];
     then
         echo -e "$FT_OTOOL_PATH\t${RED}NOK${NC}"
-        (>&2 echo "otool $@")
-        (>&2 echo "otool_diff:")
-        (>&2 echo "$OT")
-        (>&2 echo -e "end_otool_diff\n")
+        (>>error echo "otool $@")
+        (>>error echo "otool_diff:")
+        (>>error echo "$OT")
+        (>>error echo -e "end_otool_diff\n")
     else
         echo -e "$FT_OTOOL_PATH\t${GREEN}OK${NC}"
         PASS_OT=$(($PASS_OT + 1))
@@ -154,6 +154,15 @@ count_total_test () {
             count_path_len "$PATH_TEST"
         done
     fi
+}
+
+manual_test () {
+    TOTAL_TEST_MANU=0
+    TOTAL_TEST=0
+    TOTAL_PASS=0
+    TOTAL_TESTED=0
+    count_total_test $@
+    test_diff_output $@
 }
 
 main () {
