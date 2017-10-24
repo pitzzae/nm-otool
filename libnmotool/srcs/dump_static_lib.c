@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 23:37:04 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 10:11:46 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 14:59:48 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ static void	print_file_lib(t_file *bin, char *ptr, int size)
 	bin_tmp.d_opt = bin->d_opt;
 	bin_tmp.ar_lib = bin->ar_lib;
 	bin_tmp.arch_opt = bin->arch_opt;
+	bin_tmp.arch_all = bin->arch_all;
 	dump_segments(&bin_tmp, bin_tmp.d_opt);
 }
 

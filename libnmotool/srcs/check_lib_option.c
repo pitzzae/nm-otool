@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 15:22:15 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 15:01:29 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 17:49:06 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ static int	fat_is_select(t_file *bin, int pos)
 
 	i = 0;
 	find_64 = 0;
+	if (bin->arch_all)
+		return (1);
 	while (i < bin->nfat_arch)
 	{
 		if (bin->fat_l[i] == bin->arch_opt)
@@ -39,7 +41,7 @@ int			check_lib_option(t_file *bin, int pos)
 		i = fat_is_select(bin, pos);
 	else
 		i = 1;
-	if (i && !bin->is_print)
+	if (i && (!bin->is_print || bin->arch_all))
 	{
 		bin->is_print = i;
 		return (i);

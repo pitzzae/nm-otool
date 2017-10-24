@@ -6,7 +6,7 @@
 /*   By: gtorresa <null>                            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/23 09:53:01 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 15:17:35 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 17:46:09 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ static void	check_option_type(char *opt, t_file *bin)
 			bin->arch_opt = CPU_TYPE_X86_64;
 		else if (!ft_strcmp(&opt[6], "i386"))
 			bin->arch_opt = CPU_TYPE_I386;
+		else if (!ft_strcmp(&opt[6], "all"))
+			bin->arch_all = 1;
 	}
 	else
 		while (opt[++i])
@@ -40,23 +42,10 @@ static void	empty_arg_after_option(t_file *bin, t_arg *arg)
 	}
 }
 
-void		read_option_flag(int ac, t_arg *arg, t_file *bin)
+static char	**create_new_argv(int ac, t_arg *arg,int i, int j)
 {
 	char			**new_av;
-	int				i;
-	int				j;
 
-	i = 0;
-	j = 0;
-	bin->d_opt = OT_OPT_NO;
-	while (++i < ac)
-	{
-		if (arg->av[i][0] == '-')
-		{
-			check_option_type(&arg->av[i][0], bin);
-			j++;
-		}
-	}
 	arg->ac = i - j;
 	new_av = malloc(sizeof(char*) * ((i - j) + 2));
 	i = 0;
@@ -66,6 +55,26 @@ void		read_option_flag(int ac, t_arg *arg, t_file *bin)
 		if (arg->av[i][0] != '-')
 			new_av[++j] = arg->av[i];
 	new_av[++j] = NULL;
-	arg->av = new_av;
+	return (new_av);
+}
+
+void		read_option_flag(int ac, t_arg *arg, t_file *bin)
+{
+	int				i;
+	int				j;
+
+	i = 0;
+	j = 0;
+	bin->d_opt = OT_OPT_NO;
+	bin->arch_all = 0;
+	while (++i < ac)
+	{
+		if (arg->av[i][0] == '-')
+		{
+			check_option_type(&arg->av[i][0], bin);
+			j++;
+		}
+	}
+	arg->av = create_new_argv(ac, arg, i, j);
 	empty_arg_after_option(bin, arg);
 }

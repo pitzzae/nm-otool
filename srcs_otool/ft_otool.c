@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 20:43:20 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 14:48:00 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 16:15:25 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,6 @@ void		ft_otool(t_file *bin)
 		ft_otool_t(bin);
 	if (bin->d_opt & OT_OPT_F && !bin->is_arlib)
 		ft_otool_f(bin);
-	if (!bin->is_arlib)
+	if (!bin->is_arlib && !bin->arch_all)
 		bin->is_print = 1;
 }

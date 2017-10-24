@@ -81,6 +81,7 @@ typedef struct		s_file
 	int							display;
 	uint32_t					d_opt;
 	int							arch_opt;
+	int							arch_all;
 	struct fat_header			*head;
 	struct fat_arch				*arch;
 	int							*fat_l;

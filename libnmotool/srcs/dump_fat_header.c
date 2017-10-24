@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 17:23:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 12:04:30 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 18:30:28 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,24 @@ static void		make_fat_head_list(t_file *bin, struct fat_arch *arch)
 	while (i < bin->nfat_arch)
 	{
 		bin->arch = (struct fat_arch*)(((bin->ptr) + sizeof(struct fat_header))
-									+ (sizeof(struct fat_arch) * i));
+						+ (sizeof(struct fat_arch) * i));
 		if (bin->dump->is_swap)
 			ft_swap_fat_arch(bin, arch);
 		bin->mach32 = (struct mach_header*)((bin->ptr) + bin->arch->offset);
 		bin->mach64 = NULL;
 		bin->fat_l[i] = (int)bin->arch->cputype;
 		i++;
+	}
+}
+
+static void		dump_fat_mach(t_file *bin)
+{
+	bin->mach64 = NULL;
+	bin->mach32 = (struct mach_header*)((bin->ptr) + bin->arch->offset);
+	if (bin->dump->is_64 == 1)
+	{
+		bin->mach32 = NULL;
+		bin->mach64 = (struct mach_header_64*)((bin->ptr) + bin->arch->offset);
 	}
 }
 
@@ -59,15 +70,8 @@ void			dump_fat_header(t_file *bin)
 					+ (sizeof(struct fat_arch) * i));
 		if (bin->dump->is_swap)
 			ft_swap_fat_arch(bin, &arch);
-		bin->mach32 = (struct mach_header*)((bin->ptr) + bin->arch->offset);
-		bin->mach64 = NULL;
+		dump_fat_mach(bin);
 		bin->dump->is_64 = is_magic_64(bin->mach32->magic);
-		if (bin->dump->is_64 == 1)
-		{
-			bin->mach32 = NULL;
-			bin->mach64 = (struct mach_header_64*)((bin->ptr) +
-												   bin->arch->offset);
-		}
 		if (check_lib_option(bin, i))
 			dump_mach_header(bin);
 		i++;
