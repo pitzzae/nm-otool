@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 15:02:12 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 12:04:30 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 14:57:38 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 # define OT_OPT_F 0x01
 # define OT_OPT_A 0x02
 # define OT_OPT_H 0x04
-# define OT_OPT_L 0x08
 # define OT_OPT_T 0x10
 
 # define MSG_NM_DIR ": Is a directory."

@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 16:38:34 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 10:40:59 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 15:44:20 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,6 @@ static void	ot_option_parser(t_file *bin, char opt)
 		bin->d_opt += OT_OPT_A;
 	else if (opt == 'h' && !(bin->d_opt & OT_OPT_H))
 		bin->d_opt += OT_OPT_H;
-	else if (opt == 'l' && !(bin->d_opt & OT_OPT_L))
-		bin->d_opt += OT_OPT_L;
 	else if (opt == 't' && !(bin->d_opt & OT_OPT_T))
 		bin->d_opt += OT_OPT_T;
 }
@@ -94,8 +92,6 @@ static void	parse_argv_file(t_file *bin, int ac, char **av)
 				dump_segments(bin, OT_OPT_T);
 			if ((opt & OT_OPT_H))
 				dump_segments(bin, OT_OPT_H);
-			if ((opt & OT_OPT_L))
-				dump_segments(bin, OT_OPT_L);
 			munmap(bin->ptr, (size_t)bin->st.st_size);
 		}
 		i++;

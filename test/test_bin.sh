@@ -172,7 +172,7 @@ manual_test () {
 main () {
     RESULT=""
     #TOTAL_TEST_MANU=5282
-    TOTAL_TEST_MANU=5282
+    TOTAL_TEST_MANU=0
     TOTAL_TEST=0
     TOTAL_PASS=0
     TOTAL_TESTED=0

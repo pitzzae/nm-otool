@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/24 10:54:00 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 12:45:39 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 16:22:20 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,13 +63,16 @@ void		ft_otool_f(t_file *bin)
 	uint32_t			i;
 
 	i = 0;
-	ft_print_header_arch(bin);
-	ptr = (bin->ptr + sizeof(struct fat_header));
-	while (i < bin->head->nfat_arch)
+	if (ft_strncmp(bin->ptr, ARMAG, SARMAG))
 	{
-		tb.arch = (struct fat_arch*)(ptr + (sizeof(struct fat_arch) * i));
-		ft_swap_fat_arch(&tb, &ta);
-		ft_print_arch(tb.arch, i);
-		i++;
+		ft_print_header_arch(bin);
+		ptr = (bin->ptr + sizeof(struct fat_header));
+		while (i < bin->head->nfat_arch)
+		{
+			tb.arch = (struct fat_arch*)(ptr + (sizeof(struct fat_arch) * i));
+			ft_swap_fat_arch(&tb, &ta);
+			ft_print_arch(tb.arch, i);
+			i++;
+		}
 	}
 }

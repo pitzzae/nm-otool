@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 20:43:20 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 14:44:23 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 14:48:00 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void		ft_otool(t_file *bin)
 {
 	if (bin->d_opt & OT_OPT_H)
 		ft_otool_h(bin);
-	if (bin->d_opt & OT_OPT_A && bin->ar_lib)
+	if (bin->d_opt & OT_OPT_A && bin->ar_lib && bin->is_arlib)
 		ft_otool_a(bin);
 	if (bin->d_opt & OT_OPT_T)
 		ft_otool_t(bin);

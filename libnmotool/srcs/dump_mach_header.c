@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 17:25:48 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 19:03:23 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 16:05:38 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ void		dump_mach_header(t_file *bin)
 {
 	char 		*ptr;
 
+	ptr = NULL;
 	if (bin->mach64)
 		ptr = (char*)bin->mach64;
 	else if (bin->mach32)
