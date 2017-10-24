@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 16:38:34 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 19:06:15 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 10:40:59 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,17 +74,28 @@ static void	init_lib_nmotool(t_file *bin)
 
 static void	parse_argv_file(t_file *bin, int ac, char **av)
 {
+	uint32_t	opt;
 	int			i;
 
 	i = 1;
 	bin->ac = ac;
+	opt = bin->d_opt;
 	while (i < ac)
 	{
 		init_lib_nmotool(bin);
 		mmap_file(bin, av[i]);
 		if (bin->ptr)
 		{
-			dump_segments(bin);
+			if ((opt & OT_OPT_F))
+				dump_segments(bin, OT_OPT_F);
+			if ((opt & OT_OPT_A))
+				dump_segments(bin, OT_OPT_A);
+			if ((opt & OT_OPT_T))
+				dump_segments(bin, OT_OPT_T);
+			if ((opt & OT_OPT_H))
+				dump_segments(bin, OT_OPT_H);
+			if ((opt & OT_OPT_L))
+				dump_segments(bin, OT_OPT_L);
 			munmap(bin->ptr, (size_t)bin->st.st_size);
 		}
 		i++;
@@ -103,8 +114,10 @@ int			main(int ac, char **av)
 	arg.ac = ac;
 	arg.av = av;
 	read_option_flag(ac, &arg, &bin);
-	if (arg.ac >= 2)
+	if (arg.ac >= 2 && bin.d_opt != OT_OPT_NO)
 		parse_argv_file(&bin, arg.ac, arg.av);
+	else
+		ft_print_ot_option(&bin);
 	free(arg.av);
 	return (0);
 }

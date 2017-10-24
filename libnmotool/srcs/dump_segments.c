@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 14:59:48 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 19:03:23 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 10:16:31 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static int	is_fat(uint32_t magic) {
 	return magic == FAT_MAGIC || magic == FAT_CIGAM;
 }
 
-static void	init_struct(t_file *bin, t_dump	*dump)
+static void	init_struct(t_file *bin, t_dump	*dump, uint32_t d_opt)
 {
 	bin->head = NULL;
 	bin->dump = NULL;
@@ -36,13 +36,14 @@ static void	init_struct(t_file *bin, t_dump	*dump)
 	dump->fat = is_fat(bin->head->magic);
 	bin->dump = dump;
 	bin->nfat_arch = 1;
+	bin->d_opt = d_opt;
 }
 
-void		dump_segments(t_file *bin) {
+void		dump_segments(t_file *bin, uint32_t d_opt) {
 	int 				fat_l[1];
 	t_dump				dump;
 
-	init_struct(bin, &dump);
+	init_struct(bin, &dump, d_opt);
 	bin->fat_l = fat_l;
 	bin->fat_l[0] = 0;
 	if (!check_magic_number(bin))

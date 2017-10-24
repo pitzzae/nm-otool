@@ -69,7 +69,7 @@ static void	parse_argv_file(t_file *bin, int ac, char **av)
 		bin->mmap = bin->ptr;
 		if (bin->ptr)
 		{
-			dump_segments(bin);
+			dump_segments(bin, bin->d_opt);
 			munmap(bin->mmap, (size_t)bin->st.st_size);
 		}
 		i++;

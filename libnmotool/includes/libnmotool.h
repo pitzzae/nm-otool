@@ -106,7 +106,7 @@ typedef struct		s_file
 
 void		read_option_flag(int ac, t_arg *arg, t_file *bin);
 void		mmap_file(t_file *bin, char *path);
-void		dump_segments(t_file *bin);
+void		dump_segments(t_file *bin, uint32_t d_opt);
 void		dump_fat_header(t_file *bin);
 void		dump_mach_header(t_file *bin);
 void		dump_load_commands(t_file *bin);
