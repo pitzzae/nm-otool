@@ -65,7 +65,7 @@ set(SOURCE_OTOOL_FILES srcs_otool/main.c srcs_otool/ft_otool.c
         srcs_otool/t_option/find_section_32.c
         srcs_otool/t_option/ft_otool_t.c
         srcs_otool/t_option/print_sections.c
-        srcs_otool/h_option/ft_otool_h.c srcs_otool/a_option/ft_otool_a.c)
+        srcs_otool/h_option/ft_otool_h.c srcs_otool/a_option/ft_otool_a.c srcs_otool/f_option/ft_otool_f.c)
 set(SOURCE_NM_FILES srcs_nm/main.c srcs_nm/ft_nm.c srcs_nm/print_symbol_table.c
         srcs_nm/order_lst.c srcs_nm/add_line_to_lst.c srcs_nm/is_symtab.c)
 

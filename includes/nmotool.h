@@ -60,6 +60,7 @@ void				ft_print_ot_option(t_file *bin);
 void				ft_otool_h(t_file *bin);
 void				ft_otool_a(t_file *bin);
 void				ft_otool_t(t_file *bin);
+void				ft_otool_f(t_file *bin);
 void				ft_otool(t_file *bin);
 
 void				ft_nm(t_file *bin);
