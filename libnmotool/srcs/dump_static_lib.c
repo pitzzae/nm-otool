@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 23:37:04 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 19:03:23 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 10:11:46 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,8 @@ static void	init_arlib(t_file *bin, t_arlib *l)
 	l->start = ptr + sizeof(struct ar_hdr) + SARMAG + 20;
 	if (bin->display == OT_DISPLAY)
 	{
+		if (bin->d_opt & OT_OPT_F)
+			print_archive_header(bin, l, ptr + SARMAG);
 		ft_putstr("Archive : ");
 		ft_putendl(bin->filename);
 		if (bin->d_opt & OT_OPT_A)

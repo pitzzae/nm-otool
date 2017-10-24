@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/24 10:54:00 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 11:29:50 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 12:45:39 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,37 +20,56 @@ static char	*ft_pex(unsigned long a, char *str)
 	return (str);
 }
 
-static void	ft_print_arch(int arch, int pos)
+static void	ft_print_arch(struct fat_arch *arch, int pos)
 {
+	char				str[16];
+
 	(void)arch;
 	ft_putstr("architecture ");
 	ft_putnbr(pos);
-	ft_putstr("\n\tcputype ");
-	ft_putnbr(pos);
-	ft_putstr("\n\tcpusubtype ");
-	ft_putnbr(pos);
-	ft_putstr("\n\tcapabilities ");
-	ft_putnbr(pos);
-	ft_putstr("\n\toffset ");
-	ft_putnbr(pos);
-	ft_putstr("\n\tsize ");
-	ft_putnbr(pos);
-	ft_putstr("\n\talign ");
-	ft_putnbr(pos);
-	ft_putchar('\n');
+	ft_putstr("\n    cputype ");
+	ft_putnbr(arch->cputype);
+	ft_putstr("\n    cpusubtype ");
+	ft_putnbr(arch->cpusubtype & 0x00ffffff);
+	ft_putstr("\n    capabilities ");
+	ft_putstr(ft_pex(((uint32_t)(arch->cpusubtype) & 0xff000000) >> 24, &str[0]));
+	ft_putstr("\n    offset ");
+	ft_putnbr(arch->offset);
+	ft_putstr("\n    size ");
+	ft_putnbr(arch->size);
+	ft_putstr("\n    align 2^");
+	ft_putnbr(arch->align);
+	ft_putstr(" (");
+	ft_putnbr(ft_pow(2, arch->align));
+	ft_putstr(")\n");
 }
 
-void		ft_otool_f(t_file *bin)
+static void	ft_print_header_arch(t_file *bin)
 {
 	char				str[16];
-	uint32_t			i;
 
-	i = 0;
 	ft_putstr("Fat headers\nfat_magic ");
 	ft_putstr(ft_pex(bin->head->magic, &str[0]));
 	ft_putstr("\nnfat_arch ");
 	ft_putnbr((long)bin->head->nfat_arch);
 	ft_putchar('\n');
-	while (i++ < bin->head->nfat_arch)
-		ft_print_arch(bin->fat_l[i], i);
+}
+
+void		ft_otool_f(t_file *bin)
+{
+	struct fat_arch		ta;
+	t_file				tb;
+	void				*ptr;
+	uint32_t			i;
+
+	i = 0;
+	ft_print_header_arch(bin);
+	ptr = (bin->ptr + sizeof(struct fat_header));
+	while (i < bin->head->nfat_arch)
+	{
+		tb.arch = (struct fat_arch*)(ptr + (sizeof(struct fat_arch) * i));
+		ft_swap_fat_arch(&tb, &ta);
+		ft_print_arch(tb.arch, i);
+		i++;
+	}
 }
