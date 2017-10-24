@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 17:25:48 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 16:05:38 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 16:53:27 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,9 @@ void		dump_mach_header(t_file *bin)
 			bin->ncmds = bin->mach32->ncmds;
 			bin->lc = (struct load_command*)(bin->mach32 + 1);
 		}
-		dump_load_commands(bin);
+		if (!(sizeof(int*) == 4 && bin->mach64))
+			dump_load_commands(bin);
+		else
+			ft_putstr("Error: arch i386 do not support x86_64\n");
 	}
 }
