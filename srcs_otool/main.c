@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 16:38:34 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 15:44:20 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/24 15:44:26 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,10 @@ int			main(int ac, char **av)
 	bin.init_lib = &(init_lib_nmotool);
 	bin.option_parser = ot_option_parser;
 	bin.display = OT_DISPLAY;
-	bin.arch_opt = CPU_TYPE_X86_64;
+	if (sizeof(int*) == 8)
+		bin.arch_opt = CPU_TYPE_X86_64;
+	else if (sizeof(int*) == 4)
+		bin.arch_opt = CPU_TYPE_I386;
 	arg.ac = ac;
 	arg.av = av;
 	read_option_flag(ac, &arg, &bin);
