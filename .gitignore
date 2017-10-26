@@ -1,3 +1,4 @@
+cmake-build-debug/cmake_install.cmake
 cmake-build-debug/libft.a
 cmake-build-debug/libnmotool.a
 ft_nm.dSYM/
