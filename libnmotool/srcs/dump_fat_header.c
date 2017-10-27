@@ -6,14 +6,15 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 17:23:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/26 18:31:25 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 15:27:14 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libnmotool.h>
 
-static int		is_magic_64(uint32_t magic) {
-	return magic == MH_MAGIC_64 || magic == MH_CIGAM_64;
+static int		is_magic_64(uint32_t magic)
+{
+	return (magic == MH_MAGIC_64 || magic == MH_CIGAM_64);
 }
 
 static int		init_fat_header(t_file *bin, struct fat_header *header)

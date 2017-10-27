@@ -6,25 +6,28 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 14:59:48 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 12:04:30 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 15:29:10 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libnmotool.h>
 
-static int	is_magic_64(uint32_t magic) {
-	return magic == MH_MAGIC_64 || magic == MH_CIGAM_64;
+static int	is_magic_64(uint32_t magic)
+{
+	return (magic == MH_MAGIC_64 || magic == MH_CIGAM_64);
 }
 
-static int	should_swap_bytes(uint32_t magic) {
-	return magic == MH_CIGAM || magic == MH_CIGAM_64 || magic == FAT_CIGAM;
+static int	should_swap_bytes(uint32_t magic)
+{
+	return (magic == MH_CIGAM || magic == MH_CIGAM_64 || magic == FAT_CIGAM);
 }
 
-static int	is_fat(uint32_t magic) {
-	return magic == FAT_MAGIC || magic == FAT_CIGAM;
+static int	is_fat(uint32_t magic)
+{
+	return (magic == FAT_MAGIC || magic == FAT_CIGAM);
 }
 
-static void	init_struct(t_file *bin, t_dump	*dump, uint32_t d_opt)
+static void	init_struct(t_file *bin, t_dump *dump, uint32_t d_opt)
 {
 	bin->head = NULL;
 	bin->dump = NULL;
@@ -39,8 +42,9 @@ static void	init_struct(t_file *bin, t_dump	*dump, uint32_t d_opt)
 	bin->d_opt = d_opt;
 }
 
-void		dump_segments(t_file *bin, uint32_t d_opt) {
-	int 				fat_l[1];
+void		dump_segments(t_file *bin, uint32_t d_opt)
+{
+	int					fat_l[1];
 	t_dump				dump;
 
 	init_struct(bin, &dump, d_opt);
@@ -63,4 +67,3 @@ void		dump_segments(t_file *bin, uint32_t d_opt) {
 			dump_mach_header(bin);
 	}
 }
-

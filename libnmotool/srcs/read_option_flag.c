@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   read_option_flag.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gtorresa <null>                            +#+  +:+       +#+        */
+/*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/23 09:53:01 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 17:46:09 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 15:29:32 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ static void	empty_arg_after_option(t_file *bin, t_arg *arg)
 	}
 }
 
-static char	**create_new_argv(int ac, t_arg *arg,int i, int j)
+static char	**create_new_argv(int ac, t_arg *arg, int i, int j)
 {
 	char			**new_av;
 

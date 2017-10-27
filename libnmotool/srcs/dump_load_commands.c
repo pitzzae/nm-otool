@@ -6,13 +6,13 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 21:28:04 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 19:03:23 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 15:23:15 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libnmotool.h>
 
-static void	send_result(t_file *bin, void (*result)(t_file *bin))
+static void	send_result(t_file *bin, void (*result)(t_file *))
 {
 	result(bin);
 }
@@ -54,7 +54,6 @@ void		dump_load_commands(t_file *bin)
 		i++;
 	}
 	dump_section_name(bin);
-	send_result(bin ,bin->func);
+	send_result(bin, bin->func);
 	free_load_command(bin);
 }
-

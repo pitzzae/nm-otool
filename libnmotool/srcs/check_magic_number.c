@@ -14,8 +14,8 @@
 
 static int	check_magic_lib(t_file *bin)
 {
-	char 		c[9];
-	int 		i;
+	char		c[9];
+	int			i;
 
 	i = 0;
 	ft_strncpy(c, (char*)bin->ptr, 8);
