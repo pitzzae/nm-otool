@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 17:23:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/27 16:11:48 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 16:20:43 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,10 @@ static int		init_fat_header(t_file *bin, struct fat_header *header)
 static void		make_fat_head_list(t_file *bin, struct fat_arch *arch)
 {
 	uint32_t			i;
+	int					j;
 
 	i = 0;
+	j = 0;
 	while (i < bin->nfat_arch)
 	{
 		bin->arch = (struct fat_arch*)(((bin->ptr) + sizeof(struct fat_header))
@@ -40,7 +42,16 @@ static void		make_fat_head_list(t_file *bin, struct fat_arch *arch)
 		bin->mach32 = (struct mach_header*)((bin->ptr) + bin->arch->offset);
 		bin->mach64 = NULL;
 		bin->fat_l[i] = (int)bin->arch->cputype;
+		if (bin->arch->cputype == bin->arch_opt)
+			j++;
 		i++;
+	}
+	if (!j)
+	{
+		if (bin->arch_opt == CPU_TYPE_X86_64)
+			bin->arch_opt = CPU_TYPE_I386;
+		else if (bin->arch_opt == CPU_TYPE_I386)
+			bin->arch_opt = CPU_TYPE_X86_64;
 	}
 }
 
