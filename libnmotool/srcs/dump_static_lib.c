@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 23:37:04 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 14:59:48 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 16:40:07 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,11 @@ static void	print_file_lib(t_file *bin, char *ptr, int size)
 {
 	void				(*init_lib_nmotool)(t_file *);
 	t_file				bin_tmp;
+	uint32_t			tmp;
 
+	tmp = bin->nfat_arch;
 	init_lib_nmotool = bin->init_lib;
-	init_lib_nmotool(bin);
+	init_lib_nmotool(&bin_tmp);
 	bin_tmp.init_lib = bin->init_lib;
 	bin_tmp.ptr = ptr;
 	bin_tmp.st.st_size = size;
@@ -30,6 +32,7 @@ static void	print_file_lib(t_file *bin, char *ptr, int size)
 	bin_tmp.ar_lib = bin->ar_lib;
 	bin_tmp.arch_opt = bin->arch_opt;
 	bin_tmp.arch_all = bin->arch_all;
+	bin_tmp.nfat_arch = tmp;
 	dump_segments(&bin_tmp, bin_tmp.d_opt);
 }
 
