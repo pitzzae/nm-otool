@@ -105,6 +105,7 @@ typedef struct		s_file
 	int							is_print;
 }					t_file;
 
+void		init_libnmotool(t_file *bin);
 void		read_option_flag(int ac, t_arg *arg, t_file *bin);
 void		mmap_file(t_file *bin, char *path);
 void		dump_segments(t_file *bin, uint32_t d_opt);

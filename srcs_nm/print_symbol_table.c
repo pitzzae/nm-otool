@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 22:47:27 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 19:03:22 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 15:32:46 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ static t_list	*print_symbol_table_32(t_file *bin, void *ptr, t_symbol *sym)
 		ft_bzero(sym->address, 17);
 		if (is_print_addr(bin->nlist32[i].n_value, bin->nlist32[i].n_sect, sym))
 			print_ptr_addr(bin->nlist32[i].n_value, sym->address,
-						   bin->dump->is_64);
+						bin->dump->is_64);
 		else
 			ft_strcat(sym->address, S_X32);
 		if (is_symtab(sym->n_type))
@@ -95,7 +95,7 @@ static t_list	*print_symbol_table_64(t_file *bin, void *ptr, t_symbol *sym)
 		ft_bzero(sym->address, 17);
 		if (is_print_addr(bin->nlist64[i].n_value, bin->nlist64[i].n_sect, sym))
 			print_ptr_addr(bin->nlist64[i].n_value, sym->address,
-						   bin->dump->is_64);
+						bin->dump->is_64);
 		else
 			ft_strcat(sym->address, S_X64);
 		if (is_symtab(sym->n_type))
