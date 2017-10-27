@@ -6,11 +6,11 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/27 15:38:01 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/27 15:38:57 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 15:40:40 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <nmotool.h>
+#include <libnmotool.h>
 
 void		init_libnmotool(t_file *bin)
 {

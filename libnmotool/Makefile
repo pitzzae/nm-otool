@@ -17,7 +17,7 @@ NAME64 = libnmotool_x86_64.a
 SRCS = dump_segments.c mmap_file.c dump_fat_header.c dump_mach_header.c \
 		dump_load_commands.c dump_static_lib.c check_lib_option.c \
 		dump_section_name.c ft_swap_fat.c check_magic_number.c \
-		read_option_flag.c
+		read_option_flag.c init_libnmotool.c
 
 INCLUDES = -I./includes -I../libft/includes
 
