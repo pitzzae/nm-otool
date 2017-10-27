@@ -53,6 +53,10 @@ static void		dump_fat_mach(t_file *bin)
 		bin->mach32 = NULL;
 		bin->mach64 = (struct mach_header_64*)((bin->ptr) + bin->arch->offset);
 	}
+	if (bin->mach32 && bin->mach32->magic != MH_MAGIC)
+		bin->mach32 = NULL;
+	if (bin->mach64 && bin->mach64->magic != MH_MAGIC_64)
+		bin->mach64 = NULL;
 }
 
 void			dump_fat_header(t_file *bin)
@@ -72,7 +76,7 @@ void			dump_fat_header(t_file *bin)
 		if (bin->dump->is_swap)
 			ft_swap_fat_arch(bin, &arch);
 		dump_fat_mach(bin);
-		if (check_lib_option(bin, i))
+		if (check_lib_option(bin, i) && (bin->mach32 || bin->mach64))
 			dump_mach_header(bin);
 		i++;
 	}
