@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 15:02:12 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 14:57:38 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 15:39:43 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,20 +34,20 @@
 # include <ar.h>
 # include <sys/mman.h>
 
-typedef struct		s_arg
+typedef struct	s_arg
 {
 	char						**av;
 	int							ac;
-}					t_arg;
+}				t_arg;
 
-typedef struct		s_dump
+typedef struct	s_dump
 {
 	int							is_64;
 	int							is_swap;
 	int							fat;
-}					t_dump;
+}				t_dump;
 
-typedef struct		s_arlib
+typedef struct	s_arlib
 {
 	struct ranlib				*lib;
 	struct ar_hdr				*ar;
@@ -55,16 +55,16 @@ typedef struct		s_arlib
 	unsigned int				st_len;
 	unsigned int				arr_len;
 	char						*str;
-}					t_arlib;
+}				t_arlib;
 
-typedef struct		s_tdb_nsect
+typedef struct	s_tdb_nsect
 {
 	unsigned char				text_nsect;
 	unsigned char				data_nsect;
 	unsigned char				bss_nsect;
-}					t_tdb_nsect;
+}				t_tdb_nsect;
 
-typedef struct		s_file
+typedef struct	s_file
 {
 	char						*filename;
 	char						*exename;
@@ -103,20 +103,20 @@ typedef struct		s_file
 	t_tdb_nsect					*tdb;
 	t_arlib						*ar_lib;
 	int							is_print;
-}					t_file;
+}				t_file;
 
-void		init_libnmotool(t_file *bin);
-void		read_option_flag(int ac, t_arg *arg, t_file *bin);
-void		mmap_file(t_file *bin, char *path);
-void		dump_segments(t_file *bin, uint32_t d_opt);
-void		dump_fat_header(t_file *bin);
-void		dump_mach_header(t_file *bin);
-void		dump_load_commands(t_file *bin);
-void		dump_static_lib(t_file *bin);
-int			check_lib_option(t_file *bin, int pos);
-int			check_magic_number(t_file *bin);
-void		dump_section_name(t_file *bin);
-void		ft_swap_fat_header(t_file *bin, struct fat_header *header);
-void		ft_swap_fat_arch(t_file *bin, struct fat_arch *arch);
+void			init_libnmotool(t_file *bin);
+void			read_option_flag(int ac, t_arg *arg, t_file *bin);
+void			mmap_file(t_file *bin, char *path);
+void			dump_segments(t_file *bin, uint32_t d_opt);
+void			dump_fat_header(t_file *bin);
+void			dump_mach_header(t_file *bin);
+void			dump_load_commands(t_file *bin);
+void			dump_static_lib(t_file *bin);
+int				check_lib_option(t_file *bin, int pos);
+int				check_magic_number(t_file *bin);
+void			dump_section_name(t_file *bin);
+void			ft_swap_fat_header(t_file *bin, struct fat_header *header);
+void			ft_swap_fat_arch(t_file *bin, struct fat_arch *arch);
 
 #endif

@@ -26,7 +26,7 @@ typedef struct		s_symbol
 	char						*name;
 	uint8_t						n_type;
 	uint8_t						n_sect;
-	uint64_t 					n_value;
+	uint64_t					n_value;
 }					t_symbol;
 
 typedef struct		s_seg_x64

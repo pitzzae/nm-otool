@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/24 10:54:00 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 16:22:20 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 15:43:41 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@ static void	ft_print_arch(struct fat_arch *arch, int pos)
 	ft_putstr("\n    cpusubtype ");
 	ft_putnbr(arch->cpusubtype & 0x00ffffff);
 	ft_putstr("\n    capabilities ");
-	ft_putstr(ft_pex(((uint32_t)(arch->cpusubtype) & 0xff000000) >> 24, &str[0]));
+	ft_putstr(ft_pex(((uint32_t)(arch->cpusubtype) & 0xff000000) >> 24,
+					&str[0]));
 	ft_putstr("\n    offset ");
 	ft_putnbr(arch->offset);
 	ft_putstr("\n    size ");
