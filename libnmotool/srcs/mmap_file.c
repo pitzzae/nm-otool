@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 16:21:15 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/27 19:13:57 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 20:41:24 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,19 @@ static int	isnt_recognized_file(t_file *bin)
 	return (1);
 }
 
+static void	ft_mmap_fd_file(t_file *bin)
+{
+	void					(*print_error)(t_file *, char *);
+
+	print_error = bin->print_error;
+	bin->mmap = mmap(0, (size_t) bin->st.st_size,
+					 PROT_READ, MAP_PRIVATE, bin->fd, 0);
+	if (isnt_recognized_file(bin))
+		print_error(bin, MSG_NM_NOOBJ);
+	else
+		bin->ptr = bin->mmap;
+}
+
 void		mmap_file(t_file *bin, char *file)
 {
 	void					(*print_error)(t_file *, char *);
@@ -51,15 +64,10 @@ void		mmap_file(t_file *bin, char *file)
 	{
 		if (bin->st.st_mode & S_IFDIR)
 			print_error(bin, MSG_NM_DIR);
+		else if (bin->st.st_size == 0)
+			print_error(bin, MSG_NM_NOOBJ);
 		else
-		{
-			bin->mmap = mmap(0, (size_t) bin->st.st_size,
-						PROT_READ, MAP_PRIVATE, bin->fd, 0);
-			if (isnt_recognized_file(bin))
-				print_error(bin, MSG_NM_NOOBJ);
-			else
-				bin->ptr = bin->mmap;
-		}
+			ft_mmap_fd_file(bin);
 	}
 	else
 		print_error(bin, MSG_NM_NOFILE);
