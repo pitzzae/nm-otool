@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/23 09:53:01 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/27 15:29:32 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 17:11:00 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ static void	check_option_type(char *opt, t_file *bin)
 			bin->arch_opt = CPU_TYPE_I386;
 		else if (!ft_strcmp(&opt[6], "all"))
 			bin->arch_all = 1;
+		else
+			bin->arch_opt = 0;
 	}
 	else
 		while (opt[++i])

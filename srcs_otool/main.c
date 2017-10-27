@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 16:38:34 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 15:44:26 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 17:12:21 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,7 @@ int			main(int ac, char **av)
 	arg.ac = ac;
 	arg.av = av;
 	read_option_flag(ac, &arg, &bin);
-	if (arg.ac >= 2 && bin.d_opt != OT_OPT_NO)
+	if (arg.ac >= 2 && bin.d_opt != OT_OPT_NO && bin.arch_opt != 0)
 		parse_argv_file(&bin, arg.ac, arg.av);
 	else
 		ft_print_ot_option(&bin);

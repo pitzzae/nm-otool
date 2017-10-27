@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 12:06:09 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 20:47:30 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 17:18:28 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,14 @@ static void	parse_result(t_file *bin, t_list *lst)
 		lst = lst->next;
 		i++;
 	}
+}
+
+void		ft_print_nm_option(t_file *bin)
+{
+	ft_putstr("Usage: ");
+	ft_putstr(bin->exename);
+	ft_putstr(" -arch=  <object file> ...\n"
+					"\t-arch= select arch display [i386,x86_64,all]\n");
 }
 
 void		ft_nm(t_file *bin)

@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 12:06:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 15:27:39 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 17:21:25 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,8 +71,10 @@ int			main(int ac, char **av)
 	arg.ac = ac;
 	arg.av = av;
 	read_option_flag(ac, &arg, &bin);
-	if (arg.ac >= 2)
+	if (arg.ac >= 2 && bin.arch_opt != 0)
 		parse_argv_file(&bin, arg.ac, arg.av);
+	else
+		ft_print_nm_option(&bin);
 	free(arg.av);
 	return (0);
 }
