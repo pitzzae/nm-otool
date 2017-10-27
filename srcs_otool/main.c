@@ -61,17 +61,17 @@ static void	parse_argv_file(t_file *bin, int ac, char **av)
 	{
 		init_lib_nmotool(bin);
 		mmap_file(bin, av[i]);
-		if (bin->ptr)
+		if (bin->mmap)
 		{
-			if ((opt & OT_OPT_F))
+			if (bin->ptr && (opt & OT_OPT_F))
 				dump_segments(bin, OT_OPT_F);
-			if ((opt & OT_OPT_A))
+			if (bin->ptr && (opt & OT_OPT_A))
 				dump_segments(bin, OT_OPT_A);
-			if ((opt & OT_OPT_T))
+			if (bin->ptr && (opt & OT_OPT_T))
 				dump_segments(bin, OT_OPT_T);
-			if ((opt & OT_OPT_H))
+			if (bin->ptr && (opt & OT_OPT_H))
 				dump_segments(bin, OT_OPT_H);
-			munmap(bin->ptr, (size_t)bin->st.st_size);
+			munmap(bin->mmap, (size_t)bin->st.st_size);
 		}
 		i++;
 	}

@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 12:06:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/27 18:16:11 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 18:16:14 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,10 +45,10 @@ static void	parse_argv_file(t_file *bin, int ac, char **av)
 	{
 		init_lib_nmotool(bin);
 		mmap_file(bin, av[i]);
-		bin->mmap = bin->ptr;
-		if (bin->ptr)
+		if (bin->mmap)
 		{
-			dump_segments(bin, bin->d_opt);
+			if (bin->ptr)
+				dump_segments(bin, bin->d_opt);
 			munmap(bin->mmap, (size_t)bin->st.st_size);
 		}
 		i++;

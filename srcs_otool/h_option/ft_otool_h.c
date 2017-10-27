@@ -50,8 +50,8 @@ static void	print_header_32(t_file *bin)
 	ft_putstr_whsp(ft_itoa(bin->mach32->cputype), ' ', ft_strlen(get_htxt(1)));
 	ft_putstr_whsp(ft_itoa(bin->mach32->cpusubtype & 0xffff), ' ',
 				ft_strlen(get_htxt(2)));
-	ft_putstr_whsp(ft_pex(((uint32_t)(bin->mach32->cpusubtype) & 0xff000000) >>
-				24, &str[0]), ' ', ft_strlen(get_htxt(3)));
+	ft_putstr_whsp(ft_pex(((uint32_t)(bin->mach32->cpusubtype) &
+				CPU_SUBTYPE_MASK) >> 24, &str[0]), ' ', ft_strlen(get_htxt(3)));
 	ft_putstr_whsp(ft_itoa(bin->mach32->filetype), ' ', ft_strlen(get_htxt(4)));
 	ft_putstr_whsp(ft_itoa(bin->mach32->ncmds), ' ', ft_strlen(get_htxt(5)));
 	ft_putstr_whsp(ft_itoa(bin->mach32->sizeofcmds), ' ',
@@ -70,8 +70,8 @@ static void	print_header_64(t_file *bin)
 	ft_putstr_whsp(ft_itoa(bin->mach64->cputype), ' ', ft_strlen(get_htxt(1)));
 	ft_putstr_whsp(ft_itoa(bin->mach64->cpusubtype & 0x00ffffff), ' ',
 				ft_strlen(get_htxt(2)));
-	ft_putstr_whsp(ft_pex(((uint32_t)(bin->mach64->cpusubtype) & 0xff000000) >>
-				24, &str[0]), ' ', ft_strlen(get_htxt(3)));
+	ft_putstr_whsp(ft_pex(((uint32_t)(bin->mach64->cpusubtype) &
+				CPU_SUBTYPE_MASK) >> 24, &str[0]), ' ', ft_strlen(get_htxt(3)));
 	ft_putstr_whsp(ft_itoa(bin->mach64->filetype), ' ', ft_strlen(get_htxt(4)));
 	ft_putstr_whsp(ft_itoa(bin->mach64->ncmds), ' ', ft_strlen(get_htxt(5)));
 	ft_putstr_whsp(ft_itoa(bin->mach64->sizeofcmds), ' ',
