@@ -112,3 +112,7 @@ clean:
 	@rm -rf $(NM_OBJS32) $(NM_OBJS64) $(OTOOL_OBJS32) $(OTOOL_OBJS64)
 
 re: fclean all
+
+norme:
+	norminette libft/srcs/* libft/includes/* libnmotool/srcs/* \
+	libnmotool/includes/* includes/* srcs_nm/* srcs_otool/*.c srcs_otool/*/*.c

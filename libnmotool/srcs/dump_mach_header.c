@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 17:25:48 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/27 15:26:17 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 16:12:10 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,10 @@ void		dump_mach_header(t_file *bin)
 		ptr = (char*)bin->mach64;
 	else if (bin->mach32)
 		ptr = (char*)bin->mach32;
+	else
+		ptr = (char*)((bin->ptr) + bin->arch->offset);
 	if (!ft_strncmp(ptr, ARMAG, SARMAG))
 		dump_static_lib(bin);
-	else
+	else if (bin->mach32 || bin->mach64)
 		dump_is_mach(bin);
 }

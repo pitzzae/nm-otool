@@ -61,8 +61,10 @@ static void	init_arlib(t_file *bin, t_arlib *l)
 
 	if (bin->dump->is_64)
 		ptr = (char*)bin->mach64;
-	else
+	else if (bin->mach32)
 		ptr = (char*)bin->mach32;
+	else
+		ptr = (char*)((bin->ptr) + bin->arch->offset);
 	l->start = ptr + sizeof(struct ar_hdr) + SARMAG + 20;
 	if (bin->display == OT_DISPLAY)
 	{

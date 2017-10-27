@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 17:23:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/27 15:27:14 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/10/27 16:11:48 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ void			dump_fat_header(t_file *bin)
 		if (bin->dump->is_swap)
 			ft_swap_fat_arch(bin, &arch);
 		dump_fat_mach(bin);
-		if (check_lib_option(bin, i) && (bin->mach32 || bin->mach64))
+		if (check_lib_option(bin, i))
 			dump_mach_header(bin);
 		i++;
 	}
