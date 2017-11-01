@@ -64,7 +64,7 @@ void		ft_otool_f(t_file *bin)
 	uint32_t			i;
 
 	i = 0;
-	if (ft_strncmp(bin->ptr, ARMAG, SARMAG))
+	if (ft_strncmp(bin->ptr, ARMAG, SARMAG) && bin->dump->fat)
 	{
 		ft_print_header_arch(bin);
 		ptr = (bin->ptr + sizeof(struct fat_header));

@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/23 12:59:22 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 19:03:23 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/01 13:24:55 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,30 +33,58 @@ static char	*get_htxt(int i)
 	return ("");
 }
 
-static char	*ft_pex(unsigned long a, char *str)
+static char	*ft_pex(unsigned long a, char *str, size_t len)
 {
+	char		tmp[16];
+	int			i;
+	int			j;
+
+	i = 0;
 	ft_bzero(str, 16);
+	ft_bzero(tmp, 16);
 	ft_strcat(str, "0x");
-	ft_putbase(a, str, 16);
+	ft_putbase(a, tmp, 16);
+	j = 8 - ft_strlen(tmp);
+	if (len && ft_strlen(tmp) < 8)
+	{
+		while (i < j)
+		{
+			ft_strcat(str, "0");
+			i++;
+		}
+	}
+	if (a == 0)
+		ft_strcat(str, "00");
+	else
+		ft_putbase(a, str, 16);
 	return (str);
 }
 
 static void	print_header_32(t_file *bin)
 {
 	char		str[16];
+	char		*tmp;
 
-	ft_putstr_whsp(ft_pex(bin->mach32->magic, &str[0]), ' ',
+	ft_putstr_whsp(ft_pex(bin->mach32->magic, &str[0], 0), ' ',
 				ft_strlen(get_htxt(0)));
-	ft_putstr_whsp(ft_itoa(bin->mach32->cputype), ' ', ft_strlen(get_htxt(1)));
-	ft_putstr_whsp(ft_itoa(bin->mach32->cpusubtype & 0xffff), ' ',
-				ft_strlen(get_htxt(2)));
+	tmp = ft_itoa(bin->mach32->cputype);
+	ft_putstr_whsp(tmp, ' ', ft_strlen(get_htxt(1)));
+	free(tmp);
+	tmp = ft_itoa(bin->mach32->cpusubtype & 0xffff);
+	ft_putstr_whsp(tmp, ' ', ft_strlen(get_htxt(2)));
+	free(tmp);
 	ft_putstr_whsp(ft_pex(((uint32_t)(bin->mach32->cpusubtype) &
-				CPU_SUBTYPE_MASK) >> 24, &str[0]), ' ', ft_strlen(get_htxt(3)));
-	ft_putstr_whsp(ft_itoa(bin->mach32->filetype), ' ', ft_strlen(get_htxt(4)));
-	ft_putstr_whsp(ft_itoa(bin->mach32->ncmds), ' ', ft_strlen(get_htxt(5)));
-	ft_putstr_whsp(ft_itoa(bin->mach32->sizeofcmds), ' ',
-				ft_strlen(get_htxt(6)));
-	ft_putstr_whsp(ft_pex(bin->mach32->flags, &str[0]), ' ',
+			CPU_SUBTYPE_MASK) >> 24, &str[0], 0), ' ', ft_strlen(get_htxt(3)));
+	tmp = ft_itoa(bin->mach32->filetype);
+	ft_putstr_whsp(tmp, ' ', ft_strlen(get_htxt(4)));
+	free(tmp);
+	tmp = ft_itoa(bin->mach32->ncmds);
+	ft_putstr_whsp(tmp, ' ', ft_strlen(get_htxt(5)));
+	free(tmp);
+	tmp = ft_itoa(bin->mach32->sizeofcmds);
+	ft_putstr_whsp(tmp, ' ', ft_strlen(get_htxt(6)));
+	free(tmp);
+	ft_putstr_whsp(ft_pex(bin->mach32->flags, &str[0], 1), ' ',
 				ft_strlen(get_htxt(7)));
 	ft_putchar('\n');
 }
@@ -64,19 +92,28 @@ static void	print_header_32(t_file *bin)
 static void	print_header_64(t_file *bin)
 {
 	char		str[16];
+	char		*tmp;
 
-	ft_putstr_whsp(ft_pex(bin->mach64->magic, &str[0]), ' ',
+	ft_putstr_whsp(ft_pex(bin->mach64->magic, &str[0], 0), ' ',
 				ft_strlen(get_htxt(0)));
-	ft_putstr_whsp(ft_itoa(bin->mach64->cputype), ' ', ft_strlen(get_htxt(1)));
-	ft_putstr_whsp(ft_itoa(bin->mach64->cpusubtype & 0x00ffffff), ' ',
-				ft_strlen(get_htxt(2)));
+	tmp = ft_itoa(bin->mach64->cputype);
+	ft_putstr_whsp(tmp, ' ', ft_strlen(get_htxt(1)));
+	free(tmp);
+	tmp = ft_itoa(bin->mach64->cpusubtype & 0x00ffffff);
+	ft_putstr_whsp(tmp, ' ', ft_strlen(get_htxt(2)));
+	free(tmp);
 	ft_putstr_whsp(ft_pex(((uint32_t)(bin->mach64->cpusubtype) &
-				CPU_SUBTYPE_MASK) >> 24, &str[0]), ' ', ft_strlen(get_htxt(3)));
-	ft_putstr_whsp(ft_itoa(bin->mach64->filetype), ' ', ft_strlen(get_htxt(4)));
-	ft_putstr_whsp(ft_itoa(bin->mach64->ncmds), ' ', ft_strlen(get_htxt(5)));
-	ft_putstr_whsp(ft_itoa(bin->mach64->sizeofcmds), ' ',
-				ft_strlen(get_htxt(6)));
-	ft_putstr_whsp(ft_pex(bin->mach64->flags, &str[0]), ' ',
+			CPU_SUBTYPE_MASK) >> 24, &str[0], 0), ' ', ft_strlen(get_htxt(3)));
+	tmp = ft_itoa(bin->mach64->filetype);
+	ft_putstr_whsp(tmp, ' ', ft_strlen(get_htxt(4)));
+	free(tmp);
+	tmp = ft_itoa(bin->mach64->ncmds);
+	ft_putstr_whsp(tmp, ' ', ft_strlen(get_htxt(5)));
+	free(tmp);
+	tmp = ft_itoa(bin->mach64->sizeofcmds);
+	ft_putstr_whsp(tmp, ' ', ft_strlen(get_htxt(6)));
+	free(tmp);
+	ft_putstr_whsp(ft_pex(bin->mach64->flags, &str[0], 1), ' ',
 				ft_strlen(get_htxt(7)));
 	ft_putchar('\n');
 }
