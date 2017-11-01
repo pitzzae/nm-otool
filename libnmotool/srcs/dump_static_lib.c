@@ -55,6 +55,8 @@ static void	print_archive_header(t_file *bin, t_arlib *l, void *ptr)
 
 	ft_otool = bin->func;
 	l->ar = (struct ar_hdr*)ptr;
+	if (bin->d_opt & OT_OPT_A)
+		bin->is_arlib = 1;
 	ft_otool(bin);
 }
 
