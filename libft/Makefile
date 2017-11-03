@@ -33,7 +33,8 @@ SRCS = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c\
 	ft_lst_add_env.c ft_lst_rm_env.c ft_strsplit_len.c ft_str_replace_str.c \
 	ft_strsub_free.c ft_myputchar.c ft_lstaddend_free.c ft_udel.c \
 	ft_strocur_slash.c ft_stradd_slash.c ft_tabdup.c ft_putbase.c \
-	ft_puthex.c ft_swapuint32.c ft_swapuint8.c ft_putstr_whsp.c ft_pow.c
+	ft_puthex.c ft_swapuint32.c ft_swapuint8.c ft_putstr_whsp.c ft_pow.c \
+	ft_putadd.c
 
 CFLAGS = -Wall -Wextra -Werror
 

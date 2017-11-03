@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 11:08:25 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 13:02:27 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 16:42:24 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -152,5 +152,6 @@ char				*ft_str_replace_str(char *str, char *find, char *replace);
 char				**ft_tabdup(char **tab);
 uint32_t			ft_swapuint32(uint32_t u);
 uint8_t				ft_swapuint8(uint8_t u);
+void				ft_putadd(void const *p, char *buf);
 
 #endif

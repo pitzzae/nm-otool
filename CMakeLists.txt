@@ -48,7 +48,7 @@ set(SOURCE_LIBFT libft/srcs/ft_atoi.c libft/srcs/ft_bzero.c
         libft/srcs/ft_stradd_slash.c libft/srcs/ft_tabdup.c
         libft/srcs/ft_putbase.c libft/srcs/ft_puthex.c
         libft/srcs/ft_swapuint32.c libft/srcs/ft_swapuint8.c
-        libft/srcs/ft_putstr_whsp.c libft/srcs/ft_pow.c)
+        libft/srcs/ft_putstr_whsp.c libft/srcs/ft_pow.c libft/srcs/ft_putadd.c)
 add_library(ft ${SOURCE_LIBFT} ${HEADER_FILES})
 
 

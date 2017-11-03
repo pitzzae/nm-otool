@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 12:06:09 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/11/03 15:28:30 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 15:57:02 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static void	ft_free_lst(void *ptr, size_t len)
 
 static void	print_name_multi_arg(t_file *bin)
 {
-	if (bin->ac > 2)
+	if (bin->ac >= 2)
 	{
 		ft_putendl("");
 		ft_putstr(bin->filename);
@@ -52,8 +52,6 @@ static void	parse_result(t_file *bin, t_list *lst)
 			i++;
 		}
 	}
-	else
-		ft_nm_print_error(bin, MSG_NM_TRUNC);
 }
 
 void		ft_print_nm_option(t_file *bin)
