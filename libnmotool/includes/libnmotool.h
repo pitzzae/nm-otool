@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 15:02:12 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/11/03 14:56:01 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 14:56:19 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,6 +104,7 @@ typedef struct	s_file
 	t_tdb_nsect					*tdb;
 	t_arlib						*ar_lib;
 	int							is_print;
+	int							error_order;
 }				t_file;
 
 void			init_libnmotool(t_file *bin);

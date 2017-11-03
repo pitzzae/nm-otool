@@ -36,4 +36,5 @@ void		init_libnmotool(t_file *bin)
 	bin->ncmds = 0;
 	bin->mmap = NULL;
 	bin->option_parser = NULL;
+	bin->error_order = 0;
 }

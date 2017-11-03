@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 23:37:04 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/27 18:16:11 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 15:40:01 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ static void	print_file_lib(t_file *bin, char *ptr, int size)
 	bin_tmp.st.st_size = size;
 	bin_tmp.func = bin->func;
 	bin_tmp.filename = bin->filename;
+	bin_tmp.exename = bin->exename;
 	bin_tmp.is_arlib = 1;
 	bin_tmp.is_print = 0;
 	bin_tmp.d_opt = bin->d_opt;
@@ -94,7 +95,7 @@ void		dump_static_lib(t_file *bin)
 
 	bin->ar_lib = &l;
 	init_arlib(bin, &l);
-	while (l.str)
+	while (l.str && bin->error_order == 0)
 	{
 		if (ft_strstr(l.str, "SYMDEF") != NULL)
 		{
@@ -103,7 +104,7 @@ void		dump_static_lib(t_file *bin)
 		}
 		l.ar = (struct ar_hdr*)l.str;
 		l.str += sizeof(struct ar_hdr);
-		if (ft_strlen(l.ar->ar_name) > 0)
+		if (ft_strlen(l.ar->ar_name) > 0 && l.ar->ar_name[0] == '#')
 		{
 			j = ft_atoi(ft_strchr(l.ar->ar_name, '/') + 1);
 			print_file_lib_path(bin, l.str);

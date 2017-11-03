@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/19 15:06:24 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/23 19:03:22 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 15:26:00 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static void		order_by_address(t_list *l, boolean_t *lst_is_order)
 		swap_content(l, lst_is_order);
 }
 
-void			order_lst(t_list *lst)
+void			order_lst(t_file *bin, t_list *lst)
 {
 	boolean_t			lst_is_order;
 	t_list				*l;
@@ -42,9 +42,12 @@ void			order_lst(t_list *lst)
 	l = lst;
 	while (!lst_is_order)
 	{
+		bin->error_order = (int)((t_symbol*)(l->content))->name;
 		lst_is_order = TRUE;
-		while (l->next && l->next->content && l->next->next)
+		while (l->next && l->next->content && l->next->next
+			&& bin->error_order > 0)
 		{
+			bin->error_order = (int)((t_symbol*)(l->content))->name;
 			cmp = ft_strcmp(((t_symbol*)(l->content))->name,
 							((t_symbol*)(l->next->content))->name);
 			if (cmp > 0)

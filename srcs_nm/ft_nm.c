@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 12:06:09 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/27 18:16:11 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 15:28:30 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,21 +32,28 @@ static void	parse_result(t_file *bin, t_list *lst)
 {
 	size_t			i;
 	t_symbol		*sym;
+	void			(*ft_nm_print_error)(t_file *, char *);
 
 	i = 0;
-	order_lst(lst);
-	print_name_multi_arg(bin);
-	while (lst != NULL && (sym = (t_symbol*)lst->content) != NULL && sym)
+	order_lst(bin, lst);
+	ft_nm_print_error = bin->print_error;
+	if (bin->error_order > 0)
 	{
-		ft_putstr(sym->address);
-		ft_putchar(' ');
-		ft_putchar(sym->type);
-		ft_putchar(' ');
-		ft_putendl(sym->name);
-		free(lst->content);
-		lst = lst->next;
-		i++;
+		print_name_multi_arg(bin);
+		while (lst != NULL && (sym = (t_symbol*)lst->content) != NULL && sym)
+		{
+			ft_putstr(sym->address);
+			ft_putchar(' ');
+			ft_putchar(sym->type);
+			ft_putchar(' ');
+			ft_putendl(sym->name);
+			free(lst->content);
+			lst = lst->next;
+			i++;
+		}
 	}
+	else
+		ft_nm_print_error(bin, MSG_NM_TRUNC);
 }
 
 void		ft_print_nm_option(t_file *bin)
