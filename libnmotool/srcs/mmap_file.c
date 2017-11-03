@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 16:21:15 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/27 20:41:24 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 13:35:52 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,8 @@ static void	ft_mmap_fd_file(t_file *bin)
 	void					(*print_error)(t_file *, char *);
 
 	print_error = bin->print_error;
-	bin->mmap = mmap(0, (size_t) bin->st.st_size,
-					 PROT_READ, MAP_PRIVATE, bin->fd, 0);
+	bin->mmap = mmap(0, (size_t)bin->st.st_size,
+					PROT_READ, MAP_PRIVATE, bin->fd, 0);
 	if (isnt_recognized_file(bin))
 		print_error(bin, MSG_NM_NOOBJ);
 	else
