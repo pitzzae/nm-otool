@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 23:37:04 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/11/03 17:31:26 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 22:30:02 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ void		dump_static_lib(t_file *bin)
 
 	bin->ar_lib = &l;
 	init_arlib(bin, &l);
-	while (l.str && bin->error_order == 0)
+	while (l.str)
 	{
 		if (ft_strstr(l.str, "SYMDEF") != NULL)
 		{

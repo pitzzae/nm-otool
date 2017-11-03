@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 17:23:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/11/01 12:43:27 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 21:52:15 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ static int		init_fat_header(t_file *bin, struct fat_header *header)
 		ft_swap_fat_header(bin, header);
 	bin->fat_l = (int*)malloc(sizeof(int) * header->nfat_arch + 2);
 	bin->nfat_arch = header->nfat_arch;
+	if (bin->nfat_arch > 100)
+		bin->nfat_arch = 0;
 	return ((int)header->nfat_arch);
 }
 
@@ -33,7 +35,8 @@ static void		make_fat_head_list(t_file *bin, struct fat_arch *arch)
 
 	i = 0;
 	j = 0;
-	while (i < bin->nfat_arch)
+	while (i < bin->nfat_arch && check_next_ptradd(bin, (((bin->ptr) +
+			sizeof(struct fat_header)) + (sizeof(struct fat_arch) * i))) == 1)
 	{
 		bin->arch = (struct fat_arch*)(((bin->ptr) + sizeof(struct fat_header))
 						+ (sizeof(struct fat_arch) * i));
@@ -59,7 +62,10 @@ static void		dump_fat_mach(t_file *bin)
 {
 	bin->mach64 = NULL;
 	bin->mach32 = (struct mach_header*)((bin->ptr) + bin->arch->offset);
-	bin->dump->is_64 = is_magic_64(bin->mach32->magic);
+	if (check_next_ptradd(bin,((bin->ptr) + bin->arch->offset)) == 1)
+		bin->dump->is_64 = is_magic_64(bin->mach32->magic);
+	else
+		bin->mach32 = NULL;
 	if (bin->dump->is_64 == 1)
 	{
 		bin->mach32 = NULL;
@@ -87,7 +93,9 @@ void			dump_fat_header(t_file *bin)
 					+ (sizeof(struct fat_arch) * i));
 		if (bin->dump->is_swap)
 			ft_swap_fat_arch(bin, &arch);
-		dump_fat_mach(bin);
+		if (check_next_ptradd(bin, (((bin->ptr) + sizeof(struct fat_header))
+									+ (sizeof(struct fat_arch) * i))) == 1)
+			dump_fat_mach(bin);
 		if (check_lib_option(bin, i))
 			dump_mach_header(bin);
 		i++;

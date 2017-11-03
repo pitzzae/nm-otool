@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 15:22:15 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/11/03 17:31:26 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 22:24:59 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ int			check_lib_option(t_file *bin, int pos)
 	else
 		return (0);
 }
-
+/*
 static void	char_ar_lib2(t_file *bin, t_arlib *l)
 {
 	char			tmp1[16];
@@ -73,7 +73,7 @@ static void	char_ar_lib2(t_file *bin, t_arlib *l)
 		l->str = NULL;
 	}
 }
-
+*/
 void		char_ar_lib(t_file *bin, t_arlib *l)
 {
 	char			tmp1[16];
@@ -89,7 +89,7 @@ void		char_ar_lib(t_file *bin, t_arlib *l)
 	{
 		l->arr_len = *(unsigned int*)(l->str - 4);
 		l->str += l->arr_len;
-		char_ar_lib2(bin, l);
+		//char_ar_lib2(bin, l);
 	}
 	else
 	{
@@ -97,4 +97,19 @@ void		char_ar_lib(t_file *bin, t_arlib *l)
 		bin->error_order = 1;
 		l->str = NULL;
 	}
+}
+
+int			check_next_ptradd(t_file *bin, void *ptr)
+{
+	char			tmp1[16];
+	char			tmp2[16];
+
+	ft_bzero(tmp1, 16);
+	ft_bzero(tmp2, 16);
+	ft_putadd(ptr, &tmp1[0]);
+	ft_putadd(bin->ptr + bin->st.st_size, &tmp2[0]);
+	if (ft_strcmp(tmp1, tmp2) <= 0)
+		return (1);
+	else
+		return (0);
 }

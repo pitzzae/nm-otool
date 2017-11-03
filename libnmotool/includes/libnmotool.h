@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 15:02:12 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/11/03 17:25:17 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 20:38:43 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,5 +121,6 @@ void			dump_section_name(t_file *bin);
 void			ft_swap_fat_header(t_file *bin, struct fat_header *header);
 void			ft_swap_fat_arch(t_file *bin, struct fat_arch *arch);
 void			char_ar_lib(t_file *bin, t_arlib *l);
+int				check_next_ptradd(t_file *bin, void *ptr);
 
 #endif

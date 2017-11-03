@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "nmotool.h"
-
+#include <signal.h>
 void		ft_print_ot_option(t_file *bin)
 {
 	ft_putstr("Usage: ");
