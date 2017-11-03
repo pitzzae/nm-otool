@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 21:28:04 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/27 18:16:11 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 14:58:45 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,22 @@ static void	free_load_command(t_file *bin)
 	free(bin->sec64);
 }
 
+static void	check_next_lc(t_file *bin)
+{
+	int				i;
+	void			(*ft_nm_print_error)(t_file *, char *);
+
+	ft_nm_print_error = bin->print_error;
+	i = (int)((void*)bin->lc) + bin->lc->cmdsize;
+	if (i > 0)
+		bin->lc = ((void*)bin->lc) + bin->lc->cmdsize;
+	else
+	{
+		bin->lc = NULL;
+		ft_nm_print_error(bin, MSG_NM_TRUNC);
+	}
+}
+
 void		dump_load_commands(t_file *bin)
 {
 	t_tdb_nsect		tbd;
@@ -43,14 +59,14 @@ void		dump_load_commands(t_file *bin)
 	i = 0;
 	bin->tdb = &tbd;
 	init_load_command(bin);
-	while (i < bin->ncmds)
+	while (i < bin->ncmds && bin->lc)
 	{
 		bin->lc_t[i] = bin->lc;
 		if (bin->dump->is_64)
 			bin->seg64_c[i] = (struct segment_command_64*)bin->lc;
 		else
 			bin->seg32_c[i] = (struct segment_command*)bin->lc;
-		bin->lc = ((void*)bin->lc) + bin->lc->cmdsize;
+		check_next_lc(bin);
 		i++;
 	}
 	dump_section_name(bin);

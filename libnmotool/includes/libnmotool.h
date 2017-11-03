@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 15:02:12 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/11/01 12:43:27 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 14:56:01 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@
 
 # define MSG_NM_DIR ": Is a directory."
 # define MSG_NM_NOOBJ ": The file was not recognized as a valid object file"
+# define MSG_NM_TRUNC ": truncated or malformed object."
 # define MSG_NM_NOFILE ": No such file or directory."
 
 # include <libft.h>

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 FT_NM_PATH="../ft_nm"
-FT_OTOOL_PATH="../ft_otool -a"
+FT_OTOOL_PATH="../ft_otool -t"
 
 run_sys_nm () {
 	nm $@ | cat -e | sed -e 's/\$/\\n/g'
@@ -12,7 +12,7 @@ run_ft_nm () {
 }
 
 run_sys_otool () {
-	otool -a $@ | cat -e | sed -e 's/\$/\\n/g'
+	otool -t $@ | cat -e | sed -e 's/\$/\\n/g'
 }
 
 run_ft_otool () {
