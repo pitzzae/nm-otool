@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 15:22:15 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/10/24 17:49:06 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 17:31:26 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,28 @@ int			check_lib_option(t_file *bin, int pos)
 	}
 	else
 		return (0);
+}
+
+void		char_ar_lib(t_file *bin, t_arlib *l)
+{
+	char			tmp1[16];
+	char			tmp2[16];
+	void			(*ft_nm_print_error)(t_file *, char *);
+
+	ft_bzero(tmp1, 16);
+	ft_bzero(tmp2, 16);
+	ft_putadd((void*)(l->str - 4), &tmp1[0]);
+	ft_putadd(bin->ptr + bin->st.st_size, &tmp2[0]);
+	ft_nm_print_error = bin->print_error;
+	if (ft_strcmp(tmp1, tmp2) <= 0)
+	{
+		l->arr_len = *(unsigned int*)(l->str - 4);
+		l->str += l->arr_len;
+	}
+	else
+	{
+		ft_nm_print_error(bin, MSG_NM_TRUNC);
+		bin->error_order = 1;
+		l->str = NULL;
+	}
 }

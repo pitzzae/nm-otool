@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 23:37:04 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/11/03 15:40:20 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 17:31:26 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,8 +84,7 @@ static void	init_arlib(t_file *bin, t_arlib *l)
 	l->st_len = *(unsigned int*)l->start / sizeof(struct ranlib);
 	l->lib = (struct ranlib*)(l->start + 4);
 	l->str = (void*)l->lib + l->st_len * sizeof(struct ranlib) + 4;
-	l->arr_len = *(unsigned int*)(l->str - 4);
-	l->str += l->arr_len;
+	char_ar_lib(bin, l);
 }
 
 void		dump_static_lib(t_file *bin)

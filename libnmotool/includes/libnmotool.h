@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 15:02:12 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/11/03 14:56:19 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 17:25:17 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,5 +120,6 @@ int				check_magic_number(t_file *bin);
 void			dump_section_name(t_file *bin);
 void			ft_swap_fat_header(t_file *bin, struct fat_header *header);
 void			ft_swap_fat_arch(t_file *bin, struct fat_arch *arch);
+void			char_ar_lib(t_file *bin, t_arlib *l);
 
 #endif
