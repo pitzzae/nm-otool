@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/19 15:06:24 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/11/03 15:26:00 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/03 17:42:20 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void			order_lst(t_file *bin, t_list *lst)
 
 	lst_is_order = FALSE;
 	l = lst;
-	while (!lst_is_order)
+	while (!lst_is_order && l->content)
 	{
 		bin->error_order = (int)((t_symbol*)(l->content))->name;
 		lst_is_order = TRUE;
