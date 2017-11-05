@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 12:06:09 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/11/03 15:57:02 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/05 14:02:47 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,11 @@ static void	print_name_multi_arg(t_file *bin)
 	if (bin->ac > 2)
 	{
 		ft_putendl("");
+		ft_putstr(bin->filename);
+		ft_putendl(":");
+	}
+	else if ((bin->dump->fat == 1 && bin->mach32))
+	{
 		ft_putstr(bin->filename);
 		ft_putendl(":");
 	}
