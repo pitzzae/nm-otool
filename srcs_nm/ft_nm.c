@@ -20,7 +20,7 @@ static void	ft_free_lst(void *ptr, size_t len)
 
 static void	print_name_multi_arg(t_file *bin)
 {
-	if (bin->ac >= 2)
+	if (bin->ac > 2)
 	{
 		ft_putendl("");
 		ft_putstr(bin->filename);
