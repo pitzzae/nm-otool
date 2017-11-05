@@ -6,7 +6,7 @@
 /*   By: gtorresa <gtorresa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/17 17:23:02 by gtorresa          #+#    #+#             */
-/*   Updated: 2017/11/03 21:52:15 by gtorresa         ###   ########.fr       */
+/*   Updated: 2017/11/05 13:30:03 by gtorresa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,9 @@ static int		init_fat_header(t_file *bin, struct fat_header *header)
 	return ((int)header->nfat_arch);
 }
 
-static void		make_fat_head_list(t_file *bin, struct fat_arch *arch)
+static void		make_fat_head_list(t_file *bin, struct fat_arch *arch, int j)
 {
 	uint32_t			i;
-	int					j;
 
 	i = 0;
 	j = 0;
@@ -62,7 +61,7 @@ static void		dump_fat_mach(t_file *bin)
 {
 	bin->mach64 = NULL;
 	bin->mach32 = (struct mach_header*)((bin->ptr) + bin->arch->offset);
-	if (check_next_ptradd(bin,((bin->ptr) + bin->arch->offset)) == 1)
+	if (check_next_ptradd(bin, ((bin->ptr) + bin->arch->offset)) == 1)
 		bin->dump->is_64 = is_magic_64(bin->mach32->magic);
 	else
 		bin->mach32 = NULL;
@@ -86,7 +85,8 @@ void			dump_fat_header(t_file *bin)
 
 	i = 0;
 	init_fat_header(bin, &header);
-	make_fat_head_list(bin, &arch_tmp);
+	make_fat_head_list(bin, &arch_tmp, (int)i);
+	i = 0;
 	while (i < bin->nfat_arch)
 	{
 		bin->arch = (struct fat_arch*)(((bin->ptr) + sizeof(struct fat_header))
